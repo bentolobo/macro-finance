@@ -348,6 +348,12 @@ def refresh_all() -> None:
     for name in ["broad_dollar", "trade_openness", "fdi_inflows_gdp"]:
         _, p = series(name)
         print(f"  {p.tier.upper():13s} {name}")
+    try:
+        from pylib import newsfeed
+        snap = newsfeed.refresh()
+        print(f"  NEWS          {snap.get('feeds_ok', 0)}/{snap.get('feeds_total', 0)} feeds ok")
+    except Exception as e:  # noqa: BLE001
+        print(f"  NEWS          refresh failed: {e}")
 
 
 def fx_round(year: int) -> Value:

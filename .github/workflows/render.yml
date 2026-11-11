@@ -1,6 +1,6 @@
 name: Refresh data and publish
 on:
-  schedule: [{cron: '0 6 1 * *'}]     # 06:00 UTC, 1st of each month
+  schedule: [{cron: '17 11 * * *'}]   # daily, 11:17 UTC (6:17 am Eastern): news + data
   workflow_dispatch:
   push: {branches: [main]}
 permissions: {contents: write, pages: write, id-token: write}
@@ -21,7 +21,7 @@ jobs:
           git config user.name data-bot
           git config user.email bot@users.noreply.github.com
           git add cache/
-          git diff --staged --quiet || git commit -m "chore: monthly data refresh"
+          git diff --staged --quiet || git commit -m "chore: daily data and news refresh"
           git push
       - name: Render the web edition
         run: quarto render --to html

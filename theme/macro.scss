@@ -94,6 +94,15 @@ td, th { padding: .45rem .65rem !important; vertical-align: top; }
 .callout.mf-application { @include box($navy,  #fff,    "Worked application");
                           border: 1px solid $rule !important; border-left: 5px solid $navy !important; }
 .callout.mf-note        { @include box(#5b6b7a, #f2f2ef, "Note"); }
+.callout.mf-news        { @include box($teal,  #fff,    "Live · updated each build");
+                          border: 1px solid $rule !important; border-left: 5px solid $teal !important;
+  ul { list-style: none; padding-left: 0; margin-bottom: .6rem; }
+  li { padding: .5rem 0; border-bottom: 1px solid $rule; font-family: $font-family-sans-serif; font-size: .92rem; }
+  li:last-child { border-bottom: 0; }
+  li a { color: $ink; text-decoration: none; } li a:hover { color: $navy; text-decoration: underline; }
+}
+.news-meta { font-family: $font-family-sans-serif; font-size: .76rem; color: #6b7785; letter-spacing: .02em; }
+.news-teaser { display: block; font-size: .84rem; color: #3a4654; margin-top: .15rem; }
 // strip the redundant prefix from titles once the label shows it
 .callout.mf-box .callout-title-container { line-height: 1.3; }
 

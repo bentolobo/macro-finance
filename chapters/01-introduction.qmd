@@ -366,6 +366,16 @@ plt.show()
 
 *A standing feature. Every chapter carries a short dossier of current press and primary-source coverage, selected to be read against the chapter's analytical framework rather than as background colour. In the live edition this section is rebuilt on each render; the dossier below was assembled 6 October 2026.*
 
+```{python}
+#| echo: false
+#| output: asis
+from pylib.newsfeed import render_box
+print(render_box("ch01"))
+```
+
+The dossier below is the curated part of this section: a small number of stories, chosen by the author and read closely against the chapter. The headlines above change with every build; the dossier changes with each edition.
+
+
 ::: {.callout-note .mf-box .mf-note icon=false}
 ## Why this section exists
 
