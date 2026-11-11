@@ -121,10 +121,21 @@ def parse_feed(xml_bytes: bytes):
     return out
 
 
+# Automated market-data blurbs ("WSJ Dollar Index Rises 0.44% to 97.97") add nothing.
+NOISE = re.compile(r"\bIndex (Rises|Falls|Edges|Slips|Gains)\b.*\d|\bAppointments?\b|\bvacanc", re.I)
+
+
 # ---------------------------------------------------------------- matching
-def _matches(title: str, summary: str, chapter: str) -> bool:
-    hay = f"{title} {summary}"
+def _matches(title: str, summary: str, chapter: str, kind: str = "press", publisher: str = "") -> bool:
+    """Press items must match in the headline itself; official releases may match in the
+    teaser, but not merely by naming the issuing institution."""
+    if NOISE.search(title):
+        return False
+    hay = title if kind == "press" else f"{title} {summary}"
+    own = {"Bank for International Settlements": "BIS"}.get(publisher)
     for k in KEYWORDS.get(chapter, []):
+        if k == own:
+            continue
         if k in CASE_SENSITIVE:
             if re.search(rf"\b{re.escape(k)}\b", hay):
                 return True
@@ -187,12 +198,14 @@ def select(chapter: str, snap: dict | None = None, now: datetime | None = None):
         d = _date(it["date"]) if it.get("date") else None
         if d is None or d < cutoff or not it.get("title") or not it.get("link"):
             continue
-        if not _matches(it["title"], _clean(it.get("summary", ""), 80), chapter):
+        if not _matches(it["title"], _clean(it.get("summary", ""), 80), chapter,
+                        it.get("kind", "press"), it.get("publisher", "")):
             continue
         items.append({**it, "date": d})
     items.sort(key=lambda x: x["date"], reverse=True)
     for it in items:
-        key = re.sub(r"\W+", " ", it["title"].lower()).strip()
+        # "Boris Vujčić: Integrated, open…" and "Integrated, open…" are the same speech
+        key = re.sub(r"\W+", " ", re.sub(r"^[^:]{2,40}:\s*", "", it["title"]).lower()).strip()
         if key in seen or per_pub.get(it["publisher"], 0) >= MAX_PER_PUBLISHER:
             continue
         seen.add(key)
