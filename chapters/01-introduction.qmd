@@ -1,6 +1,6 @@
 ---
 title: "Globalization and the Multinational Firm"
-author: "Bento J. Lobo · University of Tennessee at Chattanooga"
+author: "Bento J. Lobo, Ph.D., CFA · The University of Tennessee at Chattanooga"
 number-depth: 2
 execute:
   warning: false

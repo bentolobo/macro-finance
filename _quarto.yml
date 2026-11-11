@@ -7,14 +7,14 @@ book:
   title: "Macro Finance"
   subtitle: "A Living Textbook on International Finance"
   author:
-    - name: "Bento J. Lobo"
-      affiliation: "University of Tennessee at Chattanooga"
+    - name: "Bento J. Lobo, Ph.D., CFA"
+      affiliation: "The University of Tennessee at Chattanooga"
   date: last-modified
   date-format: "MMMM D, YYYY"
   search: true
   sidebar: {style: docked, collapse-level: 1}
   page-footer:
-    left: "© 2026 Bento J. Lobo"
+    left: "© 2026 Bento J. Lobo, Ph.D., CFA"
     center: "Living edition — data refreshed at build time"
   chapters:
     - index.qmd

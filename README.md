@@ -70,7 +70,7 @@ make deploy      # quarto publish gh-pages
 
 Then push to GitHub and add `FRED_API_KEY` under
 Settings → Secrets and variables → Actions. `.github/workflows/render.yml`
-re-fetches, re-renders and republishes at 06:00 UTC on the 1st of every month.
+re-fetches data and headlines, re-renders and republishes every day at 11:17 UTC.
 
 ## What is and isn't in here
 

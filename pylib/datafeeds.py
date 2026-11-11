@@ -1,6 +1,6 @@
 """
 pylib/datafeeds.py — data layer for *Macro Finance: A Living Textbook on
-International Finance* (Bento J. Lobo, UTC).               engine v2, Nov 2026
+International Finance* (Bento J. Lobo, Ph.D., CFA; UTC). engine v2, Nov 2026
 
 Three-tier fallback on every accessor:
     1. live API   2. cached parquet in cache/   3. curated published value
