@@ -1,0 +1,112 @@
+/*-- scss:defaults --*/
+// Macro Finance house style. Colours match pylib/plotting.py so charts and page agree.
+$navy:   #1f4e79;
+$teal:   #2a9d8f;
+$amber:  #b7791f;   // darkened for text contrast (chart amber is #e9b949)
+$rust:   #e76f51;
+$plum:   #6a4c93;
+$ink:    #1d2733;
+$paper:  #fbfaf7;
+$rule:   #e3e0d8;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;600;700&display=swap');
+
+$font-family-serif: "Source Serif 4", Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+$font-family-sans-serif: Inter, "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-base: $font-family-serif;
+$headings-font-family: $font-family-sans-serif;
+$font-size-root: 18px;
+$line-height-base: 1.62;
+$body-color: $ink;
+$body-bg: $paper;
+$primary: $navy;
+$link-color: $navy;
+$headings-color: $navy;
+$headings-font-weight: 700;
+$toc-color: $navy;
+$code-color: #8a3b2a;
+$table-border-color: $rule;
+
+/*-- scss:rules --*/
+// ---------------------------------------------------------------- page
+main.content { max-width: 50rem; }
+p, li { hyphens: auto; }
+h1, h2, h3, h4, .sidebar, .nav, .quarto-title-meta, figcaption, table, .callout-header,
+.vintage, .objectives, .sidebar-title, .breadcrumb { font-family: $font-family-sans-serif; }
+h2 { font-size: 1.55rem; margin-top: 2.6rem; padding-top: .9rem; border-top: 3px solid $navy;
+     letter-spacing: -.01em; }
+h3 { font-size: 1.15rem; margin-top: 1.8rem; color: $ink; }
+h2 .header-section-number { color: $teal; margin-right: .35em; }
+
+// chapter opener: navy band
+#title-block-header.quarto-title-block {
+  background: $navy; color: #fff; margin: 0 -1.5rem 2rem; padding: 2.2rem 1.8rem 1.6rem;
+  border-radius: 0 0 6px 6px;
+  .title { color: #fff; font-size: 2.3rem; line-height: 1.15; letter-spacing: -.02em; }
+  .subtitle, .quarto-title-meta, .quarto-title-meta-heading, .quarto-title-meta-contents,
+  .quarto-title-meta-contents p { color: #d6e2ee; }
+  .quarto-title-breadcrumbs { display: none !important; }
+  .title .chapter-number { display: block; font-size: .8rem; font-weight: 700; letter-spacing: .16em;
+                    text-transform: uppercase; color: #9fd8cf; margin-bottom: .5rem; }
+  .title .chapter-number::before { content: "Chapter "; }
+  .title .chapter-title { display: block; }
+}
+
+// data vintage stamp
+.vintage { font-size: .85rem; color: #4a5866; background: #eef3f8; border-left: 4px solid $teal;
+           padding: .55rem .9rem; margin: 0 0 1.4rem; border-radius: 0 4px 4px 0; }
+.vintage p { margin: 0; }
+
+// learning objectives card
+.objectives { background: #fff; border: 1px solid $rule; border-top: 4px solid $navy; border-radius: 6px;
+              padding: 1rem 1.3rem .4rem; margin-bottom: 1.6rem; font-size: .95rem;
+  ol { padding-left: 1.2rem; } li { margin-bottom: .45rem; } }
+
+// ---------------------------------------------------------------- figures
+.quarto-figure { margin: 1.8rem 0; }
+.quarto-figure img, .cell-output-display img { box-sizing: border-box; max-width: 100%; height: auto; background: #fff; border: 1px solid $rule; border-radius: 6px;
+                                             padding: .4rem; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+figcaption, .figure-caption { font-size: .86rem; line-height: 1.45; color: #4a5866; margin-top: .55rem; }
+figcaption strong { color: $navy; }
+
+// ---------------------------------------------------------------- tables
+table { font-size: .86rem; margin: 1.4rem 0; }
+thead th { background: $navy; color: #fff; border-bottom: 0 !important; font-weight: 600; }
+tbody tr:nth-child(even) { background: #f3f1ec; }
+td, th { padding: .45rem .65rem !important; vertical-align: top; }
+
+// ---------------------------------------------------------------- boxes
+@mixin box($c, $bg, $label) {
+  border: 0 !important; border-left: 5px solid $c !important; background: $bg !important;
+  border-radius: 0 6px 6px 0 !important; box-shadow: none !important;
+  .callout-header { background: transparent !important; border: 0 !important; padding-bottom: 0; }
+  .callout-title-container { color: $c; font-weight: 700; font-size: 1rem; }
+  .callout-title-container::before { content: $label; display: block; font-size: .7rem; font-weight: 700;
+                                      letter-spacing: .14em; text-transform: uppercase; opacity: .75; }
+  .callout-body-container { font-size: .97rem; }
+}
+.callout.mf-box { margin: 1.8rem 0; }
+.callout.mf-trap        { @include box($rust,  #fdf1ec, "Trap"); }
+.callout.mf-keyidea     { @include box($navy,  #eef3f8, "Key idea"); }
+.callout.mf-ethics      { @include box($plum,  #f3eff8, "Ethics in practice"); }
+.callout.mf-debate      { @include box($amber, #fbf5e8, "Policy debate"); }
+.callout.mf-activity    { @include box($teal,  #ecf6f4, "Your turn"); }
+.callout.mf-application { @include box($navy,  #fff,    "Worked application");
+                          border: 1px solid $rule !important; border-left: 5px solid $navy !important; }
+.callout.mf-note        { @include box(#5b6b7a, #f2f2ef, "Note"); }
+// strip the redundant prefix from titles once the label shows it
+.callout.mf-box .callout-title-container { line-height: 1.3; }
+
+blockquote { border-left: 3px solid $rule; color: #3a4654; font-size: .97rem; padding-left: 1rem; }
+
+// code fold: quieter
+details.code-fold summary { font-family: $font-family-sans-serif; font-size: .78rem; color: #7a8794; }
+
+// sidebar
+.sidebar-navigation .sidebar-item-text { font-size: .9rem; }
+#quarto-sidebar .sidebar-title a { color: $navy; font-weight: 700; }
+
+@media print {
+  #title-block-header.quarto-title-block { background: none; color: $ink;
+    .title { color: $navy; } }
+}
