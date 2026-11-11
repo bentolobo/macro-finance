@@ -44,7 +44,7 @@ Keep this page. You will be asked to revisit it at the end of the chapter.
 
 On a single ordinary business day, the world's foreign exchange market turns over about **\$`{python} val('fx_turnover')` trillion** — a figure that exceeds the annual economic output of every country on earth except the United States and China, and it happens *daily*. In April 2025 that number was **`{python} val('fx_turnover_chg')` percent higher** than three years earlier, measured in a month when tariff announcements sent currencies lurching and hedging demand surging. Alongside it, over-the-counter interest rate derivatives traded **\$`{python} val('irt_turnover')` trillion** per day, up **`{python} val('irt_turnover_chg')` percent** over the same three years.
 
-These numbers come from the Bank for International Settlements' Triennial Central Bank Survey, a census conducted every three years across `{python} val('triennial_jurisdictions')` jurisdictions and more than `{python} val('triennial_dealers')` banks and other dealers. It is the closest thing the field has to a ground truth about market size, and it is the single most important data source you will meet in this course.
+These numbers come from the Bank for International Settlements' [Triennial Central Bank Survey](https://www.bis.org/statistics/rpfx25.htm), a census conducted every three years across `{python} val('triennial_jurisdictions')` jurisdictions and more than `{python} val('triennial_dealers')` banks and other dealers. It is the closest thing the field has to a ground truth about market size, and it is the single most important data source you will meet in this course.
 
 Hold two facts in mind as you read. First, almost none of that turnover is paying for trade in goods. Global merchandise exports run to about \$`{python} val('wto_merch_exports')` trillion *per year*; the FX market clears that much in about `{python} val('days_to_clear_trade')` trading days. Second, a firm with no foreign subsidiary, no foreign sales, and no foreign debt is still exposed to this market — because its competitors, its suppliers, and its customers are.
 
@@ -812,7 +812,7 @@ In its 2008 fiscal year, Volkswagen reported a loss of roughly €1.5 billion on
 
 ## References and Further Reading {.unnumbered}
 
-Bank for International Settlements. *Triennial Central Bank Survey of Foreign Exchange and Over-the-Counter Derivatives Markets.* Basel: BIS, April 2025 round, published September 2025.
+Bank for International Settlements. *Triennial Central Bank Survey of Foreign Exchange and Over-the-Counter Derivatives Markets.* Basel: BIS, April 2025 round, published September 2025. <https://www.bis.org/statistics/rpfx25.htm>
 
 Bekaert, Geert, and Robert J. Hodrick. *International Financial Management.* 3rd ed. Cambridge University Press — Chapter 1.
 
