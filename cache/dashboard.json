@@ -1,0 +1,180 @@
+{
+ "built": "2026-11-12T16:59+00:00",
+ "groups": [
+  {
+   "title": "Inflation",
+   "items": [
+    {
+     "key": "cpi",
+     "label": "CPI, all items (y/y)",
+     "unit": "%",
+     "dp": 1,
+     "value": 3.72,
+     "prev": 3.35,
+     "period": "Sep 2026",
+     "prev_period": "Aug 2026",
+     "updated": "2026-11-10",
+     "source": "FRED",
+     "series": "CPIAUCSL",
+     "url": "https://fred.stlouisfed.org/series/CPIAUCSL",
+     "status": "live"
+    },
+    {
+     "key": "core_cpi",
+     "label": "Core CPI (y/y)",
+     "unit": "%",
+     "dp": 1,
+     "value": 2.57,
+     "prev": 2.45,
+     "period": "Sep 2026",
+     "prev_period": "Aug 2026",
+     "updated": "2026-11-10",
+     "source": "FRED",
+     "series": "CPILFESL",
+     "url": "https://fred.stlouisfed.org/series/CPILFESL",
+     "status": "live"
+    },
+    {
+     "key": "core_pce",
+     "label": "Core PCE, Fed's target gauge (y/y)",
+     "unit": "%",
+     "dp": 1,
+     "value": 3.12,
+     "prev": 3.03,
+     "period": "Sep 2026",
+     "prev_period": "Aug 2026",
+     "updated": "2026-10-29",
+     "source": "FRED",
+     "series": "PCEPILFE",
+     "url": "https://fred.stlouisfed.org/series/PCEPILFE",
+     "status": "live"
+    },
+    {
+     "key": "ea_hicp",
+     "label": "Euro area HICP (y/y)",
+     "unit": "%",
+     "dp": 1,
+     "value": 1.9,
+     "prev": 2.1,
+     "period": "Dec 2025",
+     "prev_period": "Nov 2025",
+     "updated": null,
+     "source": "ECB Data Portal",
+     "series": "ICP/M.U2.N.000000.4.ANR",
+     "url": "https://data.ecb.europa.eu/data/datasets/ICP",
+     "status": "live"
+    }
+   ]
+  },
+  {
+   "title": "Jobs",
+   "items": [
+    {
+     "key": "unrate",
+     "label": "Unemployment rate",
+     "unit": "%",
+     "dp": 1,
+     "value": 4.1,
+     "prev": 4.2,
+     "period": "Oct 2026",
+     "prev_period": "Sep 2026",
+     "updated": "2026-11-06",
+     "source": "FRED",
+     "series": "UNRATE",
+     "url": "https://fred.stlouisfed.org/series/UNRATE",
+     "status": "live"
+    },
+    {
+     "key": "payrolls",
+     "label": "Nonfarm payrolls (monthly change)",
+     "unit": "k",
+     "dp": 0,
+     "value": 165.0,
+     "prev": 60.0,
+     "period": "Oct 2026",
+     "prev_period": "Sep 2026",
+     "updated": "2026-11-06",
+     "source": "FRED",
+     "series": "PAYEMS",
+     "url": "https://fred.stlouisfed.org/series/PAYEMS",
+     "status": "live"
+    },
+    {
+     "key": "claims",
+     "label": "Initial jobless claims (weekly)",
+     "unit": "k",
+     "dp": 0,
+     "value": 200.0,
+     "prev": 191.0,
+     "period": "week of 7 Nov 2026",
+     "prev_period": "week of 31 Oct 2026",
+     "updated": "2026-11-12",
+     "source": "FRED",
+     "series": "ICSA",
+     "url": "https://fred.stlouisfed.org/series/ICSA",
+     "status": "live"
+    }
+   ]
+  }
+ ],
+ "policy": [
+  {
+   "key": "fed",
+   "bank": "Federal Reserve",
+   "label": "Fed funds target",
+   "rate": "3.75–4.00%",
+   "last_move_bp": 25,
+   "last_move_date": "2026-09-17",
+   "last_move_text": "raised 25 bp on 17 Sep 2026",
+   "as_of": "2026-11-12",
+   "series": "DFEDTARL,DFEDTARU",
+   "url": "https://fred.stlouisfed.org/series/DFEDTARU",
+   "status": "live"
+  },
+  {
+   "key": "ecb",
+   "bank": "European Central Bank",
+   "label": "Deposit facility rate",
+   "rate": "2.50%",
+   "last_move_bp": 25,
+   "last_move_date": "2026-09-16",
+   "last_move_text": "raised 25 bp on 16 Sep 2026",
+   "as_of": "2026-11-12",
+   "series": "ECBDFR",
+   "url": "https://fred.stlouisfed.org/series/ECBDFR",
+   "status": "live"
+  }
+ ],
+ "statements": [
+  {
+   "bank": "BoJ",
+   "title": "Summary of Opinions at the Monetary Policy Meeting on October 29 and 30, 2026",
+   "link": "http://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi261030.pdf",
+   "date": "2026-11-09T23:50:00+00:00"
+  },
+  {
+   "bank": "BoJ",
+   "title": "Minutes of the Monetary Policy Meeting on September 17 and 18, 2026",
+   "link": "http://www.boj.or.jp/en/mopo/mpmsche_minu/minu_2026/g260918.pdf",
+   "date": "2026-11-04T23:50:00+00:00"
+  },
+  {
+   "bank": "ECB",
+   "title": "Monetary policy decisions",
+   "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+   "date": "2026-10-29T13:15:00+00:00"
+  },
+  {
+   "bank": "Fed",
+   "title": "Federal Reserve issues FOMC statement",
+   "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+   "date": "2026-10-28T18:00:00+00:00"
+  },
+  {
+   "bank": "Fed",
+   "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+   "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
+   "date": "2026-10-13T18:00:00+00:00"
+  }
+ ]
+}
