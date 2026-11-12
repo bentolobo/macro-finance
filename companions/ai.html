@@ -48,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-447c5dbdbaadf3195d746f842414959a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5a69d7421ec103e6927869f8fc206c29.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -596,6 +596,370 @@ body.mf-ind-open #mf-ind-toggle{display:none}
   }
   const saved = store.get("mf-ind-open");
   setOpen(saved === null ? innerWidth >= 1400 : saved === "1");
+})();
+</script>
+<!-- Modules, gates and the Chapter Checkpoint.
+     Authoring (in a chapter .qmd):
+       ::: {#module-map data-chapter="ch01"}          module map + progress (top of chapter)
+       ::: {.module-banner data-n="1" data-title="…"} start of a module
+       ::::: {.gate data-module="1"} :::: {.q} prompt ::: {.a} model answer ::: :::: :::::
+       ::::: {.gate .pretest data-module="0"} …       pretest: answers saved, no model answers
+       ::: {#pretest-recall}                           shows saved pretest answers (Revisit box)
+       ::: {#checkpoint}  + a <script type="application/json" id="checkpoint-items"> block
+     Soft lock: every module stays readable; only the Checkpoint is locked until all gates
+     are done. State lives in this browser only (localStorage). ?preview opens everything. -->
+<style>
+.mf-map{background:#fff;border:1px solid #e3e0d8;border-top:4px solid #2a9d8f;border-radius:6px;padding:1rem 1.2rem .8rem;margin:0 0 1.8rem;font-family:Inter,system-ui,sans-serif}
+.mf-map h4{all:unset;display:block;font-weight:700;color:#1f4e79;font-size:1rem;margin-bottom:.15rem}
+.mf-map .sub{font-size:.8rem;color:#6b7785;margin-bottom:.7rem}
+.mf-map ol{list-style:none;padding:0;margin:0;counter-reset:none}
+.mf-map li{display:flex;align-items:center;gap:.6rem;padding:.38rem 0;border-top:1px dotted #e3e0d8;font-size:.88rem}
+.mf-map li:first-child{border-top:0}
+.mf-map .st{flex:0 0 1.5rem;height:1.5rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;border:2px solid #c9d3dc;color:#8a95a2;background:#fff}
+.mf-map .done .st{background:#2a9d8f;border-color:#2a9d8f;color:#fff}
+.mf-map .cp .st{border-color:#1f4e79;color:#1f4e79}
+.mf-map .cp.locked .st{border-color:#c9d3dc;color:#8a95a2}
+.mf-map a{color:#1d2733;text-decoration:none}.mf-map a:hover{text-decoration:underline}
+.mf-map .tag{margin-left:auto;font-size:.72rem;color:#8a95a2;white-space:nowrap}
+.mf-map .done .tag{color:#2a9d8f}
+.mf-map .bar{height:6px;background:#eef1f4;border-radius:3px;margin:.7rem 0 .5rem;overflow:hidden}
+.mf-map .bar span{display:block;height:100%;background:#2a9d8f;transition:width .3s}
+.mf-map .tools{font-size:.72rem;color:#8a95a2}.mf-map .tools button{all:unset;cursor:pointer;color:#1f4e79;text-decoration:underline;margin-right:.8rem}
+.mf-banner{display:flex;align-items:center;gap:.7rem;margin:2.4rem 0 -.6rem;font-family:Inter,system-ui,sans-serif}
+.mf-banner .n{background:#1f4e79;color:#fff;font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:.28rem .6rem;border-radius:3px}
+.mf-banner .t{font-weight:600;color:#1f4e79;font-size:.9rem}
+.mf-banner .s{margin-left:auto;font-size:.74rem;color:#8a95a2}
+.mf-banner.done .s{color:#2a9d8f}
+.mf-banner .warn{display:block;font-size:.74rem;color:#b7791f;font-weight:400}
+.mf-gate{background:#f3f7f6;border:1px solid #cfe5e1;border-left:5px solid #2a9d8f;border-radius:0 6px 6px 0;padding:1rem 1.2rem .6rem;margin:2rem 0;font-family:Inter,system-ui,sans-serif;font-size:.9rem}
+.mf-gate > h4{all:unset;display:block;font-weight:700;color:#1d6b62;font-size:.95rem;margin-bottom:.15rem}
+.mf-gate > .sub{font-size:.78rem;color:#5c6b78;margin-bottom:.6rem}
+.mf-gq{border-top:1px solid #d9ebe7;padding:.7rem 0 .5rem}
+.mf-gq .p{font-family:"Source Serif 4",Georgia,serif;font-size:1rem;margin-bottom:.45rem}
+.mf-gq .p p{margin:0}
+.mf-gq textarea,.mf-cp input[type=text],.mf-cp textarea{width:100%;box-sizing:border-box;border:1px solid #c9d3dc;border-radius:4px;padding:.45rem .55rem;font:inherit;font-size:.9rem;background:#fff}
+.mf-gq textarea{min-height:3.2rem}
+.mf-btn{all:unset;cursor:pointer;display:inline-block;background:#1f4e79;color:#fff;font-weight:600;font-size:.8rem;padding:.38rem .8rem;border-radius:4px;margin:.4rem .4rem 0 0}
+.mf-btn[disabled]{background:#a9b6c3;cursor:not-allowed}
+.mf-btn.ghost{background:#fff;color:#1f4e79;border:1px solid #1f4e79}
+.mf-btn.r1{background:#2a9d8f}.mf-btn.r2{background:#b7791f}.mf-btn.r3{background:#c0392b}
+.mf-ans{background:#fff;border:1px dashed #9fd8cf;border-radius:4px;padding:.55rem .7rem;margin-top:.5rem;font-size:.88rem}
+.mf-ans b.k{color:#1d6b62}
+.mf-rated{font-size:.78rem;color:#1d6b62;margin-top:.35rem}
+.mf-gate .fin{font-weight:700;color:#1d6b62;padding:.5rem 0}
+.mf-cp{background:#fff;border:1px solid #c9d3dc;border-top:5px solid #1f4e79;border-radius:6px;padding:1.1rem 1.3rem;margin:1.2rem 0 2rem;font-family:Inter,system-ui,sans-serif;font-size:.9rem}
+.mf-cp.locked{background:#f6f5f2;border-top-color:#a9b6c3}
+.mf-cp h4{all:unset;display:block;font-weight:700;font-size:1.05rem;color:#1f4e79;margin-bottom:.3rem}
+.mf-cp .lock{font-size:2rem;line-height:1;float:right;opacity:.5}
+.mf-cp ul.todo{margin:.4rem 0 .2rem 1.1rem}
+.mf-cp .meta{font-size:.78rem;color:#6b7785}
+.mf-ci{border-top:1px solid #e3e0d8;padding:.9rem 0 .6rem}
+.mf-ci .hd{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8a95a2;margin-bottom:.25rem}
+.mf-ci .p{font-family:"Source Serif 4",Georgia,serif;font-size:1rem;margin-bottom:.5rem}
+.mf-ci .row{display:flex;gap:.8rem;align-items:center;flex-wrap:wrap}
+.mf-ci .row input[type=text]{max-width:12rem}
+.mf-ci label.c{font-size:.78rem;color:#5c6b78;display:flex;align-items:center;gap:.4rem}
+.mf-ci input[type=range]{width:8rem}
+.mf-ci .res{margin-top:.5rem;padding:.55rem .7rem;border-radius:4px;font-size:.86rem}
+.mf-ci .res.ok{background:#e8f5f2;border-left:4px solid #2a9d8f}
+.mf-ci .res.no{background:#fbeeea;border-left:4px solid #e76f51}
+.mf-ci .res.self{background:#f4f6f8;border-left:4px solid #8a95a2}
+.mf-score{background:#1f4e79;color:#fff;border-radius:6px;padding:.9rem 1.1rem;margin:.8rem 0}
+.mf-score b{font-size:1.5rem}
+.mf-score .meta{color:#c9d8e6}
+.mf-score a{color:#9fd8cf}
+.mf-preview{position:fixed;left:.6rem;bottom:.6rem;z-index:1060;background:#b7791f;color:#fff;font:600 .72rem Inter,sans-serif;padding:.3rem .6rem;border-radius:4px}
+@media print{.mf-gate textarea,.mf-btn,.mf-map .tools,.mf-preview{display:none!important}}
+</style>
+<script>
+(function () {
+  const map = document.getElementById("module-map");
+  if (!map) return;
+  const CH = map.dataset.chapter || "ch";
+  const KEY = "mf-progress-" + CH;
+  const PREVIEW = /[?&]preview\b/.test(location.search);
+  const PASS = 70, MAX_ATTEMPTS = 3, WAIT_H = 24;
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+  const load = () => { try { return JSON.parse(localStorage.getItem(KEY + (PREVIEW ? "-preview" : ""))) || {}; } catch (e) { return {}; } };
+  let S = load(); S.gates = S.gates || {}; S.attempts = S.attempts || [];
+  const persist = () => { try { localStorage.setItem(KEY + (PREVIEW ? "-preview" : ""), JSON.stringify(S)); } catch (e) {} };
+  const save = () => { persist(); render(); };
+  if (PREVIEW) { const b = document.createElement("div"); b.className = "mf-preview"; b.textContent = "Instructor preview · progress not kept with student data"; document.body.appendChild(b); }
+
+  // -------------------------------------------------------------- modules
+  const banners = [...document.querySelectorAll(".module-banner")].map((el) => ({el, n: +el.dataset.n, title: el.dataset.title}));
+  const gates = [...document.querySelectorAll(".gate")];
+  const titleOf = (n) => (banners.find((b) => b.n === n) || {}).title || (n === 0 ? "Before You Read" : "Module " + n);
+  const gateDone = (n) => !!(S.gates[n] && S.gates[n].done);
+  const allN = gates.map((g) => +g.dataset.module).sort((a, b) => a - b);
+  const allDone = () => allN.every(gateDone);
+
+  // ---------------------------------------------------------------- gates
+  gates.forEach((g) => {
+    const n = +g.dataset.module, pre = g.classList.contains("pretest");
+    g.id = g.id || "gate-" + n;
+    const qs = [...g.querySelectorAll(":scope > .q")].map((q) => {
+      const a = q.querySelector(":scope > .a"); const ans = a ? a.innerHTML : ""; if (a) a.remove();
+      return {prompt: q.innerHTML, ans};
+    });
+    const box = document.createElement("div");
+    box.className = "mf-gate"; box.id = g.id; box.dataset.module = n;
+    g.replaceWith(box);
+    const st = () => (S.gates[n] = S.gates[n] || {items: []});
+    function draw() {
+      const s = st();
+      box.innerHTML = pre
+        ? `<h4>Before you read: commit to an answer</h4><div class="sub">Type your best guess to each question above. No looking anything up. Your answers are kept in this browser, and you'll see them again at the end of the chapter.</div>`
+        : `<h4>Check · Module ${n}: ${esc(titleOf(n))}</h4><div class="sub">Answer from memory first, then reveal the model answer and rate yourself honestly. Rating every question completes the check. Your rating isn't scored; the attempt is what counts.</div>`;
+      qs.forEach((q, i) => {
+        const it = s.items[i] = s.items[i] || {};
+        const d = document.createElement("div"); d.className = "mf-gq";
+        d.innerHTML = `<div class="p">${pre ? "<b>" + (i + 1) + ".</b> " : ""}${q.prompt}</div><textarea aria-label="Your answer">${esc(it.text || "")}</textarea>`;
+        const ta = d.querySelector("textarea");
+        if (pre) {
+          ta.addEventListener("input", () => { it.text = ta.value; s.done = qs.every((_, j) => (s.items[j] && (s.items[j].text || "").trim().length >= 3)); save(); updateFin(); });
+        } else {
+          const btn = document.createElement("button"); btn.className = "mf-btn"; btn.type = "button"; btn.textContent = "Reveal model answer";
+          const area = document.createElement("div");
+          const showAns = () => {
+            btn.remove();
+            area.innerHTML = `<div class="mf-ans"><b class="k">Model answer.</b> ${q.ans}</div>` +
+              (it.rating ? `<div class="mf-rated">You rated this: ${{1: "got it", 2: "partly", 3: "missed it"}[it.rating]}. <a href="#" class="rerate">change</a></div>`
+                         : `<div><button class="mf-btn r1" data-r="1" type="button">Got it</button><button class="mf-btn r2" data-r="2" type="button">Partly</button><button class="mf-btn r3" data-r="3" type="button">Missed it</button></div>`);
+            area.querySelectorAll("[data-r]").forEach((b) => b.addEventListener("click", () => {
+              it.rating = +b.dataset.r; it.text = ta.value; s.done = qs.every((_, j) => s.items[j] && s.items[j].rating); if (s.done) s.when = Date.now(); save(); showAns(); updateFin();
+            }));
+            const rr = area.querySelector(".rerate"); if (rr) rr.addEventListener("click", (e) => { e.preventDefault(); it.rating = 0; s.done = false; save(); showAns(); updateFin(); });
+          };
+          btn.disabled = (ta.value.trim().length < 10) && !PREVIEW;
+          ta.addEventListener("input", () => { it.text = ta.value; btn.disabled = ta.value.trim().length < 10 && !PREVIEW; persist(); });
+          btn.addEventListener("click", showAns);
+          d.appendChild(btn); d.appendChild(area);
+          if (it.rating) showAns();
+        }
+        box.appendChild(d);
+      });
+      const fin = document.createElement("div"); fin.className = "fin"; box.appendChild(fin);
+      function updateFin() {
+        const next = banners.find((b) => b.n === n + 1);
+        fin.innerHTML = st().done ? `✓ ${pre ? "Answers saved." : "Check complete."} ` + (next ? `<a href="#${next.el.id}">Continue to Module ${next.n}: ${esc(next.title)} ↓</a>` : `<a href="#checkpoint">Go to the Chapter Checkpoint ↓</a>`) : "";
+      }
+      updateFin();
+    }
+    draw();
+  });
+
+  // ------------------------------------------------------------- banners
+  banners.forEach((b) => { b.el.id = b.el.id || "module-" + b.n; b.el.classList.add("mf-banner"); });
+  function renderBanners() {
+    banners.forEach((b) => {
+      const prevUndone = allN.filter((m) => m < b.n && !gateDone(m));
+      b.el.classList.toggle("done", gateDone(b.n));
+      b.el.innerHTML = `<span class="n">Module ${b.n}</span><span class="t">${esc(b.title)}</span>` +
+        `<span class="s">${gateDone(b.n) ? "✓ check complete" : "check not yet done"}` +
+        (prevUndone.length ? `<span class="warn">You're reading ahead: the check for ${prevUndone.map((m) => m === 0 ? "Before You Read" : "Module " + m).join(", ")} is still open.</span>` : "") + `</span>`;
+    });
+  }
+
+  // ----------------------------------------------------------- module map
+  function renderMap() {
+    const done = allN.filter(gateDone).length;
+    const best = bestScore();
+    const lockedCP = !allDone() && !PREVIEW;
+    map.className = "mf-map";
+    map.innerHTML = `<h4>This chapter in ${banners.length} modules</h4>
+      <div class="sub">Work through the modules in order. Each ends with a short check. The Chapter Checkpoint unlocks when every check is done.</div>
+      <div class="bar"><span style="width:${Math.round(100 * done / allN.length)}%"></span></div>
+      <ol>${allN.map((n) => `<li class="${gateDone(n) ? "done" : ""}"><span class="st">${gateDone(n) ? "✓" : n}</span>
+          <a href="#${n === 0 ? "gate-0" : "module-" + n}">${n === 0 ? "Before You Read (pretest)" : esc(titleOf(n))}</a>
+          <span class="tag">${gateDone(n) ? "done" : "to do"}</span></li>`).join("")}
+        <li class="cp ${lockedCP ? "locked" : ""}"><span class="st">${lockedCP ? "🔒" : "★"}</span><a href="#checkpoint">Chapter Checkpoint</a>
+          <span class="tag">${best != null ? "best " + best + "%" : lockedCP ? "locked" : "open"}</span></li></ol>
+      <div class="tools" style="margin-top:.6rem">Progress is saved in this browser only.
+        <button type="button" data-t="export">Copy progress code</button><button type="button" data-t="import">Paste progress code</button><button type="button" data-t="reset">Reset</button></div>`;
+    map.querySelector('[data-t="export"]').onclick = async () => {
+      const code = btoa(unescape(encodeURIComponent(JSON.stringify(S))));
+      try { await navigator.clipboard.writeText(code); alertInline("Progress code copied. Paste it on your other device."); } catch (e) { prompt("Copy this progress code:", code); }
+    };
+    map.querySelector('[data-t="import"]').onclick = () => {
+      const code = prompt("Paste a progress code:"); if (!code) return;
+      try { S = JSON.parse(decodeURIComponent(escape(atob(code.trim())))); save(); location.reload(); } catch (e) { alertInline("That code could not be read."); }
+    };
+    map.querySelector('[data-t="reset"]').onclick = () => { if (confirm("Erase your progress, answers and Checkpoint attempts for this chapter?")) { S = {gates: {}, attempts: []}; save(); location.reload(); } };
+  }
+  function alertInline(msg) { const t = map.querySelector(".tools"); const s = document.createElement("div"); s.textContent = msg; s.style.color = "#1d6b62"; t.appendChild(s); setTimeout(() => s.remove(), 4000); }
+
+  // ------------------------------------------------------- pretest recall
+  function renderRecall() {
+    const el = document.getElementById("pretest-recall"); if (!el) return;
+    const items = (S.gates[0] && S.gates[0].items) || [];
+    if (!items.some((i) => i && i.text)) { el.innerHTML = `<p><em>You didn't record pretest answers in this browser.</em></p>`; return; }
+    el.innerHTML = `<p><b>What you wrote before reading:</b></p><ol>${items.map((i) => `<li>${esc((i && i.text) || "—")}</li>`).join("")}</ol>`;
+  }
+
+  // ===================================================== CHECKPOINT ENGINE
+  const cpEl = document.getElementById("checkpoint");
+  let ITEMS = [];
+  try { ITEMS = JSON.parse(document.getElementById("checkpoint-items").textContent); } catch (e) {}
+
+  function rng(seedStr) { // mulberry32 over a string hash
+    let h = 1779033703 ^ seedStr.length;
+    for (let i = 0; i < seedStr.length; i++) { h = Math.imul(h ^ seedStr.charCodeAt(i), 3432918353); h = (h << 13) | (h >>> 19); }
+    let a = h >>> 0;
+    return () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+  }
+  const pick = (r, lo, hi, step) => { const k = Math.round((hi - lo) / step); return +(lo + step * Math.floor(r() * (k + 1))).toFixed(6); };
+  const fmt = (x, d) => Number(x).toLocaleString("en-US", {minimumFractionDigits: d, maximumFractionDigits: d});
+
+  // Generators: return {prompt, answer, unit, tol (relative), atol, solution}
+  const GEN = {
+    fx_vs_trade(r) {
+      const T = pick(r, 6.0, 10.0, 0.1), X = pick(r, 22, 28, 0.5);
+      const a = X / T;
+      return {vars: {T: fmt(T, 1), X: fmt(X, 1)}, answer: a, unit: "trading days", tol: 0.03, atol: 0.15,
+        solution: `Days needed = annual exports ÷ daily turnover = ${fmt(X, 1)} ÷ ${fmt(T, 1)} = <b>${fmt(a, 2)} trading days</b>. Currency trading clears a year of goods trade in a few days, which is why most turnover can't be paying for trade.`};
+    },
+    cagr(r) {
+      const a = pick(r, 3.0, 5.5, 0.1), b = pick(r, 6.5, 10.0, 0.1), n = pick(r, 6, 12, 1);
+      const g = (Math.pow(b / a, 1 / n) - 1) * 100;
+      return {vars: {a: fmt(a, 1), b: fmt(b, 1), n}, answer: g, unit: "% per year", tol: 0, atol: 0.1,
+        solution: `CAGR = (end ÷ start)<sup>1/n</sup> − 1 = (${fmt(b, 1)} ÷ ${fmt(a, 1)})<sup>1/${n}</sup> − 1 = <b>${fmt(g, 2)}% per year</b>.`};
+    },
+    receivable(r) {
+      const A = pick(r, 2, 8, 0.5), S0 = pick(r, 1.02, 1.18, 0.005);
+      let d = pick(r, -0.08, 0.08, 0.005); if (Math.abs(d) < 0.02) d = d < 0 ? -0.03 : 0.03;
+      const S1 = +(S0 * (1 + d)).toFixed(4), chg = A * 1e6 * (S1 - S0) / 1000;
+      return {vars: {A: fmt(A, 1), S0: S0.toFixed(4), S1: S1.toFixed(4)}, answer: chg, unit: "$ thousands", tol: 0.01, atol: 1,
+        solution: `Change = €${fmt(A, 1)}m × ($${S1.toFixed(4)} − $${S0.toFixed(4)}) = <b>${chg >= 0 ? "+" : "−"}$${fmt(Math.abs(chg), 0)} thousand</b>. That's transaction exposure: the euro amount is fixed, the dollar amount is not.`};
+    },
+    translation(r) {
+      const N = pick(r, 120, 240, 5), r0 = pick(r, 16.5, 18.5, 0.05);
+      let d = pick(r, -0.12, 0.15, 0.01); if (Math.abs(d) < 0.05) d = 0.08;
+      const r1 = +(r0 * (1 + d)).toFixed(2), g = N / r1 - N / r0;
+      return {vars: {N, r0: r0.toFixed(2), r1: r1.toFixed(2)}, answer: g, unit: "$ millions", tol: 0.02, atol: 0.05,
+        solution: `Dollar value before = ${N} ÷ ${r0.toFixed(2)} = $${fmt(N / r0, 2)}m; after = ${N} ÷ ${r1.toFixed(2)} = $${fmt(N / r1, 2)}m. Translation ${g < 0 ? "loss" : "gain"} = <b>${g < 0 ? "−" : "+"}$${fmt(Math.abs(g), 2)}m</b>. It goes to the cumulative translation adjustment in equity, not through income, and no cash moves.`};
+    }
+  };
+  const fill = (t, v) => t.replace(/\{(\w+)\}/g, (_, k) => v[k] ?? "{" + k + "}");
+
+  function build(seed) {
+    const r = rng(seed);
+    return ITEMS.map((it, i) => {
+      const o = {i, kind: it.kind, module: it.module, label: it.label, from: it.from};
+      if (it.kind === "num") { const g = GEN[it.gen](r); Object.assign(o, g, {prompt: fill(it.prompt, g.vars)}); }
+      else if (it.kind === "keyword") { const sc = it.pool[Math.floor(r() * it.pool.length)]; Object.assign(o, {prompt: it.prompt + "<br><br>" + sc.text, keys: sc.keys, model: sc.model}); }
+      else Object.assign(o, {prompt: it.prompt, model: it.model, rubric: it.rubric});
+      return o;
+    });
+  }
+  const parseNum = (s) => { const x = parseFloat(String(s).replace(/[,$€%\s]/g, "").replace(/[−–]/g, "-")); return isNaN(x) ? null : x; };
+  const numOK = (x, it) => x != null && (Math.abs(x - it.answer) <= Math.max(it.atol || 0, Math.abs(it.answer) * (it.tol || 0)));
+  function bestScore() { const sc = (S.attempts || []).filter((a) => a.score != null).map((a) => a.score); return sc.length ? Math.max(...sc) : null; }
+
+  let live = null; // in-progress attempt
+  function renderCP() {
+    if (!cpEl) return;
+    cpEl.className = "mf-cp";
+    const atts = (S.attempts || []).filter((a) => a.score != null);
+    const used = atts.length, best = bestScore();
+    if (!allDone() && !PREVIEW) {
+      cpEl.classList.add("locked");
+      const todo = allN.filter((n) => !gateDone(n));
+      cpEl.innerHTML = `<span class="lock">🔒</span><h4>Chapter Checkpoint</h4>
+        <p>Unlocks when every module check is done. Still to do:</p>
+        <ul class="todo">${todo.map((n) => `<li><a href="#gate-${n}">${n === 0 ? "Before You Read" : "Module " + n + ": " + esc(titleOf(n))}</a></li>`).join("")}</ul>
+        <p class="meta">${ITEMS.length} questions · about 20 minutes · up to ${MAX_ATTEMPTS} attempts, best score counts · new numbers each attempt</p>`;
+      return;
+    }
+    if (live) return drawLive();
+    const last = atts[atts.length - 1];
+    const waitUntil = last ? last.when + WAIT_H * 3600e3 : 0;
+    const wait = !PREVIEW && used > 0 && used < MAX_ATTEMPTS && Date.now() < waitUntil;
+    let html = `<h4>Chapter Checkpoint</h4>
+      <p class="meta">${ITEMS.length} questions covering Modules 1–${Math.max(...allN)}, one of them carried forward from the Top Ten · about 20 minutes ·
+      up to ${MAX_ATTEMPTS} attempts, best score counts · target ${PASS}% · each attempt has new numbers · retakes open ${WAIT_H} hours after an attempt, because spacing works.</p>`;
+    if (atts.length) {
+      html += `<div class="mf-score">Best score <b>${best}%</b> ${best >= PASS ? "· target met ✓" : ""}<div class="meta">${atts.map((a, k) => `Attempt ${k + 1}: ${a.score}%`).join(" · ")}${calibLine(atts[atts.length - 1])}</div>
+        ${weakLine(atts[atts.length - 1])}</div>`;
+    }
+    if (used >= MAX_ATTEMPTS && !PREVIEW) html += `<p>You've used all ${MAX_ATTEMPTS} attempts. Your best score stands. The practice problems and the module checks are still open for review.</p>`;
+    else if (wait) html += `<p>Your next attempt opens <b>${new Date(waitUntil).toLocaleString([], {weekday: "short", hour: "numeric", minute: "2-digit"})}</b>. Use the time to revisit the modules flagged above.</p>`;
+    else html += `<div class="row" style="display:flex;gap:.6rem;align-items:center;flex-wrap:wrap"><label>Student ID or name <input type="text" id="cp-id" value="${esc(S.sid || "")}" style="width:12rem"></label>
+      <button class="mf-btn" id="cp-start" type="button">Start attempt ${used + 1} of ${MAX_ATTEMPTS}</button></div>
+      <p class="meta">Your ID only sets your numbers, so no two students get the same problems. It never leaves this browser.</p>`;
+    cpEl.innerHTML = html;
+    const st = cpEl.querySelector("#cp-start");
+    if (st) st.onclick = () => {
+      const id = (cpEl.querySelector("#cp-id").value || "").trim();
+      if (!id) { cpEl.querySelector("#cp-id").focus(); return; }
+      S.sid = id; const k = used + 1;
+      live = {k, items: build(`${id}|${CH}|${k}${PREVIEW ? "|" + Date.now() : ""}`), resp: {}, phase: "answer"};
+      save(); cpEl.scrollIntoView({behavior: "smooth"});
+    };
+  }
+  function calibLine(a) {
+    if (!a || !a.conf) return "";
+    return `<br>Calibration: you were on average <b>${a.conf}%</b> confident and scored <b>${a.score}%</b>${Math.abs(a.conf - a.score) <= 10 ? " — well calibrated." : a.conf > a.score ? " — overconfident. That's the gap fluency creates." : " — underconfident. You know more than you think."}`;
+  }
+  function weakLine(a) {
+    if (!a || !a.missed || !a.missed.length) return "";
+    const mods = [...new Set(a.missed)].sort();
+    return `<div class="meta" style="margin-top:.4rem">Review before your next attempt: ${mods.map((m) => `<a href="#module-${m}">Module ${m}</a>`).join(", ")}</div>`;
+  }
+  function drawLive() {
+    const L = live;
+    cpEl.innerHTML = `<h4>Chapter Checkpoint · attempt ${L.k} of ${MAX_ATTEMPTS}</h4>
+      <p class="meta">Rate your confidence <em>before</em> you submit. For number answers, type a number; signs matter for gains and losses.</p>`;
+    L.items.forEach((it, i) => {
+      const R = L.resp[i] = L.resp[i] || {conf: 50};
+      const d = document.createElement("div"); d.className = "mf-ci";
+      d.innerHTML = `<div class="hd">Question ${i + 1}${it.from ? " · " + esc(it.from) : ""}</div><div class="p">${it.prompt}</div>` +
+        (it.kind === "num" ? `<div class="row"><input type="text" inputmode="decimal" value="${esc(R.v ?? "")}" ${L.phase !== "answer" ? "disabled" : ""}> <span class="meta">${esc(it.unit)}</span></div>`
+                           : `<textarea rows="3" ${L.phase !== "answer" ? "disabled" : ""}>${esc(R.v ?? "")}</textarea>`) +
+        `<label class="c">Confidence <input type="range" min="0" max="100" step="10" value="${R.conf}" ${L.phase !== "answer" ? "disabled" : ""}> <span>${R.conf}%</span></label><div class="out"></div>`;
+      const inp = d.querySelector("input[type=text],textarea"), rg = d.querySelector("input[type=range]");
+      inp.addEventListener("input", () => { R.v = inp.value; });
+      rg.addEventListener("input", () => { R.conf = +rg.value; rg.nextElementSibling.textContent = rg.value + "%"; });
+      if (L.phase !== "answer") {
+        const out = d.querySelector(".out");
+        if (it.kind === "num") {
+          const ok = numOK(parseNum(R.v), it); R.score = ok ? 1 : 0;
+          out.innerHTML = `<div class="res ${ok ? "ok" : "no"}">${ok ? "✓ Correct." : "✗ Not quite."} ${it.solution}</div>`;
+        } else if (it.kind === "keyword") {
+          const ok = it.keys.some((k) => new RegExp("\\b" + k, "i").test(R.v || "")); R.score = ok ? 1 : 0;
+          out.innerHTML = `<div class="res ${ok ? "ok" : "no"}">${ok ? "✓ Correct classification." : "✗ Not the classification we were looking for."} ${it.model}</div>`;
+        } else {
+          out.innerHTML = `<div class="res self"><b>Model answer.</b> ${it.model}${it.rubric ? `<br><span class="meta"><b>Full credit if</b> ${it.rubric}</span>` : ""}
+            <div>${[[1, "Full", "r1"], [0.5, "Partly", "r2"], [0, "Missed", "r3"]].map(([v, t, c]) => `<button class="mf-btn ${c}" data-v="${v}" type="button" ${R.score === v ? 'style="outline:3px solid #1d2733"' : ""}>${t}</button>`).join("")}</div></div>`;
+          out.querySelectorAll("[data-v]").forEach((b) => b.onclick = () => { R.score = +b.dataset.v; drawLive(); });
+        }
+      }
+      cpEl.appendChild(d);
+    });
+    const foot = document.createElement("div");
+    if (L.phase === "answer") {
+      foot.innerHTML = `<button class="mf-btn" type="button">Submit answers</button><button class="mf-btn ghost" type="button">Cancel attempt</button>`;
+      const [sub, can] = foot.querySelectorAll("button");
+      sub.onclick = () => { if (L.items.some((it, i) => !(L.resp[i].v || "").trim()) && !confirm("Some questions are blank. Submit anyway?")) return; L.phase = "mark"; drawLive(); };
+      can.onclick = () => { live = null; renderCP(); };
+    } else {
+      const pending = L.items.filter((it, i) => it.kind === "self" && L.resp[i].score == null).length;
+      foot.innerHTML = pending ? `<p class="meta">Mark your ${pending} written answer${pending > 1 ? "s" : ""} against the model answer to finish.</p>` : `<button class="mf-btn" type="button">Record my score</button>`;
+      const fin = foot.querySelector("button");
+      if (fin) fin.onclick = () => {
+        const tot = L.items.reduce((s, it, i) => s + (L.resp[i].score || 0), 0);
+        const score = Math.round(100 * tot / L.items.length);
+        const conf = Math.round(L.items.reduce((s, it, i) => s + (L.resp[i].conf || 0), 0) / L.items.length);
+        const missed = L.items.filter((it, i) => (L.resp[i].score || 0) < 1 && it.module).map((it) => it.module);
+        S.attempts = S.attempts || []; S.attempts.push({score, conf, missed, when: Date.now()});
+        live = null; save(); cpEl.scrollIntoView({behavior: "smooth"});
+      };
+    }
+    cpEl.appendChild(foot);
+  }
+
+  function render() { renderMap(); renderBanners(); renderRecall(); if (live) drawLive(); else renderCP(); }
+  render();
 })();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
