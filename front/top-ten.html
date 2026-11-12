@@ -261,7 +261,10 @@ body.mf-ind-open #mf-ind-toggle{display:none}
 #mf-ind h3{all:unset;display:block;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#2a9d8f;margin:.15rem 0 .4rem}
 #mf-ind .note{font-size:.68rem;color:#6b7785;line-height:1.35;margin:.3rem 0 0}
 #mf-ind .note a{color:#6b7785}
-#mf-ind .tv{height:69px;overflow:hidden;margin:0 -.4rem}
+#mf-ind .tv{height:69px;overflow:hidden;margin:0 -.4rem;position:relative}
+#mf-ind .tvlab{position:absolute;left:0;top:0;bottom:0;width:46%;background:#fbfaf7;z-index:2;display:flex;flex-direction:column;
+  justify-content:center;padding-left:.45rem;line-height:1.2}
+#mf-ind .tvlab b{font-size:.86rem;color:#1d2733}#mf-ind .tvlab small{font-size:.66rem;color:#8a95a2}
 #mf-ind .row{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem;padding:.28rem 0;font-size:.82rem}
 #mf-ind .row + .row{border-top:1px dotted #e3e0d8}
 #mf-ind .row .lab{flex:1;color:#3a4654;line-height:1.25}
@@ -292,8 +295,10 @@ body.mf-ind-open #mf-ind-toggle{display:none}
     <button type="button" id="mf-ind-close" aria-label="Close indicators">×</button></header>
   <div class="body">
     <section><h3>Markets · live</h3><div id="mf-ind-mkts"></div>
-      <p class="note">Streaming quotes via TradingView. Stock indexes are shown as index CFDs, which track the cash index
-        and also trade outside exchange hours. 10-year is the Treasury yield in percent.</p></section>
+      <p class="note">Streaming quotes via TradingView. DJIA and S&amp;P 500 are index CFDs, which track the cash index
+        and also trade outside exchange hours. The Nasdaq Composite and the PHLX Semiconductor index (SOX) are licensed
+        and cannot be streamed here, so ETFs stand in on a 15-minute delay: ONEQ tracks the Composite, and SOXX, a
+        semiconductor-sector ETF, moves closely with the SOX but is not the same index.</p></section>
     <section><h3>Next policy meeting · market odds</h3><div id="mf-ind-odds"><p class="err">Loading…</p></div>
       <p class="note">Prices on <a href="https://polymarket.com/" target="_blank" rel="noopener">Polymarket</a> prediction
         markets, refreshed every minute. Read them as probabilities; they are not CME FedWatch futures-implied odds.</p></section>
@@ -307,7 +312,17 @@ body.mf-ind-open #mf-ind-toggle{display:none}
 <script>
 (function () {
   const RAW = "https://raw.githubusercontent.com/bentolobo/macro-finance/main/cache/dashboard.json";
-  const MKTS = [["FOREXCOM:DJI"], ["FOREXCOM:SPXUSD"], ["FOREXCOM:NSXUSD"], ["PYTH:US10Y"], ["FX:EURUSD"], ["FX:USDJPY"]];
+  // [TradingView symbol, our label, sub-label]. TradingView's free widgets cannot show the
+  // Nasdaq Composite or PHLX Semiconductor (SOX) index levels (licensed), so those two are
+  // tracked through ETFs: ONEQ holds the Composite; SOXX is the largest semiconductor ETF.
+  const MKTS = [
+    ["FOREXCOM:DJI", "DJIA", "Dow Jones Industrial Avg."],
+    ["FOREXCOM:SPXUSD", "S&P 500", "Index"],
+    ["NASDAQ:ONEQ", "Nasdaq Composite", "via ONEQ ETF · 15-min delay"],
+    ["NASDAQ:SOXX", "Semiconductors", "via SOXX ETF · 15-min delay"],
+    ["PYTH:US10Y", "10-yr Treasury", "Yield, %"],
+    ["FX:EURUSD", "EUR/USD", "Dollars per euro"],
+    ["FX:USDJPY", "USD/JPY", "Yen per dollar"]];
   const BANKS = [
     {name: "Federal Reserve", tag: "fed-rates", re: /^Fed Decision in/i},
     {name: "ECB", tag: "ecb", re: /^ECB Interest Rates:/i},
@@ -340,15 +355,19 @@ body.mf-ind-open #mf-ind-toggle{display:none}
   // ------------------------------------------------------------------ markets
   function markets() {
     const box = $("mf-ind-mkts");
-    for (const [sym] of MKTS) {
+    for (const [sym, name, sub] of MKTS) {
       const c = document.createElement("div");
       c.className = "tv tradingview-widget-container";
+      const lab = document.createElement("div");
+      lab.className = "tvlab";
+      lab.innerHTML = `<b>${esc(name)}</b><small>${esc(sub)}</small>`;
       c.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
       const s = document.createElement("script");
       s.src = "https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js";
       s.async = true;
       s.text = JSON.stringify({symbol: sym, width: "100%", colorTheme: "light", isTransparent: true, locale: "en"});
       c.appendChild(s);
+      c.appendChild(lab);
       box.appendChild(c);
     }
   }
