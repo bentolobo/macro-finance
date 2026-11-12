@@ -1,5 +1,5 @@
 {
- "retrieved": "2026-11-12T00:18+00:00",
+ "retrieved": "2026-11-12T00:52+00:00",
  "feeds_ok": 11,
  "feeds_total": 11,
  "items": [
@@ -61,7 +61,7 @@
    "title": "Bessent Moved to Military Base After Threats Linked to Iran",
    "link": "https://www.wsj.com/politics/national-security/bessent-moved-to-military-base-after-threats-linked-to-iran-95cfced1?mod=rss_worldnews",
    "date": "2026-11-11T22:39:00+00:00",
-   "summary": "The Treasury secretary has spearheaded the administration’s economic pressure campaign against Tehran.",
+   "summary": "The Treasury secretary has led the administration’s economic pressure campaign against Tehran.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
@@ -841,6 +841,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
+   "title": "Nikkei Falls 0.2%, Dragged by Electronics Stocks",
+   "link": "https://www.wsj.com/finance/stocks/nikkei-falls-0-2-dragged-by-electronics-stocks-0da84013?mod=rss_markets_main",
+   "date": "2026-11-12T00:26:00+00:00",
+   "summary": "Japan’s Nikkei Stock Average was down 0.2% as declines in electronics makers offset gains in chemical companies and trading houses.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
+  },
+  {
    "title": "The Global Economy Looks Vulnerable to an AI Bust",
    "link": "https://www.wsj.com/economy/the-global-economy-looks-vulnerable-to-an-ai-bust-a04bb0f1?mod=rss_markets_main",
    "date": "2026-11-11T22:15:00+00:00",
@@ -872,15 +881,6 @@
    "link": "https://www.wsj.com/business/nvidia-short-seller-culper-jensen-huang-0e0cec38?mod=rss_markets_main",
    "date": "2026-11-11T18:47:00+00:00",
    "summary": "For six months, no one really noticed Culper Research’s report. All that changed this week.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
-  },
-  {
-   "title": "European Chip Stocks Climb After CoreWeave Results Fuel AI Optimism",
-   "link": "https://www.wsj.com/finance/stocks/nikkei-flat-supported-by-bank-pharma-stocks-2c6e1b38?mod=rss_markets_main",
-   "date": "2026-11-11T09:25:00+00:00",
-   "summary": "Shares of European semiconductor companies were on the rise as solid results from cloud-computing company CoreWeave reignited AI appetite.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
@@ -940,6 +940,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
+   "title": "Gold Dims Amid Rising Fed Rate-Hike Expectations",
+   "link": "https://www.wsj.com/finance/commodities-futures/gold-dims-amid-rising-fed-rate-hike-expectations-22fab6f0?mod=rss_markets_main",
+   "date": "2026-11-12T00:48:00+00:00",
+   "summary": "Gold prices edged lower in early Asian trade as Fed rate-hike bets dim the appeal of the non-interest-bearing metal",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
+  },
+  {
    "title": "Oil Futures Halt Slide Awaiting Clarity on Middle East Talks",
    "link": "https://www.wsj.com/finance/commodities-futures/oil-rises-as-middle-east-risks-linger-53d39c2e?mod=rss_markets_main",
    "date": "2026-11-11T21:27:00+00:00",
@@ -971,15 +980,6 @@
    "link": "https://www.wsj.com/finance/commodities-futures/gold-edges-higher-in-likely-technical-rebound-f73bdc8f?mod=rss_markets_main",
    "date": "2026-11-11T19:47:00+00:00",
    "summary": "Gold futures fell for a second straight session settling back under $4,000 as inflation worries kept up expectations for higher interest rates.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
-  },
-  {
-   "title": "Poland’s Orlen Cancels Qatar LNG Supply Deal After Months of Force Majeure",
-   "link": "https://www.wsj.com/finance/commodities-futures/polands-orlen-cancels-qatar-lng-supply-deal-after-months-of-force-majeure-88f37e7b?mod=rss_markets_main",
-   "date": "2026-11-11T15:23:00+00:00",
-   "summary": "The termination of the long-term LNG supply contract with QatarEnergy marks the first-known cancellation of an agreement with the exporter since the Iran war began.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
@@ -7690,51 +7690,6 @@
    "feed": "https://www.bis.org/doclist/all_pressrels.rss"
   },
   {
-   "title": "Message for the European Chamber of Commerce Philippines Luncheon Meeting",
-   "link": "https://www.bis.org/speeches/20261110-message-european-chamber-commerce-philippines-luncheon-meeting",
-   "date": "2026-11-10T00:00:00+00:00",
-   "summary": "Message by Mr Eli M Remolona, Jr, Governor of Bangko Sentral ng Pilipinas (BSP, the central bank of the Philippines), for the European Chamber of Commerce Philippines Luncheon Meeting, Makati City, 3 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Welcome address - Fourth Women in Central Banking Workshop",
-   "link": "https://www.bis.org/speeches/20261110-welcome-address-fourth-women-central-banking-workshop",
-   "date": "2026-11-10T00:00:00+00:00",
-   "summary": "Welcome address by Ms Victoria Rodríguez Ceja, Governor of Bank of Mexico, at the Fourth Women in Central Banking Workshop, organised by Bank of Mexico, the Federal Reserve Bank of Dallas, Norges Bank (Central Bank of Norway) and Bank of Italy, Mexico City, 6 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Opening remarks - Monetary Policy Report (IPOM) press conference, third quarter of 2026",
-   "link": "https://www.bis.org/speeches/20261110-opening-remarks-monetary-policy-report-ipom-press-conference-third-quarter-2026",
-   "date": "2026-11-10T00:00:00+00:00",
-   "summary": "Opening remarks by Mr Santiago Bausili, President of the Central Bank of Argentina, at the Monetary Policy Report (IPOM) press conference, together with Mr Vladimir Werning, Deputy Governor of the Central Bank of Argentina, Buenos Aires, 29 October 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Transmission and conduct of monetary policy in Switzerland",
-   "link": "https://www.bis.org/speeches/20261110-transmission-and-conduct-monetary-policy-switzerland",
-   "date": "2026-11-10T00:00:00+00:00",
-   "summary": "Speech by Mr Martin Schlegel, Chairman of the Governing Board of the Swiss National Bank, at the conference \"The SNB and its watchers\", Zurich, 5 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Introductory remarks - Official Monetary and Financial Institutions Forum (OMFIF)",
-   "link": "https://www.bis.org/speeches/20261110-introductory-remarks-official-monetary-and-financial-institutions-forum-omfif",
-   "date": "2026-11-10T00:00:00+00:00",
-   "summary": "Introductory remarks by Mr Dimitar Radev, Governor of the Bulgarian National Bank, at the Official Monetary and Financial Institutions Forum (OMFIF), Sofia, 3 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
    "title": "We have kept the policy rate unchanged",
    "link": "https://www.bis.org/speeches/20261110-we-have-kept-policy-rate-unchanged",
    "date": "2026-11-10T00:00:00+00:00",
@@ -7789,19 +7744,46 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Opening remarks - 2026 Market Practitioners Group Conference",
-   "link": "https://www.bis.org/speeches/20261109-opening-remarks-2026-market-practitioners-group-conference",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Opening remarks by Mr Rashad Cassim, Deputy Governor of the South African Reserve Bank, at the 2026 Market Practitioners Group Conference, Johannesburg, 3 November 2026.",
+   "title": "Message for the European Chamber of Commerce Philippines Luncheon Meeting",
+   "link": "https://www.bis.org/speeches/20261110-message-european-chamber-commerce-philippines-luncheon-meeting",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Message by Mr Eli M Remolona, Jr, Governor of Bangko Sentral ng Pilipinas (BSP, the central bank of the Philippines), for the European Chamber of Commerce Philippines Luncheon Meeting, Makati City, 3 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Making AI-driven finance work for consumers",
-   "link": "https://www.bis.org/speeches/20261109-making-ai-driven-finance-work-consumers",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Welcome address by Mr Sergio Nicoletti Altimari, Deputy Governor of the Bank of Italy, at the 13th Joint ESA’s Consumer Protection Day, Rome, 4 November 2026.",
+   "title": "Welcome address - Fourth Women in Central Banking Workshop",
+   "link": "https://www.bis.org/speeches/20261110-welcome-address-fourth-women-central-banking-workshop",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Welcome address by Ms Victoria Rodríguez Ceja, Governor of Bank of Mexico, at the Fourth Women in Central Banking Workshop, organised by Bank of Mexico, the Federal Reserve Bank of Dallas, Norges Bank (Central Bank of Norway) and Bank of Italy, Mexico City, 6 November 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Opening remarks - Monetary Policy Report (IPOM) press conference, third quarter of 2026",
+   "link": "https://www.bis.org/speeches/20261110-opening-remarks-monetary-policy-report-ipom-press-conference-third-quarter-2026",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Opening remarks by Mr Santiago Bausili, President of the Central Bank of Argentina, at the Monetary Policy Report (IPOM) press conference, together with Mr Vladimir Werning, Deputy Governor of the Central Bank of Argentina, Buenos Aires, 29 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Transmission and conduct of monetary policy in Switzerland",
+   "link": "https://www.bis.org/speeches/20261110-transmission-and-conduct-monetary-policy-switzerland",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Speech by Mr Martin Schlegel, Chairman of the Governing Board of the Swiss National Bank, at the conference \"The SNB and its watchers\", Zurich, 5 November 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Introductory remarks - Official Monetary and Financial Institutions Forum (OMFIF)",
+   "link": "https://www.bis.org/speeches/20261110-introductory-remarks-official-monetary-and-financial-institutions-forum-omfif",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Introductory remarks by Mr Dimitar Radev, Governor of the Bulgarian National Bank, at the Official Monetary and Financial Institutions Forum (OMFIF), Sofia, 3 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -7843,37 +7825,19 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Economic transitions - technology",
-   "link": "https://www.bis.org/speeches/20261103-economic-transitions-technology",
-   "date": "2026-11-03T00:00:00+00:00",
-   "summary": "Opening remarks by Mr Gabriel Makhlouf, Governor of the Central Bank of Ireland, at the 5th Financial System Conference, Dublin, 2 November 2026.",
+   "title": "Opening remarks - 2026 Market Practitioners Group Conference",
+   "link": "https://www.bis.org/speeches/20261109-opening-remarks-2026-market-practitioners-group-conference",
+   "date": "2026-11-09T00:00:00+00:00",
+   "summary": "Opening remarks by Mr Rashad Cassim, Deputy Governor of the South African Reserve Bank, at the 2026 Market Practitioners Group Conference, Johannesburg, 3 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Building sills for Africa’s home-grown development",
-   "link": "https://www.bis.org/speeches/20261103-building-sills-africas-home-grown-development",
-   "date": "2026-11-03T00:00:00+00:00",
-   "summary": "Speech by Mr Paolo Angelini, Senior Deputy Governor of the Bank of Italy, at the Africa growth and opportunity: research in action 2026 conference (AGORA 26), Palermo, 26 October 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "The path back to 2 % has become less comfortable",
-   "link": "https://www.bis.org/speeches/20261103-path-back-2-has-become-less-comfortable",
-   "date": "2026-11-03T00:00:00+00:00",
-   "summary": "Dinner speech by Mr Tuomas Välimäki, Board Member of the Bank of Finland, on the outlook for the euro area economy and inflation, Helsinki, 2 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Credit unionism and the development of Barbados",
-   "link": "https://www.bis.org/speeches/20261103-credit-unionism-and-development-barbados",
-   "date": "2026-11-03T00:00:00+00:00",
-   "summary": "Remarks by Dr Kevin Greenidge, Governor of the Central Bank of Barbados, at the UWI (Cave Hill) Cooperative Credit Union’s 40th Anniversary Dinner and Awards, Bridgetown, 24 October 2026.",
+   "title": "Making AI-driven finance work for consumers",
+   "link": "https://www.bis.org/speeches/20261109-making-ai-driven-finance-work-consumers",
+   "date": "2026-11-09T00:00:00+00:00",
+   "summary": "Welcome address by Mr Sergio Nicoletti Altimari, Deputy Governor of the Bank of Italy, at the 13th Joint ESA’s Consumer Protection Day, Rome, 4 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -7924,28 +7888,37 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
-   "link": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Talking points by Mr Phil Mnisi, Governor of the Central Bank of Eswatini, at the Eswatini Urban Development Forum, Ezulwini, 26 October 2026.",
+   "title": "Economic transitions - technology",
+   "link": "https://www.bis.org/speeches/20261103-economic-transitions-technology",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Opening remarks by Mr Gabriel Makhlouf, Governor of the Central Bank of Ireland, at the 5th Financial System Conference, Dublin, 2 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Statement - base rate of the National Bank of Kazakhstan",
-   "link": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Statement by Mr Timur M Suleimenov, Governor of the National Bank of Kazakhstan, on the base rate of the National Bank of Kazakhstan, Astana, 23 October 2026.",
+   "title": "Building sills for Africa’s home-grown development",
+   "link": "https://www.bis.org/speeches/20261103-building-sills-africas-home-grown-development",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Speech by Mr Paolo Angelini, Senior Deputy Governor of the Bank of Italy, at the Africa growth and opportunity: research in action 2026 conference (AGORA 26), Palermo, 26 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Liquidity against collateral - the Swiss National Bank’s approach",
-   "link": "https://www.bis.org/speeches/20261102-liquidity-against-collateral-swiss-national-banks-approach",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Speech by Ms Petra Tschudin, Member of the Governing Board of the Swiss National Bank, and Mr Thomas Moser, Alternate Member of the Governing Board of the Swiss National Bank, at the Money Market Event, Geneva, 29 October 2026.",
+   "title": "The path back to 2 % has become less comfortable",
+   "link": "https://www.bis.org/speeches/20261103-path-back-2-has-become-less-comfortable",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Dinner speech by Mr Tuomas Välimäki, Board Member of the Bank of Finland, on the outlook for the euro area economy and inflation, Helsinki, 2 November 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Credit unionism and the development of Barbados",
+   "link": "https://www.bis.org/speeches/20261103-credit-unionism-and-development-barbados",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Remarks by Dr Kevin Greenidge, Governor of the Central Bank of Barbados, at the UWI (Cave Hill) Cooperative Credit Union’s 40th Anniversary Dinner and Awards, Bridgetown, 24 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -7987,19 +7960,28 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Opening Statement to the Senate Economics Legislation Committee (Supplementary Budget Estimates)",
-   "link": "https://www.bis.org/speeches/20261029-opening-statement-senate-economics-legislation-committee-supplementary-budget-estimates",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "Opening statement via videoconference by Ms Michele Bullock, Governor of the Reserve Bank of Australia, to the Senate Economics Legislation Committee (Supplementary Budget Estimates), Sydney, 28 October 2026.",
+   "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
+   "link": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Talking points by Mr Phil Mnisi, Governor of the Central Bank of Eswatini, at the Eswatini Urban Development Forum, Ezulwini, 26 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Chile's September 2026 Monetary Policy Report",
-   "link": "https://www.bis.org/speeches/20261029-chiles-september-2026-monetary-policy-report",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "Presentation by Ms Rosanna Costa, Governor of the Central Bank of Chile, of the Monetary Policy Report before the Honorable Senate of the Republic, Santiago de Chile, 9 September 2026.",
+   "title": "Statement - base rate of the National Bank of Kazakhstan",
+   "link": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Statement by Mr Timur M Suleimenov, Governor of the National Bank of Kazakhstan, on the base rate of the National Bank of Kazakhstan, Astana, 23 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Liquidity against collateral - the Swiss National Bank’s approach",
+   "link": "https://www.bis.org/speeches/20261102-liquidity-against-collateral-swiss-national-banks-approach",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Speech by Ms Petra Tschudin, Member of the Governing Board of the Swiss National Bank, and Mr Thomas Moser, Alternate Member of the Governing Board of the Swiss National Bank, at the Money Market Event, Geneva, 29 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -8041,28 +8023,19 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Keeping European supervision on track",
-   "link": "https://www.bis.org/speeches/20261027-keeping-european-supervision-track",
-   "date": "2026-10-27T00:00:00+00:00",
-   "summary": "Keynote speech by Mr Steven Maijoor, Executive Board Member and Chair of Supervision of De Nederlandsche Bank, at the Data Amplified conference, The Hague, 27 October 2026.",
+   "title": "Opening Statement to the Senate Economics Legislation Committee (Supplementary Budget Estimates)",
+   "link": "https://www.bis.org/speeches/20261029-opening-statement-senate-economics-legislation-committee-supplementary-budget-estimates",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "Opening statement via videoconference by Ms Michele Bullock, Governor of the Reserve Bank of Australia, to the Senate Economics Legislation Committee (Supplementary Budget Estimates), Sydney, 28 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Scene-setting remarks on digital safety",
-   "link": "https://www.bis.org/speeches/20261027-scene-setting-remarks-digital-safety",
-   "date": "2026-10-27T00:00:00+00:00",
-   "summary": "Remarks by Ms Daranee Saeju, Deputy Governor of the Bank of Thailand, at the World Economic Forum at the International Monetary Fund (IMF)-World Bank Group (WBG) Annual Meetings, Bangkok, 15 October 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Monetary policy in times of geopolitical tensions and technological disruption",
-   "link": "https://www.bis.org/speeches/20261027-monetary-policy-times-geopolitical-tensions-and-technological-disruption",
-   "date": "2026-10-27T00:00:00+00:00",
-   "summary": "Speech by Mr Olli Rehn, Governor of the Bank of Finland, at the CEPS Macro group webinar, Helsinki, 20 October 2026.",
+   "title": "Chile's September 2026 Monetary Policy Report",
+   "link": "https://www.bis.org/speeches/20261029-chiles-september-2026-monetary-policy-report",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "Presentation by Ms Rosanna Costa, Governor of the Central Bank of Chile, of the Monetary Policy Report before the Honorable Senate of the Republic, Santiago de Chile, 9 September 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -8135,6 +8108,33 @@
    "link": "https://www.bis.org/speeches/20261027-taking-action-nature-investing-economic-resilience-and-prosperity",
    "date": "2026-10-27T00:00:00+00:00",
    "summary": "Keynote speech by Mr Frank Elderson, Member of the Executive Board of the European Central Bank and Vice-Chair of the Supervisory Board of the European Central Bank, at the COP17 Finance and Biodiversity Day, Yerewan, 26 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Keeping European supervision on track",
+   "link": "https://www.bis.org/speeches/20261027-keeping-european-supervision-track",
+   "date": "2026-10-27T00:00:00+00:00",
+   "summary": "Keynote speech by Mr Steven Maijoor, Executive Board Member and Chair of Supervision of De Nederlandsche Bank, at the Data Amplified conference, The Hague, 27 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Scene-setting remarks on digital safety",
+   "link": "https://www.bis.org/speeches/20261027-scene-setting-remarks-digital-safety",
+   "date": "2026-10-27T00:00:00+00:00",
+   "summary": "Remarks by Ms Daranee Saeju, Deputy Governor of the Bank of Thailand, at the World Economic Forum at the International Monetary Fund (IMF)-World Bank Group (WBG) Annual Meetings, Bangkok, 15 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Monetary policy in times of geopolitical tensions and technological disruption",
+   "link": "https://www.bis.org/speeches/20261027-monetary-policy-times-geopolitical-tensions-and-technological-disruption",
+   "date": "2026-10-27T00:00:00+00:00",
+   "summary": "Speech by Mr Olli Rehn, Governor of the Bank of Finland, at the CEPS Macro group webinar, Helsinki, 20 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
