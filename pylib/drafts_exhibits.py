@@ -219,7 +219,7 @@ def crisis_event_study():
         t = np.arange(-60, 251)
         ax.plot(t, np.where(t < 0, 100, 100 - 45 * (1 - np.exp(-t / 40))), color=SLATE)
     if drawn:
-        ax.legend(loc="lower left", fontsize=8.8, frameon=True, framealpha=0.95)
+        ax.legend(loc="upper right", fontsize=8.8, frameon=True, framealpha=0.95)
     ax.axvline(0, color=INK, lw=1)
     ax.text(2, 103, "Day the peg broke", fontsize=8.6, color=INK)
     ax.axhline(100, color=MUTED, lw=0.8, ls="--")
