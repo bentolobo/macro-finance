@@ -1,22 +1,22 @@
 {
- "retrieved": "2026-11-12T02:20+00:00",
+ "retrieved": "2026-11-12T02:33+00:00",
  "feeds_ok": 11,
  "feeds_total": 11,
  "items": [
   {
-   "title": "The Spread of Cheaper Ballistic Missiles Rips Up Decades of Military Thinking",
-   "link": "https://www.wsj.com/world/the-spread-of-cheaper-ballistic-missiles-rips-up-decades-of-military-thinking-e6ef7fac?mod=rss_worldnews",
-   "date": "2026-11-12T01:00:00+00:00",
-   "summary": "As interceptor supplies run down, Iran and the Houthis have shown how American bases are increasingly vulnerable.",
+   "title": "The ‘Peruvian Pope’ Returns Home to Elation",
+   "link": "https://www.wsj.com/world/americas/the-peruvian-pope-returns-home-to-elation-83890915?mod=rss_worldnews",
+   "date": "2026-11-12T02:30:00+00:00",
+   "summary": "Chicago-born Pope Leo XIV spent two decades ministering in Peru, where citizens are welcoming him with a 45-foot statue, murals and T-shirts bearing his likeness.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
-   "title": "The ‘Peruvian Pope’ Returns Home to Elation",
-   "link": "https://www.wsj.com/world/americas/the-peruvian-pope-returns-home-to-elation-83890915?mod=rss_worldnews",
-   "date": "2026-11-11T22:55:00+00:00",
-   "summary": "Chicago-born Pope Leo XIV spent two decades ministering in Peru, where citizens are welcoming him with a 45-foot statue, murals and T-shirts bearing his likeness.",
+   "title": "The Spread of Cheaper Ballistic Missiles Rips Up Decades of Military Thinking",
+   "link": "https://www.wsj.com/world/the-spread-of-cheaper-ballistic-missiles-rips-up-decades-of-military-thinking-e6ef7fac?mod=rss_worldnews",
+   "date": "2026-11-12T01:00:00+00:00",
+   "summary": "As interceptor supplies run down, Iran and the Houthis have shown how American bases are increasingly vulnerable.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
@@ -985,6 +985,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
+   "title": "Yen Hitting 160 to Dollar Again Won’t Be Surprising",
+   "link": "https://www.wsj.com/finance/currencies/yen-hitting-160-to-dollar-again-wont-be-surprising-f82f47e6?mod=rss_markets_main",
+   "date": "2026-11-12T02:31:00+00:00",
+   "summary": "With markets pricing more than 25 basis points of Fed tightening by the year-end, the yen hitting 160 against the dollar again wouldn’t be surprising, said State Street Investment Management.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
+  },
+  {
    "title": "WSJ Dollar Index Rises 0.44% to 97.97",
    "link": "https://www.wsj.com/finance/currencies/asian-currencies-soften-after-u-s-cpi-data-boosts-dollar-26f03632?mod=rss_markets_main",
    "date": "2026-11-11T22:29:00+00:00",
@@ -1061,15 +1070,6 @@
    "link": "https://www.wsj.com/business/polymarket-investigating-suspicious-trades-on-israel-election-44626e53?mod=rss_markets_main",
    "date": "2026-10-29T17:55:00+00:00",
    "summary": "The trades under investigation came in shortly before polls closed, betting that Israeli Prime Minister Benjamin Netanyahu would do better than his opponent.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
-  },
-  {
-   "title": "The Morning Risk Report: Tech, Social Media Companies Brace for Deepfake Scrutiny in Midterms Run-Up",
-   "link": "https://www.wsj.com/risk-compliance-journal/the-morning-risk-report-tech-social-media-companies-brace-for-deepfake-scrutiny-in-midterms-run-up-e8622394?mod=rss_markets_main",
-   "date": "2026-10-29T11:32:00+00:00",
-   "summary": "Plus: Drug middlemen to share payment details, and Elizabeth Warren demands answers from Anthropic.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
