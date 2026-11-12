@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Beyond the Page – Macro Finance</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../companions/ai.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-447c5dbdbaadf3195d746f842414959a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../companions/ai.html">Companions</a></li><li class="breadcrumb-item"><a href="../companions/beyond-the-page.html">Beyond the Page</a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Macro Finance</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../front/top-ten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Top Ten Things to Know in International Finance</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Book at a Glance</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Part I — The Global Financial Environment</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Globalization and the Multinational Firm</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Companions</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../companions/ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI in International Finance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../companions/beyond-the-page.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Beyond the Page</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#btp-ch01" id="toc-btp-ch01" class="nav-link active" data-scroll-target="#btp-ch01">Chapter 1 · Globalization and the Multinational Firm</a>
+  <ul class="collapse">
+  <li><a href="#watch" id="toc-watch" class="nav-link" data-scroll-target="#watch">Watch</a></li>
+  <li><a href="#read" id="toc-read" class="nav-link" data-scroll-target="#read">Read</a></li>
+  <li><a href="#scroll" id="toc-scroll" class="nav-link" data-scroll-target="#scroll">Scroll</a></li>
+  <li><a href="#assignment-media-audit-400-words" id="toc-assignment-media-audit-400-words" class="nav-link" data-scroll-target="#assignment-media-audit-400-words">Assignment · Media audit (400 words)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../companions/ai.html">Companions</a></li><li class="breadcrumb-item"><a href="../companions/beyond-the-page.html">Beyond the Page</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Beyond the Page</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>Watch it, read it, scroll it: a media companion to the chapters</em></p>
+<p>Every chapter has a short media dossier here: one or two films, a tiered reading list, and a set of feeds worth following — plus, always, at least one item chosen because it is <em>wrong</em> in an instructive way. The purpose is not enrichment in the decorative sense. Three things happen when a technical idea is attached to a narrative. You remember it longer, because story is a better retrieval cue than a definition. You acquire the professional vocabulary in its native setting rather than from a glossary. And you encounter the idea <em>failing</em>, which is where most of the learning in finance actually lives: nobody becomes careful about currency mismatch by reading the definition of currency mismatch.</p>
+<p>A warning before the lists. Every item gets a <em>What it gets wrong</em> line, and that line is not a disclaimer — it is the assignment. A film that is 90 percent right and 10 percent wrong is a better teaching instrument than one that is entirely right, because finding the 10 percent is the exercise.</p>
+<section id="btp-ch01" class="level2">
+<h2 class="anchored" data-anchor-id="btp-ch01">Chapter 1 · Globalization and the Multinational Firm</h2>
+<section id="watch" class="level3">
+<h3 class="anchored" data-anchor-id="watch">Watch</h3>
+<p><strong>Primary pick for this chapter — <em>The China Hustle</em> (2017, 82 min., dir. Jed Rothstein).</strong></p>
+<p>This is the single best film for Chapter 1, and almost nobody assigns it. It follows U.S. investors who bought Chinese companies listed on American exchanges through reverse mergers, and discovered — after sending people to physically stand outside the factories and count the trucks — that the reported revenues were in many cases fiction. Watch it as a documentary about <strong>Friction 4</strong>: investors knew less about the foreign firm than about a domestic one, the gap persisted even though the disclosures were formally comparable, and the auditors’ working papers sat in a jurisdiction where the U.S. regulator could not subpoena them. That last detail is <strong>Friction 2</strong> and <strong>Friction 3</strong> arriving together — sovereignty and institutional heterogeneity — and it is the reason the story was possible at all. The film is also an unusually clean illustration of why a cross-listed share is not the same asset as a domestic one, which is Chapter 14’s argument before you get there.</p>
+<blockquote class="blockquote">
+<p><strong>Viewing guide.</strong> Answer in writing as you watch.</p>
+</blockquote>
+<ol type="1">
+<li>Name the specific informational asymmetry the short-sellers exploited. Was it an asymmetry about the <em>firms</em>, or about the <em>institutions</em> surrounding the firms?</li>
+<li>The film’s investigators travelled to China to verify revenue. In an integrated capital market, why should that ever be necessary — and what does its necessity tell you about how integrated the market actually was?</li>
+<li>Who in the chain had an incentive to not look closely? List every party and state the incentive in one line each. This is a governance question, and you will meet it again in Chapter 14.</li>
+<li>The film implies the problem is specific to China. Is it? Construct the strongest argument that the same structure could arise in any jurisdiction with weak enforcement and a capital-hungry corporate sector.</li>
+</ol>
+<blockquote class="blockquote">
+<p><em>What it gets wrong.</em> The film is made by and about short-sellers, who are paid to be right about failure, and it is edited accordingly. It does not seriously engage the counter-case that the frauds were concentrated in a particular vintage of reverse-merger listings rather than representative of Chinese firms generally, and it leaves the viewer with an impression of scale that the data does not fully support. Ask yourself throughout: what would the denominator have to be for this to be the crisis the film says it is?</p>
+</blockquote>
+<p><strong>Second pick — <em>Inside Job</em> (2010, 109 min., dir. Charles Ferguson).</strong> Narrated by Matt Damon, Academy Award for Best Documentary. Most students have heard of it as a film about American subprime mortgages; it is more usefully watched as a film about <strong>cross-border transmission</strong>. The Iceland sequence that opens it is the most compact illustration in any film of the currency-mismatch mechanism in proposition 10 of the <a href="../front/top-ten.html">Top Ten</a>: a banking system that had grown to many times national GDP, funded in foreign currency, lending domestically. When the funding stopped, the exchange rate and the banks failed together. That is Chapter 20 in nine minutes.</p>
+<p><em>What it gets wrong:</em> the film is a prosecution, not an analysis. Its theory of the crisis is essentially a theory of individual bad actors, and it largely omits the global imbalances and dollar-funding mechanics — the very things Chapters 3 and 10 will argue were structural. Watch it, then read the Tooze below as the correction.</p>
+<p><strong>Third pick — <em>Rogue Trader</em> (1999, 101 min.), or the BBC documentary <em>25 Million Pounds</em> (1996).</strong> Nick Leeson, Barings Bank, Singapore, and the Nikkei. The dramatic film is uneven; the documentary is better and is Leeson in his own words. Either works as a preview of Chapters 8 and 9 — exchange-traded futures, margin, the eighty-eight account — but its real Chapter 1 relevance is organizational: a 233-year-old British bank was destroyed by a position taken in a different currency, a different time zone, and a different legal system from the one that supervised it. All four frictions, one employee.</p>
+<p><strong>If you have ten minutes rather than ninety.</strong> The Bank for International Settlements, the IMF and the New York Fed all publish short explainer videos; the IMF’s <em>Back to Basics</em> series is the most reliable short-form introduction to the balance of payments and to exchange rate regimes, and it is free of the incentive problems discussed below.</p>
+</section>
+<section id="read" class="level3">
+<h3 class="anchored" data-anchor-id="read">Read</h3>
+<p>Three tiers, by how much time you actually have.</p>
+<p><strong>One sitting (an evening):</strong></p>
+<ul>
+<li>Michael Lewis, <em>Boomerang: Travels in the New Third World</em> (2011). Iceland, Greece, Ireland, and Germany as four different ways for a country to go wrong in foreign currency. Funny, fast, and occasionally unfair to its subjects — which is worth noticing as you read. Pairs with Friction 2 and with Chapter 20.</li>
+<li>Barry Eichengreen, <em>Exorbitant Privilege</em> (2011), chapters 1 and 7. The short, readable authority on <em>why</em> the dollar occupies the position Exhibit 1.14 shows, and on what would actually have to change for that to end. Written before the current round of de-dollarization headlines, which makes it a better test of those headlines, not a worse one.</li>
+</ul>
+<p><strong>One weekend:</strong></p>
+<ul>
+<li>Adam Tooze, <em>Crashed: How a Decade of Financial Crises Changed the World</em> (2018), especially Part II on the Federal Reserve’s swap lines. The best available account of the dollar funding system, and the direct complement to Chapter 4.</li>
+<li>Matthew Klein and Michael Pettis, <em>Trade Wars Are Class Wars</em> (2020). The argument that trade imbalances are produced by domestic distributional choices rather than by national cheating. You do not have to accept the thesis — several of the empirical steps are contested — but you should be able to state it, and it is the most intellectually serious challenge to the way Chapter 3 is usually taught.</li>
+<li>Liaquat Ahamed, <em>Lords of Finance</em> (2009). Four central bankers and the gold standard between the wars. Pulitzer Prize, and the most enjoyable possible preparation for Chapter 2.</li>
+</ul>
+<p><strong>One semester, in the background:</strong></p>
+<ul>
+<li>Barry Eichengreen, <em>Globalizing Capital: A History of the International Monetary System</em> (3rd ed., 2019). The standard scholarly history; read a chapter alongside each of Chapters 2, 4 and 20.</li>
+<li>Sebastian Mallaby, <em>More Money Than God</em> (2010), chapter on 1992. Soros, the Bank of England, and the ERM. The clearest narrative anywhere of a speculative attack on a pegged currency, which is the impossible trinity being enforced by the market rather than chosen by a government.</li>
+</ul>
+<p><strong>Read against the grain.</strong> Thomas Friedman’s <em>The World Is Flat</em> (2005) and Peter Zeihan’s <em>The End of the World Is Just the Beginning</em> (2022) make opposite and equally confident predictions about the trajectory in Exhibit 1.3. Both were written with conviction; at most one of them can be right, and the honest reading is that the data in <a href="../chapters/01-introduction.html#sec-globalization" class="quarto-xref"><span>Has Globalization Stalled?</span></a> does not fully vindicate either. Read twenty pages of each and you will have a sharper sense of how much of this field’s public commentary is forecasting dressed as description.</p>
+</section>
+<section id="scroll" class="level3">
+<h3 class="anchored" data-anchor-id="scroll">Scroll</h3>
+<p>Short-form financial media is where most students will actually encounter this subject after the course ends, so it is worth being deliberate about which feeds you train your attention on.</p>
+<p><strong>Worth following:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feed</th>
+<th>Format</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>Odd Lots</em> (Bloomberg; Weisenthal &amp; Alloway)</td>
+<td>Podcast, ~45 min</td>
+<td>The best general-audience source on FX plumbing, the cross-currency basis and dollar funding. Several episodes are more current than any textbook can be.</td>
+</tr>
+<tr class="even">
+<td><em>Money Stuff</em> (Matt Levine, Bloomberg)</td>
+<td>Daily newsletter, free</td>
+<td>Derivatives and market structure explained with unusual clarity about what is actually a trade versus what is accounting.</td>
+</tr>
+<tr class="odd">
+<td><em>The Indicator</em> (NPR Planet Money)</td>
+<td>Podcast, 9 min</td>
+<td>One economic statistic per episode, correctly caveated. Good discipline for <a href="../chapters/01-introduction.html#sec-data" class="quarto-xref"><span>How This Book Handles Data</span></a>’s habits.</td>
+</tr>
+<tr class="even">
+<td><em>FT Alphaville</em></td>
+<td>Blog</td>
+<td>Skeptical, numerate, and willing to publish the chart that undermines the consensus.</td>
+</tr>
+<tr class="odd">
+<td>BIS <em>Quarterly Review</em>; IMF <em>Blog</em>; NY Fed <em>Liberty Street Economics</em></td>
+<td>Research notes</td>
+<td>Primary. The Liberty Street reserve-composition decomposition used in Chapter 1’s news dossier is a model of what good short-form analysis looks like.</td>
+</tr>
+<tr class="even">
+<td>Patrick Boyle (YouTube)</td>
+<td>Video, 10–20 min</td>
+<td>A former derivatives trader, now an academic, on carry trades and currency crises. Dry, numerate, and he shows his sources.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Trap · The algorithm does not know what a basis point is</strong></p>
+<blockquote class="blockquote">
+<p>You will see reels and short videos asserting that the dollar is “collapsing,” that the BRICS are “launching a currency,” or that de-dollarization is imminent. Some of these are made by people who believe it. Many are made by people selling gold, crypto, a newsletter, or a course.</p>
+<p>Here is the discipline. Every such claim reduces to a number that exists in a public database. “The dollar is collapsing” is a claim about either the broad dollar index (Exhibit 1.2), the dollar’s share of allocated reserves (Exhibit 1.15), its share of FX turnover, or its share of international debt issuance (Exhibit 1.14) — and those four things have been moving in <em>different directions</em>, which is precisely why a confident one-sentence claim is almost always sloppy. As Chapter 1’s news dossier showed, even careful outlets reported four different numbers for the same reserve share in the same year.</p>
+<p>Before you repeat a claim from a feed, you should be able to name (1) the series, (2) the issuing agency, (3) the vintage, and (4) the direction of the <em>other three</em> measures. If you cannot, you do not yet have a view; you have an impression.</p>
+</blockquote>
+</section>
+<section id="assignment-media-audit-400-words" class="level3">
+<h3 class="anchored" data-anchor-id="assignment-media-audit-400-words">Assignment · Media audit (400 words)</h3>
+<p>Find one short-form video, post or newsletter item making a quantitative claim about the international financial system — the dollar’s role, a currency’s “collapse,” a trade deficit, a country’s debt. Then:</p>
+<ol type="1">
+<li>Identify the exact series the claim depends on, and retrieve it yourself from the issuing agency using the sources in <a href="../chapters/01-introduction.html#sec-data" class="quarto-xref"><span>How This Book Handles Data</span></a>.</li>
+<li>State whether the claim is true, false, true-but-misleading, or unfalsifiable as worded. Most will be the third.</li>
+<li>If it is misleading, identify the specific move: wrong denominator, cherry-picked start date, level confused with change, gross confused with net, nominal confused with real, or stale vintage. Each of these appears somewhere in Chapter 1.</li>
+<li>Rewrite the claim in one sentence so that it is defensible.</li>
+</ol>
+<p>Submit the link, your retrieved series, and the four answers. This assignment recurs in every chapter with a different domain, and by the end of the course you will have built the habit the rest of the book depends on.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<!-- Today's Indicators: site-wide sidebar. Markets and policy odds load in the reader's
+     browser; macro releases come from cache/dashboard.json (pylib/dashboard.py). -->
+<style>
+#mf-ind-toggle{position:fixed;right:0;top:42%;z-index:1040;writing-mode:vertical-rl;transform:rotate(180deg);
+  background:#1f4e79;color:#fff;border:0;border-radius:0 6px 6px 0;padding:.9rem .45rem;font:600 .78rem/1 Inter,system-ui,sans-serif;
+  letter-spacing:.06em;text-transform:uppercase;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.18)}
+#mf-ind-toggle .dot{display:inline-block;width:.5rem;height:.5rem;border-radius:50%;background:#2a9d8f;margin-bottom:.45rem;
+  animation:mfpulse 2s infinite}
+@keyframes mfpulse{0%,100%{opacity:1}50%{opacity:.35}}
+#mf-ind{position:fixed;top:0;right:0;bottom:0;width:330px;max-width:92vw;z-index:1050;background:#fbfaf7;
+  border-left:1px solid #e3e0d8;box-shadow:-4px 0 16px rgba(0,0,0,.08);transform:translateX(100%);transition:transform .25s ease;
+  display:flex;flex-direction:column;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:#1d2733}
+body.mf-ind-open #mf-ind{transform:none}
+body.mf-ind-open #mf-ind-toggle{display:none}
+@media (min-width:1400px){ body.mf-ind-open{padding-right:330px} body.mf-ind-open #mf-ind{box-shadow:none} }
+#mf-ind header{background:#1f4e79;color:#fff;padding:.75rem 1rem .6rem;display:flex;align-items:flex-start;justify-content:space-between}
+#mf-ind header h2{all:unset;display:block;font-weight:700;font-size:1rem;letter-spacing:-.01em}
+#mf-ind header .sub{font-size:.72rem;color:#c9d8e6;margin-top:.15rem}
+#mf-ind header button{background:none;border:0;color:#fff;font-size:1.3rem;line-height:1;cursor:pointer;padding:0 .2rem}
+#mf-ind .body{overflow-y:auto;padding:.3rem 0 1rem;flex:1}
+#mf-ind section{padding:.55rem 1rem .4rem;border-bottom:1px solid #e3e0d8}
+#mf-ind h3{all:unset;display:block;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#2a9d8f;margin:.15rem 0 .4rem}
+#mf-ind .note{font-size:.68rem;color:#6b7785;line-height:1.35;margin:.3rem 0 0}
+#mf-ind .note a{color:#6b7785}
+#mf-ind .tv{height:69px;overflow:hidden;margin:0 -.4rem;position:relative}
+#mf-ind .tvlab{position:absolute;left:0;top:0;bottom:0;width:46%;background:#fbfaf7;z-index:2;display:flex;flex-direction:column;
+  justify-content:center;padding-left:.45rem;line-height:1.2}
+#mf-ind .tvlab b{font-size:.86rem;color:#1d2733}#mf-ind .tvlab small{font-size:.66rem;color:#8a95a2}
+#mf-ind .row{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem;padding:.28rem 0;font-size:.82rem}
+#mf-ind .row + .row{border-top:1px dotted #e3e0d8}
+#mf-ind .row .lab{flex:1;color:#3a4654;line-height:1.25}
+#mf-ind .row .lab small{display:block;color:#8a95a2;font-size:.68rem}
+#mf-ind .row .v{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+#mf-ind .row .v small{display:block;font-weight:400;font-size:.68rem;color:#8a95a2}
+#mf-ind .up{color:#c0392b}#mf-ind .dn{color:#2a7f62}#mf-ind .flat{color:#6b7785}
+#mf-ind .odds{margin:.2rem 0 .65rem}
+#mf-ind .odds .t{display:flex;justify-content:space-between;font-size:.8rem;margin-bottom:.25rem}
+#mf-ind .odds .t a{color:#1d2733;text-decoration:none;white-space:nowrap}#mf-ind .odds .t b{font-weight:700}
+#mf-ind .bar{display:flex;height:.95rem;border-radius:3px;overflow:hidden;background:#e3e0d8;font-size:.62rem;color:#fff;font-weight:700}
+#mf-ind .bar span{display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap}
+#mf-ind .bar .cut{background:#2a9d8f}#mf-ind .bar .hold{background:#8a95a2}#mf-ind .bar .hike{background:#e76f51}
+#mf-ind .legend{display:flex;gap:.7rem;font-size:.66rem;color:#6b7785;margin-top:.1rem}
+#mf-ind .legend i{display:inline-block;width:.55rem;height:.55rem;border-radius:2px;margin-right:.2rem;vertical-align:-1px}
+#mf-ind .stmt{font-size:.78rem;line-height:1.3;padding:.25rem 0}
+#mf-ind .stmt a{color:#1f4e79;text-decoration:none}#mf-ind .stmt a:hover{text-decoration:underline}
+#mf-ind .stmt small{display:block;color:#8a95a2;font-size:.66rem}
+#mf-ind .stale{color:#b7791f;font-size:.66rem}
+#mf-ind .err{font-size:.75rem;color:#8a95a2;font-style:italic}
+@media print{#mf-ind,#mf-ind-toggle{display:none!important} body.mf-ind-open{padding-right:0!important}}
+</style>
+
+<button id="mf-ind-toggle" type="button" aria-controls="mf-ind" aria-expanded="false">
+  <span class="dot"></span>Today's Indicators</button>
+<aside id="mf-ind" aria-label="Today's economic indicators" aria-hidden="true">
+  <header><div><h2>Today's Indicators</h2><div class="sub" id="mf-ind-clock">&nbsp;</div></div>
+    <button type="button" id="mf-ind-close" aria-label="Close indicators">×</button></header>
+  <div class="body">
+    <section><h3>Markets · live</h3><div id="mf-ind-mkts"></div>
+      <p class="note">Streaming quotes via TradingView. DJIA and S&amp;P 500 are index CFDs, which track the cash index
+        and also trade outside exchange hours. The Nasdaq Composite and the PHLX Semiconductor index (SOX) are licensed
+        and cannot be streamed here, so ETFs stand in on a 15-minute delay: ONEQ tracks the Composite, and SOXX, a
+        semiconductor-sector ETF, moves closely with the SOX but is not the same index.</p></section>
+    <section><h3>Next policy meeting · market odds</h3><div id="mf-ind-odds"><p class="err">Loading…</p></div>
+      <p class="note">Prices on <a href="https://polymarket.com/" target="_blank" rel="noopener">Polymarket</a> prediction
+        markets, refreshed every minute. Read them as probabilities; they are not CME FedWatch futures-implied odds.</p></section>
+    <section><h3>Central banks</h3><div id="mf-ind-cb"><p class="err">Loading…</p></div></section>
+    <section><h3>Inflation</h3><div id="mf-ind-Inflation"></div></section>
+    <section><h3>Growth</h3><div id="mf-ind-Growth"></div></section>
+    <section><h3>Jobs</h3><div id="mf-ind-Jobs"></div>
+      <p class="note" id="mf-ind-src"></p></section>
+  </div>
+</aside>
+
+<script>
+(function () {
+  const RAW = "https://raw.githubusercontent.com/bentolobo/macro-finance/main/cache/dashboard.json";
+  // [TradingView symbol, our label, sub-label]. TradingView's free widgets cannot show the
+  // Nasdaq Composite or PHLX Semiconductor (SOX) index levels (licensed), so those two are
+  // tracked through ETFs: ONEQ holds the Composite; SOXX is the largest semiconductor ETF.
+  const MKTS = [
+    ["FOREXCOM:DJI", "DJIA", "Dow Jones Industrial Avg."],
+    ["FOREXCOM:SPXUSD", "S&P 500", "Index"],
+    ["NASDAQ:ONEQ", "Nasdaq Composite", "via ONEQ ETF · 15-min delay"],
+    ["NASDAQ:SOXX", "Semiconductors", "via SOXX ETF · 15-min delay"],
+    ["PYTH:US10Y", "10-yr Treasury", "Yield, %"],
+    ["FX:EURUSD", "EUR/USD", "Dollars per euro"],
+    ["FX:USDJPY", "USD/JPY", "Yen per dollar"]];
+  const BANKS = [
+    {name: "Federal Reserve", tag: "fed-rates", re: /^Fed Decision in/i},
+    {name: "ECB", tag: "ecb", re: /^ECB Interest Rates:/i},
+    {name: "Bank of Japan", tag: "boj", re: /^Bank of Japan Decision in/i}];
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+  const store = {get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+                 set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }};
+  let started = false, timers = [];
+
+  // ------------------------------------------------------------------ open / close
+  function setOpen(open) {
+    document.body.classList.toggle("mf-ind-open", open);
+    $("mf-ind").setAttribute("aria-hidden", String(!open));
+    $("mf-ind-toggle").setAttribute("aria-expanded", String(open));
+    store.set("mf-ind-open", open ? "1" : "0");
+    if (open && !started) start();
+  }
+  $("mf-ind-toggle").addEventListener("click", () => setOpen(true));
+  $("mf-ind-close").addEventListener("click", () => setOpen(false));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && document.body.classList.contains("mf-ind-open") && innerWidth < 1400) setOpen(false); });
+
+  // ------------------------------------------------------------------ clock
+  function tick() {
+    const t = new Date().toLocaleString("en-US", {timeZone: "America/New_York", weekday: "short", month: "short",
+      day: "numeric", hour: "numeric", minute: "2-digit"});
+    $("mf-ind-clock").textContent = t + " ET";
+  }
+
+  // ------------------------------------------------------------------ markets
+  function markets() {
+    const box = $("mf-ind-mkts");
+    for (const [sym, name, sub] of MKTS) {
+      const c = document.createElement("div");
+      c.className = "tv tradingview-widget-container";
+      const lab = document.createElement("div");
+      lab.className = "tvlab";
+      lab.innerHTML = `<b>${esc(name)}</b><small>${esc(sub)}</small>`;
+      c.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
+      const s = document.createElement("script");
+      s.src = "https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js";
+      s.async = true;
+      s.text = JSON.stringify({symbol: sym, width: "100%", colorTheme: "light", isTransparent: true, locale: "en"});
+      c.appendChild(s);
+      c.appendChild(lab);
+      box.appendChild(c);
+    }
+  }
+
+  // ------------------------------------------------------------------ policy odds
+  async function nextMeeting(b) {
+    const r = await fetch(`https://gamma-api.polymarket.com/events?tag_slug=${b.tag}&closed=false&limit=100`);
+    const evs = (await r.json()).filter((e) => b.re.test(e.title) && new Date(e.endDate) > new Date());
+    evs.sort((a, z) => new Date(a.endDate) - new Date(z.endDate));
+    const e = evs[0];
+    if (!e) return null;
+    const g = {cut: 0, hold: 0, hike: 0}; let top = null;
+    for (const m of e.markets || []) {
+      if (m.closed) continue;
+      let p; try { p = parseFloat(JSON.parse(m.outcomePrices)[0]); } catch (x) { continue; }
+      const lab = m.groupItemTitle || m.question || "";
+      const k = /decrease|cut/i.test(lab) ? "cut" : /no change|hold|unchanged/i.test(lab) ? "hold" : /increase|hike/i.test(lab) ? "hike" : null;
+      if (!k || isNaN(p)) continue;
+      g[k] += p;
+      if (!top || p > top.p) top = {lab, p};
+    }
+    const tot = g.cut + g.hold + g.hike;
+    if (!tot) return null;
+    for (const k in g) g[k] /= tot;
+    const month = (e.title.match(/(January|February|March|April|May|June|July|August|September|October|November|December)/) || [])[1] || "";
+    return {bank: b.name, month, g, top: top && {lab: top.lab, p: top.p / tot}, url: `https://polymarket.com/event/${e.slug}`};
+  }
+  function short(l) {
+    if (/no change|hold|unchanged/i.test(l)) return "Hold";
+    const m = l.match(/(\d+\+?)\s*bps?/i);
+    return (/increase|hike/i.test(l) ? "Hike" : "Cut") + (m ? " " + m[1] + " bp" : "");
+  }
+  async function odds() {
+    const res = await Promise.allSettled(BANKS.map(nextMeeting));
+    const pct = (x) => Math.round(x * 100);
+    const html = res.map((r) => {
+      if (r.status !== "fulfilled" || !r.value) return "";
+      const o = r.value, g = o.g;
+      const seg = (k, lab) => g[k] > 0.005 ? `<span class="${k}" style="width:${(g[k] * 100).toFixed(1)}%" title="${lab} ${pct(g[k])}%">${g[k] > .12 ? pct(g[k]) + "%" : ""}</span>` : "";
+      return `<div class="odds"><div class="t"><span>${esc(o.bank)} · ${esc(o.month)}</span>
+        <a href="${o.url}" target="_blank" rel="noopener">${esc(short(o.top.lab))} <b>${pct(o.top.p)}%</b></a></div>
+        <div class="bar">${seg("cut", "Cut")}${seg("hold", "Hold")}${seg("hike", "Hike")}</div></div>`;
+    }).join("");
+    $("mf-ind-odds").innerHTML = html ? html + '<div class="legend"><span><i style="background:#2a9d8f"></i>Cut</span><span><i style="background:#8a95a2"></i>Hold</span><span><i style="background:#e76f51"></i>Hike</span></div>'
+                                      : '<p class="err">Odds are unavailable right now.</p>';
+  }
+
+  // ------------------------------------------------------------------ macro data
+  function siteBase() {
+    const s = document.querySelector('script[src*="site_libs/"]');
+    return s ? s.src.slice(0, s.src.indexOf("site_libs/")) : "./";
+  }
+  async function getJSON() {
+    for (const u of [RAW + "?t=" + Math.floor(Date.now() / 300000), siteBase() + "cache/dashboard.json"]) {
+      try { const r = await fetch(u, {cache: "no-cache"}); if (r.ok) return await r.json(); } catch (e) {}
+    }
+    return null;
+  }
+  const fmt = (v, it) => it.unit === "k" ? Math.round(v).toLocaleString("en-US") + "k"
+                                         : Number(v).toFixed(it.dp) + (it.unit === "%" ? "%" : "");
+  const fdate = (d) => new Date(d + (d.length === 10 ? "T12:00:00" : "")).toLocaleDateString("en-US", {month: "short", day: "numeric"});
+  function arrow(it) {
+    const d = it.value - it.prev, eps = it.unit === "k" ? 0.5 : 0.05;
+    if (Math.abs(d) < eps) return '<span class="flat">▬</span>';
+    const good = (d > 0) === !!it.up_is_good;
+    return `<span class="${good ? "dn" : "up"}">${d > 0 ? "▲" : "▼"}</span>`;
+  }
+  async function macro() {
+    const d = await getJSON();
+    if (!d) { $("mf-ind-cb").innerHTML = '<p class="err">Data unavailable.</p>'; return; }
+    for (const g of d.groups || []) {
+      const el = $("mf-ind-" + g.title); if (!el) continue;
+      el.innerHTML = g.items.map((it) => `<div class="row"><span class="lab"><a href="${it.url}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">${esc(it.label)}</a>
+        <small>${esc(it.period)}${it.updated ? " · updated " + fdate(it.updated) : ""}${it.status === "cached" ? ' <span class="stale">· last good value</span>' : ""}</small></span>
+        <span class="v">${arrow(it)} ${fmt(it.value, it)}<small>prior ${fmt(it.prev, it)}</small></span></div>`).join("");
+    }
+    const pol = (d.policy || []).map((p) => `<div class="row"><span class="lab">${esc(p.bank)}<small>${esc(p.label)} · ${esc(p.last_move_text)}</small></span>
+        <span class="v ${p.last_move_bp > 0 ? "up" : p.last_move_bp < 0 ? "dn" : ""}">${esc(p.rate)}</span></div>`).join("");
+    const st = (d.statements || []).slice(0, 4).map((s) => `<div class="stmt"><a href="${esc(s.link)}" target="_blank" rel="noopener">${esc(s.title)}</a>
+        <small>${esc(s.bank)} · ${fdate(s.date)}</small></div>`).join("");
+    $("mf-ind-cb").innerHTML = pol + (st ? '<div style="margin-top:.35rem">' + st + "</div>" : "");
+    const built = d.built ? new Date(d.built).toLocaleString("en-US", {timeZone: "America/New_York", month: "short", day: "numeric", hour: "numeric", minute: "2-digit"}) + " ET" : "—";
+    $("mf-ind-src").innerHTML = `Releases from BLS, BEA, the Atlanta Fed, the Fed and ECB via <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED</a>, and Eurostat; ` +
+      `checked hourly on weekdays. Arrows compare with the prior release. Last change recorded ${built}.`;
+  }
+
+  // ------------------------------------------------------------------ start
+  function start() {
+    started = true;
+    tick(); markets(); odds(); macro();
+    timers.push(setInterval(tick, 30000), setInterval(odds, 60000), setInterval(macro, 600000));
+  }
+  const saved = store.get("mf-ind-open");
+  setOpen(saved === null ? innerWidth >= 1400 : saved === "1");
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="../companions/ai.html" class="pagination-link" aria-label="AI in International Finance">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">AI in International Finance</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Bento J. Lobo, Ph.D., CFA</p>
+</div>   
+    <div class="nav-footer-center">
+<p>Living edition — data refreshed at build time</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

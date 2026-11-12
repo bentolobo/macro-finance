@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>AI in International Finance – Macro Finance</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../companions/beyond-the-page.html" rel="next">
+<link href="../chapters/01-introduction.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-447c5dbdbaadf3195d746f842414959a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../companions/ai.html">Companions</a></li><li class="breadcrumb-item"><a href="../companions/ai.html">AI in International Finance</a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Macro Finance</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../front/top-ten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Top Ten Things to Know in International Finance</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Book at a Glance</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Part I — The Global Financial Environment</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/01-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Globalization and the Multinational Firm</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Companions</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../companions/ai.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">AI in International Finance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../companions/beyond-the-page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Beyond the Page</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#ai-ch01" id="toc-ai-ch01" class="nav-link active" data-scroll-target="#ai-ch01">Chapter 1 · Globalization and the Multinational Firm</a>
+  <ul class="collapse">
+  <li><a href="#friction-4-is-the-one-ai-actually-attacks" id="toc-friction-4-is-the-one-ai-actually-attacks" class="nav-link" data-scroll-target="#friction-4-is-the-one-ai-actually-attacks">Friction 4 is the one AI actually attacks</a></li>
+  <li><a href="#market-structure-the-risk-is-correlation-not-speed" id="toc-market-structure-the-risk-is-correlation-not-speed" class="nav-link" data-scroll-target="#market-structure-the-risk-is-correlation-not-speed">Market structure: the risk is correlation, not speed</a></li>
+  <li><a href="#the-treasury-function-where-the-money-has-actually-been-saved" id="toc-the-treasury-function-where-the-money-has-actually-been-saved" class="nav-link" data-scroll-target="#the-treasury-function-where-the-money-has-actually-been-saved">The treasury function: where the money has actually been saved</a></li>
+  <li><a href="#ai-as-a-macroeconomic-force-moving-the-rates-themselves" id="toc-ai-as-a-macroeconomic-force-moving-the-rates-themselves" class="nav-link" data-scroll-target="#ai-as-a-macroeconomic-force-moving-the-rates-themselves">AI as a macroeconomic force moving the rates themselves</a></li>
+  <li><a href="#what-ai-does-not-change" id="toc-what-ai-does-not-change" class="nav-link" data-scroll-target="#what-ai-does-not-change">What AI does not change</a></li>
+  <li><a href="#questions-to-carry-forward" id="toc-questions-to-carry-forward" class="nav-link" data-scroll-target="#questions-to-carry-forward">Questions to carry forward</a></li>
+  <li><a href="#recall" id="toc-recall" class="nav-link" data-scroll-target="#recall">Recall</a></li>
+  <li><a href="#problems" id="toc-problems" class="nav-link" data-scroll-target="#problems">Problems</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../companions/ai.html">Companions</a></li><li class="breadcrumb-item"><a href="../companions/ai.html">AI in International Finance</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">AI in International Finance</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>A companion to the chapters</em></p>
+<p>Each chapter of this book ends its core material with a one-page box on how artificial intelligence bears on what the chapter has just developed. This companion is where the full treatment lives: one section per chapter, in chapter order, with its own exhibits, recall items and problems. Read a section after the chapter it belongs to; it assumes you have.</p>
+<p>The sections are deliberately unenthusiastic. AI is doing real and measurable work in international finance, and it is also the subject of more confident nonsense than any topic in the field since the credit derivatives of 2006. The discipline asked of you is the same one <a href="../chapters/01-introduction.html#sec-data" class="quarto-xref"><span>How This Book Handles Data</span></a> asks about data: <em>name the mechanism, then ask what evidence would distinguish it from the claim’s opposite.</em></p>
+<section id="ai-ch01" class="level2">
+<h2 class="anchored" data-anchor-id="ai-ch01">Chapter 1 · Globalization and the Multinational Firm</h2>
+<p>Chapter 1 has four elements AI touches directly. Take them in order of how well established the effect is.</p>
+<div id="cell-ex0121" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div id="ex0121" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="ai_files/figure-html/ex0121-output-1.png" width="1188" height="445" class="figure-img"></p>
+<figcaption><strong>Exhibit AI 1.1</strong> The four contact points between artificial intelligence and the material of Chapter 1. The claims are ordered by evidentiary strength, not by how often they are asserted.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="friction-4-is-the-one-ai-actually-attacks" class="level3">
+<h3 class="anchored" data-anchor-id="friction-4-is-the-one-ai-actually-attacks">Friction 4 is the one AI actually attacks</h3>
+<p>Return to the four frictions in <a href="../chapters/01-introduction.html#sec-frictions" class="quarto-xref"><span>What Makes International Finance Different</span></a>. Three of them are not technological problems at all. Multiple currencies exist because sovereigns issue money (Friction 1); jurisdictional risk exists because states have power (Friction 2); institutional heterogeneity exists because legal systems evolved separately (Friction 3). No model, however capable, dissolves any of these. A language model cannot make the Argentine peso convertible or place a Chinese auditor’s working papers within reach of a U.S. subpoena.</p>
+<p><strong>Friction 4 is different, because it is fundamentally a cost-of-information problem.</strong> The reason investors know less about foreign firms is not that the information is unobtainable; it is that obtaining it requires reading a filing in another language, under another accounting standard, written for another regulator, embedded in a local news environment you do not follow. That is precisely the kind of work the current generation of models does cheaply. The BIS’s survey of the technology makes the general point: the decisive capability is <strong>imposing structure on unstructured data</strong> at scale — text, images, satellite imagery, transcripts — which is exactly the form in which cross-border information arrives.</p>
+<p>The implications for this course are concrete:</p>
+<ul>
+<li><strong>Foreign disclosure becomes searchable.</strong> A model can read a Japanese annual report, a Brazilian central bank minute and a Polish bond prospectus in one pass and return comparable fields. The institutional heterogeneity of Friction 3 does not disappear, but the <em>cost of navigating it</em> falls sharply.</li>
+<li><strong>Country risk assessment gets a new input class.</strong> Night-time lights, shipping movements, pollution imagery and job postings can all be converted into economic indicators, which matters most precisely where official statistics are weakest — the emerging markets of Chapter 18.</li>
+<li><strong>Nowcasting compresses the data lag.</strong> Central banks are already building real-time estimates of activity and inflation from unstructured sources, and the BIS documents a line of work in which models trained to predict the next word are applied, without retraining, to predicting the next observation in a time series.</li>
+</ul>
+<p>Here is the honest part. If the informational friction is falling, the <strong>home bias puzzle</strong> of <a href="../chapters/01-introduction.html#sec-frictions" class="quarto-xref"><span>What Makes International Finance Different</span></a> should be shrinking — investors should hold more foreign equity as the cost of knowing about foreign firms falls. Whether that is happening is an open empirical question, and it is a good one; Chapter 15 gives you the data to examine it. Be alert to the possibility that home bias was never mainly about information.</p>
+<div class="mf-box mf-activity callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Explain It
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Why is Friction 4 the only one that yields?</strong> Because it is the only one whose source is a <em>cost</em> rather than an <em>authority</em>. Frictions 1–3 exist because some sovereign has the power to make them exist. Friction 4 exists because reading is expensive. Technology lowers costs; it does not revoke sovereignty. Any claim that AI will “flatten” cross-border finance should be tested against which of these two categories it is really talking about.</p>
+</div>
+</div>
+</section>
+<section id="market-structure-the-risk-is-correlation-not-speed" class="level3">
+<h3 class="anchored" data-anchor-id="market-structure-the-risk-is-correlation-not-speed">Market structure: the risk is correlation, not speed</h3>
+<p><a href="../chapters/01-introduction.html#sec-participants" class="quarto-xref"><span>Who Is in This Market?</span></a> showed you a market in which dealers and principal trading firms account for the large majority of the $9.6 trillion in daily turnover, and non-financial customers for about 5 percent. Algorithmic execution is not new there — electronic trading restructured FX markets long before the current AI wave, and Chapter 5 treats that history properly. What is new is the breadth of what the algorithms condition on, and the degree to which they act without a human in the loop.</p>
+<p>The financial-stability concern identified by the BIS is specific and worth stating precisely, because it is routinely misreported as a concern about speed. <strong>The risk is monoculture.</strong> If many institutions use models built on the same handful of foundation architectures, trained on overlapping data, they will tend to read the same signal the same way at the same moment. The result is amplified herding, correlated liquidity withdrawal and procyclicality — and, as a regulatory matter, the possibility of collusive-looking outcomes among algorithms that were never instructed to collude. A related exposure runs through concentration on the supply side: a small number of firms provide frontier models, so third-party dependency becomes a systemic variable rather than a procurement detail.</p>
+<p>Hold this next to Exhibit 1.9 in Chapter 1. A market whose intermediation is concentrated in a few dozen institutions, running models sourced from a few providers, is more tightly coupled than its turnover statistics suggest. That is a Chapter 5 and Chapter 20 problem, and you now have the vocabulary for it.</p>
+</section>
+<section id="the-treasury-function-where-the-money-has-actually-been-saved" class="level3">
+<h3 class="anchored" data-anchor-id="the-treasury-function-where-the-money-has-actually-been-saved">The treasury function: where the money has actually been saved</h3>
+<p>This is the contact point with the most concrete evidence, and it bears directly on the exposure framework of <a href="../chapters/01-introduction.html#sec-exposure" class="quarto-xref"><span>Three Kinds of Currency Exposure</span></a> and on the hedging decision in Chapter 11.</p>
+<p>Corporate treasury work decomposes into four tasks: <strong>forecast</strong> the foreign-currency cash flows, <strong>identify</strong> the resulting exposures, <strong>decide</strong> the hedge, and <strong>execute</strong> it. The first, second and fourth are pattern recognition and process. The third is judgment. AI has moved quickly through the first, second and fourth, and the reported numbers are not trivial — a Citi and Ant International pilot for an airline reported roughly <strong>30 percent savings in hedging costs</strong> alongside forecasting accuracy above 90 percent, and broader industry surveys report cash- and currency-forecasting accuracy improvements on the order of <strong>20 to 30 percent</strong> where AI tools have been deployed.</p>
+<p>Note carefully what those numbers are and are not. Improved <em>cash-flow</em> forecasting is a genuine and large gain: a treasurer who knows next quarter’s euro receipts to within two percent rather than ten hedges a smaller notional, rolls fewer contracts, and pays less in spread and in over-hedging. That is a cost saving achieved <strong>without any claim to forecast the exchange rate.</strong> Keep those two forecasts separate in your mind; the Trap box below is about what happens when people do not.</p>
+<p>The direction of travel is from decision support to execution. Treasury management platforms now embed forecasting and risk tools directly in corporate workflows, and a frontier set of firms is granting software agents authority to transact — routing payments on cost and speed criteria and managing currency exposure and cash pooling inside defined corporate policy. Exhibit AI 1.2 lays out the ladder.</p>
+<div id="cell-ex0122" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div id="ex0122" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="ai_files/figure-html/ex0122-output-1.png" width="1188" height="335" class="figure-img"></p>
+<figcaption><strong>Exhibit AI 1.2</strong> Three rungs of treasury automation. The move from rung two to rung three is not primarily a technology decision; it is a decision about delegated authority, and it is made by a board, not by a treasurer.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The binding constraint on rung three is governance, not capability. The industry’s own annual survey of AI use in financial services reports exactly this: adoption of generative and agentic systems is accelerating, formal risk management now governs deployment across the industry, and <strong>third-party models remain the hardest thing to validate</strong>, with layered governance emerging as the standard response. Return-on-investment and the cost of running these systems have become first-order considerations rather than afterthoughts.</p>
+<p>For a treasurer, the governance questions are these, and they are examinable:</p>
+<ol type="1">
+<li><strong>Authority.</strong> What notional can an agent transact without a human approval, in which currencies, and at what tenor?</li>
+<li><strong>Explainability.</strong> When the hedge ratio moves from 60 percent to 85 percent, can the treasurer state <em>why</em> to an auditor? A model that cannot be interrogated cannot be defended in a 10-K.</li>
+<li><strong>Model risk.</strong> Who validated the model, and does the firm have the right to inspect it? With a third-party model the honest answer is often “no,” which is why this is the industry’s hardest governance problem.</li>
+<li><strong>Failure mode.</strong> What does the system do when the input data is stale, the market gaps, or the model is confidently wrong? Chapter 1’s Volkswagen mini-case, extended in Chapter 11, is the pre-AI version of this question.</li>
+</ol>
+<p>The Trap box in the chapter (<a href="../chapters/01-introduction.html#sec-ai" class="quarto-xref"><span>AI and the Four Frictions</span></a>) works through the most common misreading of these numbers: <em>“Our AI forecasts the euro, so we have stopped hedging.”</em> Reread it now if you skipped it.</p>
+</section>
+<section id="ai-as-a-macroeconomic-force-moving-the-rates-themselves" class="level3">
+<h3 class="anchored" data-anchor-id="ai-as-a-macroeconomic-force-moving-the-rates-themselves">AI as a macroeconomic force moving the rates themselves</h3>
+<p>There is a fourth channel, and it is the one most likely to appear on an exam in the next few years precisely because it is not about finance technology at all. <strong>The AI investment boom is itself an international macroeconomic shock.</strong> The BIS characterizes it as a large and increasingly debt-financed investment surge, one that is lifting trade and equity markets and generating sizeable terms-of-trade and wealth effects that differ substantially across countries — with a productivity payoff that remains uncertain and unevenly distributed.</p>
+<p>Read that through the apparatus of this book. A country-specific investment boom financed by foreign borrowing is a capital-account surplus, hence a current-account deficit, hence real exchange rate appreciation — the mechanics of Chapter 3 and the models of Chapter 7. Economies that export the inputs (semiconductors, capital equipment, energy) experience a terms-of-trade gain; economies that import the finished intelligence do not. And because AI affects aggregate demand and aggregate supply at the same time, it <strong>blurs the cyclical signal</strong> central banks read, complicating the policy calibration that drives the interest differentials at the heart of Chapters 6 and 7.</p>
+<p>In other words: before AI changes how you hedge, it will change what you are hedging against. That is the larger story, and it is the one with the least commentary attached to it.</p>
+</section>
+<section id="what-ai-does-not-change" class="level3">
+<h3 class="anchored" data-anchor-id="what-ai-does-not-change">What AI does not change</h3>
+<p>A short list, because it is the part most worth retaining.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>It does not change</th>
+<th>Because</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The forecastability of exchange rates</td>
+<td>The limit is not computational. Spot rates already embed the market’s information, so the residual is close to unforecastable news. Chapter 7.</td>
+</tr>
+<tr class="even">
+<td>The case for hedging</td>
+<td>Hedging is justified by the convexity of distress costs, not by a view. A better forecast changes the notional, not the logic. Chapter 11.</td>
+</tr>
+<tr class="odd">
+<td>Sovereign risk</td>
+<td>A state’s capacity to expropriate, restrict or default is unaffected by the quality of your model of it. Chapter 18.</td>
+</tr>
+<tr class="even">
+<td>The parity conditions</td>
+<td>CIP and UIP are arbitrage and equilibrium relations. Better execution closes deviations faster; it does not repeal the no-arbitrage condition. Chapter 6.</td>
+</tr>
+<tr class="odd">
+<td>Responsibility for the number</td>
+<td>A hallucinated figure with a confident citation is still your error when it appears in your work. <a href="../chapters/01-introduction.html#sec-data" class="quarto-xref"><span>How This Book Handles Data</span></a>.</td>
+</tr>
+</tbody>
+</table>
+<p>That last row deserves emphasis in a book of this kind. Language models generate text that is <em>statistically plausible</em>, which is not the same property as <em>factually correct</em>; the BIS is explicit that hallucination is a structural feature of how these systems work rather than a defect awaiting a patch, and that fabricated supporting citations are part of the failure mode. <strong>A model output has no vintage.</strong> It cannot tell you whether the reserve share it reported is the 2026 Q1 value, a stale figure from two years ago, or an average of several sources it has silently blended — which is exactly the confusion Chapter 1’s news dossier was built around. The retrieval discipline of <a href="../chapters/01-introduction.html#sec-data" class="quarto-xref"><span>How This Book Handles Data</span></a> is therefore <em>more</em> important in an AI-assisted workflow, not less.</p>
+<div class="mf-box mf-note callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Disclosure, and the standard this book holds itself to
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This textbook is built by an automated pipeline, and AI tools were used in drafting and editing it. They were not used to generate a single number in it. Every official statistic in this chapter is retrieved at build time from the issuing agency — the BIS, the IMF, the World Bank, FRED, the ECB — and carries its source and retrieval date; the handful of private-sector figures (industry surveys, bank research, a reported pilot) are cited to their named publisher and date, and are treated as indicative rather than official. That is the same standard you are held to in this course: <strong>AI may help you write; it may not be your source.</strong> When you are asked for a figure, you are being asked for the agency, the series, the vintage, and the retrieval date. No model output satisfies that requirement, however confident it sounds.</p>
+</div>
+</div>
+</section>
+<section id="questions-to-carry-forward" class="level3">
+<h3 class="anchored" data-anchor-id="questions-to-carry-forward">Questions to carry forward</h3>
+<ol type="1">
+<li>If AI lowers the cost of evaluating foreign firms, home bias should fall. Name two reasons it might not. <em>(Revisit in Chapter 15.)</em></li>
+<li>A treasurer reports that an AI system improved hedge performance by 30 percent. What single question tells you whether that is a cost saving or a disguised directional bet? <em>(Chapter 11.)</em></li>
+<li>If every major dealer’s pricing model is a fine-tuned version of the same foundation model, what happens to liquidity in the first hour of an unexpected policy announcement? <em>(Chapters 5 and 20.)</em></li>
+<li>The AI capital expenditure boom is concentrated in a few economies and partly financed externally. Trace the effect on those economies’ current accounts and real exchange rates. <em>(Chapters 3 and 7.)</em></li>
+</ol>
+</section>
+<section id="recall" class="level3">
+<h3 class="anchored" data-anchor-id="recall">Recall</h3>
+<p><em>Short answers, from memory. The chapter’s own Recall Ledger carries the core AI item; this one goes deeper.</em></p>
+<ol type="1">
+<li><em>(Carried forward in later chapters.)</em> A firm reports that its AI system cut hedging costs by 30 percent. Write the one clarifying question you would ask, and state what each possible answer would imply.</li>
+</ol>
+</section>
+<section id="problems" class="level3">
+<h3 class="anchored" data-anchor-id="problems">Problems</h3>
+<p><strong>AI 1.1</strong> A treasury vendor advertises that its model “predicts EUR/USD with 87 percent accuracy.” (a) State precisely what that sentence would have to mean to be testable. (b) Name the benchmark the claim must beat, and explain why beating a coin flip is not sufficient. (c) Suppose the claim is true in-sample and false out-of-sample. Explain why that pattern is the expected result rather than a surprise, citing proposition 4 of the <a href="../front/top-ten.html">Top Ten</a>.</p>
+<p><strong>AI 1.2</strong> The AI investment boom is financed partly by cross-border borrowing and is concentrated in a small number of economies. Trace its effect through (a) the capital account, (b) the current account, and (c) the real exchange rate of a recipient economy. Then name one group of economies that gains through the terms of trade and one that does not, and say why.</p>
+<p><strong>AI 1.3</strong> Give one example each of an AI application in international finance whose risk is primarily <em>operational</em>, one whose risk is primarily <em>systemic</em>, and one whose risk is primarily <em>epistemic</em> (that is, a risk about knowing). Justify each classification in one sentence.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<!-- Today's Indicators: site-wide sidebar. Markets and policy odds load in the reader's
+     browser; macro releases come from cache/dashboard.json (pylib/dashboard.py). -->
+<style>
+#mf-ind-toggle{position:fixed;right:0;top:42%;z-index:1040;writing-mode:vertical-rl;transform:rotate(180deg);
+  background:#1f4e79;color:#fff;border:0;border-radius:0 6px 6px 0;padding:.9rem .45rem;font:600 .78rem/1 Inter,system-ui,sans-serif;
+  letter-spacing:.06em;text-transform:uppercase;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.18)}
+#mf-ind-toggle .dot{display:inline-block;width:.5rem;height:.5rem;border-radius:50%;background:#2a9d8f;margin-bottom:.45rem;
+  animation:mfpulse 2s infinite}
+@keyframes mfpulse{0%,100%{opacity:1}50%{opacity:.35}}
+#mf-ind{position:fixed;top:0;right:0;bottom:0;width:330px;max-width:92vw;z-index:1050;background:#fbfaf7;
+  border-left:1px solid #e3e0d8;box-shadow:-4px 0 16px rgba(0,0,0,.08);transform:translateX(100%);transition:transform .25s ease;
+  display:flex;flex-direction:column;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:#1d2733}
+body.mf-ind-open #mf-ind{transform:none}
+body.mf-ind-open #mf-ind-toggle{display:none}
+@media (min-width:1400px){ body.mf-ind-open{padding-right:330px} body.mf-ind-open #mf-ind{box-shadow:none} }
+#mf-ind header{background:#1f4e79;color:#fff;padding:.75rem 1rem .6rem;display:flex;align-items:flex-start;justify-content:space-between}
+#mf-ind header h2{all:unset;display:block;font-weight:700;font-size:1rem;letter-spacing:-.01em}
+#mf-ind header .sub{font-size:.72rem;color:#c9d8e6;margin-top:.15rem}
+#mf-ind header button{background:none;border:0;color:#fff;font-size:1.3rem;line-height:1;cursor:pointer;padding:0 .2rem}
+#mf-ind .body{overflow-y:auto;padding:.3rem 0 1rem;flex:1}
+#mf-ind section{padding:.55rem 1rem .4rem;border-bottom:1px solid #e3e0d8}
+#mf-ind h3{all:unset;display:block;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#2a9d8f;margin:.15rem 0 .4rem}
+#mf-ind .note{font-size:.68rem;color:#6b7785;line-height:1.35;margin:.3rem 0 0}
+#mf-ind .note a{color:#6b7785}
+#mf-ind .tv{height:69px;overflow:hidden;margin:0 -.4rem;position:relative}
+#mf-ind .tvlab{position:absolute;left:0;top:0;bottom:0;width:46%;background:#fbfaf7;z-index:2;display:flex;flex-direction:column;
+  justify-content:center;padding-left:.45rem;line-height:1.2}
+#mf-ind .tvlab b{font-size:.86rem;color:#1d2733}#mf-ind .tvlab small{font-size:.66rem;color:#8a95a2}
+#mf-ind .row{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem;padding:.28rem 0;font-size:.82rem}
+#mf-ind .row + .row{border-top:1px dotted #e3e0d8}
+#mf-ind .row .lab{flex:1;color:#3a4654;line-height:1.25}
+#mf-ind .row .lab small{display:block;color:#8a95a2;font-size:.68rem}
+#mf-ind .row .v{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+#mf-ind .row .v small{display:block;font-weight:400;font-size:.68rem;color:#8a95a2}
+#mf-ind .up{color:#c0392b}#mf-ind .dn{color:#2a7f62}#mf-ind .flat{color:#6b7785}
+#mf-ind .odds{margin:.2rem 0 .65rem}
+#mf-ind .odds .t{display:flex;justify-content:space-between;font-size:.8rem;margin-bottom:.25rem}
+#mf-ind .odds .t a{color:#1d2733;text-decoration:none;white-space:nowrap}#mf-ind .odds .t b{font-weight:700}
+#mf-ind .bar{display:flex;height:.95rem;border-radius:3px;overflow:hidden;background:#e3e0d8;font-size:.62rem;color:#fff;font-weight:700}
+#mf-ind .bar span{display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap}
+#mf-ind .bar .cut{background:#2a9d8f}#mf-ind .bar .hold{background:#8a95a2}#mf-ind .bar .hike{background:#e76f51}
+#mf-ind .legend{display:flex;gap:.7rem;font-size:.66rem;color:#6b7785;margin-top:.1rem}
+#mf-ind .legend i{display:inline-block;width:.55rem;height:.55rem;border-radius:2px;margin-right:.2rem;vertical-align:-1px}
+#mf-ind .stmt{font-size:.78rem;line-height:1.3;padding:.25rem 0}
+#mf-ind .stmt a{color:#1f4e79;text-decoration:none}#mf-ind .stmt a:hover{text-decoration:underline}
+#mf-ind .stmt small{display:block;color:#8a95a2;font-size:.66rem}
+#mf-ind .stale{color:#b7791f;font-size:.66rem}
+#mf-ind .err{font-size:.75rem;color:#8a95a2;font-style:italic}
+@media print{#mf-ind,#mf-ind-toggle{display:none!important} body.mf-ind-open{padding-right:0!important}}
+</style>
+
+<button id="mf-ind-toggle" type="button" aria-controls="mf-ind" aria-expanded="false">
+  <span class="dot"></span>Today's Indicators</button>
+<aside id="mf-ind" aria-label="Today's economic indicators" aria-hidden="true">
+  <header><div><h2>Today's Indicators</h2><div class="sub" id="mf-ind-clock">&nbsp;</div></div>
+    <button type="button" id="mf-ind-close" aria-label="Close indicators">×</button></header>
+  <div class="body">
+    <section><h3>Markets · live</h3><div id="mf-ind-mkts"></div>
+      <p class="note">Streaming quotes via TradingView. DJIA and S&amp;P 500 are index CFDs, which track the cash index
+        and also trade outside exchange hours. The Nasdaq Composite and the PHLX Semiconductor index (SOX) are licensed
+        and cannot be streamed here, so ETFs stand in on a 15-minute delay: ONEQ tracks the Composite, and SOXX, a
+        semiconductor-sector ETF, moves closely with the SOX but is not the same index.</p></section>
+    <section><h3>Next policy meeting · market odds</h3><div id="mf-ind-odds"><p class="err">Loading…</p></div>
+      <p class="note">Prices on <a href="https://polymarket.com/" target="_blank" rel="noopener">Polymarket</a> prediction
+        markets, refreshed every minute. Read them as probabilities; they are not CME FedWatch futures-implied odds.</p></section>
+    <section><h3>Central banks</h3><div id="mf-ind-cb"><p class="err">Loading…</p></div></section>
+    <section><h3>Inflation</h3><div id="mf-ind-Inflation"></div></section>
+    <section><h3>Growth</h3><div id="mf-ind-Growth"></div></section>
+    <section><h3>Jobs</h3><div id="mf-ind-Jobs"></div>
+      <p class="note" id="mf-ind-src"></p></section>
+  </div>
+</aside>
+
+<script>
+(function () {
+  const RAW = "https://raw.githubusercontent.com/bentolobo/macro-finance/main/cache/dashboard.json";
+  // [TradingView symbol, our label, sub-label]. TradingView's free widgets cannot show the
+  // Nasdaq Composite or PHLX Semiconductor (SOX) index levels (licensed), so those two are
+  // tracked through ETFs: ONEQ holds the Composite; SOXX is the largest semiconductor ETF.
+  const MKTS = [
+    ["FOREXCOM:DJI", "DJIA", "Dow Jones Industrial Avg."],
+    ["FOREXCOM:SPXUSD", "S&P 500", "Index"],
+    ["NASDAQ:ONEQ", "Nasdaq Composite", "via ONEQ ETF · 15-min delay"],
+    ["NASDAQ:SOXX", "Semiconductors", "via SOXX ETF · 15-min delay"],
+    ["PYTH:US10Y", "10-yr Treasury", "Yield, %"],
+    ["FX:EURUSD", "EUR/USD", "Dollars per euro"],
+    ["FX:USDJPY", "USD/JPY", "Yen per dollar"]];
+  const BANKS = [
+    {name: "Federal Reserve", tag: "fed-rates", re: /^Fed Decision in/i},
+    {name: "ECB", tag: "ecb", re: /^ECB Interest Rates:/i},
+    {name: "Bank of Japan", tag: "boj", re: /^Bank of Japan Decision in/i}];
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+  const store = {get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+                 set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }};
+  let started = false, timers = [];
+
+  // ------------------------------------------------------------------ open / close
+  function setOpen(open) {
+    document.body.classList.toggle("mf-ind-open", open);
+    $("mf-ind").setAttribute("aria-hidden", String(!open));
+    $("mf-ind-toggle").setAttribute("aria-expanded", String(open));
+    store.set("mf-ind-open", open ? "1" : "0");
+    if (open && !started) start();
+  }
+  $("mf-ind-toggle").addEventListener("click", () => setOpen(true));
+  $("mf-ind-close").addEventListener("click", () => setOpen(false));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && document.body.classList.contains("mf-ind-open") && innerWidth < 1400) setOpen(false); });
+
+  // ------------------------------------------------------------------ clock
+  function tick() {
+    const t = new Date().toLocaleString("en-US", {timeZone: "America/New_York", weekday: "short", month: "short",
+      day: "numeric", hour: "numeric", minute: "2-digit"});
+    $("mf-ind-clock").textContent = t + " ET";
+  }
+
+  // ------------------------------------------------------------------ markets
+  function markets() {
+    const box = $("mf-ind-mkts");
+    for (const [sym, name, sub] of MKTS) {
+      const c = document.createElement("div");
+      c.className = "tv tradingview-widget-container";
+      const lab = document.createElement("div");
+      lab.className = "tvlab";
+      lab.innerHTML = `<b>${esc(name)}</b><small>${esc(sub)}</small>`;
+      c.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
+      const s = document.createElement("script");
+      s.src = "https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js";
+      s.async = true;
+      s.text = JSON.stringify({symbol: sym, width: "100%", colorTheme: "light", isTransparent: true, locale: "en"});
+      c.appendChild(s);
+      c.appendChild(lab);
+      box.appendChild(c);
+    }
+  }
+
+  // ------------------------------------------------------------------ policy odds
+  async function nextMeeting(b) {
+    const r = await fetch(`https://gamma-api.polymarket.com/events?tag_slug=${b.tag}&closed=false&limit=100`);
+    const evs = (await r.json()).filter((e) => b.re.test(e.title) && new Date(e.endDate) > new Date());
+    evs.sort((a, z) => new Date(a.endDate) - new Date(z.endDate));
+    const e = evs[0];
+    if (!e) return null;
+    const g = {cut: 0, hold: 0, hike: 0}; let top = null;
+    for (const m of e.markets || []) {
+      if (m.closed) continue;
+      let p; try { p = parseFloat(JSON.parse(m.outcomePrices)[0]); } catch (x) { continue; }
+      const lab = m.groupItemTitle || m.question || "";
+      const k = /decrease|cut/i.test(lab) ? "cut" : /no change|hold|unchanged/i.test(lab) ? "hold" : /increase|hike/i.test(lab) ? "hike" : null;
+      if (!k || isNaN(p)) continue;
+      g[k] += p;
+      if (!top || p > top.p) top = {lab, p};
+    }
+    const tot = g.cut + g.hold + g.hike;
+    if (!tot) return null;
+    for (const k in g) g[k] /= tot;
+    const month = (e.title.match(/(January|February|March|April|May|June|July|August|September|October|November|December)/) || [])[1] || "";
+    return {bank: b.name, month, g, top: top && {lab: top.lab, p: top.p / tot}, url: `https://polymarket.com/event/${e.slug}`};
+  }
+  function short(l) {
+    if (/no change|hold|unchanged/i.test(l)) return "Hold";
+    const m = l.match(/(\d+\+?)\s*bps?/i);
+    return (/increase|hike/i.test(l) ? "Hike" : "Cut") + (m ? " " + m[1] + " bp" : "");
+  }
+  async function odds() {
+    const res = await Promise.allSettled(BANKS.map(nextMeeting));
+    const pct = (x) => Math.round(x * 100);
+    const html = res.map((r) => {
+      if (r.status !== "fulfilled" || !r.value) return "";
+      const o = r.value, g = o.g;
+      const seg = (k, lab) => g[k] > 0.005 ? `<span class="${k}" style="width:${(g[k] * 100).toFixed(1)}%" title="${lab} ${pct(g[k])}%">${g[k] > .12 ? pct(g[k]) + "%" : ""}</span>` : "";
+      return `<div class="odds"><div class="t"><span>${esc(o.bank)} · ${esc(o.month)}</span>
+        <a href="${o.url}" target="_blank" rel="noopener">${esc(short(o.top.lab))} <b>${pct(o.top.p)}%</b></a></div>
+        <div class="bar">${seg("cut", "Cut")}${seg("hold", "Hold")}${seg("hike", "Hike")}</div></div>`;
+    }).join("");
+    $("mf-ind-odds").innerHTML = html ? html + '<div class="legend"><span><i style="background:#2a9d8f"></i>Cut</span><span><i style="background:#8a95a2"></i>Hold</span><span><i style="background:#e76f51"></i>Hike</span></div>'
+                                      : '<p class="err">Odds are unavailable right now.</p>';
+  }
+
+  // ------------------------------------------------------------------ macro data
+  function siteBase() {
+    const s = document.querySelector('script[src*="site_libs/"]');
+    return s ? s.src.slice(0, s.src.indexOf("site_libs/")) : "./";
+  }
+  async function getJSON() {
+    for (const u of [RAW + "?t=" + Math.floor(Date.now() / 300000), siteBase() + "cache/dashboard.json"]) {
+      try { const r = await fetch(u, {cache: "no-cache"}); if (r.ok) return await r.json(); } catch (e) {}
+    }
+    return null;
+  }
+  const fmt = (v, it) => it.unit === "k" ? Math.round(v).toLocaleString("en-US") + "k"
+                                         : Number(v).toFixed(it.dp) + (it.unit === "%" ? "%" : "");
+  const fdate = (d) => new Date(d + (d.length === 10 ? "T12:00:00" : "")).toLocaleDateString("en-US", {month: "short", day: "numeric"});
+  function arrow(it) {
+    const d = it.value - it.prev, eps = it.unit === "k" ? 0.5 : 0.05;
+    if (Math.abs(d) < eps) return '<span class="flat">▬</span>';
+    const good = (d > 0) === !!it.up_is_good;
+    return `<span class="${good ? "dn" : "up"}">${d > 0 ? "▲" : "▼"}</span>`;
+  }
+  async function macro() {
+    const d = await getJSON();
+    if (!d) { $("mf-ind-cb").innerHTML = '<p class="err">Data unavailable.</p>'; return; }
+    for (const g of d.groups || []) {
+      const el = $("mf-ind-" + g.title); if (!el) continue;
+      el.innerHTML = g.items.map((it) => `<div class="row"><span class="lab"><a href="${it.url}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">${esc(it.label)}</a>
+        <small>${esc(it.period)}${it.updated ? " · updated " + fdate(it.updated) : ""}${it.status === "cached" ? ' <span class="stale">· last good value</span>' : ""}</small></span>
+        <span class="v">${arrow(it)} ${fmt(it.value, it)}<small>prior ${fmt(it.prev, it)}</small></span></div>`).join("");
+    }
+    const pol = (d.policy || []).map((p) => `<div class="row"><span class="lab">${esc(p.bank)}<small>${esc(p.label)} · ${esc(p.last_move_text)}</small></span>
+        <span class="v ${p.last_move_bp > 0 ? "up" : p.last_move_bp < 0 ? "dn" : ""}">${esc(p.rate)}</span></div>`).join("");
+    const st = (d.statements || []).slice(0, 4).map((s) => `<div class="stmt"><a href="${esc(s.link)}" target="_blank" rel="noopener">${esc(s.title)}</a>
+        <small>${esc(s.bank)} · ${fdate(s.date)}</small></div>`).join("");
+    $("mf-ind-cb").innerHTML = pol + (st ? '<div style="margin-top:.35rem">' + st + "</div>" : "");
+    const built = d.built ? new Date(d.built).toLocaleString("en-US", {timeZone: "America/New_York", month: "short", day: "numeric", hour: "numeric", minute: "2-digit"}) + " ET" : "—";
+    $("mf-ind-src").innerHTML = `Releases from BLS, BEA, the Atlanta Fed, the Fed and ECB via <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED</a>, and Eurostat; ` +
+      `checked hourly on weekdays. Arrows compare with the prior release. Last change recorded ${built}.`;
+  }
+
+  // ------------------------------------------------------------------ start
+  function start() {
+    started = true;
+    tick(); markets(); odds(); macro();
+    timers.push(setInterval(tick, 30000), setInterval(odds, 60000), setInterval(macro, 600000));
+  }
+  const saved = store.get("mf-ind-open");
+  setOpen(saved === null ? innerWidth >= 1400 : saved === "1");
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/01-introduction.html" class="pagination-link" aria-label="Globalization and the Multinational Firm">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Globalization and the Multinational Firm</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../companions/beyond-the-page.html" class="pagination-link" aria-label="Beyond the Page">
+        <span class="nav-page-text">Beyond the Page</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Bento J. Lobo, Ph.D., CFA</p>
+</div>   
+    <div class="nav-footer-center">
+<p>Living edition — data refreshed at build time</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
