@@ -101,7 +101,7 @@ def gbp_dollar():
                     va="center", color=RUST, fontweight="bold")
         lo = m.idxmin()
         ax.annotate(f"Low ${m.min():.2f} ({lo:%b %Y})", (lo.year + (lo.month - 1) / 12, m.min()),
-                    xytext=(-8, -4), textcoords="offset points", ha="right", va="top", fontsize=8.6, color=RUST)
+                    xytext=(4, -8), textcoords="offset points", ha="left", va="top", fontsize=8.6, color=RUST)
     ax.text(1990, 2.75, "Market rate since 1971", color=RUST, fontsize=9, fontweight="bold")
     ax.set_xlim(1875, date.today().year + 4)
     ax.set_ylim(0.8, 5.6)
@@ -209,16 +209,17 @@ def crisis_event_study():
             continue
         w = s.iloc[pos - 60: pos + 251]
         v = 100 * w.iloc[60] / w            # dollars per unit of local currency, indexed
-        ax.plot(range(-60, -60 + len(v)), v.values, color=c, lw=1.8)
         trough = v.min()
-        ax.annotate(f"{name}  {trough - 100:+.0f}% at worst", (int(np.argmin(v.values)) - 60, trough),
-                    xytext=(6, -2), textcoords="offset points", fontsize=8.6, color=c, fontweight="bold")
+        ax.plot(range(-60, -60 + len(v)), v.values, color=c, lw=1.8,
+                label=f"{name} ({pd.Timestamp(t0):%b %Y}): {trough - 100:+.0f}% at worst")
         provs.append(prov)
         drawn += 1
     ill = drawn == 0
     if ill:
         t = np.arange(-60, 251)
         ax.plot(t, np.where(t < 0, 100, 100 - 45 * (1 - np.exp(-t / 40))), color=SLATE)
+    if drawn:
+        ax.legend(loc="lower left", fontsize=8.8, frameon=True, framealpha=0.95)
     ax.axvline(0, color=INK, lw=1)
     ax.text(2, 103, "Day the peg broke", fontsize=8.6, color=INK)
     ax.axhline(100, color=MUTED, lw=0.8, ls="--")
