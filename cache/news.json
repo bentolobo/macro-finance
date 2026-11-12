@@ -1,8 +1,17 @@
 {
- "retrieved": "2026-11-12T20:11+00:00",
+ "retrieved": "2026-11-12T20:22+00:00",
  "feeds_ok": 11,
  "feeds_total": 11,
  "items": [
+  {
+   "title": "U.S. Collected $12 Billion in Venezuelan Oil Sales, Returning Nearly All of It",
+   "link": "https://www.wsj.com/world/americas/u-s-collected-12-billion-in-venezuelan-oil-sales-returning-nearly-all-of-it-140bba70?mod=rss_worldnews",
+   "date": "2026-11-12T20:14:00+00:00",
+   "summary": "A State Department report shows Caracas has received most of the revenue, while Trump says the U.S. has profited from the oil sales.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  },
   {
    "title": "Ukraine Says Its Military Starlink Is Disrupted Again, Hurting Defenses",
    "link": "https://www.wsj.com/world/ukraine-says-its-military-starlink-is-disrupted-again-hurting-defenses-bfb00a64?mod=rss_worldnews",
@@ -49,15 +58,6 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
-   "title": "JD Vance Emerges as Lead Iran Negotiator",
-   "link": "https://www.wsj.com/world/middle-east/jd-vance-emerges-as-lead-iran-negotiator-cba55bcb?mod=rss_worldnews",
-   "date": "2026-11-11T22:20:00+00:00",
-   "summary": "Plus, Democrats are pointing fingers after Defense Secretary Pete Hegseth avoided impeachment, and United Airlines will ban AI bots from booking its flights.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
    "title": "Oil Prices Rebound as Trump Questions Need for Iran Deal",
    "link": "https://www.wsj.com/business/energy-oil/oil-prices-fall-as-investors-weigh-u-s-iran-diplomacy-296e2847?mod=rss_worldnews",
    "date": "2026-11-12T14:07:00+00:00",
@@ -76,6 +76,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
+   "title": "JD Vance Emerges as Lead Iran Negotiator",
+   "link": "https://www.wsj.com/world/middle-east/jd-vance-emerges-as-lead-iran-negotiator-cba55bcb?mod=rss_worldnews",
+   "date": "2026-11-11T22:20:00+00:00",
+   "summary": "Plus, Democrats are pointing fingers after Defense Secretary Pete Hegseth avoided impeachment, and United Airlines will ban AI bots from booking its flights.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  },
+  {
    "title": "Vance Considers Direct Talks With Iran Hard-Liner in Push to End War",
    "link": "https://www.wsj.com/world/middle-east/vance-considers-direct-talks-with-iran-hardliner-in-push-to-end-war-0c2e3ea4?mod=rss_worldnews",
    "date": "2026-11-11T19:25:00+00:00",
@@ -89,15 +98,6 @@
    "link": "https://www.wsj.com/world/middle-east/u-s-iran-exchange-strikes-on-islands-as-they-fight-for-control-of-strait-895801e5?mod=rss_worldnews",
    "date": "2026-11-10T13:07:00+00:00",
    "summary": "The U.S. and Iran are waging a fierce battle over control of the Strait of Hormuz, with both sides striking islands in the waterway in recent days.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
-   "title": "Adnoc Gas Still Evaluating Options to Bypass Strait of Hormuz",
-   "link": "https://www.wsj.com/business/energy-oil/adnoc-gas-still-evaluating-options-to-bypass-strait-of-hormuz-3f833140?mod=rss_worldnews",
-   "date": "2026-11-10T09:12:00+00:00",
-   "summary": "The company has been examining ways to reduce its reliance on the strait—including an LNG export facility on the country’s east coast—its chief executive says.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
@@ -292,6 +292,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
+   "title": "U.S. Military Officer Arrested in the U.K. Was Detained in Sting Operation",
+   "link": "https://www.wsj.com/politics/national-security/u-s-military-officer-arrested-in-the-u-k-was-detained-in-sting-operation-e809a042?mod=rss_worldnews",
+   "date": "2026-11-12T20:16:00+00:00",
+   "summary": "Lt. Col. Brandon Tyner was arrested over allegations of spying for Russia after unwittingly speaking with British officials.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  },
+  {
    "title": "Spain Hit by General Strike as Cost of Living Takes Center Stage Ahead of Elections",
    "link": "https://www.wsj.com/world/europe/spain-hit-by-general-strike-as-cost-of-living-takes-center-stage-ahead-of-elections-2c86baf7?mod=rss_worldnews",
    "date": "2026-11-11T17:58:00+00:00",
@@ -323,15 +332,6 @@
    "link": "https://www.wsj.com/world/europe/u-s-overture-to-russia-on-european-security-sparks-alarm-eb9b6acf?mod=rss_worldnews",
    "date": "2026-11-10T20:04:00+00:00",
    "summary": "U.S. officials said work on a Ukraine ceasefire must proceed alongside discussions about Europe’s future security arrangements.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
-   "title": "Poland’s Political Divisions Puncture Its Influence on World Stage",
-   "link": "https://www.wsj.com/world/europe/polands-political-divisions-puncture-its-influence-on-world-stage-1b17e3f2?mod=rss_worldnews",
-   "date": "2026-11-10T03:00:00+00:00",
-   "summary": "Economic strength and high military spending haven’t translated into decision-making clout on Ukraine.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
@@ -850,6 +850,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
+   "title": "Nvidia’s Meteoric Rise, in One Chart",
+   "link": "https://www.wsj.com/tech/nvidias-meteoric-rise-in-one-chart-2f47d54e?mod=rss_markets_main",
+   "date": "2026-11-12T20:14:00+00:00",
+   "summary": "A once-modest company soared after ChatGPT unleashed demand for its chips.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
+  },
+  {
    "title": "European Stock Indexes Higher as Investors Rotate Away From AI",
    "link": "https://www.wsj.com/finance/stocks/nikkei-falls-0-2-dragged-by-electronics-stocks-0da84013?mod=rss_markets_main",
    "date": "2026-11-12T08:23:00+00:00",
@@ -881,15 +890,6 @@
    "link": "https://www.wsj.com/finance/stocks/u-s-stocks-rise-as-coreweave-update-eases-some-ai-worries-f8bfbaa7?mod=rss_markets_main",
    "date": "2026-11-11T22:07:00+00:00",
    "summary": "U.S. stocks rose after CoreWeave’s earnings update quelled worries that AI profits would not come soon enough to cover infrastructure debt burdens.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
-  },
-  {
-   "title": "Investors Run Back to AI Stocks, Less Than a Week After a Historic Selloff",
-   "link": "https://www.wsj.com/finance/stocks/investors-run-back-to-ai-stocks-less-than-a-week-after-a-historic-selloff-854483e8?mod=rss_markets_main",
-   "date": "2026-11-11T21:58:00+00:00",
-   "summary": "CoreWeave, an AI data-center operator, delivered strong results late Tuesday. Tech stocks roared back the next morning.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
@@ -1084,6 +1084,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
+   "title": "Investors Run Back to AI Stocks, Less Than a Week After a Historic Selloff",
+   "link": "https://www.wsj.com/finance/stocks/investors-run-back-to-ai-stocks-less-than-a-week-after-a-historic-selloff-854483e8?mod=rss_markets_main",
+   "date": "2026-11-11T21:58:00+00:00",
+   "summary": "CoreWeave, an AI data-center operator, delivered strong results late Tuesday. Tech stocks roared back the next morning.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
+  },
+  {
    "title": "CoreWeave Jumps, Boosting the AI Trade",
    "link": "https://www.wsj.com/finance/stocks/coreweave-jumps-boosting-the-ai-trade-e5c1569b?mod=rss_markets_main",
    "date": "2026-11-11T21:17:00+00:00",
@@ -1115,15 +1124,6 @@
    "link": "https://www.wsj.com/finance/asian-bond-yields-rise-on-growing-expectations-for-fed-rate-hike-a2491a28?mod=rss_markets_main",
    "date": "2026-11-11T06:37:00+00:00",
    "summary": "Hotter-than-expected U.S. inflation data and Federal Reserve officials’ hawkish commentary raised the chances of a rate increase next month.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
-  },
-  {
-   "title": "The $26 Million Cyber Heist Rocking a Small New Jersey Town",
-   "link": "https://www.wsj.com/us-news/the-26-million-cyberheist-rocking-a-small-new-jersey-town-bbe2ae6d?mod=rss_markets_main",
-   "date": "2026-11-11T00:00:00+00:00",
-   "summary": "In historic Cranbury, residents are confronting local leaders over missing money that wasn’t disclosed until after the election.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
@@ -7699,51 +7699,6 @@
    "feed": "https://www.bis.org/doclist/all_pressrels.rss"
   },
   {
-   "title": "Opening remarks - Joint Central Bank of Kuwait and Global Finance Magazine Roundtable Discussion with Kuwait Banks",
-   "link": "https://www.bis.org/speeches/20261112-opening-remarks-joint-central-bank-kuwait-and-global-finance-magazine-roundtable-discussion-kuwait-banks",
-   "date": "2026-11-12T00:00:00+00:00",
-   "summary": "Opening remarks by His Excellency Mr Basel A Al-Haroon, Governor of the Central Bank of Kuwait, at the Joint Central Bank of Kuwait and Global Finance Magazine Roundtable Discussion with Kuwait Banks, Kuwait City, 23 September 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Foundations for innovative and resilient capital markets",
-   "link": "https://www.bis.org/speeches/20261112-foundations-innovative-and-resilient-capital-markets",
-   "date": "2026-11-12T00:00:00+00:00",
-   "summary": "Keynote address by Mr Vasileios Madouros, Deputy Governor of the Central Bank of Ireland, at the 2026 ECMI (European Capital Markets Institute) Annual Conference, Brussels, 11 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Central bank independence in today’s world",
-   "link": "https://www.bis.org/speeches/20261112-central-bank-independence-todays-world",
-   "date": "2026-11-12T00:00:00+00:00",
-   "summary": "Speech by Mr Andrew Bailey, Governor of the Bank of England, at the Swiss Institute of International Studies (SIAF) Lecture Series, Zurich University, Zurich, 9 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "The US economy and considerations for monetary policy",
-   "link": "https://www.bis.org/speeches/20261112-us-economy-and-considerations-monetary-policy",
-   "date": "2026-11-12T00:00:00+00:00",
-   "summary": "Speech by Ms Michelle W Bowman, Vice Chair for Supervision of the Board of Governors of the Federal Reserve System, at the C Peter McColough Series on International Economics Council on Foreign Relations, Washington DC, 10 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Japan's current account surplus and corporate adjustment",
-   "link": "https://www.bis.org/speeches/20261112-japans-current-account-surplus-and-corporate-adjustment",
-   "date": "2026-11-12T00:00:00+00:00",
-   "summary": "Speech by Mr Kazuo Ueda, Governor of the Bank of Japan, at the 2026 Michel Camdessus Central Banking Lecture, International Monetary Fund, Washington DC, 6 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
    "title": "The science and practice of monetary policy communication - the European Central Bank experience",
    "link": "https://www.bis.org/speeches/20261112-science-and-practice-monetary-policy-communication-european-central-bank-experience",
    "date": "2026-11-12T00:00:00+00:00",
@@ -7807,28 +7762,46 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Trust, expectations and monetary policy",
-   "link": "https://www.bis.org/speeches/20261110-trust-expectations-and-monetary-policy",
-   "date": "2026-11-10T00:00:00+00:00",
-   "summary": "Text of the Sir Leslie Melville Lecture by Mr Andrew Hauser, Deputy Governor of the Reserve Bank of Australia, to the Australian National University, Canberra, 5 November 2026.",
+   "title": "Opening remarks - Joint Central Bank of Kuwait and Global Finance Magazine Roundtable Discussion with Kuwait Banks",
+   "link": "https://www.bis.org/speeches/20261112-opening-remarks-joint-central-bank-kuwait-and-global-finance-magazine-roundtable-discussion-kuwait-banks",
+   "date": "2026-11-12T00:00:00+00:00",
+   "summary": "Opening remarks by His Excellency Mr Basel A Al-Haroon, Governor of the Central Bank of Kuwait, at the Joint Central Bank of Kuwait and Global Finance Magazine Roundtable Discussion with Kuwait Banks, Kuwait City, 23 September 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Navigating stormy waters - reflections on monetary policy",
-   "link": "https://www.bis.org/speeches/20261110-navigating-stormy-waters-reflections-monetary-policy",
-   "date": "2026-11-10T00:00:00+00:00",
-   "summary": "Speech by Ms Isabel Schnabel, Member of the Executive Board of the European Central Bank, at the ECB Conference on Money Markets 2026, Frankfurt am Main, 5 November 2026.",
+   "title": "Foundations for innovative and resilient capital markets",
+   "link": "https://www.bis.org/speeches/20261112-foundations-innovative-and-resilient-capital-markets",
+   "date": "2026-11-12T00:00:00+00:00",
+   "summary": "Keynote address by Mr Vasileios Madouros, Deputy Governor of the Central Bank of Ireland, at the 2026 ECMI (European Capital Markets Institute) Annual Conference, Brussels, 11 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Message for the European Chamber of Commerce Philippines Luncheon Meeting",
-   "link": "https://www.bis.org/speeches/20261110-message-european-chamber-commerce-philippines-luncheon-meeting",
-   "date": "2026-11-10T00:00:00+00:00",
-   "summary": "Message by Mr Eli M Remolona, Jr, Governor of Bangko Sentral ng Pilipinas (BSP, the central bank of the Philippines), for the European Chamber of Commerce Philippines Luncheon Meeting, Makati City, 3 November 2026.",
+   "title": "Central bank independence in today’s world",
+   "link": "https://www.bis.org/speeches/20261112-central-bank-independence-todays-world",
+   "date": "2026-11-12T00:00:00+00:00",
+   "summary": "Speech by Mr Andrew Bailey, Governor of the Bank of England, at the Swiss Institute of International Studies (SIAF) Lecture Series, Zurich University, Zurich, 9 November 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "The US economy and considerations for monetary policy",
+   "link": "https://www.bis.org/speeches/20261112-us-economy-and-considerations-monetary-policy",
+   "date": "2026-11-12T00:00:00+00:00",
+   "summary": "Speech by Ms Michelle W Bowman, Vice Chair for Supervision of the Board of Governors of the Federal Reserve System, at the C Peter McColough Series on International Economics Council on Foreign Relations, Washington DC, 10 November 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Japan's current account surplus and corporate adjustment",
+   "link": "https://www.bis.org/speeches/20261112-japans-current-account-surplus-and-corporate-adjustment",
+   "date": "2026-11-12T00:00:00+00:00",
+   "summary": "Speech by Mr Kazuo Ueda, Governor of the Bank of Japan, at the 2026 Michel Camdessus Central Banking Lecture, International Monetary Fund, Washington DC, 6 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -7906,19 +7879,28 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Leading today, building for tomorrow",
-   "link": "https://www.bis.org/speeches/20261109-leading-today-building-tomorrow",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Special address by Mr Swaminathan J, Deputy Governor of the Reserve Bank of India, at the Leadership Conference of Indian Bank, Chennai, 23 October 2026.",
+   "title": "Trust, expectations and monetary policy",
+   "link": "https://www.bis.org/speeches/20261110-trust-expectations-and-monetary-policy",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Text of the Sir Leslie Melville Lecture by Mr Andrew Hauser, Deputy Governor of the Reserve Bank of Australia, to the Australian National University, Canberra, 5 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Safeguarding trust and monetary sovereignty in a digital payments era",
-   "link": "https://www.bis.org/speeches/20261109-safeguarding-trust-and-monetary-sovereignty-digital-payments-era",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Speech by Mr Denis Beau, First Deputy Governor of the Bank of France, at the Hong Kong FinTech Week 2026, Hong Kong, 3 November 2026.",
+   "title": "Navigating stormy waters - reflections on monetary policy",
+   "link": "https://www.bis.org/speeches/20261110-navigating-stormy-waters-reflections-monetary-policy",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Speech by Ms Isabel Schnabel, Member of the Executive Board of the European Central Bank, at the ECB Conference on Money Markets 2026, Frankfurt am Main, 5 November 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Message for the European Chamber of Commerce Philippines Luncheon Meeting",
+   "link": "https://www.bis.org/speeches/20261110-message-european-chamber-commerce-philippines-luncheon-meeting",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Message by Mr Eli M Remolona, Jr, Governor of Bangko Sentral ng Pilipinas (BSP, the central bank of the Philippines), for the European Chamber of Commerce Philippines Luncheon Meeting, Makati City, 3 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -7960,19 +7942,19 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Payments in a fragmenting world - sovereignty, strategy and system design",
-   "link": "https://www.bis.org/speeches/20261103-payments-fragmenting-world-sovereignty-strategy-and-system-design",
-   "date": "2026-11-03T00:00:00+00:00",
-   "summary": "Speech by Mr Denis Beau, First Deputy Governor of the Bank of France, at the South African Reserve Bank Payments Conference 2026, Pretoria, 21 October 2026.",
+   "title": "Leading today, building for tomorrow",
+   "link": "https://www.bis.org/speeches/20261109-leading-today-building-tomorrow",
+   "date": "2026-11-09T00:00:00+00:00",
+   "summary": "Special address by Mr Swaminathan J, Deputy Governor of the Reserve Bank of India, at the Leadership Conference of Indian Bank, Chennai, 23 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Innovation, security and technological sovereignty - reconciling three imperatives",
-   "link": "https://www.bis.org/speeches/20261103-innovation-security-and-technological-sovereignty-reconciling-three-imperatives",
-   "date": "2026-11-03T00:00:00+00:00",
-   "summary": "Speech by Mr Denis Beau, First Deputy Governor of the Bank of France and Delegated Chairman of the Prudential Supervision and Resolution Authority (ACPR), at a seminar organised by the Association Europe-Finances-Régulations, Paris, 15 October 2026.",
+   "title": "Safeguarding trust and monetary sovereignty in a digital payments era",
+   "link": "https://www.bis.org/speeches/20261109-safeguarding-trust-and-monetary-sovereignty-digital-payments-era",
+   "date": "2026-11-09T00:00:00+00:00",
+   "summary": "Speech by Mr Denis Beau, First Deputy Governor of the Bank of France, at the Hong Kong FinTech Week 2026, Hong Kong, 3 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -8041,28 +8023,19 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Savings in a changing society",
-   "link": "https://www.bis.org/speeches/20261102-savings-changing-society",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Address by Mr Fabio Panetta, Governor of the Bank of Italy, at the 2024 World Savings Day, organised by the Association of Italian Savings Banks (ACRI), Rome, 30 October 2026.",
+   "title": "Payments in a fragmenting world - sovereignty, strategy and system design",
+   "link": "https://www.bis.org/speeches/20261103-payments-fragmenting-world-sovereignty-strategy-and-system-design",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Speech by Mr Denis Beau, First Deputy Governor of the Bank of France, at the South African Reserve Bank Payments Conference 2026, Pretoria, 21 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Capital needs AI, and AI needs capital - Europe's opportunity for more growth",
-   "link": "https://www.bis.org/speeches/20261102-capital-needs-ai-and-ai-needs-capital-europes-opportunity-more-growth",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Keynote speech by Dr Sabine Mauderer, First Deputy Governor of the Deutsche Bundesbank, at the AI Week Frankfurt, Frankfurt am Main, 29 October 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
-   "link": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Talking points by Mr Phil Mnisi, Governor of the Central Bank of Eswatini, at the Eswatini Urban Development Forum, Ezulwini, 26 October 2026.",
+   "title": "Innovation, security and technological sovereignty - reconciling three imperatives",
+   "link": "https://www.bis.org/speeches/20261103-innovation-security-and-technological-sovereignty-reconciling-three-imperatives",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Speech by Mr Denis Beau, First Deputy Governor of the Bank of France and Delegated Chairman of the Prudential Supervision and Resolution Authority (ACPR), at a seminar organised by the Association Europe-Finances-Régulations, Paris, 15 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -8104,19 +8077,28 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Connecting sustainable finance with climate-resilient growth",
-   "link": "https://www.bis.org/speeches/20261029-connecting-sustainable-finance-climate-resilient-growth",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "Remarks by Mr Arthur Yuen, Deputy Chief Executive of the Hong Kong Monetary Authority, at One Earth Summit 2026, Hong Kong, 28 October 2026.",
+   "title": "Savings in a changing society",
+   "link": "https://www.bis.org/speeches/20261102-savings-changing-society",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Address by Mr Fabio Panetta, Governor of the Bank of Italy, at the 2024 World Savings Day, organised by the Association of Italian Savings Banks (ACRI), Rome, 30 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "National Bank of Ukraine press briefing - monetary policy decisions",
-   "link": "https://www.bis.org/speeches/20261102-national-bank-ukraine-press-briefing-monetary-policy-decisions",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "Speech by Mr Andriy Pyshnyy, Governor of the National Bank of Ukraine, at a press briefing on monetary policy decisions, Kyiv, 29 October 2026.",
+   "title": "Capital needs AI, and AI needs capital - Europe's opportunity for more growth",
+   "link": "https://www.bis.org/speeches/20261102-capital-needs-ai-and-ai-needs-capital-europes-opportunity-more-growth",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Keynote speech by Dr Sabine Mauderer, First Deputy Governor of the Deutsche Bundesbank, at the AI Week Frankfurt, Frankfurt am Main, 29 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
+   "link": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Talking points by Mr Phil Mnisi, Governor of the Central Bank of Eswatini, at the Eswatini Urban Development Forum, Ezulwini, 26 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -8144,6 +8126,24 @@
    "link": "https://www.bis.org/speeches/20261029-release-monetary-policy-report",
    "date": "2026-10-29T00:00:00+00:00",
    "summary": "Opening statement by Mr Tiff Macklem, Governor of the Bank of Canada and Ms Carolyn Rogers, Senior Deputy Governor of the Bank of Canada, at the press conference following the monetary policy decision, Ottawa, Ontario, 28 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Economic resilience, thinner buffers, emerging risks globally - where does India stand?",
+   "link": "https://www.bis.org/speeches/20261029-economic-resilience-thinner-buffers-emerging-risks-globally-where-does-india-stand",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "Address by Dr Poonam Gupta, Deputy Governor of the Reserve Bank of India, at the Business Standard BFSI (Banking, financial services and insurance) Insight Summit, Mumbai, 28 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Connecting sustainable finance with climate-resilient growth",
+   "link": "https://www.bis.org/speeches/20261029-connecting-sustainable-finance-climate-resilient-growth",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "Remarks by Mr Arthur Yuen, Deputy Chief Executive of the Hong Kong Monetary Authority, at One Earth Summit 2026, Hong Kong, 28 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
