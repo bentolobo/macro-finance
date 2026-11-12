@@ -26,41 +26,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -215,10 +180,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>These ten propositions are the irreducible core of the field. Each is stated as a claim, followed by why it is true, where this book develops it, and the specific error that believing the opposite produces. They are deliberately phrased as things an experienced practitioner would say, not as formulas. The formulas are in the chapters.</p>
 <p>Exhibit P.2 is the version to photograph and keep. The ten sections that follow are the argument for each line.</p>
 <div id="cell-ex0118" class="cell" data-execution_count="2">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>ex.ex0118()<span class="op">;</span> plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0118" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -247,25 +208,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>9 · Hedging does not change expected cash flows. It creates value only by reducing frictions.</strong></p>
 <p>In a frictionless world, shareholders can hedge currency risk themselves more cheaply than the firm can, and corporate hedging is value-neutral at best. Hedging creates value through specific channels: lowering the probability of financial distress, avoiding the underinvestment that follows a cash shortfall, reducing expected taxes under a convex schedule, and improving the information content of reported earnings. Every one of those is a friction. If you cannot name which friction your hedge addresses, you are not hedging — you are trading. <em>Developed in:</em> Chapter 11. <em>The error it prevents:</em> evaluating a hedging program by whether it made money, which is the wrong question entirely. A hedge that “lost” money did its job.</p>
 <div id="cell-ex0119" class="cell" data-execution_count="3">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>S <span class="op">=</span> np.linspace(<span class="fl">0.95</span>, <span class="fl">1.25</span>, <span class="dv">200</span>)<span class="op">;</span> F, K, prem <span class="op">=</span> <span class="fl">1.10</span>, <span class="fl">1.10</span>, <span class="fl">0.018</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">10.6</span>, <span class="fl">4.4</span>))</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>ax.plot(S, S, color<span class="op">=</span>RUST, lw<span class="op">=</span><span class="fl">2.2</span>, label<span class="op">=</span><span class="st">"Unhedged"</span>)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>ax.plot(S, np.full_like(S, F), color<span class="op">=</span>NAVY, lw<span class="op">=</span><span class="fl">2.2</span>, label<span class="op">=</span><span class="st">"Forward hedge at 1.10"</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>ax.plot(S, np.maximum(S, K) <span class="op">-</span> prem, color<span class="op">=</span>TEAL, lw<span class="op">=</span><span class="fl">2.2</span>, ls<span class="op">=</span><span class="st">"--"</span>, label<span class="op">=</span><span class="st">"Put option, strike 1.10, premium 0.018"</span>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>ax.axvline(F, color<span class="op">=</span>SLATE, lw<span class="op">=</span><span class="fl">0.9</span>, ls<span class="op">=</span><span class="st">":"</span>)</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>ax.text(F <span class="op">+</span> <span class="fl">0.003</span>, <span class="fl">0.955</span>, <span class="st">"spot = forward"</span>, color<span class="op">=</span>SLATE, fontsize<span class="op">=</span><span class="fl">8.5</span>)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>ax.fill_between(S, F, S, where<span class="op">=</span>S <span class="op">&gt;</span> F, color<span class="op">=</span>RUST, alpha<span class="op">=</span><span class="fl">0.08</span>)</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">1.215</span>, <span class="fl">1.135</span>, <span class="st">"upside the forward</span><span class="ch">\n</span><span class="st">gives up"</span>, color<span class="op">=</span>RUST, fontsize<span class="op">=</span><span class="dv">9</span>, ha<span class="op">=</span><span class="st">"center"</span>)</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>ax.fill_between(S, S, F, where<span class="op">=</span>S <span class="op">&lt;</span> F, color<span class="op">=</span>NAVY, alpha<span class="op">=</span><span class="fl">0.06</span>)</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="fl">1.0</span>, <span class="fl">1.04</span>, <span class="st">"loss the forward</span><span class="ch">\n</span><span class="st">prevents"</span>, color<span class="op">=</span>NAVY, fontsize<span class="op">=</span><span class="dv">9</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>)</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"Spot rate at maturity (USD per EUR)"</span>)<span class="op">;</span> ax.set_ylabel(<span class="st">"USD received per €1, millions per €1m"</span>)</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>ax.legend(loc<span class="op">=</span><span class="st">"upper left"</span>)</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>finish(fig, <span class="st">"ex0119"</span>, <span class="st">"Three ways to receive €1 million in 90 days"</span>,</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>       <span class="st">"Illustrative rates. Chapter 11 does this with live forward and option prices."</span>)</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0119" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">

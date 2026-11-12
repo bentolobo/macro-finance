@@ -27,41 +27,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -275,10 +240,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Data in this chapter were last refreshed on <strong>11 November 2026</strong>. Every chart names its source and retrieval date beneath it.</p>
 </div>
 <div id="cell-glance" class="cell" data-execution_count="2">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>ex.glance()<span class="op">;</span> plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="glance" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -331,10 +292,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="1.1" class="anchored" data-anchor-id="sec-frictions"><span class="header-section-number">1.1</span> What Makes International Finance Different</h2>
 <p>Domestic corporate finance gives you a powerful toolkit: discounted cash flow, the cost of capital, capital structure, risk management. None of it is wrong when you cross a border. All of it becomes harder, for four reasons that structure this entire book. Exhibit 1.1 is the map; the four sections that follow are the territory.</p>
 <div id="cell-ex0102" class="cell" data-execution_count="3">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>ex.ex0102()<span class="op">;</span> plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0102" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -348,24 +305,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="friction-1-multiple-currencies">Friction 1 · Multiple currencies</h3>
 <p>A domestic firm’s cash flows are denominated in one unit of account. A multinational’s are not, and the rates of exchange between those units move continuously, unpredictably, and sometimes violently. This creates a risk with no domestic counterpart: the <em>value</em> of a perfectly certain future cash flow becomes uncertain simply because it will arrive in a foreign currency.</p>
 <div id="cell-ex0103" class="cell" data-execution_count="4">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>s, prov <span class="op">=</span> series(<span class="st">"broad_dollar"</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>ill <span class="op">=</span> prov.tier <span class="op">==</span> <span class="st">"illustrative"</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">10.6</span>, <span class="fl">4.4</span>))</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>ax.plot(s.index, s.values, color<span class="op">=</span>NAVY, lw<span class="op">=</span><span class="fl">1.7</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Index, January 2006 = 100"</span>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> ill:</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    peak <span class="op">=</span> s.cummax()<span class="op">;</span> dd <span class="op">=</span> (s <span class="op">/</span> peak <span class="op">-</span> <span class="dv">1</span>).<span class="bu">min</span>() <span class="op">*</span> <span class="dv">100</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    trough <span class="op">=</span> s.cummin()<span class="op">;</span> ru <span class="op">=</span> (s <span class="op">/</span> trough <span class="op">-</span> <span class="dv">1</span>).<span class="bu">max</span>() <span class="op">*</span> <span class="dv">100</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    ax.annotate(<span class="ss">f"</span><span class="sc">{</span>s<span class="sc">.</span>iloc[<span class="op">-</span><span class="dv">1</span>]<span class="sc">:.1f}</span><span class="ss">"</span>, (s.index[<span class="op">-</span><span class="dv">1</span>], s.iloc[<span class="op">-</span><span class="dv">1</span>]), xytext<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">0</span>),</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>                textcoords<span class="op">=</span><span class="st">"offset points"</span>, color<span class="op">=</span>NAVY, fontweight<span class="op">=</span><span class="st">"bold"</span>, va<span class="op">=</span><span class="st">"center"</span>)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    ax.text(<span class="fl">0.01</span>, <span class="fl">0.95</span>, <span class="ss">f"Largest run-up </span><span class="sc">{</span>ru<span class="sc">:.0f}</span><span class="ss">% · largest decline </span><span class="sc">{</span><span class="bu">abs</span>(dd)<span class="sc">:.0f}</span><span class="ss">%"</span>,</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>            transform<span class="op">=</span>ax.transAxes, color<span class="op">=</span>RUST, fontsize<span class="op">=</span><span class="fl">9.5</span>, fontweight<span class="op">=</span><span class="st">"bold"</span>, va<span class="op">=</span><span class="st">"top"</span>)</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>finish(fig, <span class="st">"ex0103"</span>, <span class="st">"Nominal broad U.S. dollar index"</span>, <span class="st">"Trade-weighted against major and emerging-market partners; monthly average"</span>,</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>       source<span class="op">=</span><span class="ss">f"Source: </span><span class="sc">{</span>prov<span class="sc">}</span><span class="ss">. FRED series DTWEXBGS."</span>, illustrative<span class="op">=</span>ill)</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0103" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -411,25 +350,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="1.2" class="anchored" data-anchor-id="sec-scale"><span class="header-section-number">1.2</span> How Big Is Global Finance?</h2>
 <p>Scale matters for intuition, so let us establish benchmarks. The most common measure of <em>real-economy</em> integration is <strong>trade openness</strong>: exports plus imports as a share of GDP.</p>
 <div id="cell-ex0104" class="cell" data-execution_count="5">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>d, prov <span class="op">=</span> series(<span class="st">"trade_openness"</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>ill <span class="op">=</span> prov.tier <span class="op">==</span> <span class="st">"illustrative"</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">10.6</span>, <span class="fl">4.2</span>))</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>ax.plot(d[<span class="st">"year"</span>], d[<span class="st">"value"</span>], color<span class="op">=</span>TEAL, lw<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Exports + imports, </span><span class="sc">% o</span><span class="st">f world GDP"</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> ill:</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    pk <span class="op">=</span> d.loc[d[<span class="st">"value"</span>].idxmax()]<span class="op">;</span> last <span class="op">=</span> d.iloc[<span class="op">-</span><span class="dv">1</span>]</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    ax.annotate(<span class="ss">f"Peak </span><span class="sc">{</span>pk<span class="sc">.</span>value<span class="sc">:.0f}</span><span class="ss">% (</span><span class="sc">{</span>pk<span class="sc">.</span>year<span class="sc">:.0f}</span><span class="ss">)"</span>, (pk.year, pk.value), xytext<span class="op">=</span>(<span class="op">-</span><span class="dv">10</span>, <span class="dv">10</span>),</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>                textcoords<span class="op">=</span><span class="st">"offset points"</span>, ha<span class="op">=</span><span class="st">"right"</span>, color<span class="op">=</span>RUST, fontweight<span class="op">=</span><span class="st">"bold"</span>)</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    ax.annotate(<span class="ss">f"</span><span class="sc">{</span>last<span class="sc">.</span>value<span class="sc">:.0f}</span><span class="ss">% (</span><span class="sc">{</span>last<span class="sc">.</span>year<span class="sc">:.0f}</span><span class="ss">)"</span>, (last.year, last.value), xytext<span class="op">=</span>(<span class="dv">6</span>, <span class="op">-</span><span class="dv">2</span>),</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>                textcoords<span class="op">=</span><span class="st">"offset points"</span>, color<span class="op">=</span>TEAL, fontweight<span class="op">=</span><span class="st">"bold"</span>)</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>finish(fig, <span class="st">"ex0104"</span>, <span class="st">"World trade openness"</span>, <span class="st">"Exports plus imports of goods and services as a share of world GDP"</span>,</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>       source<span class="op">=</span><span class="ss">f"Source: </span><span class="sc">{</span>prov<span class="sc">}</span><span class="ss">. Indicator NE.TRD.GNFS.ZS, world aggregate."</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>              <span class="op">+</span> (<span class="ss">f" </span><span class="sc">{</span>HELD_BACK[<span class="st">'NE.TRD.GNFS.ZS'</span>][<span class="dv">0</span>]<span class="sc">}</span><span class="ss"> value provisional; held back."</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>                 <span class="cf">if</span> <span class="st">"NE.TRD.GNFS.ZS"</span> <span class="kw">in</span> HELD_BACK <span class="cf">else</span> <span class="st">""</span>), illustrative<span class="op">=</span>ill)</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0104" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -441,28 +361,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>The <em>financial</em> economy is a different order of magnitude — and the comparison is easier to feel on one axis than to read in a sentence.</p>
 <div id="cell-ex0105" class="cell" data-execution_count="6">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>rows <span class="op">=</span> [(<span class="st">"World merchandise exports, per year"</span>, <span class="bu">float</span>(val(<span class="st">"wto_merch_exports"</span>)), SLATE),</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>        (<span class="st">"U.S. GDP, per year"</span>, <span class="bu">float</span>(val(<span class="st">"us_gdp"</span>)), SLATE),</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        (<span class="st">"World GDP, per year"</span>, <span class="bu">float</span>(val(<span class="st">"world_gdp"</span>)), SLATE),</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>        (<span class="st">"FX turnover, per day"</span>, <span class="bu">float</span>(val(<span class="st">"fx_turnover"</span>)), RUST),</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>        (<span class="st">"FX turnover, per year (252 days)"</span>, <span class="bu">float</span>(val(<span class="st">"fx_annual"</span>)), NAVY)]</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">10.6</span>, <span class="fl">3.9</span>))</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, (lab, v, c) <span class="kw">in</span> <span class="bu">enumerate</span>(rows[::<span class="op">-</span><span class="dv">1</span>]):</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    ax.barh(i, v, color<span class="op">=</span>c, height<span class="op">=</span><span class="fl">0.62</span>)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    ax.text(v <span class="op">*</span> <span class="fl">1.12</span>, i, <span class="ss">f"$</span><span class="sc">{</span>v<span class="sc">:,.0f}</span><span class="ss">tn"</span> <span class="cf">if</span> v <span class="op">&gt;=</span> <span class="dv">20</span> <span class="cf">else</span> <span class="ss">f"$</span><span class="sc">{</span>v<span class="sc">:,.1f}</span><span class="ss">tn"</span>, va<span class="op">=</span><span class="st">"center"</span>, color<span class="op">=</span>c, fontweight<span class="op">=</span><span class="st">"bold"</span>, fontsize<span class="op">=</span><span class="fl">9.5</span>)</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>ax.set_yticks(<span class="bu">range</span>(<span class="bu">len</span>(rows)), [r[<span class="dv">0</span>] <span class="cf">for</span> r <span class="kw">in</span> rows[::<span class="op">-</span><span class="dv">1</span>]])</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>ax.set_xscale(<span class="st">"log"</span>)<span class="op">;</span> ax.set_xlim(<span class="dv">3</span>, <span class="dv">12000</span>)<span class="op">;</span> ax.grid(axis<span class="op">=</span><span class="st">"y"</span>, visible<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.ticker <span class="im">import</span> FixedLocator, FixedFormatter</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>ax.xaxis.set_major_locator(FixedLocator([<span class="dv">10</span>, <span class="dv">100</span>, <span class="dv">1000</span>, <span class="dv">10000</span>]))</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>ax.xaxis.set_major_formatter(FixedFormatter([<span class="st">"$10tn"</span>, <span class="st">"$100tn"</span>, <span class="st">"$1,000tn"</span>, <span class="st">"$10,000tn"</span>]))</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>ax.xaxis.set_minor_formatter(FixedFormatter([]))</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"U.S. dollars, trillions (logarithmic scale)"</span>)</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>finish(fig, <span class="st">"ex0105"</span>, <span class="st">"Orders of magnitude"</span>, <span class="st">"The financial economy against the real economy it prices"</span>,</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>       source<span class="op">=</span><span class="st">"Sources: BIS Triennial Survey, April 2025; WTO, 2025; World Bank WDI, 2024."</span>)</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0105" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -474,23 +372,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Exhibit 1.5 plots the headline series from the BIS Triennial Survey, the only global census of FX activity.</p>
 <div id="cell-ex0106" class="cell" data-execution_count="7">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> FX_TURNOVER_ROUNDS</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">10.6</span>, <span class="fl">4.2</span>))</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>cols <span class="op">=</span> [NAVY <span class="cf">if</span> y <span class="op">==</span> s.index[<span class="op">-</span><span class="dv">1</span>] <span class="cf">else</span> <span class="st">"#9aa7b3"</span> <span class="cf">for</span> y <span class="kw">in</span> s.index]</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>ax.bar([<span class="bu">str</span>(y) <span class="cf">for</span> y <span class="kw">in</span> s.index], s.values, color<span class="op">=</span>cols, width<span class="op">=</span><span class="fl">0.62</span>)</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, v <span class="kw">in</span> <span class="bu">enumerate</span>(s.values):</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    ax.text(i, v <span class="op">+</span> <span class="fl">0.15</span>, <span class="ss">f"</span><span class="sc">{</span>v<span class="sc">:.1f}</span><span class="ss">"</span>, ha<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="fl">9.5</span>, color<span class="op">=</span>NAVY <span class="cf">if</span> i <span class="op">==</span> <span class="bu">len</span>(s) <span class="op">-</span> <span class="dv">1</span> <span class="cf">else</span> MUTED,</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>            fontweight<span class="op">=</span><span class="st">"bold"</span> <span class="cf">if</span> i <span class="op">==</span> <span class="bu">len</span>(s) <span class="op">-</span> <span class="dv">1</span> <span class="cf">else</span> <span class="st">"normal"</span>)</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"USD trillion per day"</span>)<span class="op">;</span> ax.grid(axis<span class="op">=</span><span class="st">"x"</span>, visible<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>ax.text(<span class="bu">len</span>(s) <span class="op">-</span> <span class="dv">1</span>, s.values[<span class="op">-</span><span class="dv">1</span>] <span class="op">+</span> <span class="fl">0.95</span>, <span class="ss">f"+</span><span class="sc">{</span>val(<span class="st">'fx_turnover_chg'</span>)<span class="sc">}</span><span class="ss">% on 2022"</span>, ha<span class="op">=</span><span class="st">"center"</span>, color<span class="op">=</span>RUST,</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>        fontsize<span class="op">=</span><span class="fl">9.5</span>, fontweight<span class="op">=</span><span class="st">"bold"</span>)</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="dv">0</span>, s.<span class="bu">max</span>() <span class="op">*</span> <span class="fl">1.22</span>)</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>finish(fig, <span class="st">"ex0106"</span>, <span class="st">"Global foreign exchange turnover"</span>, <span class="st">"Daily average in April of each survey year, net-net basis"</span>,</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>       source<span class="op">=</span><span class="st">"Source: BIS Triennial Central Bank Survey; each round as published, latest April 2025."</span>)</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0106" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -503,20 +384,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Two features deserve comment. First, the series grows faster than world trade or world GDP over the same period — financial activity has outpaced the real transactions it nominally serves. Second, it is not monotonic: turnover <em>fell</em> between 2013 and 2016, a reminder that the post-crisis regulatory tightening and the retreat of bank balance-sheet capacity had measurable effects on market size. Growth in this market is not a law of nature.</p>
 <p>Put the two economies side by side and the asymmetry is stark.</p>
 <div id="cell-ex0107" class="cell" data-execution_count="8">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>fx, tr <span class="op">=</span> <span class="bu">float</span>(val(<span class="st">"fx_turnover"</span>)), <span class="bu">float</span>(val(<span class="st">"wto_merch_exports"</span>))</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">10.6</span>, <span class="fl">2.9</span>))</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>ax.barh([<span class="dv">1</span>, <span class="dv">0</span>], [fx, tr], color<span class="op">=</span>[NAVY, RUST], height<span class="op">=</span><span class="fl">0.55</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>ax.set_yticks([<span class="dv">1</span>, <span class="dv">0</span>], [<span class="st">"Global FX turnover,</span><span class="ch">\n</span><span class="st">one trading day"</span>, <span class="st">"World merchandise exports,</span><span class="ch">\n</span><span class="st">one full year"</span>])</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> y, v <span class="kw">in</span> [(<span class="dv">1</span>, fx), (<span class="dv">0</span>, tr)]:</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    ax.text(v <span class="op">+</span> <span class="fl">0.3</span>, y, <span class="ss">f"$</span><span class="sc">{</span>v<span class="sc">:.1f}</span><span class="ss">tn"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontweight<span class="op">=</span><span class="st">"bold"</span>)</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>ax.set_xlim(<span class="dv">0</span>, tr <span class="op">*</span> <span class="fl">1.18</span>)<span class="op">;</span> ax.set_xlabel(<span class="st">"USD trillion"</span>)<span class="op">;</span> ax.grid(axis<span class="op">=</span><span class="st">"y"</span>, visible<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>finish(fig, <span class="st">"ex0107"</span>, <span class="st">"One day of currency trading, one year of goods trade"</span>,</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>       <span class="ss">f"The FX market clears a year of world merchandise trade in about </span><span class="sc">{</span>val(<span class="st">'days_to_clear_trade'</span>)<span class="sc">}</span><span class="ss"> trading days"</span>,</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>       source<span class="op">=</span><span class="st">"Sources: BIS Triennial Central Bank Survey, April 2025; WTO Global Trade Outlook and Statistics, March 2026."</span>)</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0107" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -529,22 +396,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The ratio is roughly 2.7 trading days of FX turnover per year of world goods trade. If currency trading existed only to settle trade invoices, the market would be about one-hundredth of its observed size. It is not: the overwhelming majority of turnover is dealer-to-dealer position management, hedging of financial rather than commercial exposures, and speculation. We decompose it properly in Chapter 5.</p>
 <p>The same survey measures a second market of comparable size.</p>
 <div id="cell-ex0108" class="cell" data-execution_count="9">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>f, r <span class="op">=</span> FX_TURNOVER_ROUNDS.loc[<span class="dv">2016</span>:], IRD_TURNOVER_ROUNDS</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="bu">len</span>(r))<span class="op">;</span> w <span class="op">=</span> <span class="fl">0.36</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">10.6</span>, <span class="fl">4.0</span>))</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>ax.bar(x <span class="op">-</span> w <span class="op">/</span> <span class="dv">2</span>, f.values, w, color<span class="op">=</span>NAVY, label<span class="op">=</span><span class="st">"Foreign exchange"</span>)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>ax.bar(x <span class="op">+</span> w <span class="op">/</span> <span class="dv">2</span>, r.values, w, color<span class="op">=</span>RUST, label<span class="op">=</span><span class="st">"OTC interest rate derivatives"</span>)</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(r)):</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    ax.text(i <span class="op">-</span> w <span class="op">/</span> <span class="dv">2</span>, f.values[i] <span class="op">+</span> <span class="fl">0.15</span>, <span class="ss">f"</span><span class="sc">{</span>f<span class="sc">.</span>values[i]<span class="sc">:.1f}</span><span class="ss">"</span>, ha<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">9</span>, color<span class="op">=</span>NAVY)</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    ax.text(i <span class="op">+</span> w <span class="op">/</span> <span class="dv">2</span>, r.values[i] <span class="op">+</span> <span class="fl">0.15</span>, <span class="ss">f"</span><span class="sc">{</span>r<span class="sc">.</span>values[i]<span class="sc">:.1f}</span><span class="ss">"</span>, ha<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">9</span>, color<span class="op">=</span>RUST)</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>ax.set_xticks(x, [<span class="bu">str</span>(y) <span class="cf">for</span> y <span class="kw">in</span> r.index])<span class="op">;</span> ax.set_ylabel(<span class="st">"USD trillion per day"</span>)</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="dv">0</span>, f.<span class="bu">max</span>() <span class="op">*</span> <span class="fl">1.18</span>)<span class="op">;</span> ax.grid(axis<span class="op">=</span><span class="st">"x"</span>, visible<span class="op">=</span><span class="va">False</span>)<span class="op">;</span> ax.legend(loc<span class="op">=</span><span class="st">"upper left"</span>)</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>finish(fig, <span class="st">"ex0108"</span>, <span class="st">"Two markets, one triennial census"</span>, <span class="st">"Average daily OTC turnover in April of each survey year"</span>,</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>       source<span class="op">=</span><span class="st">"Source: BIS Triennial Central Bank Survey; interest rate derivatives for 2019 and 2022 as compared in the 2025 release."</span>)</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0108" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -568,10 +419,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div id="cell-ex0109" class="cell" data-execution_count="10">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>ex.ex0109()<span class="op">;</span> plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0109" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -586,10 +433,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="1.3" class="anchored" data-anchor-id="sec-participants"><span class="header-section-number">1.3</span> Who Is in This Market?</h2>
 <p>Six groups transact, and each is pursuing something different. Knowing whose objective function sits on the other side of your trade is what separates a finance professional from a price-taker — and the distribution in Exhibit 1.9 is the first surprise of the course.</p>
 <div id="cell-ex0110" class="cell" data-execution_count="11">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>ex.ex0110()<span class="op">;</span> plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0110" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -673,10 +516,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="1.4" class="anchored" data-anchor-id="sec-exposure"><span class="header-section-number">1.4</span> Three Kinds of Currency Exposure</h2>
 <p>The managerial core of this book is Part IV, and it rests on a taxonomy students routinely conflate. Exhibit 1.10 states it compactly; read it before the paragraph that follows, not after.</p>
 <div id="cell-ex0111" class="cell" data-execution_count="12">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>ex.ex0111()<span class="op">;</span> plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0111" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -689,10 +528,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Three examples fix the categories. A U.S. firm has invoiced a German customer €4 million payable in 90 days: the euro amount is certain, the dollar amount is not, and a forward contract hedges it almost exactly — <strong>transaction exposure</strong>. A U.S. machine-tool maker selling only domestically against a Japanese rival loses pricing power when the yen depreciates, though every invoice it writes is in dollars — <strong>economic exposure</strong>, larger, longer and unhedgeable with any single contract. A parent restating a Mexican subsidiary’s peso books into dollars reports a different consolidated equity when the peso moves, with no cash crossing any border — <strong>translation exposure</strong>, a reporting phenomenon with real consequences through covenants, compensation and investor perception.</p>
 <p>Classification is not an academic exercise; it determines which instrument is even applicable. Exhibit 1.11 is the diagnostic, and it is worth committing to memory.</p>
 <div id="cell-ex0112" class="cell" data-execution_count="13">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>ex.ex0112()<span class="op">;</span> plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0112" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -740,10 +575,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="1.5" class="anchored" data-anchor-id="sec-globalization"><span class="header-section-number">1.5</span> Has Globalization Stalled?</h2>
 <p>Before engaging the question, place it in time. The present moment is the fifth distinct regime in eighty years, and every one of its predecessors felt permanent from the inside.</p>
 <div id="cell-ex0113" class="cell" data-execution_count="14">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>ex.ex0113()<span class="op">;</span> plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0113" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -756,22 +587,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>A serious senior-level course must engage the claim, now widespread in the business press, that globalization has peaked and is reversing. The evidence does not support a simple answer, and the discipline of separating the three distinct measures is itself the lesson.</p>
 <p><strong>Trade.</strong> World trade openness rose steeply for four decades and then stopped rising around 2008. It has not collapsed — the level remains near its historic high — but the <em>trend</em> broke. The phenomenon has acquired the label <strong>slowbalization</strong>. Contributing factors include the maturation of China’s integration, the shortening of supply chains in electronics, the post-2016 tariff cycle, and a composition shift from goods toward services, which the headline goods-trade series understates.</p>
 <div id="cell-ex0114" class="cell" data-execution_count="15">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>d, prov <span class="op">=</span> series(<span class="st">"fdi_inflows_gdp"</span>)</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>ill <span class="op">=</span> prov.tier <span class="op">==</span> <span class="st">"illustrative"</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">10.6</span>, <span class="fl">4.0</span>))</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>ax.plot(d[<span class="st">"year"</span>], d[<span class="st">"value"</span>], color<span class="op">=</span>PLUM, lw<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>ax.axhline(<span class="dv">0</span>, color<span class="op">=</span><span class="st">"#9aa7b3"</span>, lw<span class="op">=</span><span class="fl">0.8</span>)</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Net FDI inflows, </span><span class="sc">% o</span><span class="st">f world GDP"</span>)</span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> ill:</span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    pk <span class="op">=</span> d.loc[d[<span class="st">"value"</span>].idxmax()]</span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    ax.annotate(<span class="ss">f"Peak </span><span class="sc">{</span>pk<span class="sc">.</span>value<span class="sc">:.1f}</span><span class="ss">% (</span><span class="sc">{</span>pk<span class="sc">.</span>year<span class="sc">:.0f}</span><span class="ss">)"</span>, (pk.year, pk.value), xytext<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">0</span>),</span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>                textcoords<span class="op">=</span><span class="st">"offset points"</span>, color<span class="op">=</span>PLUM, fontweight<span class="op">=</span><span class="st">"bold"</span>, va<span class="op">=</span><span class="st">"center"</span>)</span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>finish(fig, <span class="st">"ex0114"</span>, <span class="st">"Global foreign direct investment"</span>, <span class="st">"Net inflows as a share of world GDP, annual"</span>,</span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>       source<span class="op">=</span><span class="ss">f"Source: </span><span class="sc">{</span>prov<span class="sc">}</span><span class="ss">. Indicator BX.KLT.DINV.WD.GD.ZS, world aggregate."</span>, illustrative<span class="op">=</span>ill)</span>
-<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0114" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -856,25 +671,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Two exhibits frame everything in the dossier below. The first is the fact that makes the dollar story newsworthy at all; the second is the number every item in the dossier is arguing about.</p>
 <div id="cell-ex0115" class="cell" data-execution_count="17">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>bars <span class="op">=</span> [(<span class="st">"One side of</span><span class="ch">\n</span><span class="st">FX trades"</span>, <span class="bu">float</span>(val(<span class="st">"usd_fx_share"</span>))),</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>        (<span class="st">"Foreign-currency</span><span class="ch">\n</span><span class="st">debt issuance"</span>, <span class="bu">float</span>(val(<span class="st">"usd_debt_share"</span>))),</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>        (<span class="st">"Cross-border</span><span class="ch">\n</span><span class="st">loans"</span>, <span class="bu">float</span>(val(<span class="st">"usd_loan_share"</span>))),</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>        (<span class="st">"Allocated FX</span><span class="ch">\n</span><span class="st">reserves"</span>, <span class="bu">float</span>(val(<span class="st">"cofer_usd"</span>)))]</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> <span class="bu">float</span>(val(<span class="st">"usd_gdp_share"</span>))</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="fl">10.6</span>, <span class="fl">4.2</span>))</span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>ax.bar([b[<span class="dv">0</span>] <span class="cf">for</span> b <span class="kw">in</span> bars], [b[<span class="dv">1</span>] <span class="cf">for</span> b <span class="kw">in</span> bars], color<span class="op">=</span>NAVY, width<span class="op">=</span><span class="fl">0.58</span>)</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, (_, v) <span class="kw">in</span> <span class="bu">enumerate</span>(bars):</span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    ax.text(i, v <span class="op">+</span> <span class="fl">1.5</span>, <span class="ss">f"</span><span class="sc">{</span>v<span class="sc">:.0f}</span><span class="ss">%"</span>, ha<span class="op">=</span><span class="st">"center"</span>, fontweight<span class="op">=</span><span class="st">"bold"</span>, color<span class="op">=</span>NAVY)</span>
-<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>ax.axhline(g, color<span class="op">=</span>RUST, ls<span class="op">=</span><span class="st">"--"</span>, lw<span class="op">=</span><span class="fl">1.4</span>, label<span class="op">=</span><span class="ss">f"U.S. share of world GDP: </span><span class="sc">{</span>g<span class="sc">:.0f}</span><span class="ss">%"</span>)</span>
-<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>ax.legend(loc<span class="op">=</span><span class="st">"upper right"</span>, labelcolor<span class="op">=</span>RUST)</span>
-<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="dv">0</span>, <span class="dv">105</span>)<span class="op">;</span> ax.set_ylabel(<span class="st">"Dollar share, %"</span>)<span class="op">;</span> ax.grid(axis<span class="op">=</span><span class="st">"x"</span>, visible<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>finish(fig, <span class="st">"ex0115"</span>, <span class="st">"The dollar's role against the U.S. economy's size"</span>,</span>
-<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>       <span class="st">"FX turnover sums to 200 percent across currencies because every trade has two sides"</span>,</span>
-<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>       source<span class="op">=</span><span class="st">"Sources: BIS Triennial 2025; Federal Reserve, International Role of the U.S. Dollar (2025); IMF COFER 2026 Q1; World Bank WDI."</span>)</span>
-<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0115" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -885,26 +681,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div id="cell-ex0116" class="cell" data-execution_count="18">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>sh <span class="op">=</span> <span class="bu">dict</span>(COFER_2026Q1)<span class="op">;</span> sh[<span class="st">"All other"</span>] <span class="op">=</span> <span class="bu">round</span>(<span class="dv">100</span> <span class="op">-</span> <span class="bu">sum</span>(sh.values()), <span class="dv">2</span>)</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>cols <span class="op">=</span> [NAVY, TEAL, AMBER, RUST, <span class="st">"#c9d3dc"</span>]</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="fl">10.6</span>, <span class="fl">4.0</span>))</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>a1 <span class="op">=</span> fig.add_axes([<span class="fl">0.0</span>, <span class="fl">0.05</span>, <span class="fl">0.36</span>, <span class="fl">0.9</span>])<span class="op">;</span> a2 <span class="op">=</span> fig.add_axes([<span class="fl">0.47</span>, <span class="fl">0.12</span>, <span class="fl">0.5</span>, <span class="fl">0.78</span>])</span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>a1.pie(<span class="bu">list</span>(sh.values()), colors<span class="op">=</span>cols, startangle<span class="op">=</span><span class="dv">90</span>, counterclock<span class="op">=</span><span class="va">False</span>,</span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>       wedgeprops<span class="op">=</span><span class="bu">dict</span>(width<span class="op">=</span><span class="fl">0.36</span>, edgecolor<span class="op">=</span><span class="st">"white"</span>, linewidth<span class="op">=</span><span class="dv">2</span>))</span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>a1.text(<span class="dv">0</span>, <span class="fl">0.05</span>, <span class="ss">f"</span><span class="sc">{</span>sh[<span class="st">'USD'</span>]<span class="sc">:.2f}</span><span class="ss">%"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">19</span>, fontweight<span class="op">=</span><span class="st">"bold"</span>, color<span class="op">=</span>NAVY)</span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>a1.text(<span class="dv">0</span>, <span class="op">-</span><span class="fl">0.2</span>, <span class="st">"U.S. dollar, 2026 Q1"</span>, ha<span class="op">=</span><span class="st">"center"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="dv">9</span>, color<span class="op">=</span>MUTED)</span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>names <span class="op">=</span> <span class="bu">list</span>(sh)[::<span class="op">-</span><span class="dv">1</span>]</span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>a2.barh(names, [sh[n] <span class="cf">for</span> n <span class="kw">in</span> names], color<span class="op">=</span>cols[::<span class="op">-</span><span class="dv">1</span>], height<span class="op">=</span><span class="fl">0.6</span>)</span>
-<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, n <span class="kw">in</span> <span class="bu">enumerate</span>(names):</span>
-<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>    a2.text(sh[n] <span class="op">+</span> <span class="fl">0.8</span>, i, <span class="ss">f"</span><span class="sc">{</span>sh[n]<span class="sc">:.2f}</span><span class="ss">%"</span>, va<span class="op">=</span><span class="st">"center"</span>, fontsize<span class="op">=</span><span class="fl">9.5</span>, fontweight<span class="op">=</span><span class="st">"bold"</span>, color<span class="op">=</span><span class="st">"#3b4a57"</span>)</span>
-<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>a2.set_xlim(<span class="dv">0</span>, <span class="dv">70</span>)<span class="op">;</span> a2.set_xlabel(<span class="st">"Share of official FX reserves, %"</span>)<span class="op">;</span> a2.grid(axis<span class="op">=</span><span class="st">"y"</span>, visible<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>finish(fig, <span class="st">"ex0116"</span>, <span class="st">"Currency composition of official foreign exchange reserves"</span>,</span>
-<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>       <span class="st">"Since 2025, COFER shares cover all reported reserves: there is no 'unallocated' remainder"</span>,</span>
-<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>       source<span class="op">=</span><span class="st">"Source: IMF COFER data brief, 1 July 2026 (2026 Q1). 'All other' is the residual of the four currencies the brief reports."</span>)</span>
-<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0116" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -959,10 +735,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="sec-data" class="level2" data-number="1.6">
 <h2 data-number="1.6" class="anchored" data-anchor-id="sec-data"><span class="header-section-number">1.6</span> How This Book Handles Data</h2>
 <div id="cell-ex0120" class="cell" data-execution_count="19">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>ex.ex0120()<span class="op">;</span> plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0120" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -974,7 +746,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>This is a <em>living</em> textbook. Every statistic, table, and figure in it is generated by code that queries the original statistical agency at the moment the book is built. Nothing is transcribed by hand, which has three consequences you should understand as a reader.</p>
 <p><strong>Numbers in the text may differ from those your classmate sees.</strong> If your instructor built the course PDF in September and you load the web edition in November, an FX rate or a turnover figure may have changed. Each chapter therefore carries a data-vintage stamp at the top, and each exhibit carries a source note with its retrieval date. <em>Always quote the vintage when you cite a figure in your written work.</em> This build, for example, is stamped 11 November 2026.</p>
-<p><strong>The code is the citation.</strong> In the web edition, every figure has a “Show the code that produced this” control that reveals the exact query used. There is no step between the agency’s database and the exhibit in which a number could be mistyped — and if you doubt a figure, you can reproduce it.</p>
+<p><strong>The source line is the citation.</strong> Every figure names the agency, the series and the date it was retrieved. No number is typed by hand: each one goes straight from the agency’s database into the exhibit, so there is no step at which it could be mistyped — and if you doubt a figure, the source line tells you exactly where to check it.</p>
 <p><strong>Primary sources, named.</strong> Five institutions supply almost everything in this book, and you should know what each is authoritative for:</p>
 <table class="caption-top table">
 <colgroup>
@@ -1036,10 +808,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Every chapter of this book carries a section in this position, examining how artificial intelligence is changing one or more of the elements the chapter has just developed. The sections are deliberately unenthusiastic. AI is doing real and measurable work in international finance, and it is also the subject of more confident nonsense than any topic in the field since the credit derivatives of 2006. The discipline this book asks of you is the same one <a href="#sec-data" class="quarto-xref"><span>Section 1.6</span></a> asks about data: <em>name the mechanism, then ask what evidence would distinguish it from the claim’s opposite.</em></p>
 <p>Chapter 1 has four elements AI touches directly. Take them in order of how well established the effect is.</p>
 <div id="cell-ex0121" class="cell" data-execution_count="20">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>ex.ex0121()<span class="op">;</span> plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0121" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -1087,10 +855,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Note carefully what those numbers are and are not. Improved <em>cash-flow</em> forecasting is a genuine and large gain: a treasurer who knows next quarter’s euro receipts to within two percent rather than ten hedges a smaller notional, rolls fewer contracts, and pays less in spread and in over-hedging. That is a cost saving achieved <strong>without any claim to forecast the exchange rate.</strong> Keep those two forecasts separate in your mind; the Trap box below is about what happens when people do not.</p>
 <p>The direction of travel is from decision support to execution. Treasury management platforms now embed forecasting and risk tools directly in corporate workflows, and a frontier set of firms is granting software agents authority to transact — routing payments on cost and speed criteria and managing currency exposure and cash pooling inside defined corporate policy. Exhibit 1.18 lays out the ladder.</p>
 <div id="cell-ex0122" class="cell" data-execution_count="21">
-<details class="code-fold">
-<summary>Show the code that produced this</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>ex.ex0122()<span class="op">;</span> plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="ex0122" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
