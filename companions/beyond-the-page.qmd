@@ -38,7 +38,7 @@ Three tiers, by how much time you actually have.
 **One sitting (an evening):**
 
 - Michael Lewis, *Boomerang: Travels in the New Third World* (2011). Iceland, Greece, Ireland, and Germany as four different ways for a country to go wrong in foreign currency. Funny, fast, and occasionally unfair to its subjects — which is worth noticing as you read. Pairs with Friction 2 and with Chapter 20.
-- Barry Eichengreen, *Exorbitant Privilege* (2011), chapters 1 and 7. The short, readable authority on *why* the dollar occupies the position Exhibit 1.14 shows, and on what would actually have to change for that to end. Written before the current round of de-dollarization headlines, which makes it a better test of those headlines, not a worse one.
+- Barry Eichengreen, *Exorbitant Privilege* (2011), chapters 1 and 7. The short, readable authority on *why* the dollar occupies the position Exhibit D1.1 shows, and on what would actually have to change for that to end. Written before the current round of de-dollarization headlines, which makes it a better test of those headlines, not a worse one.
 
 **One weekend:**
 
@@ -65,14 +65,14 @@ Short-form financial media is where most students will actually encounter this s
 | *Money Stuff* (Matt Levine, Bloomberg) | Daily newsletter, free | Derivatives and market structure explained with unusual clarity about what is actually a trade versus what is accounting. |
 | *The Indicator* (NPR Planet Money) | Podcast, 9 min | One economic statistic per episode, correctly caveated. Good discipline for @sec-data's habits. |
 | *FT Alphaville* | Blog | Skeptical, numerate, and willing to publish the chart that undermines the consensus. |
-| BIS *Quarterly Review*; IMF *Blog*; NY Fed *Liberty Street Economics* | Research notes | Primary. The Liberty Street reserve-composition decomposition used in Chapter 1's news dossier is a model of what good short-form analysis looks like. |
+| BIS *Quarterly Review*; IMF *Blog*; NY Fed *Liberty Street Economics* | Research notes | Primary. The Liberty Street reserve-composition decomposition used in the [Chapter 1 dossier](dossiers.qmd#dossier-ch01) is a model of what good short-form analysis looks like. |
 | Patrick Boyle (YouTube) | Video, 10–20 min | A former derivatives trader, now an academic, on carry trades and currency crises. Dry, numerate, and he shows his sources. |
 
 **Trap · The algorithm does not know what a basis point is**
 
 > You will see reels and short videos asserting that the dollar is "collapsing," that the BRICS are "launching a currency," or that de-dollarization is imminent. Some of these are made by people who believe it. Many are made by people selling gold, crypto, a newsletter, or a course.
 >
-> Here is the discipline. Every such claim reduces to a number that exists in a public database. "The dollar is collapsing" is a claim about either the broad dollar index (Exhibit 1.2), the dollar's share of allocated reserves (Exhibit 1.15), its share of FX turnover, or its share of international debt issuance (Exhibit 1.14) — and those four things have been moving in *different directions*, which is precisely why a confident one-sentence claim is almost always sloppy. As Chapter 1's news dossier showed, even careful outlets reported four different numbers for the same reserve share in the same year.
+> Here is the discipline. Every such claim reduces to a number that exists in a public database. "The dollar is collapsing" is a claim about either the broad dollar index (Exhibit 1.2), the dollar's share of allocated reserves (Exhibit D1.2), its share of FX turnover, or its share of international debt issuance (Exhibit D1.1) — and those four things have been moving in *different directions*, which is precisely why a confident one-sentence claim is almost always sloppy. As the [Chapter 1 dossier](dossiers.qmd#dossier-ch01) showed, even careful outlets reported four different numbers for the same reserve share in the same year.
 >
 > Before you repeat a claim from a feed, you should be able to name (1) the series, (2) the issuing agency, (3) the vintage, and (4) the direction of the *other three* measures. If you cannot, you do not yet have a view; you have an impression.
 

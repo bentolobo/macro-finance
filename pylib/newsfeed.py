@@ -253,7 +253,9 @@ def render_box(chapter: str, refresh_first: bool = False) -> str:
                 lines.append(f"  <span class='news-teaser'>{_md_escape(teaser)}</span>")
     src = (f"Headlines retrieved {when_txt} from" if when else
            "Headlines appear after the first online build. They are drawn from")
-    lines += ["", f"<span class='news-meta'>{src} the public feeds of "
+    lines += ["", "<span class='news-meta'><b>Updated every morning</b> (around 6–7 a.m. Eastern) and whenever "
+              "the book is rebuilt.</span>  ",
+              f"<span class='news-meta'>{src} the public feeds of "
               "the WSJ, The Economist, the FT, the Federal Reserve, the ECB and the BIS, filtered for "
               "this chapter's topics. Links open the publisher's site; some articles require a "
               "subscription. Your library's databases give full-text access.</span>", ":::"]

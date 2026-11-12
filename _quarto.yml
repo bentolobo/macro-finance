@@ -26,6 +26,7 @@ book:
         - chapters/01-introduction.qmd
     - part: "Companions"
       chapters:
+        - companions/dossiers.qmd
         - companions/ai.qmd
         - companions/beyond-the-page.qmd
 
