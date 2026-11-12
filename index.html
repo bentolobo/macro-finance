@@ -49,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8ded272303a8e57ffe0fe5f6cadaeb83.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5a69d7421ec103e6927869f8fc206c29.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -371,6 +371,7 @@ body.mf-ind-open #mf-ind-toggle{display:none}
         markets, refreshed every minute. Read them as probabilities; they are not CME FedWatch futures-implied odds.</p></section>
     <section><h3>Central banks</h3><div id="mf-ind-cb"><p class="err">Loading…</p></div></section>
     <section><h3>Inflation</h3><div id="mf-ind-Inflation"></div></section>
+    <section><h3>Growth</h3><div id="mf-ind-Growth"></div></section>
     <section><h3>Jobs</h3><div id="mf-ind-Jobs"></div>
       <p class="note" id="mf-ind-src"></p></section>
   </div>
@@ -499,7 +500,8 @@ body.mf-ind-open #mf-ind-toggle{display:none}
   function arrow(it) {
     const d = it.value - it.prev, eps = it.unit === "k" ? 0.5 : 0.05;
     if (Math.abs(d) < eps) return '<span class="flat">▬</span>';
-    return d > 0 ? '<span class="up">▲</span>' : '<span class="dn">▼</span>';
+    const good = (d > 0) === !!it.up_is_good;
+    return `<span class="${good ? "dn" : "up"}">${d > 0 ? "▲" : "▼"}</span>`;
   }
   async function macro() {
     const d = await getJSON();
@@ -516,7 +518,7 @@ body.mf-ind-open #mf-ind-toggle{display:none}
         <small>${esc(s.bank)} · ${fdate(s.date)}</small></div>`).join("");
     $("mf-ind-cb").innerHTML = pol + (st ? '<div style="margin-top:.35rem">' + st + "</div>" : "");
     const built = d.built ? new Date(d.built).toLocaleString("en-US", {timeZone: "America/New_York", month: "short", day: "numeric", hour: "numeric", minute: "2-digit"}) + " ET" : "—";
-    $("mf-ind-src").innerHTML = `Releases from BLS, BEA, the Fed and ECB via <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED</a>, and Eurostat; ` +
+    $("mf-ind-src").innerHTML = `Releases from BLS, BEA, the Atlanta Fed, the Fed and ECB via <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED</a>, and Eurostat; ` +
       `checked hourly on weekdays. Arrows compare with the prior release. Last change recorded ${built}.`;
   }
 
