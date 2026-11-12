@@ -734,8 +734,7 @@ body.mf-ind-open #mf-ind-toggle{display:none}
         <li class="cp ${lockedCP ? "locked" : ""}"><span class="st">${lockedCP ? "🔒" : "★"}</span><a href="#checkpoint">Chapter Checkpoint</a>
           <span class="tag">${best != null ? "best " + best + "%" : lockedCP ? "locked" : "open"}</span></li></ol>
       <div class="tools" style="margin-top:.6rem">Progress is saved in this browser only.
-        <button type="button" data-t="export">Copy progress code</button><button type="button" data-t="import">Paste progress code</button><button type="button" data-t="reset">Reset</button>
-        <a href="${PREVIEW ? location.pathname : location.pathname + "?preview"}" style="color:#b7791f;text-decoration:underline">${PREVIEW ? "Exit preview" : "Preview (instructor): open everything"}</a></div>`;
+        <button type="button" data-t="export">Copy progress code</button><button type="button" data-t="import">Paste progress code</button><button type="button" data-t="reset">Reset</button></div>`;
     map.querySelector('[data-t="export"]').onclick = async () => {
       const code = btoa(unescape(encodeURIComponent(JSON.stringify(S))));
       try { await navigator.clipboard.writeText(code); alertInline("Progress code copied. Paste it on your other device."); } catch (e) { prompt("Copy this progress code:", code); }
