@@ -9,3 +9,4 @@ _audit/
 **/*.quarto_ipynb
 # kept out of the public repository
 instructor/
+drafts/
