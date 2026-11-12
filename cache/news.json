@@ -1,5 +1,5 @@
 {
- "retrieved": "2026-11-12T19:44+00:00",
+ "retrieved": "2026-11-12T19:50+00:00",
  "feeds_ok": 11,
  "feeds_total": 11,
  "items": [
@@ -238,6 +238,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
+   "title": "Opinion | The Vote Against the Wealth Tax Was a Verdict on Inflation",
+   "link": "https://www.wsj.com/opinion/the-vote-against-the-wealth-tax-was-a-verdict-on-inflation-fe173cae?mod=rss_worldnews",
+   "date": "2026-11-12T19:45:00+00:00",
+   "summary": "Politicians who want to address debt by devaluing the currency will find it easier said than done.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  },
+  {
    "title": "Opinion | Iran’s Assassins Are on the Loose",
    "link": "https://www.wsj.com/opinion/iran-assassins-irgc-scott-bessent-john-bolton-1df4ef62?mod=rss_worldnews",
    "date": "2026-11-11T22:42:00+00:00",
@@ -278,15 +287,6 @@
    "link": "https://www.wsj.com/opinion/if-you-think-war-is-unpopular-wait-till-you-see-defeat-04608ab0?mod=rss_worldnews",
    "date": "2026-11-10T21:33:00+00:00",
    "summary": "Truman’s lesson for Iran: History often vindicates difficult decisions that exact a political price.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
-   "title": "Opinion | China’s Jensen Huang Caper",
-   "link": "https://www.wsj.com/opinion/chinas-jensen-huang-caper-025c3326?mod=rss_worldnews",
-   "date": "2026-11-10T21:13:00+00:00",
-   "summary": "Before going off half-cocked, we ought to ask how Beijing thinks it benefits.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
