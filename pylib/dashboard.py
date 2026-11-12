@@ -41,7 +41,7 @@ INDICATORS = {
         ("cpi", "CPI, all items (y/y)", "CPIAUCSL", "yoy", "%", 1),
         ("core_cpi", "Core CPI (y/y)", "CPILFESL", "yoy", "%", 1),
         ("core_pce", "Core PCE, Fed's target gauge (y/y)", "PCEPILFE", "yoy", "%", 1),
-        ("ea_hicp", "Euro area HICP (y/y)", "ECB:ICP/M.U2.N.000000.4.ANR", "level", "%", 1),
+        ("ea_hicp", "Euro area HICP (y/y)", "ESTAT:prc_hicp_minr", "level", "%", 1),
     ],
     "Jobs": [
         ("unrate", "Unemployment rate", "UNRATE", "level", "%", 1),
@@ -59,7 +59,7 @@ POLICY = [
 # Latest policy statements (official feeds; headline + link only).
 STATEMENT_FEEDS = [
     ("Fed", "https://www.federalreserve.gov/feeds/press_monetary.xml",
-     r"FOMC statement|federal funds|monetary policy|minutes"),
+     r"FOMC statement|minutes of the Federal Open Market Committee"),
     ("ECB", "https://www.ecb.europa.eu/rss/press.html", r"monetary policy decision"),
     ("BoJ", "https://www.boj.or.jp/en/rss/whatsnew.xml", r"statement on monetary policy|monetary policy meeting"),
 ]
@@ -106,7 +106,23 @@ def _ecb(key: str) -> tuple[pd.Series, str | None]:
     return s, None
 
 
+def _eurostat(dataset: str) -> tuple[pd.Series, str | None]:
+    """Euro area HICP, annual rate. ECOICOP ver. 2 (from 2026): the all-items code is
+    coicop18=TOTAL; the old CP00 series in prc_hicp_manr stops at Dec 2025."""
+    r = requests.get(f"https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/{dataset}",
+                     params={"geo": "EA", "coicop18": "TOTAL", "unit": "RCH_A", "lastTimePeriod": 24},
+                     headers=UA, timeout=TIMEOUT)
+    r.raise_for_status()
+    j = r.json()
+    times = sorted(j["dimension"]["time"]["category"]["index"].items(), key=lambda kv: kv[1])
+    vals = j.get("value", {})
+    s = pd.Series({pd.Timestamp(t + "-01"): float(vals[str(i)]) for t, i in times if str(i) in vals})
+    return s.sort_index(), (j.get("updated") or "")[:10] or None
+
+
 def _series(sid: str):
+    if sid.startswith("ESTAT:"):
+        return _eurostat(sid[6:])
     return _ecb(sid[4:]) if sid.startswith("ECB:") else _fred(sid)
 
 
@@ -140,10 +156,12 @@ def _indicator(key, label, sid, how, unit, dp):
         "prev": round(_scale(float(t.iloc[-2]), unit, sid), dp + 1),
         "period": _period(last, sid), "prev_period": _period(prev, sid),
         "updated": updated,
-        "source": "ECB Data Portal" if sid.startswith("ECB:") else "FRED",
-        "series": sid.replace("ECB:", ""),
-        "url": ("https://data.ecb.europa.eu/data/datasets/" + sid[4:].split("/")[0]) if sid.startswith("ECB:")
-               else f"https://fred.stlouisfed.org/series/{sid}",
+        "source": ("Eurostat" if sid.startswith("ESTAT:") else
+                   "ECB Data Portal" if sid.startswith("ECB:") else "FRED"),
+        "series": sid.split(":", 1)[-1],
+        "url": (f"https://ec.europa.eu/eurostat/databrowser/view/{sid[6:]}/default/table" if sid.startswith("ESTAT:") else
+                "https://data.ecb.europa.eu/data/datasets/" + sid[4:].split("/")[0] if sid.startswith("ECB:") else
+                f"https://fred.stlouisfed.org/series/{sid}"),
         "status": "live",
     }
 
