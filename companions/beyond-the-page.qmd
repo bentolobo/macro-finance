@@ -1,0 +1,88 @@
+# Beyond the Page {.unnumbered}
+
+*Watch it, read it, scroll it: a media companion to the chapters*
+
+Every chapter has a short media dossier here: one or two films, a tiered reading list, and a set of feeds worth following — plus, always, at least one item chosen because it is *wrong* in an instructive way. The purpose is not enrichment in the decorative sense. Three things happen when a technical idea is attached to a narrative. You remember it longer, because story is a better retrieval cue than a definition. You acquire the professional vocabulary in its native setting rather than from a glossary. And you encounter the idea *failing*, which is where most of the learning in finance actually lives: nobody becomes careful about currency mismatch by reading the definition of currency mismatch.
+
+A warning before the lists. Every item gets a *What it gets wrong* line, and that line is not a disclaimer — it is the assignment. A film that is 90 percent right and 10 percent wrong is a better teaching instrument than one that is entirely right, because finding the 10 percent is the exercise.
+
+## Chapter 1 · Globalization and the Multinational Firm {#btp-ch01}
+
+### Watch
+
+**Primary pick for this chapter — *The China Hustle* (2017, 82 min., dir. Jed Rothstein).**
+
+This is the single best film for Chapter 1, and almost nobody assigns it. It follows U.S. investors who bought Chinese companies listed on American exchanges through reverse mergers, and discovered — after sending people to physically stand outside the factories and count the trucks — that the reported revenues were in many cases fiction. Watch it as a documentary about **Friction 4**: investors knew less about the foreign firm than about a domestic one, the gap persisted even though the disclosures were formally comparable, and the auditors' working papers sat in a jurisdiction where the U.S. regulator could not subpoena them. That last detail is **Friction 2** and **Friction 3** arriving together — sovereignty and institutional heterogeneity — and it is the reason the story was possible at all. The film is also an unusually clean illustration of why a cross-listed share is not the same asset as a domestic one, which is Chapter 14's argument before you get there.
+
+> **Viewing guide.** Answer in writing as you watch.
+
+1. Name the specific informational asymmetry the short-sellers exploited. Was it an asymmetry about the *firms*, or about the *institutions* surrounding the firms?
+2. The film's investigators travelled to China to verify revenue. In an integrated capital market, why should that ever be necessary — and what does its necessity tell you about how integrated the market actually was?
+3. Who in the chain had an incentive to not look closely? List every party and state the incentive in one line each. This is a governance question, and you will meet it again in Chapter 14.
+4. The film implies the problem is specific to China. Is it? Construct the strongest argument that the same structure could arise in any jurisdiction with weak enforcement and a capital-hungry corporate sector.
+
+> *What it gets wrong.* The film is made by and about short-sellers, who are paid to be right about failure, and it is edited accordingly. It does not seriously engage the counter-case that the frauds were concentrated in a particular vintage of reverse-merger listings rather than representative of Chinese firms generally, and it leaves the viewer with an impression of scale that the data does not fully support. Ask yourself throughout: what would the denominator have to be for this to be the crisis the film says it is?
+
+**Second pick — *Inside Job* (2010, 109 min., dir. Charles Ferguson).** Narrated by Matt Damon, Academy Award for Best Documentary. Most students have heard of it as a film about American subprime mortgages; it is more usefully watched as a film about **cross-border transmission**. The Iceland sequence that opens it is the most compact illustration in any film of the currency-mismatch mechanism in proposition 10 of the [Top Ten](../front/top-ten.qmd): a banking system that had grown to many times national GDP, funded in foreign currency, lending domestically. When the funding stopped, the exchange rate and the banks failed together. That is Chapter 20 in nine minutes.
+
+*What it gets wrong:* the film is a prosecution, not an analysis. Its theory of the crisis is essentially a theory of individual bad actors, and it largely omits the global imbalances and dollar-funding mechanics — the very things Chapters 3 and 10 will argue were structural. Watch it, then read the Tooze below as the correction.
+
+**Third pick — *Rogue Trader* (1999, 101 min.), or the BBC documentary *25 Million Pounds* (1996).** Nick Leeson, Barings Bank, Singapore, and the Nikkei. The dramatic film is uneven; the documentary is better and is Leeson in his own words. Either works as a preview of Chapters 8 and 9 — exchange-traded futures, margin, the eighty-eight account — but its real Chapter 1 relevance is organizational: a 233-year-old British bank was destroyed by a position taken in a different currency, a different time zone, and a different legal system from the one that supervised it. All four frictions, one employee.
+
+**If you have ten minutes rather than ninety.** The Bank for International Settlements, the IMF and the New York Fed all publish short explainer videos; the IMF's *Back to Basics* series is the most reliable short-form introduction to the balance of payments and to exchange rate regimes, and it is free of the incentive problems discussed below.
+
+### Read
+
+Three tiers, by how much time you actually have.
+
+**One sitting (an evening):**
+
+- Michael Lewis, *Boomerang: Travels in the New Third World* (2011). Iceland, Greece, Ireland, and Germany as four different ways for a country to go wrong in foreign currency. Funny, fast, and occasionally unfair to its subjects — which is worth noticing as you read. Pairs with Friction 2 and with Chapter 20.
+- Barry Eichengreen, *Exorbitant Privilege* (2011), chapters 1 and 7. The short, readable authority on *why* the dollar occupies the position Exhibit 1.14 shows, and on what would actually have to change for that to end. Written before the current round of de-dollarization headlines, which makes it a better test of those headlines, not a worse one.
+
+**One weekend:**
+
+- Adam Tooze, *Crashed: How a Decade of Financial Crises Changed the World* (2018), especially Part II on the Federal Reserve's swap lines. The best available account of the dollar funding system, and the direct complement to Chapter 4.
+- Matthew Klein and Michael Pettis, *Trade Wars Are Class Wars* (2020). The argument that trade imbalances are produced by domestic distributional choices rather than by national cheating. You do not have to accept the thesis — several of the empirical steps are contested — but you should be able to state it, and it is the most intellectually serious challenge to the way Chapter 3 is usually taught.
+- Liaquat Ahamed, *Lords of Finance* (2009). Four central bankers and the gold standard between the wars. Pulitzer Prize, and the most enjoyable possible preparation for Chapter 2.
+
+**One semester, in the background:**
+
+- Barry Eichengreen, *Globalizing Capital: A History of the International Monetary System* (3rd ed., 2019). The standard scholarly history; read a chapter alongside each of Chapters 2, 4 and 20.
+- Sebastian Mallaby, *More Money Than God* (2010), chapter on 1992. Soros, the Bank of England, and the ERM. The clearest narrative anywhere of a speculative attack on a pegged currency, which is the impossible trinity being enforced by the market rather than chosen by a government.
+
+**Read against the grain.** Thomas Friedman's *The World Is Flat* (2005) and Peter Zeihan's *The End of the World Is Just the Beginning* (2022) make opposite and equally confident predictions about the trajectory in Exhibit 1.3. Both were written with conviction; at most one of them can be right, and the honest reading is that the data in @sec-globalization does not fully vindicate either. Read twenty pages of each and you will have a sharper sense of how much of this field's public commentary is forecasting dressed as description.
+
+### Scroll
+
+Short-form financial media is where most students will actually encounter this subject after the course ends, so it is worth being deliberate about which feeds you train your attention on.
+
+**Worth following:**
+
+| Feed | Format | Why |
+|---|---|---|
+| *Odd Lots* (Bloomberg; Weisenthal & Alloway) | Podcast, ~45 min | The best general-audience source on FX plumbing, the cross-currency basis and dollar funding. Several episodes are more current than any textbook can be. |
+| *Money Stuff* (Matt Levine, Bloomberg) | Daily newsletter, free | Derivatives and market structure explained with unusual clarity about what is actually a trade versus what is accounting. |
+| *The Indicator* (NPR Planet Money) | Podcast, 9 min | One economic statistic per episode, correctly caveated. Good discipline for @sec-data's habits. |
+| *FT Alphaville* | Blog | Skeptical, numerate, and willing to publish the chart that undermines the consensus. |
+| BIS *Quarterly Review*; IMF *Blog*; NY Fed *Liberty Street Economics* | Research notes | Primary. The Liberty Street reserve-composition decomposition used in Chapter 1's news dossier is a model of what good short-form analysis looks like. |
+| Patrick Boyle (YouTube) | Video, 10–20 min | A former derivatives trader, now an academic, on carry trades and currency crises. Dry, numerate, and he shows his sources. |
+
+**Trap · The algorithm does not know what a basis point is**
+
+> You will see reels and short videos asserting that the dollar is "collapsing," that the BRICS are "launching a currency," or that de-dollarization is imminent. Some of these are made by people who believe it. Many are made by people selling gold, crypto, a newsletter, or a course.
+>
+> Here is the discipline. Every such claim reduces to a number that exists in a public database. "The dollar is collapsing" is a claim about either the broad dollar index (Exhibit 1.2), the dollar's share of allocated reserves (Exhibit 1.15), its share of FX turnover, or its share of international debt issuance (Exhibit 1.14) — and those four things have been moving in *different directions*, which is precisely why a confident one-sentence claim is almost always sloppy. As Chapter 1's news dossier showed, even careful outlets reported four different numbers for the same reserve share in the same year.
+>
+> Before you repeat a claim from a feed, you should be able to name (1) the series, (2) the issuing agency, (3) the vintage, and (4) the direction of the *other three* measures. If you cannot, you do not yet have a view; you have an impression.
+
+### Assignment · Media audit (400 words)
+
+Find one short-form video, post or newsletter item making a quantitative claim about the international financial system — the dollar's role, a currency's "collapse," a trade deficit, a country's debt. Then:
+
+1. Identify the exact series the claim depends on, and retrieve it yourself from the issuing agency using the sources in @sec-data.
+2. State whether the claim is true, false, true-but-misleading, or unfalsifiable as worded. Most will be the third.
+3. If it is misleading, identify the specific move: wrong denominator, cherry-picked start date, level confused with change, gross confused with net, nominal confused with real, or stale vintage. Each of these appears somewhere in Chapter 1.
+4. Rewrite the claim in one sentence so that it is defensible.
+
+Submit the link, your retrieved series, and the four answers. This assignment recurs in every chapter with a different domain, and by the end of the course you will have built the habit the rest of the book depends on.

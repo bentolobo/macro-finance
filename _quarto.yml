@@ -24,6 +24,10 @@ book:
     - part: "Part I — The Global Financial Environment"
       chapters:
         - chapters/01-introduction.qmd
+    - part: "Companions"
+      chapters:
+        - companions/ai.qmd
+        - companions/beyond-the-page.qmd
 
 format:
   html:
