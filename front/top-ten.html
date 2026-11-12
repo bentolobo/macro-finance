@@ -48,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5a69d7421ec103e6927869f8fc206c29.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-447c5dbdbaadf3195d746f842414959a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -664,7 +664,8 @@ body.mf-ind-open #mf-ind-toggle{display:none}
         <li class="cp ${lockedCP ? "locked" : ""}"><span class="st">${lockedCP ? "🔒" : "★"}</span><a href="#checkpoint">Chapter Checkpoint</a>
           <span class="tag">${best != null ? "best " + best + "%" : lockedCP ? "locked" : "open"}</span></li></ol>
       <div class="tools" style="margin-top:.6rem">Progress is saved in this browser only.
-        <button type="button" data-t="export">Copy progress code</button><button type="button" data-t="import">Paste progress code</button><button type="button" data-t="reset">Reset</button></div>`;
+        <button type="button" data-t="export">Copy progress code</button><button type="button" data-t="import">Paste progress code</button><button type="button" data-t="reset">Reset</button>
+        <a href="${PREVIEW ? location.pathname : location.pathname + "?preview"}" style="color:#b7791f;text-decoration:underline">${PREVIEW ? "Exit preview" : "Preview (instructor): open everything"}</a></div>`;
     map.querySelector('[data-t="export"]').onclick = async () => {
       const code = btoa(unescape(encodeURIComponent(JSON.stringify(S))));
       try { await navigator.clipboard.writeText(code); alertInline("Progress code copied. Paste it on your other device."); } catch (e) { prompt("Copy this progress code:", code); }
