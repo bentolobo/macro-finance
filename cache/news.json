@@ -1,5 +1,5 @@
 {
- "retrieved": "2026-11-12T16:59+00:00",
+ "retrieved": "2026-11-12T17:03+00:00",
  "feeds_ok": 11,
  "feeds_total": 11,
  "items": [
@@ -7699,24 +7699,6 @@
    "feed": "https://www.bis.org/doclist/all_pressrels.rss"
   },
   {
-   "title": "Competitiveness and resilience in the financial sector - oxymoron or complementarity?",
-   "link": "https://www.bis.org/speeches/20261112-competitiveness-and-resilience-financial-sector-oxymoron-or-complementarity",
-   "date": "2026-11-12T00:00:00+00:00",
-   "summary": "Speech by Mr Emmanuel Moulin, Governor of the Bank of France and Chairman of the Autorité de contrôle prudentiel et de resolution (ACPR), at the ACPR conference, Paris, 5 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Cash and the digital euro - two sides of the same coin",
-   "link": "https://www.bis.org/speeches/20261112-cash-and-digital-euro-two-sides-same-coin",
-   "date": "2026-11-12T00:00:00+00:00",
-   "summary": "Introductory statement by Mr Piero Cipollone, Member of the Executive Board of the European Central Bank, at the Committee on Economic and Monetary Affairs of the European Parliament, Brussels, 10 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
    "title": "The Czech National Bank’s first DLT bond and the new physics of the digital koruna",
    "link": "https://www.bis.org/speeches/20261112-czech-national-banks-first-dlt-bond-and-new-physics-digital-koruna",
    "date": "2026-11-12T00:00:00+00:00",
@@ -7807,19 +7789,19 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "We have kept the policy rate unchanged",
-   "link": "https://www.bis.org/speeches/20261110-we-have-kept-policy-rate-unchanged",
-   "date": "2026-11-10T00:00:00+00:00",
-   "summary": "Introductory statement by Ms Ida Wolden Bache, Governor of Norges Bank (Central Bank of Norway), at the press conference following Norway's announcement of the policy rate, Oslo, 5 November 2026.",
+   "title": "Competitiveness and resilience in the financial sector - oxymoron or complementarity?",
+   "link": "https://www.bis.org/speeches/20261112-competitiveness-and-resilience-financial-sector-oxymoron-or-complementarity",
+   "date": "2026-11-12T00:00:00+00:00",
+   "summary": "Speech by Mr Emmanuel Moulin, Governor of the Bank of France and Chairman of the Autorité de contrôle prudentiel et de resolution (ACPR), at the ACPR conference, Paris, 5 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "The future of FinTech",
-   "link": "https://www.bis.org/speeches/20261110-future-fintech",
-   "date": "2026-11-10T00:00:00+00:00",
-   "summary": "Speech by Dr P Nandalal Weerasinghe, Governor of the Central Bank of Sri Lanka, at the Sri Lanka FinTech Festival, Colombo, 3 November 2026.",
+   "title": "Cash and the digital euro - two sides of the same coin",
+   "link": "https://www.bis.org/speeches/20261112-cash-and-digital-euro-two-sides-same-coin",
+   "date": "2026-11-12T00:00:00+00:00",
+   "summary": "Introductory statement by Mr Piero Cipollone, Member of the Executive Board of the European Central Bank, at the Committee on Economic and Monetary Affairs of the European Parliament, Brussels, 10 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -7906,10 +7888,19 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Message for the SEACEN masterclass - central bank communication",
-   "link": "https://www.bis.org/speeches/20261109-message-seacen-masterclass-central-bank-communication",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Message by Mr Eli M Remolona, Jr, Governor of Bangko Sentral ng Pilipinas (BSP, the central bank of the Philippines), for the SEACEN Masterclass “Central bank communication”, Makati City, 20 October 2026.",
+   "title": "We have kept the policy rate unchanged",
+   "link": "https://www.bis.org/speeches/20261110-we-have-kept-policy-rate-unchanged",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Introductory statement by Ms Ida Wolden Bache, Governor of Norges Bank (Central Bank of Norway), at the press conference following Norway's announcement of the policy rate, Oslo, 5 November 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "The future of FinTech",
+   "link": "https://www.bis.org/speeches/20261110-future-fintech",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Speech by Dr P Nandalal Weerasinghe, Governor of the Central Bank of Sri Lanka, at the Sri Lanka FinTech Festival, Colombo, 3 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -7960,19 +7951,10 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "A new payment scheme for Iceland - building a sovereign and secure payment system",
-   "link": "https://www.bis.org/speeches/20261103-new-payment-scheme-iceland-building-sovereign-and-secure-payment-system",
-   "date": "2026-11-03T00:00:00+00:00",
-   "summary": "Speech by Mr Tómas Brynjólfsson, Deputy Governor for Financial Stability at the Central Bank of Iceland, at the Money Live Nordic Banking conference, Copenhagen, 30 October 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Stable banks, strong capital markets - Europe’s financial system for the future",
-   "link": "https://www.bis.org/speeches/20261103-stable-banks-strong-capital-markets-europes-financial-system-future",
-   "date": "2026-11-03T00:00:00+00:00",
-   "summary": "Keynote speech by Dr Joachim Nagel, President of the Deutsche Bundesbank, at the conference for the 40th anniversary of the International Bankers Forum, Frankfurt am Main, 21 October 2026.",
+   "title": "Message for the SEACEN masterclass - central bank communication",
+   "link": "https://www.bis.org/speeches/20261109-message-seacen-masterclass-central-bank-communication",
+   "date": "2026-11-09T00:00:00+00:00",
+   "summary": "Message by Mr Eli M Remolona, Jr, Governor of Bangko Sentral ng Pilipinas (BSP, the central bank of the Philippines), for the SEACEN Masterclass “Central bank communication”, Makati City, 20 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -8041,10 +8023,19 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
-   "link": "https://www.bis.org/speeches/20261102-next-day-securities-settlement-tokenisation-and-transformation-europes-financial-infrastructure",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Keynote address by Mr Piero Cipollone, Member of the Executive Board of the European Central Bank, at an EU T+1 Industry Committee event on “One year to T+1”, Frankfurt am Main, 29 October 2026.",
+   "title": "A new payment scheme for Iceland - building a sovereign and secure payment system",
+   "link": "https://www.bis.org/speeches/20261103-new-payment-scheme-iceland-building-sovereign-and-secure-payment-system",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Speech by Mr Tómas Brynjólfsson, Deputy Governor for Financial Stability at the Central Bank of Iceland, at the Money Live Nordic Banking conference, Copenhagen, 30 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Stable banks, strong capital markets - Europe’s financial system for the future",
+   "link": "https://www.bis.org/speeches/20261103-stable-banks-strong-capital-markets-europes-financial-system-future",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Keynote speech by Dr Joachim Nagel, President of the Deutsche Bundesbank, at the conference for the 40th anniversary of the International Bankers Forum, Frankfurt am Main, 21 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -8104,10 +8095,10 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Release of the Monetary Policy Report",
-   "link": "https://www.bis.org/speeches/20261029-release-monetary-policy-report",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "Opening statement by Mr Tiff Macklem, Governor of the Bank of Canada and Ms Carolyn Rogers, Senior Deputy Governor of the Bank of Canada, at the press conference following the monetary policy decision, Ottawa, Ontario, 28 October 2026.",
+   "title": "Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
+   "link": "https://www.bis.org/speeches/20261102-next-day-securities-settlement-tokenisation-and-transformation-europes-financial-infrastructure",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Keynote address by Mr Piero Cipollone, Member of the Executive Board of the European Central Bank, at an EU T+1 Industry Committee event on “One year to T+1”, Frankfurt am Main, 29 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -8144,6 +8135,15 @@
    "link": "https://www.bis.org/speeches/20261029-opening-statement-senate-economics-legislation-committee-supplementary-budget-estimates",
    "date": "2026-10-29T00:00:00+00:00",
    "summary": "Opening statement via videoconference by Ms Michele Bullock, Governor of the Reserve Bank of Australia, to the Senate Economics Legislation Committee (Supplementary Budget Estimates), Sydney, 28 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Chile's September 2026 Monetary Policy Report",
+   "link": "https://www.bis.org/speeches/20261029-chiles-september-2026-monetary-policy-report",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "Presentation by Ms Rosanna Costa, Governor of the Central Bank of Chile, of the Monetary Policy Report before the Honorable Senate of the Republic, Santiago de Chile, 9 September 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
