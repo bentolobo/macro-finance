@@ -472,7 +472,7 @@ This is a *living* textbook. Every statistic, table, and figure in it is generat
 
 **Numbers in the text may differ from those your classmate sees.** If your instructor built the course PDF in September and you load the web edition in November, an FX rate or a turnover figure may have changed. Each chapter therefore carries a data-vintage stamp at the top, and each exhibit carries a source note with its retrieval date. *Always quote the vintage when you cite a figure in your written work.* This build, for example, is stamped `{python} refresh_date()`.
 
-**The code is the citation.** In the web edition, every figure has a "Show the code that produced this" control that reveals the exact query used. There is no step between the agency's database and the exhibit in which a number could be mistyped — and if you doubt a figure, you can reproduce it.
+**The source line is the citation.** Every figure names the agency, the series and the date it was retrieved. No number is typed by hand: each one goes straight from the agency's database into the exhibit, so there is no step at which it could be mistyped — and if you doubt a figure, the source line tells you exactly where to check it.
 
 **Primary sources, named.** Five institutions supply almost everything in this book, and you should know what each is authoritative for:
 

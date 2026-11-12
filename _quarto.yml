@@ -27,10 +27,9 @@ book:
 format:
   html:
     theme: [cosmo, theme/macro.scss]
-    code-fold: true
+    echo: false            # chart code stays in the repository, not on the page
     code-tools: false
     toc-title: "On this page"
-    code-summary: "Show the code that produced this"
     toc-depth: 3
     fig-width: 8
     fig-height: 4.5
