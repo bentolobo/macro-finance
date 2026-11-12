@@ -22,12 +22,6 @@ import pylib.ch01_exhibits as ex
 Data in this chapter were last refreshed on **`{python} refresh_date()`**. Every chart names its source and retrieval date beneath it.
 :::
 
-```{python}
-#| label: glance
-#| fig-cap: "**Chapter 1 at a glance.** The five numbers this chapter is built around."
-ex.glance(); plt.show()
-```
-
 ::: {.callout-note .mf-box .mf-activity icon=false}
 ## Before You Read
 
