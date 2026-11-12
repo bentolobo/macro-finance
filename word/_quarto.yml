@@ -1,0 +1,16 @@
+# Word edition of the live chapters. A separate mini-project so the book's HTML settings
+# don't apply. CI copies each chapter here and renders it; see .github/workflows/render.yml.
+project:
+  type: default
+format:
+  docx:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    fig-dpi: 200
+    fig-width: 7
+    fig-height: 4
+execute:
+  echo: false
+  warning: false
+  message: false

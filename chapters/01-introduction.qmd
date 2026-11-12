@@ -20,11 +20,15 @@ import pylib.ch01_exhibits as ex
 
 ::: {.vintage}
 Data in this chapter were last refreshed on **`{python} refresh_date()`**. Every chart names its source and retrieval date beneath it.
+
+[Download this chapter as an editable Word file](../downloads/Chapter-01-Globalization-and-the-Multinational-Firm_v10.docx){.content-visible when-format="html"}
 :::
 
+:::: {.content-visible when-format="html"}
 ::: {#module-map data-chapter="ch01"}
 This chapter is organized as six modules, each ending with a short check, followed by a Chapter Checkpoint. The web edition tracks your progress.
 :::
+::::
 
 ::: {.callout-note .mf-box .mf-activity icon=false}
 ## Before You Read
@@ -36,6 +40,7 @@ Answer these three before you know the answers. Write them down. You will almost
 3. The euro is forecast by most banks to weaken over the next year. Does that make it cheaper or more expensive for a U.S. firm to lock in a euro receivable with a forward contract today?
 :::
 
+:::::: {.content-visible when-format="html"}
 ::::: {.gate .pretest data-module="0"}
 :::: {.q}
 Daily FX turnover: roughly how much, and how does it compare with a year of world goods trade?
@@ -47,6 +52,7 @@ Can a U.S. firm with only U.S. customers, suppliers and dollar debt have currenc
 If banks forecast the euro to weaken, is it cheaper or dearer for a U.S. firm to lock in a euro receivable with a forward today?
 ::::
 :::::
+::::::
 
 ## Learning Objectives {.unnumbered}
 
@@ -61,6 +67,10 @@ After completing this chapter you should be able to:
 6. **Retrieve** current international financial data from an authoritative source and assess its vintage and reliability.
 7. **Explain** why artificial intelligence lowers the information friction but not the other three, and why a better cash-flow forecast is not an exchange-rate forecast.
 :::
+
+## What is macro-finance? {.unnumbered}
+
+Macro-finance studies the two-way links between financial markets (such as asset prices, credit, and banking) and the aggregate macroeconomy (such as business cycles, recessions, and economic growth). Macro-finance is the core of this textbook.
 
 ::: {.module-banner data-n="1" data-title="Why international finance is different"}
 **Module 1 · Why international finance is different**
@@ -124,6 +134,7 @@ Investors know less about foreign firms than domestic ones, and the gap persists
 
 Every chapter that follows attacks one of these four frictions. When a topic feels unmoored, return to Exhibit 1.1 and ask which friction it addresses. The Top Ten at the front of the book compresses the whole field into ten propositions for exactly that purpose.
 
+:::::: {.content-visible when-format="html"}
 ::::: {.gate data-module="1"}
 :::: {.q}
 Name the four frictions that make international finance different from domestic corporate finance.
@@ -140,6 +151,7 @@ Because consequences are asymmetric even when the distribution is symmetric. A 2
 :::
 ::::
 :::::
+::::::
 
 ::: {.module-banner data-n="2" data-title="How big is global finance"}
 **Module 2 · How big is global finance**
@@ -170,11 +182,11 @@ finish(fig, "ex0104", "World trade openness", "Exports plus imports of goods and
 plt.show()
 ```
 
-The *financial* economy is a different order of magnitude — and the comparison is easier to feel on one axis than to read in a sentence.
+The *financial* economy is a different order of magnitude.
 
 ```{python}
 #| label: ex0105
-#| fig-cap: "**Exhibit 1.4** Orders of magnitude. The horizontal scale is logarithmic, which is itself the point: the two economies cannot be drawn legibly on the same linear axis. Sources: [BIS Triennial Central Bank Survey, 2025](https://www.bis.org/statistics/rpfx25.htm); [WTO, Global Trade Outlook and Statistics, March 2026](https://www.wto.org/english/res_e/publications_e/gtos0326_e.htm); [World Bank, GDP (NY.GDP.MKTP.CD)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)."
+#| fig-cap: "**Exhibit 1.4** Orders of magnitude. The horizontal scale is logarithmic. Sources: [BIS Triennial Central Bank Survey, 2025](https://www.bis.org/statistics/rpfx25.htm); [WTO, Global Trade Outlook and Statistics, March 2026](https://www.wto.org/english/res_e/publications_e/gtos0326_e.htm); [World Bank, GDP (NY.GDP.MKTP.CD)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)."
 rows = [("World merchandise exports, per year", float(val("wto_merch_exports")), SLATE),
         ("U.S. GDP, per year", float(val("us_gdp")), SLATE),
         ("World GDP, per year", float(val("world_gdp")), SLATE),
@@ -269,6 +281,7 @@ finish(fig, "ex0108", "Two markets, one triennial census", "Average daily OTC tu
 plt.show()
 ```
 
+:::::: {.content-visible when-format="html"}
 ::::: {.gate data-module="2"}
 :::: {.q}
 FX turnover runs to trillions of dollars a day, while world goods exports are a couple of dozen trillion a year. Why is there no contradiction?
@@ -285,6 +298,7 @@ That growth in this market is not a law of nature. The fall coincided with post-
 :::
 ::::
 :::::
+::::::
 
 ::: {.module-banner data-n="3" data-title="Who is in the market"}
 **Module 3 · Who is in the market**
@@ -321,6 +335,7 @@ Between roughly 2008 and 2013, traders at several of the world's largest dealer 
 The FX episode produced the [**FX Global Code**](https://www.globalfxc.org/fx-global-code/), a voluntary set of principles now adhered to by central banks, dealers, and buy-side firms, which we examine in Chapter 5. Two lessons are worth carrying forward. First, benchmarks that are economically important but structurally unsupervised attract manipulation, a pattern seen in FX, in LIBOR, in precious metals fixes, and in oil price assessments. Second, when you select a hedge execution benchmark as a treasurer, you are making a governance decision, not merely an operational one.
 :::
 
+:::::: {.content-visible when-format="html"}
 ::::: {.gate data-module="3"}
 :::: {.q}
 Who sets prices in the FX market, and roughly how big is the share of non-financial corporations?
@@ -337,6 +352,7 @@ First, benchmarks that are economically important but structurally unsupervised 
 :::
 ::::
 :::::
+::::::
 
 ::: {.module-banner data-n="4" data-title="Three kinds of currency exposure"}
 **Module 4 · Three kinds of currency exposure**
@@ -385,6 +401,7 @@ ex.ex0112(); plt.show()
 Note the ranking: the exposure that is easiest to measure and hedge (the receivable) is very likely the *smallest* of the four in present-value terms.
 :::
 
+:::::: {.content-visible when-format="html"}
 ::::: {.gate data-module="4"}
 :::: {.q}
 Name the three kinds of currency exposure and give a one-line example of each.
@@ -401,6 +418,7 @@ The euro receivable is easiest (a 60-day forward) but probably the smallest in p
 :::
 ::::
 :::::
+::::::
 
 ::: {.module-banner data-n="5" data-title="Has globalization stalled?"}
 **Module 5 · Has globalization stalled?**
@@ -469,6 +487,7 @@ print(render_box("ch01"))
 The curated half of this feature has its own page: five sources on the 2026 "dollar story," chosen by the author and read closely against this chapter, the two exhibits that frame them, and six questions to work. See [In the News · Dossiers, Chapter 1](../companions/dossiers.qmd#dossier-ch01).
 :::
 
+:::::: {.content-visible when-format="html"}
 ::::: {.gate data-module="5"}
 :::: {.q}
 "Globalization has stalled." State what has actually happened to trade, to FDI and to financial flows.
@@ -485,6 +504,7 @@ State the fragmentation view and the reconfiguration view of today's world econo
 :::
 ::::
 :::::
+::::::
 
 ::: {.module-banner data-n="6" data-title="Data, vintages and AI"}
 **Module 6 · Data, vintages and AI**
@@ -551,6 +571,7 @@ The full treatment for this chapter — market structure and algorithmic monocul
 :::
 
 
+:::::: {.content-visible when-format="html"}
 ::::: {.gate data-module="6"}
 :::: {.q}
 What is the difference between a statistic's reference period and its retrieval date, and why cite both?
@@ -567,6 +588,7 @@ The reference period is when the activity happened; the retrieval date is when t
 :::
 ::::
 :::::
+::::::
 
 ## Live Data Lab · Taking the temperature of the global economy {#sec-lab}
 

@@ -1,0 +1,4 @@
+*.qmd
+*.docx
+*_files/
+.quarto/

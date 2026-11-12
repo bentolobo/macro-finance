@@ -31,6 +31,15 @@ jobs:
           git pull --rebase -X theirs --autostash && git push
       - name: Render the web edition
         run: quarto render --to html
+      - name: Build the Word edition of each live chapter
+        continue-on-error: true          # a Word failure must never block the web edition
+        env: {WORD_EDITION: v10}         # bump when the chapter text changes edition
+        run: |
+          cp chapters/01-introduction.qmd word/ch01.qmd
+          PYTHONPATH="$PWD" quarto render word/ch01.qmd --to docx
+          mkdir -p _output/downloads
+          cp word/ch01.docx "_output/downloads/Chapter-01-Globalization-and-the-Multinational-Firm_${WORD_EDITION}.docx"
+          ls -la _output/downloads
       - uses: quarto-dev/quarto-actions/publish@v2
         with: {target: gh-pages, render: false}
         env: {GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"}
