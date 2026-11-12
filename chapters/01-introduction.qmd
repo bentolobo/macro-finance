@@ -36,19 +36,15 @@ Answer these three before you know the answers. Write them down. You will almost
 1. Roughly how much foreign currency is traded worldwide on an average day — and how does that compare with the value of goods the world trades in a year?
 2. A U.S. company sells only to U.S. customers, buys only from U.S. suppliers, and borrows only in dollars. Can it have currency exposure? If so, how?
 3. The euro is forecast by most banks to weaken over the next year. Does that make it cheaper or more expensive for a U.S. firm to lock in a euro receivable with a forward contract today?
-
-Keep this page. You will be asked to revisit it at the end of the chapter.
 :::
 
 ## Market Moment {.unnumbered}
 
 On a single ordinary business day, the world's foreign exchange market turns over about **\$`{python} val('fx_turnover')` trillion** — a figure that exceeds the annual economic output of every country on earth except the United States and China, and it happens *daily*. In April 2025 that number was **`{python} val('fx_turnover_chg')` percent higher** than three years earlier, measured in a month when tariff announcements sent currencies lurching and hedging demand surging. Alongside it, over-the-counter interest rate derivatives traded **\$`{python} val('irt_turnover')` trillion** per day, up **`{python} val('irt_turnover_chg')` percent** over the same three years.
 
-These numbers come from the Bank for International Settlements' [Triennial Central Bank Survey](https://www.bis.org/statistics/rpfx25.htm), a census conducted every three years across `{python} val('triennial_jurisdictions')` jurisdictions and more than `{python} val('triennial_dealers')` banks and other dealers. It is the closest thing the field has to a ground truth about market size, and it is the single most important data source you will meet in this course.
+These numbers come from the Bank for International Settlements' [Triennial Central Bank Survey](https://www.bis.org/statistics/rpfx25.htm), a census conducted every three years across `{python} val('triennial_jurisdictions')` jurisdictions and more than `{python} val('triennial_dealers')` banks and other dealers.
 
-Hold two facts in mind as you read. First, almost none of that turnover is paying for trade in goods. Global merchandise exports run to about \$`{python} val('wto_merch_exports')` trillion *per year*; the FX market clears that much in about `{python} val('days_to_clear_trade')` trading days. Second, a firm with no foreign subsidiary, no foreign sales, and no foreign debt is still exposed to this market — because its competitors, its suppliers, and its customers are.
-
-That gap between the real economy and the financial flows that price it is where this course lives.
+Two facts to keep in mind: first, almost none of that turnover is paying for trade in goods. Global merchandise exports run to about \$`{python} val('wto_merch_exports')` trillion *per year*; the FX market clears that much in about `{python} val('days_to_clear_trade')` trading days. Second, a firm with no foreign subsidiary, no foreign sales, and no foreign debt is still exposed to this market because its competitors, its suppliers, and its customers are.
 
 ## Learning Objectives {.unnumbered}
 
