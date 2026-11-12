@@ -1,5 +1,5 @@
 {
- "retrieved": "2026-11-12T18:56+00:00",
+ "retrieved": "2026-11-12T19:21+00:00",
  "feeds_ok": 11,
  "feeds_total": 11,
  "items": [
@@ -661,6 +661,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
+   "title": "Cravath Employee Is Charged With Insider Trading Using Confidential Deal Information",
+   "link": "https://www.wsj.com/finance/regulation/cravath-employee-is-charged-with-insider-trading-using-confidential-deal-information-a5cdd0a9?mod=rss_markets_main",
+   "date": "2026-11-12T19:08:00+00:00",
+   "summary": "Prosecutors said the employee netted $70,000 in profits related to client matters including Paramount’s acquisition of Warner Bros.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
+  },
+  {
    "title": "Another Winner From the Midterms: Crusaders Against Insurance Companies",
    "link": "https://www.wsj.com/finance/another-winner-from-the-midterms-crusaders-against-insurance-companies-36adf244?mod=rss_markets_main",
    "date": "2026-11-12T18:52:00+00:00",
@@ -674,15 +683,6 @@
    "link": "https://www.wsj.com/finance/stocks/nvidia-shareholders-wont-miss-jensen-huang-for-long-13429e31?mod=rss_markets_main",
    "date": "2026-11-12T17:43:00+00:00",
    "summary": "Steadier hands could be better suited to enriching shareholders as the AI chip company enters a new phase.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
-  },
-  {
-   "title": "Cravath Employee Is Charged With Insider Trading Using Confidential Deal Information",
-   "link": "https://www.wsj.com/finance/regulation/cravath-employee-is-charged-with-insider-trading-using-confidential-deal-information-a5cdd0a9?mod=rss_markets_main",
-   "date": "2026-11-12T17:25:00+00:00",
-   "summary": "Prosecutors said the employee netted $70,000 in profits related to client matters including Paramount’s acquisition of Warner Bros.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T17:03+00:00",
+ "built": "2026-11-12T19:21+00:00",
  "groups": [
   {
    "title": "Inflation",
@@ -9,6 +9,7 @@
      "label": "CPI, all items (y/y)",
      "unit": "%",
      "dp": 1,
+     "up_is_good": false,
      "value": 3.72,
      "prev": 3.35,
      "period": "Sep 2026",
@@ -24,6 +25,7 @@
      "label": "Core CPI (y/y)",
      "unit": "%",
      "dp": 1,
+     "up_is_good": false,
      "value": 2.57,
      "prev": 2.45,
      "period": "Sep 2026",
@@ -39,6 +41,7 @@
      "label": "Core PCE, Fed's target gauge (y/y)",
      "unit": "%",
      "dp": 1,
+     "up_is_good": false,
      "value": 3.12,
      "prev": 3.03,
      "period": "Sep 2026",
@@ -54,6 +57,7 @@
      "label": "Euro area HICP (y/y)",
      "unit": "%",
      "dp": 1,
+     "up_is_good": false,
      "value": 4.0,
      "prev": 3.8,
      "period": "Oct 2026",
@@ -67,6 +71,43 @@
    ]
   },
   {
+   "title": "Growth",
+   "items": [
+    {
+     "key": "gdp",
+     "label": "US real GDP (q/q, annualized)",
+     "unit": "%",
+     "dp": 1,
+     "up_is_good": true,
+     "value": 3.4,
+     "prev": 2.2,
+     "period": "Q3 2026",
+     "prev_period": "Q2 2026",
+     "updated": "2026-10-29",
+     "source": "FRED",
+     "series": "A191RL1Q225SBEA",
+     "url": "https://fred.stlouisfed.org/series/A191RL1Q225SBEA",
+     "status": "live"
+    },
+    {
+     "key": "gdpnow",
+     "label": "GDPNow, current-quarter estimate",
+     "unit": "%",
+     "dp": 1,
+     "up_is_good": true,
+     "value": 3.48,
+     "prev": 3.27,
+     "period": "Q4 2026",
+     "prev_period": "Q3 2026",
+     "updated": "2026-11-09",
+     "source": "FRED",
+     "series": "GDPNOW",
+     "url": "https://fred.stlouisfed.org/series/GDPNOW",
+     "status": "live"
+    }
+   ]
+  },
+  {
    "title": "Jobs",
    "items": [
     {
@@ -74,6 +115,7 @@
      "label": "Unemployment rate",
      "unit": "%",
      "dp": 1,
+     "up_is_good": false,
      "value": 4.1,
      "prev": 4.2,
      "period": "Oct 2026",
@@ -89,6 +131,7 @@
      "label": "Nonfarm payrolls (monthly change)",
      "unit": "k",
      "dp": 0,
+     "up_is_good": true,
      "value": 165.0,
      "prev": 60.0,
      "period": "Oct 2026",
@@ -104,6 +147,7 @@
      "label": "Initial jobless claims (weekly)",
      "unit": "k",
      "dp": 0,
+     "up_is_good": false,
      "value": 200.0,
      "prev": 191.0,
      "period": "week of 7 Nov 2026",
