@@ -25,4 +25,4 @@ jobs:
           git add cache/dashboard.json
           git diff --staged --quiet && exit 0
           git commit -m "chore: indicators refresh"
-          git pull --rebase --autostash && git push
+          git pull --rebase -X theirs --autostash && git push
