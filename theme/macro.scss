@@ -94,6 +94,7 @@ td, th { padding: .45rem .65rem !important; vertical-align: top; }
 .callout.mf-application { @include box($navy,  #fff,    "Worked application");
                           border: 1px solid $rule !important; border-left: 5px solid $navy !important; }
 .callout.mf-note        { @include box(#5b6b7a, #f2f2ef, "Note"); }
+.callout.mf-media       { @include box($plum,  #f6f3fa, "Watch · Read"); }
 .callout.mf-moment      { @include box($rust,  #fff8f4, "Live data · this edition");
                           border: 1px solid $rule !important; border-left: 5px solid $rust !important;
   .callout-body-container { font-size: 1.02rem; } }

@@ -23,6 +23,11 @@ book:
     - part: "Part I — The Global Financial Environment"
       chapters:
         - chapters/01-introduction.qmd
+    - part: "Working drafts"
+      chapters:
+        - drafts/02-ims.qmd
+        - drafts/03-currency-crises.qmd
+        - drafts/04-political-risk.qmd
 
 format:
   html:

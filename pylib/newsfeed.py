@@ -47,8 +47,19 @@ KEYWORDS = {
              "reserve currenc", "reserves", "emerging market", "multinational", "yuan", "renminbi",
              "euro ", "yen", "sanction", "supply chain", "fragment", "cross-border", "IMF", "BIS",
              "swap line", "stablecoin", "de-dollar"],
+    "ch02": ["gold standard", "gold price", "gold reserve", "reserve currenc", "de-dollar", "dollar dominance",
+             "Bretton Woods", "SDR", "exchange rate regime", "currency peg", "peg ", "currency board",
+             "dollarization", "dollarisation", "renminbi", "yuan", "euro adoption", "swap line", "CBDC",
+             "BRICS", "IMF", "monetary system", "central bank gold"],
+    "ch03": ["currency crisis", "currency crash", "devaluat", "depreciat", "peso", "lira", "rupee", "rupiah",
+             "naira", "rand ", "won ", "ringgit", "yen ", "capital flight", "capital control", "speculative attack",
+             "contagion", "bailout", "IMF", "debt crisis", "default", "emerging-market currenc",
+             "emerging market currenc", "currency slump", "currency plunge"],
+    "ch04": ["sanction", "expropriat", "nationaliz", "nationalis", "geopolit", "coup", "election", "unrest",
+             "war ", "conflict", "tariff", "export control", "investment screening", "seiz", "political risk",
+             "regime", "embargo", "blacklist", "entity list", "CFIUS", "USMCA"],
 }
-CASE_SENSITIVE = {"IMF", "BIS", "FX", "FDI"}
+CASE_SENSITIVE = {"IMF", "BIS", "FX", "FDI", "SDR", "CBDC", "BRICS", "CFIUS", "USMCA"}
 WINDOW_DAYS = 45
 MAX_ITEMS = 10
 MAX_PER_PUBLISHER = 3
@@ -122,7 +133,7 @@ def parse_feed(xml_bytes: bytes):
 
 
 # Automated market-data blurbs ("WSJ Dollar Index Rises 0.44% to 97.97") add nothing.
-NOISE = re.compile(r"\bIndex (Rises|Falls|Edges|Slips|Gains)\b.*\d|\bAppointments?\b|\bvacanc", re.I)
+NOISE = re.compile(r"\bIndex (Rises|Falls|Edges|Slips|Gains)\b.*\d|\bAppointments?\b|\bvacanc|newsletter", re.I)
 
 
 # ---------------------------------------------------------------- matching

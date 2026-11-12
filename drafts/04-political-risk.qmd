@@ -1,0 +1,86 @@
+---
+title: "Political Risk in International Finance"
+author: "Bento J. Lobo, Ph.D., CFA · The University of Tennessee at Chattanooga"
+number-depth: 2
+execute:
+  warning: false
+  message: false
+---
+
+```{python}
+#| label: setup-04
+#| include: false
+import matplotlib.pyplot as plt
+from pylib.datafeeds import refresh_date
+import pylib.drafts_exhibits as dx
+```
+
+::: {.callout-note .mf-box .mf-note icon=false}
+## Working draft
+A short first pass: the frame, the charts and the live headlines. Prose, problems and the full feature set come next. Chapter placement in the book is not final.
+:::
+
+::: {.vintage}
+Data in this chapter were last refreshed on **`{python} refresh_date()`**.
+:::
+
+## Why this chapter matters {#sec-pr-why}
+
+Political risk is the chance that a government — the host country's or your own — or a political event changes what a cross-border investment is worth. Exchange-rate risk can be hedged in a market. Most political risk cannot, which is why firms manage it through structure, contracts and insurance rather than derivatives.
+
+**Key questions**
+
+- What can a government do to a foreign investor, and which of those actions can be insured?
+- Can political risk be measured, or only described?
+- Why is the risk from your own government — sanctions, tariffs, export controls — now as large as the risk from the host?
+- How should political risk enter a discount rate, and when should it enter the cash flows instead?
+
+## What can go wrong {#sec-pr-types}
+
+```{python}
+#| label: d04-types
+#| fig-cap: "**Exhibit 4.1** Six ways a government can cost a foreign investor money. The first five follow the categories political-risk insurers use; the sixth comes from the investor's own government."
+dx.polrisk_types(); plt.show()
+```
+
+## Measuring it {#sec-pr-measure}
+
+Two research indexes turn newspaper coverage into a monthly number. The geopolitical risk index of Caldara and Iacoviello counts articles about wars, threats and terrorism, back to 1900.
+
+```{python}
+#| label: d04-gpr
+#| fig-cap: "**Exhibit 4.2** Geopolitical risk since 1900. The labels mark the peak month within each episode; compare the two world wars with 2001, 2003 and 2022."
+dx.gpr_chart(); plt.show()
+```
+
+The economic policy uncertainty index of Baker, Bloom and Davis measures something different: uncertainty about what governments will do to taxes, trade, regulation and money.
+
+```{python}
+#| label: d04-epu
+#| fig-cap: "**Exhibit 4.3** Global economic policy uncertainty since 1997. Compare its level today with the late 1990s."
+dx.epu_chart(); plt.show()
+```
+
+## Managing it {#sec-pr-manage}
+
+Firms have four tools: **structure** (local partners, local borrowing, staged investment), **contracts** (bilateral investment treaties and international arbitration), **insurance** (the World Bank's MIGA, the U.S. Development Finance Corporation and private insurers) and **price** (a higher hurdle rate or explicit scenario cash flows).
+
+**Running case.** Chattanooga Precision Components' Mexican warehouse faces little expropriation risk. Its bigger exposure is home-government risk: a change in U.S.–Mexico trade terms, such as one arising from the USMCA's scheduled 2026 joint review, would change the subsidiary's value without Mexico doing anything at all.
+
+::: {.callout-note .mf-box .mf-media icon=false}
+## The Ascent of Money · Niall Ferguson (book, 2008; PBS series)
+**Watch or read:** Chapter 6, "From Empire to Chimerica", describes how the first age of globalization ended with the outbreak of war in 1914. Ferguson has also published research on the subject: his 2006 *Economic History Review* article, "Political risk and the international bond market between the 1848 revolution and the outbreak of the First World War", asks whether bond investors saw the war coming.
+
+**What it gets wrong:** the book treats 1914 as a single shock. Exhibits 4.2 and 4.3 suggest the modern pattern is different — a rising floor of policy uncertainty rather than one great break.
+:::
+
+## In the News {#sec-pr-news .unnumbered}
+
+```{python}
+#| echo: false
+#| output: asis
+from pylib.newsfeed import render_box
+print(render_box("ch04"))
+```
+
+*Where this sits in the reference texts:* ESM 17 · MAD 16 · BH 14 · SHA 3 (provisional mapping from the table of contents).

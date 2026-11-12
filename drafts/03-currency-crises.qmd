@@ -1,0 +1,80 @@
+---
+title: "Global Currency Crises"
+author: "Bento J. Lobo, Ph.D., CFA · The University of Tennessee at Chattanooga"
+number-depth: 2
+execute:
+  warning: false
+  message: false
+---
+
+```{python}
+#| label: setup-03
+#| include: false
+import matplotlib.pyplot as plt
+from pylib.datafeeds import refresh_date
+import pylib.drafts_exhibits as dx
+```
+
+::: {.callout-note .mf-box .mf-note icon=false}
+## Working draft
+A short first pass: the frame, the charts and the live headlines. Prose, problems and the full feature set come next. Chapter placement in the book is not final.
+:::
+
+::: {.vintage}
+Data in this chapter were last refreshed on **`{python} refresh_date()`**.
+:::
+
+## Why this chapter matters {#sec-cc-why}
+
+A currency crisis is what happens when markets stop believing a government's exchange-rate promise. Reserves drain, interest rates spike, and the peg breaks — usually suddenly, after months in which officials insisted it would hold. A common working definition, from Frankel and Rose (1996), is a depreciation of at least 25 percent in a year that is also at least 10 percentage points faster than the year before.
+
+**Key questions**
+
+- Why do pegs that look sound on Friday collapse by Monday?
+- Which crises were caused by bad policy, and which were self-fulfilling?
+- Why do currency crises so often arrive together with banking and debt crises?
+- What happens to a firm that earns in the collapsing currency and owes in dollars?
+
+## Three centuries of crises {#sec-cc-timeline}
+
+```{python}
+#| label: d03-timeline
+#| fig-cap: "**Exhibit 3.1** Three centuries of currency crises. The axis is broken so that the crowded 1990s can be read; the selection is illustrative, not complete."
+dx.crisis_timeline(); plt.show()
+```
+
+## Three generations of explanation {#sec-cc-models}
+
+| Generation | The story | Classic case |
+|---|---|---|
+| **First** (Krugman, 1979) | A government finances deficits that are incompatible with its peg; speculators attack when reserves are predictably about to run out. | Latin America, 1970s–80s |
+| **Second** (Obstfeld, 1994) | The peg is sustainable, but defending it is costly; if enough traders bet against it, the government chooses to give up. The crisis is self-fulfilling. | ERM, 1992 |
+| **Third** (Krugman, 1999; Chang and Velasco, 2001) | Banks and firms borrowed in dollars; depreciation wrecks their balance sheets, so the currency and banking crises feed each other. | Asia, 1997 |
+
+## When the peg breaks {#sec-cc-events}
+
+```{python}
+#| label: d03-events
+#| fig-cap: "**Exhibit 3.2** When the peg breaks. Each line is a currency's value in dollars, set to 100 on the day its peg gave way. The live series come from the Federal Reserve's daily exchange rates."
+dx.crisis_event_study(); plt.show()
+```
+
+**Running case.** Chattanooga Precision Components' Mexican subsidiary books its costs in pesos. In the weeks after 20 December 1994, the dollar value of everything that subsidiary owned fell with the red line in Exhibit 3.2, while any dollar debt it carried did not. That mismatch is the third-generation story at the size of a single firm.
+
+::: {.callout-note .mf-box .mf-media icon=false}
+## The Ascent of Money · Niall Ferguson (book, 2008; PBS series)
+**Watch or read:** Chapter 3, "Blowing Bubbles", tells the story of John Law, the Scottish financier who ran France's finances, flooded the country with paper notes to inflate his Mississippi Company, and watched both the shares and the notes collapse in 1720. It is the earliest crisis on Exhibit 3.1 and has the same plot as the rest: a currency promise the issuer could not keep.
+
+**What it gets wrong:** historians dispute Ferguson's claim that Law's collapse set France on the road to revolution. The case for a direct link is weaker than the book suggests.
+:::
+
+## In the News {#sec-cc-news .unnumbered}
+
+```{python}
+#| echo: false
+#| output: asis
+from pylib.newsfeed import render_box
+print(render_box("ch03"))
+```
+
+*Where this sits in the reference texts:* KOM 22 · BH 14 · MAD 16 · ESM 17 (provisional mapping from the table of contents).
