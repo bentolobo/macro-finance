@@ -226,14 +226,14 @@ def render_box(chapter: str, refresh_first: bool = False) -> str:
     snap = refresh(verbose=False) if refresh_first else load()
     chosen = select(chapter, snap)
     when = snap.get("retrieved")
-    when_txt = (datetime.fromisoformat(when).strftime("%-d %B %Y") if when else "not yet retrieved")
+    when_txt = (datetime.fromisoformat(when).astimezone().strftime("%-d %B %Y") if when else "not yet retrieved")
     lines = ["::: {.callout-note .mf-box .mf-news icon=false}",
              "## Latest headlines", ""]
     if not chosen:
         lines.append("*No matching headlines in the last "
                      f"{WINDOW_DAYS} days at the time of this build.*")
     for it in chosen:
-        d = it["date"].strftime("%-d %b %Y")
+        d = it["date"].astimezone().strftime("%-d %b %Y")
         lines.append(f"- **[{_md_escape(it['title'])}]({it['link']})**  \n"
                      f"  <span class='news-meta'>{it['publisher']} · {d}</span>  ")
         if it["kind"] == "official":
