@@ -2,7 +2,7 @@ project:
   type: book
   execute-dir: project
   output-dir: _output
-  resources: [cache/dashboard.json]
+  resources: [cache/dashboard.json, practice/*.html]
 
 book:
   title: "Macro Finance"

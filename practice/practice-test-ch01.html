@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 1 Practice · Macro Finance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1f4e79;--teal:#2a9d8f;--rust:#e76f51;--amber:#b7791f;--ink:#1d2733;--paper:#fbfaf7;--rule:#e3e0d8;--muted:#6b7785}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.5}
+header{background:var(--navy);color:#fff;padding:1.4rem 1.5rem 1.1rem}
+header .k{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#9fd8cf;font-weight:700}
+header h1{margin:.2rem 0 .3rem;font-size:1.6rem;letter-spacing:-.01em}
+header p{margin:0;color:#d6e2ee;font-size:.88rem;max-width:46rem}
+header a{color:#9fd8cf}
+main{max-width:52rem;margin:0 auto;padding:1.2rem 1.2rem 3rem}
+.card{background:#fff;border:1px solid var(--rule);border-radius:6px;padding:1rem 1.2rem;margin:1rem 0}
+.row{display:flex;gap:.7rem;flex-wrap:wrap;align-items:center}
+label{font-size:.82rem;color:#3a4654}
+input[type=text],select,textarea{font:inherit;border:1px solid #c9d3dc;border-radius:4px;padding:.42rem .55rem;background:#fff}
+textarea{width:100%;min-height:4rem}
+button{font:inherit;font-weight:600;font-size:.84rem;border:0;border-radius:4px;padding:.45rem .9rem;background:var(--navy);color:#fff;cursor:pointer}
+button.ghost{background:#fff;color:var(--navy);border:1px solid var(--navy)}
+button.teal{background:var(--teal)}
+button[disabled]{background:#a9b6c3;cursor:not-allowed}
+.q .type{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+.q .prompt{font-family:"Source Serif 4",Georgia,serif;font-size:1.08rem;margin:.35rem 0 .8rem}
+.conf{display:flex;align-items:center;gap:.5rem;font-size:.82rem;color:#3a4654;margin:.6rem 0}
+.conf input{width:10rem}
+.res{margin-top:.8rem;padding:.7rem .85rem;border-radius:4px;font-size:.92rem}
+.res.ok{background:#e8f5f2;border-left:4px solid var(--teal)}
+.res.no{background:#fbeeea;border-left:4px solid var(--rust)}
+.res ol{margin:.4rem 0 0 1.1rem;padding:0}
+.res li{margin:.15rem 0}
+table{border-collapse:collapse;width:100%;font-size:.84rem}
+th,td{padding:.4rem .5rem;border-bottom:1px solid var(--rule);text-align:left}
+th{background:var(--navy);color:#fff;font-weight:600}
+td.n{text-align:right;font-variant-numeric:tabular-nums}
+.bar{display:inline-block;height:.55rem;border-radius:2px;background:var(--teal);vertical-align:middle}
+.muted{color:var(--muted);font-size:.8rem}
+.cal{font-size:.86rem;margin-top:.6rem}
+a.back{display:inline-block;margin-top:.4rem}
+</style>
+</head>
+<body>
+<header>
+  <div class="k">Chapter 1 · Interactive practice</div>
+  <h1>Globalization and the Multinational Firm</h1>
+  <p>Eight problem generators. Every problem draws new numbers, so you can't memorize an answer, only learn the method. Rate your confidence before you check. Your history stays in this browser; nothing is uploaded.
+  <br><a href="../chapters/01-introduction.html" class="back">← Back to Chapter 1</a></p>
+</header>
+<main>
+  <div class="card">
+    <div class="row">
+      <label>Student ID or name <input type="text" id="sid" size="14" placeholder="sets your numbers"></label>
+      <label>Problem type <select id="type"></select></label>
+      <button id="new">New problem</button>
+      <button id="weak" class="ghost" title="Picks from the types where your accuracy is lowest">Drill my weak types</button>
+    </div>
+    <p class="muted" style="margin:.5rem 0 0">Your ID only seeds the numbers so no two students get the same problems. Leave it blank to practise anonymously.</p>
+  </div>
+
+  <div class="card q" id="q"><p class="muted">Choose a type, or leave it on "Any type", and press <b>New problem</b>.</p></div>
+
+  <div class="card">
+    <div class="row" style="justify-content:space-between"><b>Your record</b><button id="reset" class="ghost">Reset history</button></div>
+    <div id="stats" style="margin-top:.6rem"></div>
+    <div id="cal" class="cal"></div>
+  </div>
+</main>
+<script>
+(function () {
+  const KEY = "mf-practice-ch01";
+  const $ = (id) => document.getElementById(id);
+  const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {h: [], n: 0}; } catch (e) { return {h: [], n: 0}; } };
+  let S = load();
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} };
+  const f = (x, d) => Number(x).toLocaleString("en-US", {minimumFractionDigits: d, maximumFractionDigits: d});
+  const sgn = (x, d) => (x < 0 ? "−" : "+") + f(Math.abs(x), d);
+
+  function rng(seedStr) {
+    let h = 1779033703 ^ seedStr.length;
+    for (let i = 0; i < seedStr.length; i++) { h = Math.imul(h ^ seedStr.charCodeAt(i), 3432918353); h = (h << 13) | (h >>> 19); }
+    let a = h >>> 0;
+    return () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+  }
+  const pick = (r, lo, hi, step) => { const k = Math.round((hi - lo) / step); return +(lo + step * Math.floor(r() * (k + 1))).toFixed(6); };
+  const choose = (r, arr) => arr[Math.floor(r() * arr.length)];
+
+  // Each generator returns {prompt, kind:"num"|"word", answer, tol, atol, unit, keys, steps[], why}
+  const G = {
+    scale: {name: "Scale and magnitude", gen(r) {
+      const T = pick(r, 6.0, 10.5, 0.1), X = pick(r, 22, 30, 0.5), D = 252;
+      const ask = choose(r, ["days", "ratio"]);
+      if (ask === "days") return {kind: "num", answer: X / T, tol: 0.03, atol: 0.1, unit: "trading days",
+        prompt: `Global FX turnover averages $${f(T, 1)} trillion per trading day. World merchandise exports are $${f(X, 1)} trillion per year. How many trading days of FX turnover equal one year of goods trade?`,
+        steps: [`Days = annual exports ÷ daily turnover`, `= ${f(X, 1)} ÷ ${f(T, 1)} = <b>${f(X / T, 2)} trading days</b>`],
+        why: "Currency trading clears a year of goods trade in a few days, so almost none of it can be paying for trade."};
+      const ann = T * D;
+      return {kind: "num", answer: ann / X, tol: 0.03, atol: 1, unit: "times",
+        prompt: `Global FX turnover averages $${f(T, 1)} trillion per day over ${D} trading days. World merchandise exports are $${f(X, 1)} trillion a year. Annual FX turnover is how many times annual goods trade?`,
+        steps: [`Annual turnover = ${f(T, 1)} × ${D} = $${f(ann, 0)} trillion`, `Ratio = ${f(ann, 0)} ÷ ${f(X, 1)} = <b>${f(ann / X, 0)} times</b>`],
+        why: "The financial economy is orders of magnitude larger than the trade it nominally serves."};
+    }},
+    apprec: {name: "Appreciation and depreciation", gen(r) {
+      const a = pick(r, 1.02, 1.20, 0.005); let b = pick(r, 0.98, 1.24, 0.005); if (Math.abs(b - a) < 0.02) b = +(a + 0.04).toFixed(3);
+      const eur = (b / a - 1) * 100, usd = (a / b - 1) * 100;
+      const ask = choose(r, ["eur", "usd"]);
+      const base = `EUR/USD moves from $${a.toFixed(3)} per euro to $${b.toFixed(3)} per euro. `;
+      return ask === "eur"
+        ? {kind: "num", answer: eur, tol: 0, atol: 0.05, unit: "% change in the euro's value",
+           prompt: base + "By what percentage did the <em>euro</em> change in value against the dollar? (Use a negative number for a depreciation.)",
+           steps: [`The euro's price in dollars went from ${a.toFixed(3)} to ${b.toFixed(3)}`, `% change = ${b.toFixed(3)} ÷ ${a.toFixed(3)} − 1 = <b>${sgn(eur, 2)}%</b>`],
+           why: "Quoted in dollars per euro, a rising number means the euro is appreciating."}
+        : {kind: "num", answer: usd, tol: 0, atol: 0.05, unit: "% change in the dollar's value",
+           prompt: base + "By what percentage did the <em>dollar</em> change in value against the euro? (Use a negative number for a depreciation.)",
+           steps: [`The dollar's price in euros is the inverse: 1/${a.toFixed(3)} = ${(1 / a).toFixed(4)} → 1/${b.toFixed(3)} = ${(1 / b).toFixed(4)}`, `% change = ${a.toFixed(3)} ÷ ${b.toFixed(3)} − 1 = <b>${sgn(usd, 2)}%</b>`],
+           why: "The two percentage changes are not equal and opposite. That asymmetry trips up almost everyone the first time."};
+    }},
+    openness: {name: "Trade openness", gen(r) {
+      const cty = choose(r, ["Mexico", "Vietnam", "Germany", "Brazil", "South Korea", "Japan"]);
+      const Y = pick(r, 0.4, 5.0, 0.1), x = pick(r, 0.12, 0.9, 0.01), m = pick(r, 0.12, 0.9, 0.01);
+      const X = +(Y * x).toFixed(2), M = +(Y * m).toFixed(2), o = (X + M) / Y * 100;
+      return {kind: "num", answer: o, tol: 0, atol: 0.5, unit: "% of GDP",
+        prompt: `A stylized ${cty} has GDP of $${f(Y, 1)} trillion, exports of $${f(X, 2)} trillion and imports of $${f(M, 2)} trillion. What is its trade openness?`,
+        steps: [`Openness = (exports + imports) ÷ GDP`, `= (${f(X, 2)} + ${f(M, 2)}) ÷ ${f(Y, 1)} = <b>${f(o, 1)}%</b>`],
+        why: "Openness above 100% is possible: exports often contain imported inputs, so trade is counted gross."};
+    }},
+    cross: {name: "Cross rates", gen(r) {
+      const eu = pick(r, 1.02, 1.20, 0.0025), uj = pick(r, 135, 165, 0.25);
+      const ej = eu * uj;
+      return {kind: "num", answer: ej, tol: 0.001, atol: 0.05, unit: "yen per euro",
+        prompt: `EUR/USD is ${eu.toFixed(4)} (dollars per euro) and USD/JPY is ${uj.toFixed(2)} (yen per dollar). What is the EUR/JPY cross rate, in yen per euro?`,
+        steps: [`Yen per euro = (dollars per euro) × (yen per dollar)`, `= ${eu.toFixed(4)} × ${uj.toFixed(2)} = <b>${f(ej, 2)} yen per euro</b>`],
+        why: "Line the units up so the dollars cancel: $/€ × ¥/$ = ¥/€."};
+    }},
+    hedge: {name: "The hedging comparison", gen(r) {
+      const A = pick(r, 1.5, 6, 0.1), F = pick(r, 1.04, 1.18, 0.0025); let S = pick(r, 0.98, 1.24, 0.0025); if (Math.abs(S - F) < 0.01) S = +(F - 0.03).toFixed(4);
+      const h = A * F * 1000, u = A * S * 1000, d = h - u;
+      return {kind: "num", answer: d, tol: 0.005, atol: 1, unit: "$ thousands",
+        prompt: `Chattanooga Precision Components (CPC) will receive €${f(A, 1)} million in 60 days. It can sell the euros forward today at $${F.toFixed(4)}/€. In 60 days the spot rate turns out to be $${S.toFixed(4)}/€. How much better (positive) or worse (negative) off is CPC, in thousands of dollars, from having hedged rather than staying unhedged?`,
+        steps: [`Hedged: €${f(A, 1)}m × ${F.toFixed(4)} = $${f(h, 0)}k`, `Unhedged: €${f(A, 1)}m × ${S.toFixed(4)} = $${f(u, 0)}k`, `Hedged − unhedged = <b>${sgn(d, 0)} thousand dollars</b>`],
+        why: d < 0 ? "Hedging 'lost' this time, and that is not a mistake. A hedge buys certainty, not profit; judged after the fact it looks wrong about half the time."
+                   : "Hedging paid off this time. Judged before the fact, though, the hedge was about locking in a known amount, not about predicting the euro."};
+    }},
+    exposure: {name: "Exposure classification", gen(r) {
+      const pool = [
+        {t: "CPC has invoiced its German distributor €2.6 million, payable in 60 days.", k: ["transaction"], m: "<b>Transaction exposure</b>: a contracted euro amount whose dollar value is unknown until it settles. A forward hedges it almost exactly."},
+        {t: "CPC sells only in the United States and invoices in dollars, but its main competitor is a Japanese firm. The yen falls 15% against the dollar.", k: ["economic", "operating", "competitive"], m: "<b>Economic (operating) exposure</b>: no yen cash flow exists, but the rival's prices fall in dollar terms, so CPC's future sales and margins are hit."},
+        {t: "CPC's Mexican warehousing subsidiary is carried at MXN 180 million. The peso depreciates, and consolidated equity falls. No cash moves.", k: ["translation", "accounting"], m: "<b>Translation (accounting) exposure</b>: restating peso net assets into dollars changes reported equity, flowing to the cumulative translation adjustment."},
+        {t: "CPC expects to keep selling to Europe for years, though none of next year's sales have been invoiced yet. The euro begins a long slide.", k: ["economic", "operating"], m: "<b>Economic exposure</b>: uninvoiced future sales are not contracts yet, so no single forward can hedge them; the whole European business is worth less in dollars."},
+        {t: "CPC has agreed to pay a Japanese supplier ¥40 million for a machine on delivery in 90 days.", k: ["transaction"], m: "<b>Transaction exposure</b>: a contracted yen payable. Buying yen forward fixes the dollar cost."}];
+      const s = choose(r, pool);
+      return {kind: "word", keys: s.k, prompt: `Name the type of currency exposure, and say in one sentence why.<br><br><em>${s.t}</em>`,
+        steps: [s.m], why: "Ask two questions: is there a contracted foreign-currency amount (transaction)? If not, is it a restatement of a foreign entity's books (translation) or a change in future competitiveness (economic)?"};
+    }},
+    translation: {name: "Translation gain or loss", gen(r) {
+      const N = pick(r, 120, 260, 5), r0 = pick(r, 16.5, 19.0, 0.05); let d = pick(r, -0.12, 0.15, 0.01); if (Math.abs(d) < 0.04) d = 0.07;
+      const r1 = +(r0 * (1 + d)).toFixed(2), g = N / r1 - N / r0;
+      return {kind: "num", answer: g, tol: 0.02, atol: 0.05, unit: "$ millions",
+        prompt: `CPC's Mexican subsidiary has net assets of MXN ${N} million. Over the year the peso moves from ${r0.toFixed(2)} to ${r1.toFixed(2)} pesos per dollar. What is the translation gain or loss, in millions of dollars? (Use a negative number for a loss.)`,
+        steps: [`Before: ${N} ÷ ${r0.toFixed(2)} = $${f(N / r0, 2)}m`, `After: ${N} ÷ ${r1.toFixed(2)} = $${f(N / r1, 2)}m`, `Change = <b>${sgn(g, 2)} million dollars</b>`],
+        why: "It goes to the cumulative translation adjustment in equity, not through income. Hedging it with a forward can create cash-flow risk where there was none."};
+    }},
+    vintage: {name: "Data-vintage judgment", gen(r) {
+      const pool = [
+        {t: "An exhibit is labelled \"Source: BIS Triennial Survey, April 2025; retrieved 14 September 2026.\" Which of the two dates tells you when the trading actually happened?", k: ["april", "reference"], m: "<b>April 2025, the reference period.</b> The retrieval date only tells you when the figure was pulled."},
+        {t: "You and a classmate cite different values for the same country's 2024 current-account balance, both from the IMF. Name the most likely innocent explanation.", k: ["revis", "vintage", "retriev", "updat"], m: "<b>Revision.</b> You pulled different vintages: balance-of-payments data are routinely revised for years, sometimes enough to flip the sign."},
+        {t: "A news story quotes the dollar's share of world reserves as 56.3%, while the IMF's latest release says 57.1%. Before calling the story wrong, what two things should you check?", k: ["quarter", "period", "reference", "vintage", "revis"], m: "<b>Which quarter (reference period) and which vintage.</b> The two numbers may describe different quarters, or the same quarter before and after revision."},
+        {t: "Your term paper uses a GDP figure you retrieved in March. Your instructor's figure, retrieved in October, is different. What should your citation have included to make the difference obvious?", k: ["retriev", "date", "vintage"], m: "<b>The retrieval date (vintage)</b>, alongside the agency, the series and the reference period."}];
+      const s = choose(r, pool);
+      return {kind: "word", keys: s.k, prompt: s.t, steps: [s.m], why: "Every figure has two dates: when the activity happened and when the number was retrieved. Agencies revise, so both matter."};
+    }}
+  };
+  const TYPES = Object.keys(G);
+  $("type").innerHTML = `<option value="any">Any type</option>` + TYPES.map((k) => `<option value="${k}">${G[k].name}</option>`).join("");
+
+  let cur = null;
+  function stats() {
+    const by = {}; TYPES.forEach((k) => by[k] = {n: 0, ok: 0, conf: 0});
+    S.h.forEach((x) => { if (by[x.t]) { by[x.t].n++; by[x.t].ok += x.ok ? 1 : 0; by[x.t].conf += x.c; } });
+    return by;
+  }
+  function renderStats() {
+    const by = stats();
+    $("stats").innerHTML = `<table><tr><th>Type</th><th>Attempts</th><th>Correct</th><th>Accuracy</th><th>Avg confidence</th></tr>` +
+      TYPES.map((k) => { const b = by[k]; const acc = b.n ? Math.round(100 * b.ok / b.n) : null;
+        return `<tr><td>${G[k].name}</td><td class="n">${b.n}</td><td class="n">${b.ok}</td><td>${acc == null ? "—" : `<span class="bar" style="width:${acc * 0.8}px"></span> ${acc}%`}</td><td class="n">${b.n ? Math.round(b.conf / b.n) + "%" : "—"}</td></tr>`; }).join("") + `</table>`;
+    const n = S.h.length;
+    if (n >= 3) {
+      const acc = Math.round(100 * S.h.filter((x) => x.ok).length / n), conf = Math.round(S.h.reduce((s, x) => s + x.c, 0) / n);
+      $("cal").innerHTML = `Across ${n} problems you averaged <b>${conf}%</b> confidence and got <b>${acc}%</b> right. ` +
+        (Math.abs(conf - acc) <= 10 ? "That's well calibrated." : conf > acc ? "You're overconfident. Fluency feels like knowing; it isn't." : "You're underconfident. You know more than you think.");
+    } else $("cal").textContent = "";
+  }
+  function weakest() {
+    const by = stats();
+    const scored = TYPES.map((k) => ({k, s: by[k].n ? by[k].ok / by[k].n : -1}));   // untried types first
+    scored.sort((a, b) => a.s - b.s);
+    const low = scored.slice(0, 3).map((x) => x.k);
+    return low[Math.floor(Math.random() * low.length)];
+  }
+  function newProblem(type) {
+    S.n = (S.n || 0) + 1; save();
+    const t = type === "any" ? TYPES[Math.floor(Math.random() * TYPES.length)] : type;
+    const seed = `${($("sid").value || "anon").trim()}|ch01|${t}|${S.n}|${Date.now()}`;
+    cur = {t, ...G[t].gen(rng(seed))};
+    $("q").innerHTML = `<div class="type">${G[t].name}</div><div class="prompt">${cur.prompt}</div>` +
+      (cur.kind === "num" ? `<div class="row"><input type="text" id="ans" inputmode="decimal" size="14" aria-label="Your answer"> <span class="muted">${cur.unit}</span></div>`
+                          : `<textarea id="ans" aria-label="Your answer"></textarea>`) +
+      `<div class="conf">How sure are you? <input type="range" id="conf" min="0" max="100" step="10" value="50"> <span id="cv">50%</span></div>
+       <button id="check">Check</button> <span class="muted">Answer first, then check.</span><div id="out"></div>`;
+    $("conf").oninput = () => { $("cv").textContent = $("conf").value + "%"; };
+    $("check").onclick = check;
+    $("ans").focus();
+  }
+  function check() {
+    const v = $("ans").value.trim(); if (!v) { $("ans").focus(); return; }
+    let ok;
+    if (cur.kind === "num") { const x = parseFloat(v.replace(/[,$€¥%\s]/g, "").replace(/[−–]/g, "-")); ok = !isNaN(x) && Math.abs(x - cur.answer) <= Math.max(cur.atol || 0, Math.abs(cur.answer) * (cur.tol || 0)); }
+    else ok = cur.keys.some((k) => new RegExp("\\b" + k, "i").test(v));
+    S.h.push({t: cur.t, ok, c: +$("conf").value, when: Date.now()}); save();
+    $("check").disabled = true; $("ans").disabled = true; $("conf").disabled = true;
+    $("out").innerHTML = `<div class="res ${ok ? "ok" : "no"}"><b>${ok ? "✓ Correct." : "✗ Not quite."}</b> Worked solution:<ol>${cur.steps.map((s) => `<li>${s}</li>`).join("")}</ol><p style="margin:.5rem 0 0">${cur.why}</p></div>
+      <div class="row" style="margin-top:.7rem"><button class="teal" id="again">Another ${G[cur.t].name.toLowerCase()} problem</button><button class="ghost" id="any">Any type</button></div>`;
+    $("again").onclick = () => newProblem(cur.t); $("any").onclick = () => newProblem("any");
+    renderStats();
+  }
+  $("new").onclick = () => newProblem($("type").value);
+  $("weak").onclick = () => newProblem(weakest());
+  $("reset").onclick = () => { if (confirm("Erase your practice history for Chapter 1?")) { S = {h: [], n: 0}; save(); renderStats(); } };
+  try { const sid = localStorage.getItem("mf-sid"); if (sid) $("sid").value = sid; $("sid").onchange = () => localStorage.setItem("mf-sid", $("sid").value); } catch (e) {}
+  renderStats();
+})();
+</script>
+</body>
+</html>

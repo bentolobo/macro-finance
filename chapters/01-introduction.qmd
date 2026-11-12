@@ -748,11 +748,13 @@ The Checkpoint runs in the web edition of this chapter.
 
 
 ::: {.callout-note .mf-box .mf-activity icon=false}
-## Interactive practice · `practice-test-ch01.html`
+## Interactive practice
 
-The problems below are fixed; the companion practice test is not. It contains eight problem *generators* — scale and magnitude arithmetic, appreciation and depreciation, trade openness, cross rates, the hedging comparison, exposure classification, gross-versus-net reasoning and data-vintage judgment — and each one draws new numbers every time you open it. That is deliberate. A problem you can only solve once teaches you an answer; a problem that changes teaches you a method. Each attempt is scored, each solution is shown step by step, and a confidence slider records how well calibrated you were. Nothing is uploaded; your attempt history stays in your own browser.
+The problems below are fixed; the companion practice test is not. It contains eight problem *generators* — scale and magnitude arithmetic, appreciation and depreciation, trade openness, cross rates, the hedging comparison, exposure classification, translation gains and losses, and data-vintage judgment — and each one draws new numbers every time you open it. That is deliberate. A problem you can only solve once teaches you an answer; a problem that changes teaches you a method. Each attempt is scored, each solution is shown step by step, and a confidence slider records how well calibrated you were. Nothing is uploaded; your attempt history stays in your own browser.
 
 Work the fixed problems below first, because they are the ones your instructor can discuss. Then use the generator until you can do each type without hesitating.
+
+**[Open the Chapter 1 practice test →](../practice/practice-test-ch01.html)**
 :::
 
 ## Problems {.unnumbered}
