@@ -20,7 +20,7 @@ Chapter 1 has four elements AI touches directly. Take them in order of how well 
 
 ```{python}
 #| label: ex0121
-#| fig-cap: "**Exhibit AI 1.1** The four contact points between artificial intelligence and the material of Chapter 1. The claims are ordered by evidentiary strength, not by how often they are asserted."
+#| fig-cap: "**Exhibit AI 1.1** The four contact points between artificial intelligence and the material of Chapter 1. The claims are ordered by evidentiary strength, not by how often they are asserted. Source: original diagram for this book."
 ex.ex0121(); plt.show()
 ```
 
@@ -50,7 +50,7 @@ Here is the honest part. If the informational friction is falling, the **home bi
 
 The financial-stability concern identified by the BIS is specific and worth stating precisely, because it is routinely misreported as a concern about speed. **The risk is monoculture.** If many institutions use models built on the same handful of foundation architectures, trained on overlapping data, they will tend to read the same signal the same way at the same moment. The result is amplified herding, correlated liquidity withdrawal and procyclicality — and, as a regulatory matter, the possibility of collusive-looking outcomes among algorithms that were never instructed to collude. A related exposure runs through concentration on the supply side: a small number of firms provide frontier models, so third-party dependency becomes a systemic variable rather than a procurement detail.
 
-Hold this next to Exhibit 1.9 in Chapter 1. A market whose intermediation is concentrated in a few dozen institutions, running models sourced from a few providers, is more tightly coupled than its turnover statistics suggest. That is a Chapter 5 and Chapter 20 problem, and you now have the vocabulary for it.
+Hold this next to Exhibit 1.8 in Chapter 1. A market whose intermediation is concentrated in a few dozen institutions, running models sourced from a few providers, is more tightly coupled than its turnover statistics suggest. That is a Chapter 5 and Chapter 20 problem, and you now have the vocabulary for it.
 
 ### The treasury function: where the money has actually been saved
 
@@ -64,7 +64,7 @@ The direction of travel is from decision support to execution. Treasury manageme
 
 ```{python}
 #| label: ex0122
-#| fig-cap: "**Exhibit AI 1.2** Three rungs of treasury automation. The move from rung two to rung three is not primarily a technology decision; it is a decision about delegated authority, and it is made by a board, not by a treasurer."
+#| fig-cap: "**Exhibit AI 1.2** Three rungs of treasury automation. The move from rung two to rung three is not primarily a technology decision; it is a decision about delegated authority, and it is made by a board, not by a treasurer. Source: original diagram for this book."
 ex.ex0122(); plt.show()
 ```
 

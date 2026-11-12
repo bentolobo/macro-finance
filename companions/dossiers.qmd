@@ -26,7 +26,7 @@ Two exhibits frame everything in the dossier. The first is the fact that makes t
 
 ```{python}
 #| label: ex0115
-#| fig-cap: "**Exhibit D1.1** The dollar's role in the system against the U.S. share of world output. The gap between the bars and the dashed line is the thing that requires explanation — and the thing that de-dollarization claims assert is closing."
+#| fig-cap: "**Exhibit D1.1** The dollar's role in the system against the U.S. share of world output. The gap between the bars and the dashed line is the thing that requires explanation — and the thing that de-dollarization claims assert is closing. Sources: [BIS Triennial Central Bank Survey, 2025](https://www.bis.org/statistics/rpfx25.htm); [Federal Reserve, The International Role of the U.S. Dollar, 2025 edition](https://www.federalreserve.gov/econres/notes/feds-notes/the-international-role-of-the-u-s-dollar-2025-edition-20250718.html); [IMF COFER data brief, 1 July 2026](https://data.imf.org/en/news/imf%20data%20brief%20july%201); [World Bank, GDP (NY.GDP.MKTP.CD)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)."
 bars = [("One side of\nFX trades", float(val("usd_fx_share"))),
         ("Foreign-currency\ndebt issuance", float(val("usd_debt_share"))),
         ("Cross-border\nloans", float(val("usd_loan_share"))),
@@ -47,7 +47,7 @@ plt.show()
 
 ```{python}
 #| label: ex0116
-#| fig-cap: "**Exhibit D1.2** Currency composition of official foreign exchange reserves, 2026 Q1. The dossier contains four different values for the dollar share of this chart. Only one of them is this one."
+#| fig-cap: "**Exhibit D1.2** Currency composition of official foreign exchange reserves, 2026 Q1. The dossier contains four different values for the dollar share of this chart. Only one of them is this one. Source: [IMF COFER data brief, 1 July 2026](https://data.imf.org/en/news/imf%20data%20brief%20july%201)."
 sh = dict(COFER_2026Q1); sh["All other"] = round(100 - sum(sh.values()), 2)
 cols = [NAVY, TEAL, AMBER, RUST, "#c9d3dc"]
 fig = plt.figure(figsize=(10.6, 4.0))
@@ -69,13 +69,13 @@ plt.show()
 
 ### The dossier
 
-**1 · "World Official Foreign Currency Reserves Largely Unchanged in the First Quarter of 2026."** *IMF Data Brief, Currency Composition of Official Foreign Exchange Reserves (COFER), 1 July 2026.*
+**1 · ["World Official Foreign Currency Reserves Largely Unchanged in the First Quarter of 2026."](https://data.imf.org/en/news/imf%20data%20brief%20july%201)** *IMF Data Brief, Currency Composition of Official Foreign Exchange Reserves (COFER), 1 July 2026.*
 
 > Total foreign exchange reserves decreased to \$13.10 trillion in 2026Q1, down slightly from \$13.15 trillion in 2025Q4. The share of US dollar holdings **increased to 57.13 percent in 2026Q1, from 56.42 percent in 2025Q4**… The U.S. dollar's mild appreciation against major currencies was a key driver of the COFER dollar share this quarter, with exchange-rate-driven valuation effects accounting for around half of the increase in its share. The euro's share declined to 20.03 percent… while the renminbi's share edged up to 1.99 percent.
 
 The IMF adds a caution that almost no secondary coverage reproduced: in 2025 gold surpassed U.S. Treasuries as a share of official reserves, but that development was driven almost entirely by gold *price valuation* effects, and is not reflected in the COFER dollar share.
 
-**2 · "Are Central Banks Moving Out of Dollar Assets?"** *Linda S. Goldberg, Oliver Hannaoui and Sneha Parthasarathy, Federal Reserve Bank of New York,* Liberty Street Economics, *2 September 2026.*
+**2 · ["Are Central Banks Moving Out of Dollar Assets?"](https://libertystreeteconomics.newyorkfed.org/2026/09/are-central-banks-moving-out-of-dollar-assets/)** *Linda S. Goldberg, Oliver Hannaoui and Sneha Parthasarathy, Federal Reserve Bank of New York,* Liberty Street Economics, *2 September 2026.*
 
 > The dollar's share of global official foreign exchange reserves fell from 64 percent in 2015 to 56 percent in 2025. This downward trajectory is sometimes read as evidence that the dollar's role in international financial markets is eroding. However, aggregate statistics obscure the composition of changes occurring at the country level… **the aggregate decline is not a systematic global shift away from dollar assets.** Rather, the aggregate decline reflects the actions of a handful of large reserve holders.
 

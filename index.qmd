@@ -37,7 +37,7 @@ So the recurring features of this book are not decoration. Each one is a specifi
 
 ```{python}
 #| label: ex0101
-#| fig-cap: "**Exhibit P.1** The study cycle each chapter is built around. The order matters: guessing before reading, and retrieving rather than rereading, are the two steps students most often skip and the two with the largest measured effect."
+#| fig-cap: "**Exhibit P.1** The study cycle each chapter is built around. The order matters: guessing before reading, and retrieving rather than rereading, are the two steps students most often skip and the two with the largest measured effect. Source: original diagram for this book."
 ex.ex0101(); plt.show()
 ```
 

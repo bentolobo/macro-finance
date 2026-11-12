@@ -19,7 +19,7 @@ Exhibit P.2 is the version to photograph and keep. The ten sections that follow 
 
 ```{python}
 #| label: ex0118
-#| fig-cap: "**Exhibit P.2** The ten propositions, compressed. Two of them are in genuine tension with each other and one is stated more strongly than the evidence supports; identifying which is Chapter 1, Problem 1.15."
+#| fig-cap: "**Exhibit P.2** The ten propositions, compressed. Two of them are in genuine tension with each other and one is stated more strongly than the evidence supports; identifying which is Chapter 1, Problem 1.13. Source: original diagram for this book."
 ex.ex0118(); plt.show()
 ```
 
@@ -61,7 +61,7 @@ In a frictionless world, shareholders can hedge currency risk themselves more ch
 
 ```{python}
 #| label: ex0119
-#| fig-cap: "**Exhibit P.3** Why hedging does not raise expected value. Averaged over the distribution of terminal spot rates, the forward hedge neither gains nor loses against being unhedged; what it does is delete the left tail, and the left tail is where distress costs live. Illustrative; Chapter 11 does this properly with live rates."
+#| fig-cap: "**Exhibit P.3** Why hedging does not raise expected value. Averaged over the distribution of terminal spot rates, the forward hedge neither gains nor loses against being unhedged; what it does is delete the left tail, and the left tail is where distress costs live. Illustrative; Chapter 11 does this properly with live rates. Source: original diagram for this book."
 S = np.linspace(0.95, 1.25, 200); F, K, prem = 1.10, 1.10, 0.018
 fig, ax = plt.subplots(figsize=(10.6, 4.4))
 ax.plot(S, S, color=RUST, lw=2.2, label="Unhedged")
@@ -89,5 +89,5 @@ The anatomy of a crisis is remarkably consistent: borrow in a foreign currency, 
 
 Copy these ten claims onto a single page. At the end of every chapter, identify which of the ten the chapter sharpened, qualified, or complicated — and write one sentence saying how. By the end of the course you will have a document that is more useful than your notes, because it is organized around ideas rather than around weeks.
 
-Two of these propositions are in genuine tension with each other, and finding the tension is a worthwhile exercise. A third is stated more confidently here than the current empirical literature strictly supports. Identifying which, and defending your choice, is Chapter 1, Problem 1.15.
+Two of these propositions are in genuine tension with each other, and finding the tension is a worthwhile exercise. A third is stated more confidently here than the current empirical literature strictly supports. Identifying which, and defending your choice, is Chapter 1, Problem 1.13.
 :::

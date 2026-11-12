@@ -54,7 +54,7 @@ If banks forecast the euro to weaken, is it cheaper or dearer for a U.S. firm to
 After completing this chapter you should be able to:
 
 1. **Explain** why international finance is a distinct field rather than an application of domestic corporate finance, in terms of four specific frictions.
-2. **Describe** the scale and composition of global financial activity using primary statistical sources, and distinguish gross from net measures.
+2. **Describe** the scale and composition of global financial activity using primary statistical sources.
 3. **Identify** the principal participants in international financial markets and the objective each is pursuing.
 4. **Distinguish** the three categories of foreign exchange exposure and recognize which applies to a given business situation.
 5. **Evaluate** the claim that globalization has stalled or reversed, using trade, investment, and financial-flow evidence.
@@ -72,7 +72,7 @@ Domestic corporate finance gives you a powerful toolkit: discounted cash flow, t
 
 ```{python}
 #| label: ex0102
-#| fig-cap: "**Exhibit 1.1** The four frictions, and where each is developed. If you retain one diagram from this chapter, retain this one — every later chapter is an elaboration of one of these four boxes."
+#| fig-cap: "**Exhibit 1.1** The four frictions, and where each is developed. If you retain one diagram from this chapter, retain this one — every later chapter is an elaboration of one of these four boxes. Source: original diagram for this book."
 ex.ex0102(); plt.show()
 ```
 
@@ -82,7 +82,7 @@ A domestic firm's cash flows are denominated in one unit of account. A multinati
 
 ```{python}
 #| label: ex0103
-#| fig-cap: "**Exhibit 1.2** Nominal broad U.S. dollar index, 2006 to the latest month. A rising line means the dollar is appreciating against a trade-weighted basket — good news for a U.S. importer, painful for a U.S. exporter and for any firm with dollar debt and local-currency revenue. Swings of the size annotated, over a few years, are routine."
+#| fig-cap: "**Exhibit 1.2** Nominal broad U.S. dollar index, 2006 to the latest month. A rising line means the dollar is appreciating against a trade-weighted basket — good news for a U.S. importer, painful for a U.S. exporter and for any firm with dollar debt and local-currency revenue. Swings of the size annotated, over a few years, are routine. Source: Federal Reserve Board via FRED, series [DTWEXBGS](https://fred.stlouisfed.org/series/DTWEXBGS)."
 s, prov = series("broad_dollar")
 ill = prov.tier == "illustrative"
 fig, ax = plt.subplots(figsize=(10.6, 4.4))
@@ -151,7 +151,7 @@ Scale matters for intuition, so let us establish benchmarks. The most common mea
 
 ```{python}
 #| label: ex0104
-#| fig-cap: "**Exhibit 1.3** World trade openness, 1970 to the latest year: exports plus imports as a share of world GDP. Four decades of steep increase, then a plateau after 2008 — the central empirical fact behind the “slowbalization” debate in @sec-globalization."
+#| fig-cap: "**Exhibit 1.3** World trade openness, 1970 to the latest year: exports plus imports as a share of world GDP. Four decades of steep increase, then a plateau after 2008 — the central empirical fact behind the “slowbalization” debate in @sec-globalization. Source: World Bank, World Development Indicators, [NE.TRD.GNFS.ZS](https://data.worldbank.org/indicator/NE.TRD.GNFS.ZS)."
 d, prov = series("trade_openness")
 ill = prov.tier == "illustrative"
 fig, ax = plt.subplots(figsize=(10.6, 4.2))
@@ -174,7 +174,7 @@ The *financial* economy is a different order of magnitude — and the comparison
 
 ```{python}
 #| label: ex0105
-#| fig-cap: "**Exhibit 1.4** Orders of magnitude. The horizontal scale is logarithmic, which is itself the point: the two economies cannot be drawn legibly on the same linear axis."
+#| fig-cap: "**Exhibit 1.4** Orders of magnitude. The horizontal scale is logarithmic, which is itself the point: the two economies cannot be drawn legibly on the same linear axis. Sources: [BIS Triennial Central Bank Survey, 2025](https://www.bis.org/statistics/rpfx25.htm); [WTO, Global Trade Outlook and Statistics, March 2026](https://www.wto.org/english/res_e/publications_e/gtos0326_e.htm); [World Bank, GDP (NY.GDP.MKTP.CD)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)."
 rows = [("World merchandise exports, per year", float(val("wto_merch_exports")), SLATE),
         ("U.S. GDP, per year", float(val("us_gdp")), SLATE),
         ("World GDP, per year", float(val("world_gdp")), SLATE),
@@ -210,7 +210,7 @@ Exhibit 1.5 plots the headline series from the BIS Triennial Survey, the only gl
 
 ```{python}
 #| label: ex0106
-#| fig-cap: "**Exhibit 1.5** Global foreign exchange turnover, daily average in April of each survey year. Source: BIS Triennial Central Bank Survey; earlier rounds as reported at the time."
+#| fig-cap: "**Exhibit 1.5** Global foreign exchange turnover, daily average in April of each survey year. Source: [BIS Triennial Central Bank Survey, 2025](https://www.bis.org/statistics/rpfx25.htm); earlier rounds as published at the time."
 s = FX_TURNOVER_ROUNDS
 fig, ax = plt.subplots(figsize=(10.6, 4.2))
 cols = [NAVY if y == s.index[-1] else "#9aa7b3" for y in s.index]
@@ -233,7 +233,7 @@ Put the two economies side by side and the asymmetry is stark.
 
 ```{python}
 #| label: ex0107
-#| fig-cap: "**Exhibit 1.6** One trading day of FX turnover against one full year of world merchandise exports. Sources: BIS Triennial Central Bank Survey, April 2025; WTO, latest annual value."
+#| fig-cap: "**Exhibit 1.6** One trading day of FX turnover against one full year of world merchandise exports. Sources: [BIS Triennial Central Bank Survey, 2025](https://www.bis.org/statistics/rpfx25.htm); [WTO, Global Trade Outlook and Statistics, March 2026](https://www.wto.org/english/res_e/publications_e/gtos0326_e.htm)."
 fx, tr = float(val("fx_turnover")), float(val("wto_merch_exports"))
 fig, ax = plt.subplots(figsize=(10.6, 2.9))
 ax.barh([1, 0], [fx, tr], color=[NAVY, RUST], height=0.55)
@@ -253,7 +253,7 @@ The same survey measures a second market of comparable size.
 
 ```{python}
 #| label: ex0108
-#| fig-cap: "**Exhibit 1.7** FX and OTC interest rate derivatives turnover, 2016–2025 survey rounds. Source: BIS Triennial Central Bank Survey. The fall and recovery in interest rate derivatives after 2019 track the replacement of LIBOR by overnight index swaps, which by 2025 made up roughly two-thirds of that market."
+#| fig-cap: "**Exhibit 1.7** FX and OTC interest rate derivatives turnover, 2016–2025 survey rounds. The fall and recovery in interest rate derivatives after 2019 track the replacement of LIBOR by overnight index swaps, which by 2025 made up roughly two-thirds of that market. Source: [BIS Triennial Central Bank Survey, 2025](https://www.bis.org/statistics/rpfx25.htm)."
 f, r = FX_TURNOVER_ROUNDS.loc[2016:], IRD_TURNOVER_ROUNDS
 x = np.arange(len(r)); w = 0.36
 fig, ax = plt.subplots(figsize=(10.6, 4.0))
@@ -269,18 +269,6 @@ finish(fig, "ex0108", "Two markets, one triennial census", "Average daily OTC tu
 plt.show()
 ```
 
-::: {.callout-note .mf-box .mf-trap icon=false}
-## Gross versus net: the single most common mistake
-
-A \$`{python} val('fx_turnover')` trillion daily turnover figure is a *gross* measure. If a corporate client buys €10 million from Dealer A, who offsets with Dealer B, who offsets with Dealer C, the survey records up to \$30-plus million of turnover against \$10 million of underlying customer demand. The BIS publishes both a gross figure and one adjusted for local and cross-border inter-dealer double-counting, and the book always uses the adjusted "net-net" series. Whenever you meet a large number in international finance, your first question is whether it is gross or net. The answer frequently changes the economics by an order of magnitude — see the balance-of-payments identities in Chapter 3, where gross capital flows and net capital flows tell opposite stories about the same year.
-:::
-
-```{python}
-#| label: ex0109
-#| fig-cap: "**Exhibit 1.8** How \\$10 million of customer demand becomes \\$30 million of reported turnover. Gross measures count intermediation; net measures count demand."
-ex.ex0109(); plt.show()
-```
-
 ::::: {.gate data-module="2"}
 :::: {.q}
 FX turnover runs to trillions of dollars a day, while world goods exports are a couple of dozen trillion a year. Why is there no contradiction?
@@ -290,10 +278,10 @@ Almost none of the turnover pays for trade. It is dealer-to-dealer position mana
 :::
 ::::
 :::: {.q}
-What is the difference between gross and net turnover, and which does the BIS headline figure use?
+Global FX turnover *fell* between 2013 and 2016. What does that tell you about the market?
 
 ::: {.a}
-Gross turnover counts every leg of intermediation: €10 million of customer demand passed from Dealer A to B to C can be recorded as \$30 million or more. The BIS adjusts for local and cross-border inter-dealer double counting and reports the **net-net** figure, which this book uses. First question for any big number: gross or net?
+That growth in this market is not a law of nature. The fall coincided with post-crisis regulatory tightening and the retreat of bank balance-sheet capacity, which shrank dealers' willingness to make markets. Market size responds to regulation and to the cost of intermediation, not only to the volume of trade and investment it serves.
 :::
 ::::
 :::::
@@ -304,11 +292,11 @@ Gross turnover counts every leg of intermediation: €10 million of customer dem
 
 ## Who Is in This Market? {#sec-participants}
 
-Six groups transact, and each is pursuing something different. Knowing whose objective function sits on the other side of your trade is what separates a finance professional from a price-taker — and the distribution in Exhibit 1.9 is the first surprise of the course.
+Six groups transact, and each is pursuing something different. Knowing whose objective function sits on the other side of your trade is what separates a finance professional from a price-taker — and the distribution in Exhibit 1.8 is the first surprise of the course.
 
 ```{python}
 #| label: ex0110
-#| fig-cap: "**Exhibit 1.9** Who trades, in what proportion, and why. Note the smallest slice: the commercial end users whose needs the market nominally exists to serve. Source: BIS Triennial Central Bank Survey, April 2025."
+#| fig-cap: "**Exhibit 1.8** Who trades, in what proportion, and why. Note the smallest slice: the commercial end users whose needs the market nominally exists to serve. Source: [BIS Triennial Central Bank Survey, 2025](https://www.bis.org/statistics/rpfx25.htm)."
 ex.ex0110(); plt.show()
 ```
 
@@ -356,21 +344,21 @@ First, benchmarks that are economically important but structurally unsupervised 
 
 ## Three Kinds of Currency Exposure {#sec-exposure}
 
-The managerial core of this book is Part IV, and it rests on a taxonomy students routinely conflate. Exhibit 1.10 states it compactly; read it before the paragraph that follows, not after.
+The managerial core of this book is Part IV, and it rests on a taxonomy students routinely conflate. Exhibit 1.9 states it compactly; read it before the paragraph that follows, not after.
 
 ```{python}
 #| label: ex0111
-#| fig-cap: "**Exhibit 1.10** The three exposures, side by side on the four dimensions that actually distinguish them: horizon, hedging instrument, what gets hit, and where the book treats it."
+#| fig-cap: "**Exhibit 1.9** The three exposures, side by side on the four dimensions that actually distinguish them: horizon, hedging instrument, what gets hit, and where the book treats it. Source: original diagram for this book."
 ex.ex0111(); plt.show()
 ```
 
 Three examples fix the categories. A U.S. firm has invoiced a German customer €4 million payable in 90 days: the euro amount is certain, the dollar amount is not, and a forward contract hedges it almost exactly — **transaction exposure**. A U.S. machine-tool maker selling only domestically against a Japanese rival loses pricing power when the yen depreciates, though every invoice it writes is in dollars — **economic exposure**, larger, longer and unhedgeable with any single contract. A parent restating a Mexican subsidiary's peso books into dollars reports a different consolidated equity when the peso moves, with no cash crossing any border — **translation exposure**, a reporting phenomenon with real consequences through covenants, compensation and investor perception.
 
-Classification is not an academic exercise; it determines which instrument is even applicable. Exhibit 1.11 is the diagnostic, and it is worth committing to memory.
+Classification is not an academic exercise; it determines which instrument is even applicable. Exhibit 1.10 is the diagnostic, and it is worth committing to memory.
 
 ```{python}
 #| label: ex0112
-#| fig-cap: "**Exhibit 1.11** A two-question diagnostic. Most classification errors occur in the right-hand branch, where a firm with no foreign contracts and no foreign subsidiary concludes, wrongly, that it has no exposure."
+#| fig-cap: "**Exhibit 1.10** A two-question diagnostic. Most classification errors occur in the right-hand branch, where a firm with no foreign contracts and no foreign subsidiary concludes, wrongly, that it has no exposure. Source: original diagram for this book."
 ex.ex0112(); plt.show()
 ```
 
@@ -424,7 +412,7 @@ Before engaging the question, place it in time. The present moment is the fifth 
 
 ```{python}
 #| label: ex0113
-#| fig-cap: "**Exhibit 1.12** Eighty years of the international monetary system. Chapter 2 develops each era; the point here is that the current arrangement is neither old nor stable."
+#| fig-cap: "**Exhibit 1.11** Eighty years of the international monetary system. Chapter 2 develops each era; the point here is that the current arrangement is neither old nor stable. Source: original diagram for this book; each era is developed in Chapter 2."
 ex.ex0113(); plt.show()
 ```
 
@@ -434,7 +422,7 @@ A serious senior-level course must engage the claim, now widespread in the busin
 
 ```{python}
 #| label: ex0114
-#| fig-cap: "**Exhibit 1.13** Global foreign direct investment flows as a share of world GDP. Note the volatility against Exhibit 1.3's trade series — FDI is the noisiest of the three integration measures and the most contaminated by conduit flows."
+#| fig-cap: "**Exhibit 1.12** Global foreign direct investment flows as a share of world GDP. Note the volatility against Exhibit 1.3's trade series — FDI is the noisiest of the three integration measures and the most contaminated by conduit flows. Source: World Bank, World Development Indicators, [BX.KLT.DINV.WD.GD.ZS](https://data.worldbank.org/indicator/BX.KLT.DINV.WD.GD.ZS)."
 d, prov = series("fdi_inflows_gdp")
 ill = prov.tier == "illustrative"
 fig, ax = plt.subplots(figsize=(10.6, 4.0))
@@ -506,7 +494,7 @@ State the fragmentation view and the reconfiguration view of today's world econo
 
 ```{python}
 #| label: ex0120
-#| fig-cap: "**Exhibit 1.14** The three-tier data layer behind every number in this book. A textbook render must never fail because an API is down, and a reader must always be able to tell which vintage they are holding."
+#| fig-cap: "**Exhibit 1.13** The three-tier data layer behind every number in this book. A textbook render must never fail because an API is down, and a reader must always be able to tell which vintage they are holding. Source: original diagram for this book."
 ex.ex0120(); plt.show()
 ```
 
@@ -603,16 +591,15 @@ Films, a tiered reading list, feeds worth following and this chapter's 400-word 
 
 1. International finance is distinct because of four frictions: **multiple currencies**, **sovereign states**, **institutional heterogeneity**, and **informational distance**. Every chapter of this book elaborates at least one.
 2. The FX market turns over roughly **\$`{python} val('fx_turnover')` trillion per day** (BIS, April 2025), a `{python} val('fx_turnover_chg')` percent increase over 2022 and vastly larger than the trade flows it nominally serves. Almost all of this turnover is financial rather than commercial.
-3. Large financial statistics are usually **gross**. Distinguishing gross from net is the most common source of error in interpreting international data.
-4. Six participant groups transact with different objectives; dealers and financial institutions, not corporations, set prices.
-5. Currency exposure comes in three forms — **transaction**, **economic**, and **translation**. Economic exposure is the largest and the most frequently neglected.
-6. Globalization has **plateaued in trade, fallen in measured FDI, and continued to grow in gross financial activity.** "Globalization is over" is not supported by the financial data.
-7. This book regenerates its own data; always check and cite the vintage.
-8. Artificial intelligence attacks the one friction that is a *cost* — information — and leaves the three that rest on sovereign *authority* intact. Its documented gains are in forecasting a firm's own cash flows, not exchange rates; it does not change the case for hedging; and a model output is never a citable source.
+3. Six participant groups transact with different objectives; dealers and financial institutions, not corporations, set prices.
+4. Currency exposure comes in three forms — **transaction**, **economic**, and **translation**. Economic exposure is the largest and the most frequently neglected.
+5. Globalization has **plateaued in trade, fallen in measured FDI, and continued to grow in gross financial activity.** "Globalization is over" is not supported by the financial data.
+6. This book regenerates its own data; always check and cite the vintage.
+7. Artificial intelligence attacks the one friction that is a *cost* — information — and leaves the three that rest on sovereign *authority* intact. Its documented gains are in forecasting a firm's own cash flows, not exchange rates; it does not change the case for hedging; and a model output is never a citable source.
 
 ## Key Terms {.unnumbered}
 
-Country risk · Cross-border claim · Data vintage · Economic (operating) exposure · Foreign direct investment (FDI) · Fragmentation · FX Global Code · Gross versus net turnover · Home bias · Multinational corporation (MNC) · Net-net basis · Slowbalization · Trade openness · Transaction exposure · Translation exposure · Triennial Central Bank Survey · Weaponization of finance
+Country risk · Cross-border claim · Data vintage · Economic (operating) exposure · Foreign direct investment (FDI) · Fragmentation · FX Global Code · Home bias · Multinational corporation (MNC) · Slowbalization · Trade openness · Transaction exposure · Translation exposure · Triennial Central Bank Survey · Weaponization of finance
 
 ## Recall Ledger {.unnumbered}
 
@@ -626,7 +613,7 @@ Country risk · Cross-border claim · Data vintage · Economic (operating) expos
 
 **Carried forward** *(these will appear again, and in later chapters you will find questions from Chapter 1 here)*
 
-4. Why does the distinction between *gross* and *net* matter more in international finance than in domestic corporate finance? Give one concrete example from @sec-scale.
+4. Non-financial corporations account for only a single-digit share of FX turnover. Why, and why does that make it *more* important, not less, for a corporate treasurer to understand who else is trading? Give one example from @sec-participants.
 5. Of the Top Ten propositions at the front of the book, which one would most change a treasurer's behavior tomorrow morning? Defend the choice in three sentences.
 
 **AI item**
@@ -711,10 +698,10 @@ The Checkpoint runs in the web edition of this chapter.
  },
  {
   "kind": "self",
-  "module": 2,
-  "prompt": "A news story says FX turnover is several trillion dollars a day \"to finance world trade.\" Identify two things wrong with that framing.",
-  "model": "First, almost none of the turnover finances trade: it is dealer position management, hedging of financial exposures and speculation, and it clears a year of goods trade in a few trading days. Second, the headline is a gross-type measure of intermediation; the BIS's net-net figure strips out inter-dealer double counting, but even that counts dealer activity, not end-user demand.",
-  "rubric": "you named both the financial (not trade) nature of turnover and the gross-versus-net point."
+  "module": 3,
+  "prompt": "A news story says FX turnover is several trillion dollars a day \"to finance world trade.\" What is wrong with that framing, and who actually accounts for most of the turnover?",
+  "model": "Almost none of the turnover finances trade: the FX market clears a year of world goods trade in a few trading days. Most of it is dealer-to-dealer position management, hedging of financial exposures and speculation, so dealers and other financial institutions dominate, while non-financial corporations account for a single-digit share.",
+  "rubric": "you said turnover is overwhelmingly financial rather than trade-related and named dealers and financial institutions as the main participants."
  },
  {
   "kind": "self",
@@ -750,37 +737,35 @@ Work the fixed problems below first, because they are the ones your instructor c
 
 **1.1** State the four frictions that distinguish international from domestic finance, and give one real-world example of each that does not appear in this chapter.
 
-**1.2** Explain why the BIS reports FX turnover on a "net-net" basis. What would be overstated if it did not?
 
-**1.3** A firm sells only in its home market, buys only from domestic suppliers, and has no foreign debt. Construct a specific scenario in which it nonetheless suffers materially from a currency movement.
+**1.2** A firm sells only in its home market, buys only from domestic suppliers, and has no foreign debt. Construct a specific scenario in which it nonetheless suffers materially from a currency movement.
 
-**1.4** Distinguish the *reference period* of a statistic from its *retrieval date*, and explain why a balance-of-payments figure requires both.
+**1.3** Distinguish the *reference period* of a statistic from its *retrieval date*, and explain why a balance-of-payments figure requires both.
 
-**1.5** Why might reported global FDI overstate real cross-border investment in productive capacity?
+**1.4** Why might reported global FDI overstate real cross-border investment in productive capacity?
 
 ### B · Quantitative
 
-**1.6** Global FX turnover was \$`{python} val('fx_turnover_2022')` trillion per day in April 2022 and \$`{python} val('fx_turnover')` trillion in April 2025. (a) Compute the total percentage change. (b) Compute the compound annual growth rate. (c) World nominal GDP grew roughly 5 percent per year over the same period; interpret the difference.
+**1.5** Global FX turnover was \$`{python} val('fx_turnover_2022')` trillion per day in April 2022 and \$`{python} val('fx_turnover')` trillion in April 2025. (a) Compute the total percentage change. (b) Compute the compound annual growth rate. (c) World nominal GDP grew roughly 5 percent per year over the same period; interpret the difference.
 
-**1.7** World merchandise exports are approximately \$`{python} val('wto_merch_exports')` trillion per year. Using the April 2025 turnover figure and 252 trading days, compute (a) annual FX turnover, (b) the ratio of FX turnover to merchandise trade, and (c) the number of trading days required to clear one year of goods trade.
+**1.6** World merchandise exports are approximately \$`{python} val('wto_merch_exports')` trillion per year. Using the April 2025 turnover figure and 252 trading days, compute (a) annual FX turnover, (b) the ratio of FX turnover to merchandise trade, and (c) the number of trading days required to clear one year of goods trade.
 
-**1.8** A U.S. firm expects €4,000,000 in 90 days. The spot rate is \$1.0850/€. (a) Compute the dollar value at spot. (b) Recompute at \$1.0200/€ and at \$1.1500/€. (c) If the firm's operating margin on this sale is 9 percent, at what EUR/USD rate does the sale become unprofitable, holding costs fixed?
+**1.7** A U.S. firm expects €4,000,000 in 90 days. The spot rate is \$1.0850/€. (a) Compute the dollar value at spot. (b) Recompute at \$1.0200/€ and at \$1.1500/€. (c) If the firm's operating margin on this sale is 9 percent, at what EUR/USD rate does the sale become unprofitable, holding costs fixed?
 
-**1.9** Turnover grew from \$`{python} fx_round(2001)` trillion (2001) to \$`{python} fx_round(2025)` trillion (2025). (a) Compute the CAGR. (b) Turnover *fell* from \$`{python} fx_round(2013)` trillion in 2013 to \$`{python} fx_round(2016)` trillion in 2016; compute that annualized rate and propose two explanations consistent with the post-crisis regulatory environment.
+**1.8** Turnover grew from \$`{python} fx_round(2001)` trillion (2001) to \$`{python} fx_round(2025)` trillion (2025). (a) Compute the CAGR. (b) Turnover *fell* from \$`{python} fx_round(2013)` trillion in 2013 to \$`{python} fx_round(2016)` trillion in 2016; compute that annualized rate and propose two explanations consistent with the post-crisis regulatory environment.
 
-**1.10** A firm's foreign subsidiary has net assets of 180 million Mexican pesos. The peso moves from 17.0/USD to 19.5/USD over the year. (a) Compute the translation gain or loss in dollars. (b) State where it appears in the financial statements. (c) Explain why hedging it with a forward contract may *create* cash flow risk where none existed.
+**1.9** A firm's foreign subsidiary has net assets of 180 million Mexican pesos. The peso moves from 17.0/USD to 19.5/USD over the year. (a) Compute the translation gain or loss in dollars. (b) State where it appears in the financial statements. (c) Explain why hedging it with a forward contract may *create* cash flow risk where none existed.
 
 ### C · Analytical
 
-**1.11** Economic exposure is larger than transaction exposure yet is hedged far less often. Give three distinct explanations — one from measurement, one from agency theory, one from instrument availability — and propose an empirical test that could discriminate among them.
+**1.10** Economic exposure is larger than transaction exposure yet is hedged far less often. Give three distinct explanations — one from measurement, one from agency theory, one from instrument availability — and propose an empirical test that could discriminate among them.
 
-**1.12** Make the strongest possible case that the dollar's dominance in FX turnover is *self-reinforcing* rather than a reflection of U.S. economic size. Then identify the single piece of evidence that would most damage your argument.
+**1.11** Make the strongest possible case that the dollar's dominance in FX turnover is *self-reinforcing* rather than a reflection of U.S. economic size. Then identify the single piece of evidence that would most damage your argument.
 
-**1.13** Gross cross-border financial flows have grown while net flows have not. Explain how this is arithmetically possible, and argue whether it makes the global system more or less fragile. Relate your answer to the gross-versus-net distinction in @sec-scale.
 
-**1.14** The 2022 freezing of Russian central bank reserves has been described as a turning point for the international monetary system. Using only data available to you now, assess whether reserve-currency behavior has in fact changed. Specify what a genuine shift would look like in the data, and over what horizon it would be detectable.
+**1.12** The 2022 freezing of Russian central bank reserves has been described as a turning point for the international monetary system. Using only data available to you now, assess whether reserve-currency behavior has in fact changed. Specify what a genuine shift would look like in the data, and over what horizon it would be detectable.
 
-**1.15** The Top Ten, at the front of the book, states that two of its propositions are in genuine tension with each other, and that a third is asserted more confidently than the empirical literature strictly supports. Identify the tension and identify the overstated claim. For the tension, explain the conditions under which each proposition dominates; for the overstatement, specify what evidence would be needed to justify the strong form.
+**1.13** The Top Ten, at the front of the book, states that two of its propositions are in genuine tension with each other, and that a third is asserted more confidently than the empirical literature strictly supports. Identify the tension and identify the overstated claim. For the tension, explain the conditions under which each proposition dominates; for the overstatement, specify what evidence would be needed to justify the strong form.
 
 
 ## Mini-Case · Volkswagen's \$2 Billion Hedge That Wasn't {.unnumbered}
