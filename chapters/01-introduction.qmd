@@ -38,14 +38,6 @@ Answer these three before you know the answers. Write them down. You will almost
 3. The euro is forecast by most banks to weaken over the next year. Does that make it cheaper or more expensive for a U.S. firm to lock in a euro receivable with a forward contract today?
 :::
 
-## Market Moment {.unnumbered}
-
-On a single ordinary business day, the world's foreign exchange market turns over about **\$`{python} val('fx_turnover')` trillion** — a figure that exceeds the annual economic output of every country on earth except the United States and China, and it happens *daily*. In April 2025 that number was **`{python} val('fx_turnover_chg')` percent higher** than three years earlier, measured in a month when tariff announcements sent currencies lurching and hedging demand surging. Alongside it, over-the-counter interest rate derivatives traded **\$`{python} val('irt_turnover')` trillion** per day, up **`{python} val('irt_turnover_chg')` percent** over the same three years.
-
-These numbers come from the Bank for International Settlements' [Triennial Central Bank Survey](https://www.bis.org/statistics/rpfx25.htm), a census conducted every three years across `{python} val('triennial_jurisdictions')` jurisdictions and more than `{python} val('triennial_dealers')` banks and other dealers.
-
-Two facts to keep in mind: first, almost none of that turnover is paying for trade in goods. Global merchandise exports run to about \$`{python} val('wto_merch_exports')` trillion *per year*; the FX market clears that much in about `{python} val('days_to_clear_trade')` trading days. Second, a firm with no foreign subsidiary, no foreign sales, and no foreign debt is still exposed to this market because its competitors, its suppliers, and its customers are.
-
 ## Learning Objectives {.unnumbered}
 
 ::: {.objectives}
@@ -168,6 +160,16 @@ finish(fig, "ex0105", "Orders of magnitude", "The financial economy against the 
        source="Sources: BIS Triennial Survey, April 2025; WTO, 2025; World Bank WDI, 2024.")
 plt.show()
 ```
+
+::: {.callout-note .mf-box .mf-moment icon=false}
+## Market Moment
+
+On a single ordinary business day, the world's foreign exchange market turns over about **\$`{python} val('fx_turnover')` trillion** — a figure that exceeds the annual economic output of every country on earth except the United States and China, and it happens *daily*. In April 2025 that number was **`{python} val('fx_turnover_chg')` percent higher** than three years earlier, measured in a month when tariff announcements sent currencies lurching and hedging demand surging. Alongside it, over-the-counter interest rate derivatives traded **\$`{python} val('irt_turnover')` trillion** per day, up **`{python} val('irt_turnover_chg')` percent** over the same three years.
+
+These numbers come from the Bank for International Settlements' [Triennial Central Bank Survey](https://www.bis.org/statistics/rpfx25.htm), a census conducted every three years across `{python} val('triennial_jurisdictions')` jurisdictions and more than `{python} val('triennial_dealers')` banks and other dealers.
+
+Two facts to keep in mind: first, almost none of that turnover is paying for trade in goods. Global merchandise exports run to about \$`{python} val('wto_merch_exports')` trillion *per year*; the FX market clears that much in about `{python} val('days_to_clear_trade')` trading days. Second, a firm with no foreign subsidiary, no foreign sales, and no foreign debt is still exposed to this market because its competitors, its suppliers, and its customers are.
+:::
 
 Exhibit 1.5 plots the headline series from the BIS Triennial Survey, the only global census of FX activity.
 
