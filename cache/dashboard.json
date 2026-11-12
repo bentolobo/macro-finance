@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T16:59+00:00",
+ "built": "2026-11-12T17:03+00:00",
  "groups": [
   {
    "title": "Inflation",
@@ -54,14 +54,14 @@
      "label": "Euro area HICP (y/y)",
      "unit": "%",
      "dp": 1,
-     "value": 1.9,
-     "prev": 2.1,
-     "period": "Dec 2025",
-     "prev_period": "Nov 2025",
-     "updated": null,
-     "source": "ECB Data Portal",
-     "series": "ICP/M.U2.N.000000.4.ANR",
-     "url": "https://data.ecb.europa.eu/data/datasets/ICP",
+     "value": 4.0,
+     "prev": 3.8,
+     "period": "Oct 2026",
+     "prev_period": "Sep 2026",
+     "updated": "2026-11-04",
+     "source": "Eurostat",
+     "series": "prc_hicp_minr",
+     "url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_minr/default/table",
      "status": "live"
     }
    ]
@@ -172,9 +172,9 @@
   },
   {
    "bank": "Fed",
-   "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
-   "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
-   "date": "2026-10-13T18:00:00+00:00"
+   "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+   "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+   "date": "2026-10-07T18:00:00+00:00"
   }
  ]
 }
