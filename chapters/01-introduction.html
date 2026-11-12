@@ -741,9 +741,9 @@ ul.task-list li input[type="checkbox"] {
 <li><strong><a href="https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world">Integrated, open and resilient - Europe’s strengths in a fragmenting world</a></strong><br>
 <span class="news-meta">Bank for International Settlements · 8 Nov 2026</span><br>
 <span class="news-teaser">Speech by Mr Boris Vujčić, Vice-President of the European Central Bank, at the 5th Financial System Conference, organised by the Central Bank of Ireland, Dublin, 2 November 2026.</span></li>
-<li><strong><a href="https://www.bis.org/speeches/20261103-path-back-2-has-become-less-comfortable">The path back to 2 % has become less comfortable</a></strong><br>
+<li><strong><a href="https://www.bis.org/speeches/20261103-payments-fragmenting-world-sovereignty-strategy-and-system-design">Payments in a fragmenting world - sovereignty, strategy and system design</a></strong><br>
 <span class="news-meta">Bank for International Settlements · 2 Nov 2026</span><br>
-<span class="news-teaser">Dinner speech by Mr Tuomas Välimäki, Board Member of the Bank of Finland, on the outlook for the euro area economy and inflation, Helsinki, 2 November 2026.</span></li>
+<span class="news-teaser">Speech by Mr Denis Beau, First Deputy Governor of the Bank of France, at the South African Reserve Bank Payments Conference 2026, Pretoria, 21 October 2026.</span></li>
 <li><strong><a href="https://www.economist.com/finance-and-economics/2026/10/05/the-bond-market-sell-off-is-helping-the-dollar">The bond market sell-off is helping the dollar</a></strong><br>
 <span class="news-meta">The Economist · 5 Oct 2026</span></li>
 </ul>
@@ -1224,7 +1224,8 @@ body.mf-ind-open #mf-ind-toggle{display:none}
 #mf-ind .note{font-size:.68rem;color:#6b7785;line-height:1.35;margin:.3rem 0 0}
 #mf-ind .note a{color:#6b7785}
 #mf-ind .tv{height:69px;overflow:hidden;margin:0 -.4rem;position:relative}
-#mf-ind .tvlab{position:absolute;left:0;top:0;bottom:0;width:46%;background:#fbfaf7;z-index:2;display:flex;flex-direction:column;
+#mf-ind .tv iframe{width:190%!important;margin-left:-90%}
+#mf-ind .tvlab{position:absolute;left:0;top:0;bottom:0;width:48%;background:#fbfaf7;z-index:2;display:flex;flex-direction:column;
   justify-content:center;padding-left:.45rem;line-height:1.2}
 #mf-ind .tvlab b{font-size:.86rem;color:#1d2733}#mf-ind .tvlab small{font-size:.66rem;color:#8a95a2}
 #mf-ind .row{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem;padding:.28rem 0;font-size:.82rem}
@@ -1279,10 +1280,10 @@ body.mf-ind-open #mf-ind-toggle{display:none}
   // Nasdaq Composite or PHLX Semiconductor (SOX) index levels (licensed), so those two are
   // tracked through ETFs: ONEQ holds the Composite; SOXX is the largest semiconductor ETF.
   const MKTS = [
-    ["FOREXCOM:DJI", "DJIA", "Dow Jones Industrial Avg."],
+    ["FOREXCOM:DJI", "DJIA", "Dow Jones Industrials"],
     ["FOREXCOM:SPXUSD", "S&P 500", "Index"],
-    ["NASDAQ:ONEQ", "Nasdaq Composite", "via ONEQ ETF · 15-min delay"],
-    ["NASDAQ:SOXX", "Semiconductors", "via SOXX ETF · 15-min delay"],
+    ["NASDAQ:ONEQ", "Nasdaq Composite", "via ONEQ ETF · delayed"],
+    ["NASDAQ:SOXX", "Semiconductors", "via SOXX ETF · delayed"],
     ["PYTH:US10Y", "10-yr Treasury", "Yield, %"],
     ["FX:EURUSD", "EUR/USD", "Dollars per euro"],
     ["FX:USDJPY", "USD/JPY", "Yen per dollar"]];
