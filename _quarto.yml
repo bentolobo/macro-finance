@@ -2,6 +2,7 @@ project:
   type: book
   execute-dir: project
   output-dir: _output
+  resources: [cache/dashboard.json]
 
 book:
   title: "Macro Finance"
@@ -31,6 +32,7 @@ format:
     code-tools: false
     toc-title: "On this page"
     toc-depth: 3
+    include-after-body: theme/indicators.html
     fig-width: 8
     fig-height: 4.5
   pdf:

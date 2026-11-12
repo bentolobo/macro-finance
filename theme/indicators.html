@@ -1,0 +1,207 @@
+<!-- Today's Indicators: site-wide sidebar. Markets and policy odds load in the reader's
+     browser; macro releases come from cache/dashboard.json (pylib/dashboard.py). -->
+<style>
+#mf-ind-toggle{position:fixed;right:0;top:42%;z-index:1040;writing-mode:vertical-rl;transform:rotate(180deg);
+  background:#1f4e79;color:#fff;border:0;border-radius:0 6px 6px 0;padding:.9rem .45rem;font:600 .78rem/1 Inter,system-ui,sans-serif;
+  letter-spacing:.06em;text-transform:uppercase;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.18)}
+#mf-ind-toggle .dot{display:inline-block;width:.5rem;height:.5rem;border-radius:50%;background:#2a9d8f;margin-bottom:.45rem;
+  animation:mfpulse 2s infinite}
+@keyframes mfpulse{0%,100%{opacity:1}50%{opacity:.35}}
+#mf-ind{position:fixed;top:0;right:0;bottom:0;width:330px;max-width:92vw;z-index:1050;background:#fbfaf7;
+  border-left:1px solid #e3e0d8;box-shadow:-4px 0 16px rgba(0,0,0,.08);transform:translateX(100%);transition:transform .25s ease;
+  display:flex;flex-direction:column;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:#1d2733}
+body.mf-ind-open #mf-ind{transform:none}
+body.mf-ind-open #mf-ind-toggle{display:none}
+@media (min-width:1400px){ body.mf-ind-open{padding-right:330px} body.mf-ind-open #mf-ind{box-shadow:none} }
+#mf-ind header{background:#1f4e79;color:#fff;padding:.75rem 1rem .6rem;display:flex;align-items:flex-start;justify-content:space-between}
+#mf-ind header h2{all:unset;display:block;font-weight:700;font-size:1rem;letter-spacing:-.01em}
+#mf-ind header .sub{font-size:.72rem;color:#c9d8e6;margin-top:.15rem}
+#mf-ind header button{background:none;border:0;color:#fff;font-size:1.3rem;line-height:1;cursor:pointer;padding:0 .2rem}
+#mf-ind .body{overflow-y:auto;padding:.3rem 0 1rem;flex:1}
+#mf-ind section{padding:.55rem 1rem .4rem;border-bottom:1px solid #e3e0d8}
+#mf-ind h3{all:unset;display:block;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#2a9d8f;margin:.15rem 0 .4rem}
+#mf-ind .note{font-size:.68rem;color:#6b7785;line-height:1.35;margin:.3rem 0 0}
+#mf-ind .note a{color:#6b7785}
+#mf-ind .tv{height:69px;overflow:hidden;margin:0 -.4rem}
+#mf-ind .row{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem;padding:.28rem 0;font-size:.82rem}
+#mf-ind .row + .row{border-top:1px dotted #e3e0d8}
+#mf-ind .row .lab{flex:1;color:#3a4654;line-height:1.25}
+#mf-ind .row .lab small{display:block;color:#8a95a2;font-size:.68rem}
+#mf-ind .row .v{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+#mf-ind .row .v small{display:block;font-weight:400;font-size:.68rem;color:#8a95a2}
+#mf-ind .up{color:#c0392b}#mf-ind .dn{color:#2a7f62}#mf-ind .flat{color:#6b7785}
+#mf-ind .odds{margin:.2rem 0 .65rem}
+#mf-ind .odds .t{display:flex;justify-content:space-between;font-size:.8rem;margin-bottom:.25rem}
+#mf-ind .odds .t a{color:#1d2733;text-decoration:none;white-space:nowrap}#mf-ind .odds .t b{font-weight:700}
+#mf-ind .bar{display:flex;height:.95rem;border-radius:3px;overflow:hidden;background:#e3e0d8;font-size:.62rem;color:#fff;font-weight:700}
+#mf-ind .bar span{display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap}
+#mf-ind .bar .cut{background:#2a9d8f}#mf-ind .bar .hold{background:#8a95a2}#mf-ind .bar .hike{background:#e76f51}
+#mf-ind .legend{display:flex;gap:.7rem;font-size:.66rem;color:#6b7785;margin-top:.1rem}
+#mf-ind .legend i{display:inline-block;width:.55rem;height:.55rem;border-radius:2px;margin-right:.2rem;vertical-align:-1px}
+#mf-ind .stmt{font-size:.78rem;line-height:1.3;padding:.25rem 0}
+#mf-ind .stmt a{color:#1f4e79;text-decoration:none}#mf-ind .stmt a:hover{text-decoration:underline}
+#mf-ind .stmt small{display:block;color:#8a95a2;font-size:.66rem}
+#mf-ind .stale{color:#b7791f;font-size:.66rem}
+#mf-ind .err{font-size:.75rem;color:#8a95a2;font-style:italic}
+@media print{#mf-ind,#mf-ind-toggle{display:none!important} body.mf-ind-open{padding-right:0!important}}
+</style>
+
+<button id="mf-ind-toggle" type="button" aria-controls="mf-ind" aria-expanded="false">
+  <span class="dot"></span>Today's Indicators</button>
+<aside id="mf-ind" aria-label="Today's economic indicators" aria-hidden="true">
+  <header><div><h2>Today's Indicators</h2><div class="sub" id="mf-ind-clock">&nbsp;</div></div>
+    <button type="button" id="mf-ind-close" aria-label="Close indicators">&times;</button></header>
+  <div class="body">
+    <section><h3>Markets · live</h3><div id="mf-ind-mkts"></div>
+      <p class="note">Streaming quotes via TradingView. Stock indexes are shown as index CFDs, which track the cash index
+        and also trade outside exchange hours. 10-year is the Treasury yield in percent.</p></section>
+    <section><h3>Next policy meeting · market odds</h3><div id="mf-ind-odds"><p class="err">Loading…</p></div>
+      <p class="note">Prices on <a href="https://polymarket.com/" target="_blank" rel="noopener">Polymarket</a> prediction
+        markets, refreshed every minute. Read them as probabilities; they are not CME FedWatch futures-implied odds.</p></section>
+    <section><h3>Central banks</h3><div id="mf-ind-cb"><p class="err">Loading…</p></div></section>
+    <section><h3>Inflation</h3><div id="mf-ind-Inflation"></div></section>
+    <section><h3>Jobs</h3><div id="mf-ind-Jobs"></div>
+      <p class="note" id="mf-ind-src"></p></section>
+  </div>
+</aside>
+
+<script>
+(function () {
+  const RAW = "https://raw.githubusercontent.com/bentolobo/macro-finance/main/cache/dashboard.json";
+  const MKTS = [["FOREXCOM:DJI"], ["FOREXCOM:SPXUSD"], ["FOREXCOM:NSXUSD"], ["PYTH:US10Y"], ["FX:EURUSD"], ["FX:USDJPY"]];
+  const BANKS = [
+    {name: "Federal Reserve", tag: "fed-rates", re: /^Fed Decision in/i},
+    {name: "ECB", tag: "ecb", re: /^ECB Interest Rates:/i},
+    {name: "Bank of Japan", tag: "boj", re: /^Bank of Japan Decision in/i}];
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+  const store = {get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+                 set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }};
+  let started = false, timers = [];
+
+  // ------------------------------------------------------------------ open / close
+  function setOpen(open) {
+    document.body.classList.toggle("mf-ind-open", open);
+    $("mf-ind").setAttribute("aria-hidden", String(!open));
+    $("mf-ind-toggle").setAttribute("aria-expanded", String(open));
+    store.set("mf-ind-open", open ? "1" : "0");
+    if (open && !started) start();
+  }
+  $("mf-ind-toggle").addEventListener("click", () => setOpen(true));
+  $("mf-ind-close").addEventListener("click", () => setOpen(false));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && document.body.classList.contains("mf-ind-open") && innerWidth < 1400) setOpen(false); });
+
+  // ------------------------------------------------------------------ clock
+  function tick() {
+    const t = new Date().toLocaleString("en-US", {timeZone: "America/New_York", weekday: "short", month: "short",
+      day: "numeric", hour: "numeric", minute: "2-digit"});
+    $("mf-ind-clock").textContent = t + " ET";
+  }
+
+  // ------------------------------------------------------------------ markets
+  function markets() {
+    const box = $("mf-ind-mkts");
+    for (const [sym] of MKTS) {
+      const c = document.createElement("div");
+      c.className = "tv tradingview-widget-container";
+      c.innerHTML = '<div class="tradingview-widget-container__widget"></div>';
+      const s = document.createElement("script");
+      s.src = "https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js";
+      s.async = true;
+      s.text = JSON.stringify({symbol: sym, width: "100%", colorTheme: "light", isTransparent: true, locale: "en"});
+      c.appendChild(s);
+      box.appendChild(c);
+    }
+  }
+
+  // ------------------------------------------------------------------ policy odds
+  async function nextMeeting(b) {
+    const r = await fetch(`https://gamma-api.polymarket.com/events?tag_slug=${b.tag}&closed=false&limit=100`);
+    const evs = (await r.json()).filter((e) => b.re.test(e.title) && new Date(e.endDate) > new Date());
+    evs.sort((a, z) => new Date(a.endDate) - new Date(z.endDate));
+    const e = evs[0];
+    if (!e) return null;
+    const g = {cut: 0, hold: 0, hike: 0}; let top = null;
+    for (const m of e.markets || []) {
+      if (m.closed) continue;
+      let p; try { p = parseFloat(JSON.parse(m.outcomePrices)[0]); } catch (x) { continue; }
+      const lab = m.groupItemTitle || m.question || "";
+      const k = /decrease|cut/i.test(lab) ? "cut" : /no change|hold|unchanged/i.test(lab) ? "hold" : /increase|hike/i.test(lab) ? "hike" : null;
+      if (!k || isNaN(p)) continue;
+      g[k] += p;
+      if (!top || p > top.p) top = {lab, p};
+    }
+    const tot = g.cut + g.hold + g.hike;
+    if (!tot) return null;
+    for (const k in g) g[k] /= tot;
+    const month = (e.title.match(/(January|February|March|April|May|June|July|August|September|October|November|December)/) || [])[1] || "";
+    return {bank: b.name, month, g, top: top && {lab: top.lab, p: top.p / tot}, url: `https://polymarket.com/event/${e.slug}`};
+  }
+  function short(l) {
+    if (/no change|hold|unchanged/i.test(l)) return "Hold";
+    const m = l.match(/(\d+\+?)\s*bps?/i);
+    return (/increase|hike/i.test(l) ? "Hike" : "Cut") + (m ? " " + m[1] + " bp" : "");
+  }
+  async function odds() {
+    const res = await Promise.allSettled(BANKS.map(nextMeeting));
+    const pct = (x) => Math.round(x * 100);
+    const html = res.map((r) => {
+      if (r.status !== "fulfilled" || !r.value) return "";
+      const o = r.value, g = o.g;
+      const seg = (k, lab) => g[k] > 0.005 ? `<span class="${k}" style="width:${(g[k] * 100).toFixed(1)}%" title="${lab} ${pct(g[k])}%">${g[k] > .12 ? pct(g[k]) + "%" : ""}</span>` : "";
+      return `<div class="odds"><div class="t"><span>${esc(o.bank)} · ${esc(o.month)}</span>
+        <a href="${o.url}" target="_blank" rel="noopener">${esc(short(o.top.lab))} <b>${pct(o.top.p)}%</b></a></div>
+        <div class="bar">${seg("cut", "Cut")}${seg("hold", "Hold")}${seg("hike", "Hike")}</div></div>`;
+    }).join("");
+    $("mf-ind-odds").innerHTML = html ? html + '<div class="legend"><span><i style="background:#2a9d8f"></i>Cut</span><span><i style="background:#8a95a2"></i>Hold</span><span><i style="background:#e76f51"></i>Hike</span></div>'
+                                      : '<p class="err">Odds are unavailable right now.</p>';
+  }
+
+  // ------------------------------------------------------------------ macro data
+  function siteBase() {
+    const s = document.querySelector('script[src*="site_libs/"]');
+    return s ? s.src.slice(0, s.src.indexOf("site_libs/")) : "./";
+  }
+  async function getJSON() {
+    for (const u of [RAW + "?t=" + Math.floor(Date.now() / 300000), siteBase() + "cache/dashboard.json"]) {
+      try { const r = await fetch(u, {cache: "no-cache"}); if (r.ok) return await r.json(); } catch (e) {}
+    }
+    return null;
+  }
+  const fmt = (v, it) => it.unit === "k" ? Math.round(v).toLocaleString("en-US") + "k"
+                                         : Number(v).toFixed(it.dp) + (it.unit === "%" ? "%" : "");
+  const fdate = (d) => new Date(d + (d.length === 10 ? "T12:00:00" : "")).toLocaleDateString("en-US", {month: "short", day: "numeric"});
+  function arrow(it) {
+    const d = it.value - it.prev, eps = it.unit === "k" ? 0.5 : 0.05;
+    if (Math.abs(d) < eps) return '<span class="flat">▬</span>';
+    return d > 0 ? '<span class="up">▲</span>' : '<span class="dn">▼</span>';
+  }
+  async function macro() {
+    const d = await getJSON();
+    if (!d) { $("mf-ind-cb").innerHTML = '<p class="err">Data unavailable.</p>'; return; }
+    for (const g of d.groups || []) {
+      const el = $("mf-ind-" + g.title); if (!el) continue;
+      el.innerHTML = g.items.map((it) => `<div class="row"><span class="lab"><a href="${it.url}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">${esc(it.label)}</a>
+        <small>${esc(it.period)}${it.updated ? " · released " + fdate(it.updated) : ""}${it.status === "cached" ? ' <span class="stale">· last good value</span>' : ""}</small></span>
+        <span class="v">${arrow(it)} ${fmt(it.value, it)}<small>prior ${fmt(it.prev, it)}</small></span></div>`).join("");
+    }
+    const pol = (d.policy || []).map((p) => `<div class="row"><span class="lab">${esc(p.bank)}<small>${esc(p.label)} · ${esc(p.last_move_text)}</small></span>
+        <span class="v ${p.last_move_bp > 0 ? "up" : p.last_move_bp < 0 ? "dn" : ""}">${esc(p.rate)}</span></div>`).join("");
+    const st = (d.statements || []).slice(0, 4).map((s) => `<div class="stmt"><a href="${esc(s.link)}" target="_blank" rel="noopener">${esc(s.title)}</a>
+        <small>${esc(s.bank)} · ${fdate(s.date)}</small></div>`).join("");
+    $("mf-ind-cb").innerHTML = pol + (st ? '<div style="margin-top:.35rem">' + st + "</div>" : "");
+    const built = d.built ? new Date(d.built).toLocaleString("en-US", {timeZone: "America/New_York", month: "short", day: "numeric", hour: "numeric", minute: "2-digit"}) + " ET" : "—";
+    $("mf-ind-src").innerHTML = `Releases from BLS, BEA, the Fed and ECB via <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED</a> and the ECB Data Portal; ` +
+      `checked hourly on weekdays. Arrows compare with the prior release. Last change recorded ${built}.`;
+  }
+
+  // ------------------------------------------------------------------ start
+  function start() {
+    started = true;
+    tick(); markets(); odds(); macro();
+    timers.push(setInterval(tick, 30000), setInterval(odds, 60000), setInterval(macro, 600000));
+  }
+  const saved = store.get("mf-ind-open");
+  setOpen(saved === null ? innerWidth >= 1400 : saved === "1");
+})();
+</script>
