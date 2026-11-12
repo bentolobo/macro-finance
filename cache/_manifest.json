@@ -1,42 +1,42 @@
 {
   "fred_DEXBZUS": {
-    "retrieved": "2026-11-11",
+    "retrieved": "2026-11-12",
     "rows": 7988
   },
   "fred_DEXKOUS": {
-    "retrieved": "2026-11-11",
+    "retrieved": "2026-11-12",
     "rows": 8488
   },
   "fred_DEXMXUS": {
-    "retrieved": "2026-11-11",
+    "retrieved": "2026-11-12",
     "rows": 8273
   },
   "fred_DEXTHUS": {
-    "retrieved": "2026-11-11",
+    "retrieved": "2026-11-12",
     "rows": 8485
   },
   "fred_DEXUSUK": {
-    "retrieved": "2026-11-11",
+    "retrieved": "2026-11-12",
     "rows": 14005
   },
   "fred_DTWEXBGS": {
-    "retrieved": "2026-11-11",
+    "retrieved": "2026-11-12",
     "rows": 5227
   },
   "fred_GEPUCURRENT": {
-    "retrieved": "2026-11-11",
+    "retrieved": "2026-11-12",
     "rows": 355
   },
   "gpr_historical": {
-    "retrieved": "2026-11-11",
+    "retrieved": "2026-11-12",
     "rows": 1522
   },
   "wb_BX.KLT.DINV.WD.GD.ZS_WLD": {
-    "retrieved": "2026-11-11",
+    "retrieved": "2026-11-12",
     "rows": 36
   },
   "wb_NE.TRD.GNFS.ZS_WLD": {
-    "retrieved": "2026-11-11",
+    "retrieved": "2026-11-12",
     "rows": 56
   }
 }
