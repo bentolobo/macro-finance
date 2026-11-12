@@ -32,7 +32,7 @@ body.mf-ind-open #mf-ind-toggle{display:none}
 #mf-ind .up{color:#c0392b}#mf-ind .dn{color:#2a7f62}#mf-ind .flat{color:#6b7785}
 #mf-ind .odds{margin:.2rem 0 .65rem}
 #mf-ind .odds .t{display:flex;justify-content:space-between;font-size:.8rem;margin-bottom:.25rem}
-#mf-ind .odds .t b{font-weight:700}
+#mf-ind .odds .t a{color:#1d2733;text-decoration:none;white-space:nowrap}#mf-ind .odds .t b{font-weight:700}
 #mf-ind .bar{display:flex;height:.95rem;border-radius:3px;overflow:hidden;background:#e3e0d8;font-size:.62rem;color:#fff;font-weight:700}
 #mf-ind .bar span{display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap}
 #mf-ind .bar .cut{background:#2a9d8f}#mf-ind .bar .hold{background:#8a95a2}#mf-ind .bar .hike{background:#e76f51}
@@ -137,6 +137,11 @@ body.mf-ind-open #mf-ind-toggle{display:none}
     const month = (e.title.match(/(January|February|March|April|May|June|July|August|September|October|November|December)/) || [])[1] || "";
     return {bank: b.name, month, g, top: top && {lab: top.lab, p: top.p / tot}, url: `https://polymarket.com/event/${e.slug}`};
   }
+  function short(l) {
+    if (/no change|hold|unchanged/i.test(l)) return "Hold";
+    const m = l.match(/(\d+\+?)\s*bps?/i);
+    return (/increase|hike/i.test(l) ? "Hike" : "Cut") + (m ? " " + m[1] + " bp" : "");
+  }
   async function odds() {
     const res = await Promise.allSettled(BANKS.map(nextMeeting));
     const pct = (x) => Math.round(x * 100);
@@ -145,7 +150,7 @@ body.mf-ind-open #mf-ind-toggle{display:none}
       const o = r.value, g = o.g;
       const seg = (k, lab) => g[k] > 0.005 ? `<span class="${k}" style="width:${(g[k] * 100).toFixed(1)}%" title="${lab} ${pct(g[k])}%">${g[k] > .12 ? pct(g[k]) + "%" : ""}</span>` : "";
       return `<div class="odds"><div class="t"><span>${esc(o.bank)} · ${esc(o.month)}</span>
-        <a href="${o.url}" target="_blank" rel="noopener"><b>${esc(o.top.lab)} ${pct(o.top.p)}%</b></a></div>
+        <a href="${o.url}" target="_blank" rel="noopener">${esc(short(o.top.lab))} <b>${pct(o.top.p)}%</b></a></div>
         <div class="bar">${seg("cut", "Cut")}${seg("hold", "Hold")}${seg("hike", "Hike")}</div></div>`;
     }).join("");
     $("mf-ind-odds").innerHTML = html ? html + '<div class="legend"><span><i style="background:#2a9d8f"></i>Cut</span><span><i style="background:#8a95a2"></i>Hold</span><span><i style="background:#e76f51"></i>Hike</span></div>'
