@@ -1,5 +1,5 @@
 {
- "retrieved": "2026-11-12T01:20+00:00",
+ "retrieved": "2026-11-12T02:12+00:00",
  "feeds_ok": 11,
  "feeds_total": 11,
  "items": [
@@ -337,6 +337,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
+   "title": "Huang’s Coziness With Trump Wasn’t Enough to Save Him From Spying Scandal",
+   "link": "https://www.wsj.com/politics/national-security/huangs-coziness-with-trump-wasnt-enough-to-save-him-from-spying-scandal-85ce06f4?mod=rss_worldnews",
+   "date": "2026-11-12T02:00:00+00:00",
+   "summary": "U.S. officials have repeatedly raised concerns about the Nvidia CEO’s influence with the president and his posture toward China.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  },
+  {
    "title": "Beijing Sees a Weakened Trump. It Risks Getting a Tougher Negotiator.",
    "link": "https://www.wsj.com/world/china/beijing-sees-a-weakened-trump-it-risks-getting-a-tougher-negotiator-632f0132?mod=rss_worldnews",
    "date": "2026-11-10T11:55:00+00:00",
@@ -368,15 +377,6 @@
    "link": "https://www.wsj.com/world/china/u-s-balks-at-chinas-demand-for-tightly-scripted-trump-xi-putin-summit-77001908?mod=rss_worldnews",
    "date": "2026-11-09T20:37:00+00:00",
    "summary": "Trump has said he wants to talk about arms control, a subject long taboo for China.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
-   "title": "Hong Kong Extends Jailed Activist Joshua Wong’s Prison Term by 10 Years",
-   "link": "https://www.wsj.com/world/china/hong-kong-extends-jailed-activist-joshua-wongs-prison-term-by-10-years-6a9d9370?mod=rss_worldnews",
-   "date": "2026-11-05T03:54:00+00:00",
-   "summary": "Rights groups say a security law was used as a political weapon against the 30-year-old protest leader.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
@@ -940,6 +940,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
+   "title": "Oil Resumes Decline as Risk Premium Fades",
+   "link": "https://www.wsj.com/finance/commodities-futures/oil-resumes-decline-as-risk-premium-fades-bcdc7fc5?mod=rss_markets_main",
+   "date": "2026-11-12T01:35:00+00:00",
+   "summary": "Oil prices resumed their descent in early Asian trade after gaining moderately overnight as traders continue to weigh the prospects of a resolution in the Middle East.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
+  },
+  {
    "title": "Gold Dims Amid Rising Fed Rate-Hike Expectations",
    "link": "https://www.wsj.com/finance/commodities-futures/gold-dims-amid-rising-fed-rate-hike-expectations-22fab6f0?mod=rss_markets_main",
    "date": "2026-11-12T00:48:00+00:00",
@@ -971,15 +980,6 @@
    "link": "https://www.wsj.com/business/energy-oil/oil-prices-rebound-as-middle-east-supply-risks-persist-4e078d4b?mod=rss_markets_main",
    "date": "2026-11-11T20:58:00+00:00",
    "summary": "Oil futures rose as continued skirmishes in the Middle East tempered expectations for a diplomatic resolution to the U.S.-Iran conflict.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
-  },
-  {
-   "title": "Gold Futures Slip Back Under $4,000 Level",
-   "link": "https://www.wsj.com/finance/commodities-futures/gold-edges-higher-in-likely-technical-rebound-f73bdc8f?mod=rss_markets_main",
-   "date": "2026-11-11T19:47:00+00:00",
-   "summary": "Gold futures fell for a second straight session settling back under $4,000 as inflation worries kept up expectations for higher interest rates.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
@@ -6916,6 +6916,51 @@
    "feed": "https://www.economist.com/international/rss.xml"
   },
   {
+   "title": "Investing in America",
+   "link": "https://www.ft.com/reports/investing-america?syn-25a6b1a6=1",
+   "date": "2026-11-12T01:26:48+00:00",
+   "summary": "The fifth annual FT-Nikkei Investing in America report: How the US has received only a fraction of investment from Asian partners in deals to lower tariffs; AI jitters in the wake of the midterms and how overseas companies are pouring money into US manufacturing",
+   "publisher": "Financial Times",
+   "kind": "press",
+   "feed": "https://www.ft.com/global-economy?format=rss"
+  },
+  {
+   "title": "Money pours into US manufacturing from overseas companies",
+   "link": "https://www.ft.com/content/0b32f2c4-3e47-46ec-90ee-94194d2c3e3f?syn-25a6b1a6=1",
+   "date": "2026-11-12T01:00:02+00:00",
+   "summary": "Inflation, skills shortages and unpredictable policies on tariffs and war have made life difficult for businesses even in sectors enjoying surging demand",
+   "publisher": "Financial Times",
+   "kind": "press",
+   "feed": "https://www.ft.com/global-economy?format=rss"
+  },
+  {
+   "title": "Surging US economy defies worries over turbulent Trump",
+   "link": "https://www.ft.com/content/51fb0811-982a-4c7b-8d87-f85cd9008f3b?syn-25a6b1a6=1",
+   "date": "2026-11-12T01:00:02+00:00",
+   "summary": "World’s largest economy fires on all cylinders — but technology sell-off underlines precarious nature of AI-driven boom",
+   "publisher": "Financial Times",
+   "kind": "press",
+   "feed": "https://www.ft.com/global-economy?format=rss"
+  },
+  {
+   "title": "Japanese investment in US to power ahead",
+   "link": "https://www.ft.com/content/ec5adc72-8388-483f-95b2-362d9f0e6d66?syn-25a6b1a6=1",
+   "date": "2026-11-12T01:00:02+00:00",
+   "summary": "Tokyo has been the top investor in the US for seven years in a row — a trend that is unlikely to halt or slow, say bankers",
+   "publisher": "Financial Times",
+   "kind": "press",
+   "feed": "https://www.ft.com/global-economy?format=rss"
+  },
+  {
+   "title": "Trump’s Asia trade deals reap small slice of cash",
+   "link": "https://www.ft.com/content/70b733ec-6cab-41f5-9242-85f7f8916352?syn-25a6b1a6=1",
+   "date": "2026-11-12T01:00:02+00:00",
+   "summary": "Japan, South Korea and Taiwan have made available just 2.7% of financing and FDI under trade and investment pacts to ease tariffs",
+   "publisher": "Financial Times",
+   "kind": "press",
+   "feed": "https://www.ft.com/global-economy?format=rss"
+  },
+  {
    "title": "FirstFT: Anthropic bankers prepare to increase IPO valuation to $1.5tn",
    "link": "https://www.ft.com/content/cb451a27-481d-4106-b40f-4a83e3e361fd?syn-25a6b1a6=1",
    "date": "2026-11-11T11:08:38+00:00",
@@ -7096,49 +7141,13 @@
    "feed": "https://www.ft.com/global-economy?format=rss"
   },
   {
-   "title": "Democrats’ triumph offers China ‘window to catch up’ on AI",
-   "link": "https://www.ft.com/content/ff0e9974-b855-4b9a-a8c9-0782e7af16ff?syn-25a6b1a6=1",
-   "date": "2026-11-09T05:00:48+00:00",
-   "summary": "Analysts warn of impact on exporters if newly elected politicians take tougher line on US data centre construction",
+   "title": "Trump’s fossil fuel drive comes as war prompts energy security worries",
+   "link": "https://www.ft.com/content/9b79e9f6-4805-4299-bf76-1743ac258054?syn-25a6b1a6=1",
+   "date": "2026-11-12T01:00:02+00:00",
+   "summary": "Calls mount in Washington for legislation to overhaul US’s costly permitting system to help build desperately needed infrastructure for oil and gas sector",
    "publisher": "Financial Times",
    "kind": "press",
-   "feed": "https://www.ft.com/global-economy?format=rss"
-  },
-  {
-   "title": "ECB contender Klaas Knot ‘won’t hesitate’ to act in a debt crisis",
-   "link": "https://www.ft.com/content/4dfbc7b0-1add-4bc3-ab5e-78c18b2ca87a?syn-25a6b1a6=1",
-   "date": "2026-11-09T05:00:34+00:00",
-   "summary": "Candidate says he would be ready to invent new crisis-fighting tools if required",
-   "publisher": "Financial Times",
-   "kind": "press",
-   "feed": "https://www.ft.com/global-economy?format=rss"
-  },
-  {
-   "title": "Transcript of an interview with Klaas Knot",
-   "link": "https://www.ft.com/content/c3c2d967-78cd-4e32-869a-07e24462f982",
-   "date": "2026-11-09T05:00:34+00:00",
-   "summary": "Edited transcript from an interview with the Dutch nominee for the European Central Bank presidency",
-   "publisher": "Financial Times",
-   "kind": "press",
-   "feed": "https://www.ft.com/global-economy?format=rss"
-  },
-  {
-   "title": "UK diplomacy suffers exodus of China experts",
-   "link": "https://www.ft.com/content/063bd942-cb44-494a-ad8d-5ca6ebbfcc4c?syn-25a6b1a6=1",
-   "date": "2026-11-09T05:00:34+00:00",
-   "summary": "Shortage of Beijing specialists from Whitehall undermines Britain’s ability to make policy at time of geopolitical upheaval",
-   "publisher": "Financial Times",
-   "kind": "press",
-   "feed": "https://www.ft.com/global-economy?format=rss"
-  },
-  {
-   "title": "What markets want from the Democrats",
-   "link": "https://www.ft.com/content/6a69328b-3acb-4a74-a909-92249ad959e4?syn-25a6b1a6=1",
-   "date": "2026-11-09T05:00:26+00:00",
-   "summary": "Four policy priorities for the party to safeguard growth and sustain investor confidence",
-   "publisher": "Financial Times",
-   "kind": "press",
-   "feed": "https://www.ft.com/global-economy?format=rss"
+   "feed": "https://www.ft.com/markets?format=rss"
   },
   {
    "title": "ExxonMobil launches legal challenge to EU carbon capture rules",
@@ -7352,15 +7361,6 @@
    "link": "https://www.ft.com/content/141176cd-79ce-4633-9def-eaee96db1762",
    "date": "2026-11-10T10:11:22+00:00",
    "summary": "Revisiting the Operation Overlord of IPO stuffing",
-   "publisher": "Financial Times",
-   "kind": "press",
-   "feed": "https://www.ft.com/markets?format=rss"
-  },
-  {
-   "title": "Too big to fire",
-   "link": "https://www.ft.com/content/e1c37583-0b76-48ab-96b7-8e7da453fa88?syn-25a6b1a6=1",
-   "date": "2026-11-10T07:10:16+00:00",
-   "summary": "Should Jensen Huang stay or go?",
    "publisher": "Financial Times",
    "kind": "press",
    "feed": "https://www.ft.com/markets?format=rss"
