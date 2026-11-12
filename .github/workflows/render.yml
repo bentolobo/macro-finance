@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: America/New_York   # date stamps follow the author's clock, not the server's (UTC)
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}   # every step, including the render
     steps:
       - uses: actions/checkout@v4
       - uses: quarto-dev/quarto-actions/setup@v2

@@ -151,8 +151,22 @@ def _fetch(key, puller, source, series):
 
 
 # ----------------------------------------------------------------- providers
+def _with_retry(fn, tries: int = 3, wait: float = 4.0):
+    import time
+    for i in range(tries):
+        try:
+            return fn()
+        except Exception:
+            if i == tries - 1:
+                raise
+            time.sleep(wait * (i + 1))
+
+
 def fred(series_id: str, start: str = "1990-01-01"):
     def _pull():
+        return _with_retry(_pull_once)
+
+    def _pull_once():
         if not FRED_KEY:
             # Keyless fallback: FRED's public graph CSV (same series, same values).
             r = requests.get("https://fred.stlouisfed.org/graph/fredgraph.csv",
@@ -348,6 +362,22 @@ def refresh_all() -> None:
     for name in ["broad_dollar", "trade_openness", "fdi_inflows_gdp"]:
         _, p = series(name)
         print(f"  {p.tier.upper():13s} {name}")
+    # Series used by the working-draft chapters (IMS, currency crises, political risk)
+    import time
+    for sid, start in [("DEXUSUK", "1971-01-01"), ("DEXMXUS", "1993-01-01"), ("DEXTHUS", "1993-01-01"),
+                       ("DEXKOUS", "1993-01-01"), ("DEXBZUS", "1993-01-01"), ("GEPUCURRENT", "1997-01-01")]:
+        try:
+            _, p = fred(sid, start)
+            print(f"  {p.tier.upper():13s} {sid}")
+        except Exception as e:  # noqa: BLE001
+            print(f"  FAILED        {sid}: {e}")
+        time.sleep(1.5)
+    try:
+        from pylib.drafts_exhibits import gpr
+        _, p = gpr()
+        print(f"  {p.tier.upper():13s} GPR historical")
+    except Exception as e:  # noqa: BLE001
+        print(f"  FAILED        GPR: {e}")
     try:
         from pylib import newsfeed
         snap = newsfeed.refresh()

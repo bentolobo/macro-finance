@@ -1,0 +1,11 @@
+.env
+_output/
+_freeze/
+.quarto/
+.jupyter_cache/
+__pycache__/
+*.pyc
+_audit/
+**/*.quarto_ipynb
+# kept out of the public repository
+instructor/
