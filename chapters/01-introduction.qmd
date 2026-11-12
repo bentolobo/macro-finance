@@ -22,6 +22,10 @@ import pylib.ch01_exhibits as ex
 Data in this chapter were last refreshed on **`{python} refresh_date()`**. Every chart names its source and retrieval date beneath it.
 :::
 
+::: {#module-map data-chapter="ch01"}
+This chapter is organized as six modules, each ending with a short check, followed by a Chapter Checkpoint. The web edition tracks your progress.
+:::
+
 ::: {.callout-note .mf-box .mf-activity icon=false}
 ## Before You Read
 
@@ -31,6 +35,18 @@ Answer these three before you know the answers. Write them down. You will almost
 2. A U.S. company sells only to U.S. customers, buys only from U.S. suppliers, and borrows only in dollars. Can it have currency exposure? If so, how?
 3. The euro is forecast by most banks to weaken over the next year. Does that make it cheaper or more expensive for a U.S. firm to lock in a euro receivable with a forward contract today?
 :::
+
+::::: {.gate .pretest data-module="0"}
+:::: {.q}
+Daily FX turnover: roughly how much, and how does it compare with a year of world goods trade?
+::::
+:::: {.q}
+Can a U.S. firm with only U.S. customers, suppliers and dollar debt have currency exposure? How?
+::::
+:::: {.q}
+If banks forecast the euro to weaken, is it cheaper or dearer for a U.S. firm to lock in a euro receivable with a forward today?
+::::
+:::::
 
 ## Learning Objectives {.unnumbered}
 
@@ -44,6 +60,10 @@ After completing this chapter you should be able to:
 5. **Evaluate** the claim that globalization has stalled or reversed, using trade, investment, and financial-flow evidence.
 6. **Retrieve** current international financial data from an authoritative source and assess its vintage and reliability.
 7. **Explain** why artificial intelligence lowers the information friction but not the other three, and why a better cash-flow forecast is not an exchange-rate forecast.
+:::
+
+::: {.module-banner data-n="1" data-title="Why international finance is different"}
+**Module 1 · Why international finance is different**
 :::
 
 ## What Makes International Finance Different {#sec-frictions}
@@ -103,6 +123,27 @@ Investors know less about foreign firms than domestic ones, and the gap persists
 ### How to read the rest of the book
 
 Every chapter that follows attacks one of these four frictions. When a topic feels unmoored, return to Exhibit 1.1 and ask which friction it addresses. The Top Ten at the front of the book compresses the whole field into ten propositions for exactly that purpose.
+
+::::: {.gate data-module="1"}
+:::: {.q}
+Name the four frictions that make international finance different from domestic corporate finance.
+
+::: {.a}
+**Multiple currencies** (the value of a certain foreign cash flow is uncertain); **sovereign states** (country or political risk, with no higher authority to appeal to); **institutional heterogeneity** (accounting, bankruptcy, disclosure, tax and governance differ); **information and distance** (investors know less about foreign firms, which explains home bias).
+:::
+::::
+:::: {.q}
+A currency gain and a currency loss of the same size are not equally important to a firm. Why not, and what does that imply for hedging?
+
+::: {.a}
+Because consequences are asymmetric even when the distribution is symmetric. A 20% gain makes a good year; a 20% loss can breach a covenant, cut access to credit and force the firm to drop investment it should have made. That convexity, not managerial risk aversion, is the standard case for corporate hedging (Chapter 11).
+:::
+::::
+:::::
+
+::: {.module-banner data-n="2" data-title="How big is global finance"}
+**Module 2 · How big is global finance**
+:::
 
 ## How Big Is Global Finance? {#sec-scale}
 
@@ -240,6 +281,27 @@ A \$`{python} val('fx_turnover')` trillion daily turnover figure is a *gross* me
 ex.ex0109(); plt.show()
 ```
 
+::::: {.gate data-module="2"}
+:::: {.q}
+FX turnover runs to trillions of dollars a day, while world goods exports are a couple of dozen trillion a year. Why is there no contradiction?
+
+::: {.a}
+Almost none of the turnover pays for trade. It is dealer-to-dealer position management, hedging of financial exposures and speculation. The FX market clears a year of goods trade in a handful of trading days; if it only settled trade invoices it would be about one-hundredth of its size.
+:::
+::::
+:::: {.q}
+What is the difference between gross and net turnover, and which does the BIS headline figure use?
+
+::: {.a}
+Gross turnover counts every leg of intermediation: €10 million of customer demand passed from Dealer A to B to C can be recorded as \$30 million or more. The BIS adjusts for local and cross-border inter-dealer double counting and reports the **net-net** figure, which this book uses. First question for any big number: gross or net?
+:::
+::::
+:::::
+
+::: {.module-banner data-n="3" data-title="Who is in the market"}
+**Module 3 · Who is in the market**
+:::
+
 ## Who Is in This Market? {#sec-participants}
 
 Six groups transact, and each is pursuing something different. Knowing whose objective function sits on the other side of your trade is what separates a finance professional from a price-taker — and the distribution in Exhibit 1.9 is the first surprise of the course.
@@ -267,6 +329,27 @@ The critical structural fact: **the overwhelming majority of turnover is financi
 Between roughly 2008 and 2013, traders at several of the world's largest dealer banks coordinated through chat rooms — with names like "the Cartel" and "the Bandits' Club" — to manipulate the WM/Reuters 4 p.m. London benchmark rate, the fixing used to value trillions of dollars of index funds and corporate hedges. Regulators ultimately imposed more than \$10 billion in penalties, and several traders faced criminal charges.
 
 The episode produced the **FX Global Code**, a voluntary set of principles now adhered to by central banks, dealers, and buy-side firms, which we examine in Chapter 5. Two lessons are worth carrying forward. First, benchmarks that are economically important but structurally unsupervised attract manipulation — a pattern repeated in LIBOR, in precious metals fixes, and in oil price assessments. Second, when you select a hedge execution benchmark as a treasurer, you are making a governance decision, not merely an operational one.
+:::
+
+::::: {.gate data-module="3"}
+:::: {.q}
+Who sets prices in the FX market, and roughly how big is the share of non-financial corporations?
+
+::: {.a}
+Dealer banks and other financial institutions. Non-financial corporations account for a single-digit share of turnover, so a corporate treasurer is a price-taker in a market whose price is set by others, which is exactly why the treasurer needs to understand them.
+:::
+::::
+:::: {.q}
+What two lessons does the FX fixing scandal carry forward?
+
+::: {.a}
+First, benchmarks that are economically important but structurally unsupervised attract manipulation (as LIBOR, metals and oil assessments also showed). Second, choosing a hedge-execution benchmark is a governance decision, not just an operational one. The episode produced the FX Global Code.
+:::
+::::
+:::::
+
+::: {.module-banner data-n="4" data-title="Three kinds of currency exposure"}
+**Module 4 · Three kinds of currency exposure**
 :::
 
 ## Three Kinds of Currency Exposure {#sec-exposure}
@@ -306,6 +389,27 @@ Hedging translation exposure — which is frequently an accounting artifact — 
 - **Peso-denominated subsidiary net assets:** translation exposure, flowing to the cumulative translation adjustment in equity under ASC 830.
 
 Note the ranking: the exposure that is easiest to measure and hedge (the receivable) is very likely the *smallest* of the four in present-value terms.
+:::
+
+::::: {.gate data-module="4"}
+:::: {.q}
+Name the three kinds of currency exposure and give a one-line example of each.
+
+::: {.a}
+**Transaction:** a €4 million invoice payable in 90 days; the euro amount is fixed, the dollar amount is not; a forward hedges it. **Economic:** a U.S. firm selling only at home loses pricing power when its Japanese rival's yen falls. **Translation:** restating a Mexican subsidiary's peso balance sheet into dollars changes reported equity with no cash moving.
+:::
+::::
+:::: {.q}
+In Application 1.1, which of CPC's exposures is easiest to hedge, and which is probably the largest? Why does the difference matter?
+
+::: {.a}
+The euro receivable is easiest (a 60-day forward) but probably the smallest in present-value terms. The economic exposures, the future European sales and the competition with the Japanese rival, are likely the largest and the most often overlooked. Treasuries tend to hedge what they can measure, not what matters most.
+:::
+::::
+:::::
+
+::: {.module-banner data-n="5" data-title="Has globalization stalled?"}
+**Module 5 · Has globalization stalled?**
 :::
 
 ## Has Globalization Stalled? {#sec-globalization}
@@ -456,6 +560,27 @@ Items 1 and 2 are primary sources: a statistical agency reporting its own releas
 The dossier above cites what was publicly retrievable at the build date. Wall Street Journal and Economist coverage of these same stories sits behind paywalls that an automated build cannot read, so the live edition's news feed is configured against Reuters and Associated Press wires, central bank and IMF press releases, and the BIS *Quarterly Review*, with paywalled items added by hand where the library subscription permits. If your instructor has supplemented this dossier with WSJ or Economist pieces, read them *alongside* items 1 and 2 rather than instead of them. The point of the exercise is the gap between the two registers.
 :::
 
+::::: {.gate data-module="5"}
+:::: {.q}
+"Globalization has stalled." State what has actually happened to trade, to FDI and to financial flows.
+
+::: {.a}
+**Trade:** openness stopped rising around 2008 and has plateaued near its high (slowbalization), not collapsed. **FDI:** volatile and below its 2007 and 2015–16 peaks, partly because tax-driven conduit flows unwound. **Financial flows:** gross cross-border activity reached a record in 2025. Financial integration has not retreated where trade has plateaued.
+:::
+::::
+:::: {.q}
+The dollar's share of world reserves rose in 2026 Q1, yet no central bank needed to buy a dollar. How?
+
+::: {.a}
+Valuation. When the dollar appreciates, dollar holdings are worth more relative to holdings in other currencies, so the measured share rises mechanically; the IMF put roughly half of that quarter's rise down to exchange-rate effects. One quarter of COFER is not evidence of intent.
+:::
+::::
+:::::
+
+::: {.module-banner data-n="6" data-title="Data, vintages and AI"}
+**Module 6 · Data, vintages and AI**
+:::
+
 ## How This Book Handles Data {#sec-data}
 
 ```{python}
@@ -517,6 +642,23 @@ The full treatment for this chapter — market structure and algorithmic monocul
 :::
 
 
+::::: {.gate data-module="6"}
+:::: {.q}
+What is the difference between a statistic's reference period and its retrieval date, and why cite both?
+
+::: {.a}
+The reference period is when the activity happened; the retrieval date is when the figure was pulled. Agencies revise, balance-of-payments data for years, so the same reference period can carry different values in different vintages. Citing both lets anyone reproduce the number you used.
+:::
+::::
+:::: {.q}
+"Our AI forecasts the euro, so we have stopped hedging." Name the two errors.
+
+::: {.a}
+**Category error:** AI's documented gains are in forecasting the firm's own cash flows, not the exchange rate, and no model reliably beats a random walk out of sample. **Theory error:** hedging is left-tail insurance against convex distress costs, not a bet on direction, so even an accurate forecast would not justify dropping it.
+:::
+::::
+:::::
+
 ## Live Data Lab · Taking the temperature of the global economy {#sec-lab}
 
 **Objective.** Retrieve three current series, assess their vintage, and form a defensible view on whether global integration is advancing or retreating.
@@ -573,8 +715,105 @@ Country risk · Cross-border claim · Data vintage · Economic (operating) expos
 ::: {.callout-note .mf-box .mf-activity icon=false}
 ## Revisit: Before You Read
 
+::: {#pretest-recall}
+*Your saved pretest answers appear here in the web edition.*
+:::
+
 Return to the three questions you answered at the start of the chapter. For each one, write (a) what you believed, (b) what the chapter established, and (c) if they differ, the specific assumption that produced your error. The third part is the one that matters. Keep these across the semester; by Chapter 10 the pattern in your own errors will be visible, and it is almost always a single recurring assumption rather than a collection of unrelated gaps.
 :::
+
+## Chapter Checkpoint {.unnumbered}
+
+The Checkpoint draws on every module. It opens when all the module checks above are done. You get new numbers on each attempt, up to three attempts, and your best score counts.
+
+::: {#checkpoint}
+The Checkpoint runs in the web edition of this chapter.
+:::
+
+```{=html}
+<script type="application/json" id="checkpoint-items">
+[
+ {
+  "kind": "num",
+  "gen": "fx_vs_trade",
+  "module": 2,
+  "prompt": "Suppose global FX turnover averages ${T} trillion per trading day and world merchandise exports are ${X} trillion per year. How many trading days of FX turnover equal one year of goods trade?"
+ },
+ {
+  "kind": "num",
+  "gen": "cagr",
+  "module": 2,
+  "prompt": "A market's daily turnover grew from ${a} trillion to ${b} trillion over {n} years. What was its compound annual growth rate? Give a percentage to two decimals."
+ },
+ {
+  "kind": "num",
+  "gen": "receivable",
+  "module": 4,
+  "prompt": "A U.S. firm is owed €{A} million in 90 days. The spot rate is ${S0}/€ when it invoices and ${S1}/€ when it collects. By how much did the dollar value of the receivable change? Answer in thousands of dollars, negative for a fall."
+ },
+ {
+  "kind": "num",
+  "gen": "translation",
+  "module": 4,
+  "prompt": "A U.S. parent's Mexican subsidiary has net assets of MXN {N} million. Over the year the peso moves from {r0} to {r1} pesos per dollar. What is the translation gain or loss, in millions of dollars? Use a negative number for a loss."
+ },
+ {
+  "kind": "keyword",
+  "module": 4,
+  "prompt": "Name the type of currency exposure in this situation, and say in one sentence why.",
+  "pool": [
+   {
+    "text": "<em>A Kentucky furniture maker sells only in the United States and invoices in dollars. Its main competitor builds in Vietnam. The Vietnamese dong falls 15 percent against the dollar.</em>",
+    "keys": [
+     "economic",
+     "operating",
+     "competitive"
+    ],
+    "model": "This is <b>economic (operating) exposure</b>: no foreign-currency cash flow exists, but the rival's costs fall in dollar terms, so the firm's future margins and sales are hit."
+   },
+   {
+    "text": "<em>A Texas exporter has invoiced a Canadian buyer C$3 million, payable in 60 days.</em>",
+    "keys": [
+     "transaction"
+    ],
+    "model": "This is <b>transaction exposure</b>: a contracted foreign-currency amount whose dollar value is uncertain until it settles. A 60-day forward hedges it almost exactly."
+   },
+   {
+    "text": "<em>A U.S. parent consolidates its Brazilian subsidiary. The real depreciates, so the subsidiary's net assets are worth fewer dollars on the consolidated balance sheet. No cash moves.</em>",
+    "keys": [
+     "translation",
+     "accounting"
+    ],
+    "model": "This is <b>translation (accounting) exposure</b>: restating foreign-currency statements into dollars changes reported equity through the cumulative translation adjustment, with no cash crossing a border."
+   }
+  ]
+ },
+ {
+  "kind": "self",
+  "module": 2,
+  "prompt": "A news story says FX turnover is several trillion dollars a day \"to finance world trade.\" Identify two things wrong with that framing.",
+  "model": "First, almost none of the turnover finances trade: it is dealer position management, hedging of financial exposures and speculation, and it clears a year of goods trade in a few trading days. Second, the headline is a gross-type measure of intermediation; the BIS's net-net figure strips out inter-dealer double counting, but even that counts dealer activity, not end-user demand.",
+  "rubric": "you named both the financial (not trade) nature of turnover and the gross-versus-net point."
+ },
+ {
+  "kind": "self",
+  "module": 6,
+  "prompt": "Of the four frictions, which one can AI plausibly reduce? Explain why it cannot reduce the other three.",
+  "model": "Only Friction 4, information and distance, because it is a <em>cost</em>: reading foreign filings, in other languages and under other standards, is expensive, and that is the work models now do cheaply. Frictions 1–3 rest on <em>authority</em>: sovereigns issue currencies, states can expropriate or restrict, and legal systems differ. Technology lowers costs; it does not revoke sovereignty.",
+  "rubric": "you named Friction 4 and gave the cost-versus-authority reason."
+ },
+ {
+  "kind": "self",
+  "module": 1,
+  "from": "Carried forward from the Top Ten",
+  "prompt": "A CFO argues: \"Currency moves are symmetric, so over time gains and losses cancel and hedging is a waste of money.\" What is wrong with the argument?",
+  "model": "The distribution may be symmetric, but the consequences are not. Losses can breach covenants, cut access to credit and force the firm to abandon good investments, while gains merely produce a good year. Hedging buys protection against that left tail; it is insurance, not a bet on direction (Top Ten, proposition 9). Zero expected currency gain does not make insurance worthless.",
+  "rubric": "you explained the asymmetry in consequences and described hedging as insurance against distress, not a directional bet."
+ }
+]
+</script>
+```
+
 
 ::: {.callout-note .mf-box .mf-activity icon=false}
 ## Interactive practice · `practice-test-ch01.html`

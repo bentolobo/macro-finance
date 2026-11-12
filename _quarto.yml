@@ -36,7 +36,7 @@ format:
     code-tools: false
     toc-title: "On this page"
     toc-depth: 3
-    include-after-body: theme/indicators.html
+    include-after-body: [theme/indicators.html, theme/modules.html]
     fig-width: 8
     fig-height: 4.5
   pdf:
