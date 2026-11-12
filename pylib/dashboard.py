@@ -43,6 +43,10 @@ INDICATORS = {
         ("core_pce", "Core PCE, Fed's target gauge (y/y)", "PCEPILFE", "yoy", "%", 1),
         ("ea_hicp", "Euro area HICP (y/y)", "ESTAT:prc_hicp_minr", "level", "%", 1),
     ],
+    "Growth": [
+        ("gdp", "US real GDP (q/q, annualized)", "A191RL1Q225SBEA", "level", "%", 1),
+        ("gdpnow", "GDPNow, current-quarter estimate", "GDPNOW", "level", "%", 1),
+    ],
     "Jobs": [
         ("unrate", "Unemployment rate", "UNRATE", "level", "%", 1),
         ("payrolls", "Nonfarm payrolls (monthly change)", "PAYEMS", "diff", "k", 0),
@@ -136,7 +140,13 @@ def _transform(s: pd.Series, how: str) -> pd.Series:
     return s
 
 
+UP_IS_GOOD = {"gdp", "gdpnow", "payrolls"}   # arrow colour: green when a rise is good news
+QUARTERLY = {"A191RL1Q225SBEA", "GDPNOW"}
+
+
 def _period(ts: pd.Timestamp, sid: str) -> str:
+    if sid in QUARTERLY:
+        return f"Q{ts.quarter} {ts.year}"
     return f"week of {ts:%-d %b %Y}" if sid in ("ICSA",) else f"{ts:%b %Y}"
 
 
@@ -152,6 +162,7 @@ def _indicator(key, label, sid, how, unit, dp):
     last, prev = t.index[-1], t.index[-2]
     return {
         "key": key, "label": label, "unit": unit, "dp": dp,
+        "up_is_good": key in UP_IS_GOOD,
         "value": round(_scale(float(t.iloc[-1]), unit, sid), dp + 1),
         "prev": round(_scale(float(t.iloc[-2]), unit, sid), dp + 1),
         "period": _period(last, sid), "prev_period": _period(prev, sid),
