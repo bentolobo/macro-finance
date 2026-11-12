@@ -21,7 +21,9 @@ import pylib.ch01_exhibits as ex
 ::: {.vintage}
 Data in this chapter were last refreshed on **`{python} refresh_date()`**. Every chart names its source and retrieval date beneath it.
 
-[Download this chapter as an editable Word file](../downloads/Chapter-01-Globalization-and-the-Multinational-Firm_v10.docx){.content-visible when-format="html"}
+::: {.content-visible when-format="html"}
+[Download this chapter as an editable Word file](../downloads/Chapter-01-Globalization-and-the-Multinational-Firm_v10.docx)
+:::
 :::
 
 :::: {.content-visible when-format="html"}
