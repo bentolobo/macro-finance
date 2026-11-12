@@ -328,7 +328,7 @@ The critical structural fact: **the overwhelming majority of turnover is financi
 
 Between roughly 2008 and 2013, traders at several of the world's largest dealer banks coordinated through chat rooms — with names like "the Cartel" and "the Bandits' Club" — to manipulate the WM/Reuters 4 p.m. London benchmark rate, the fixing used to value trillions of dollars of index funds and corporate hedges. Regulators ultimately imposed more than \$10 billion in penalties, and several traders faced criminal charges.
 
-The episode produced the **FX Global Code**, a voluntary set of principles now adhered to by central banks, dealers, and buy-side firms, which we examine in Chapter 5. Two lessons are worth carrying forward. First, benchmarks that are economically important but structurally unsupervised attract manipulation — a pattern repeated in LIBOR, in precious metals fixes, and in oil price assessments. Second, when you select a hedge execution benchmark as a treasurer, you are making a governance decision, not merely an operational one.
+The episode produced the [**FX Global Code**](https://www.globalfxc.org/fx-global-code/), a voluntary set of principles now adhered to by central banks, dealers, and buy-side firms, which we examine in Chapter 5. Two lessons are worth carrying forward. First, benchmarks that are economically important but structurally unsupervised attract manipulation — a pattern repeated in LIBOR, in precious metals fixes, and in oil price assessments. Second, when you select a hedge execution benchmark as a treasurer, you are making a governance decision, not merely an operational one.
 :::
 
 ::::: {.gate data-module="3"}
@@ -343,7 +343,7 @@ Dealer banks and other financial institutions. Non-financial corporations accoun
 What two lessons does the FX fixing scandal carry forward?
 
 ::: {.a}
-First, benchmarks that are economically important but structurally unsupervised attract manipulation (as LIBOR, metals and oil assessments also showed). Second, choosing a hedge-execution benchmark is a governance decision, not just an operational one. The episode produced the FX Global Code.
+First, benchmarks that are economically important but structurally unsupervised attract manipulation (as LIBOR, metals and oil assessments also showed). Second, choosing a hedge-execution benchmark is a governance decision, not just an operational one. The episode produced the [FX Global Code](https://www.globalfxc.org/fx-global-code/).
 :::
 ::::
 :::::
@@ -375,7 +375,11 @@ ex.ex0112(); plt.show()
 ::: {.callout-note .mf-box .mf-trap icon=false}
 ## The single most expensive error in corporate treasury
 
-Hedging translation exposure — which is frequently an accounting artifact — while leaving economic exposure, which is real and large, entirely unhedged. The exposure that is easiest to measure is almost never the one that is largest, and treasuries are evaluated on what they can measure.
+**The error.** A treasury carefully hedges its *translation* exposure, the swing in reported equity when a foreign subsidiary's books are restated into dollars, and leaves its *economic* exposure unhedged.
+
+**Why it is an error.** Translation exposure is mostly an accounting effect: no cash crosses a border. Economic exposure, the damage to future sales and margins when a currency move shifts competitiveness, is real cash and usually far larger. Firms fall into the trap because the exposure that is easiest to measure is almost never the largest, and treasuries are judged on what they can measure.
+
+**See it happen.** Application 1.1, which follows, ranks one firm's four exposures. The one that is simplest to hedge turns out to be the smallest.
 :::
 
 ::: {.callout-note .mf-box .mf-application icon=false}

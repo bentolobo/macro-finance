@@ -61,8 +61,8 @@ KEYWORDS = {
 }
 CASE_SENSITIVE = {"IMF", "BIS", "FX", "FDI", "SDR", "CBDC", "BRICS", "CFIUS", "USMCA"}
 WINDOW_DAYS = 45
-MAX_ITEMS = 10
-MAX_PER_PUBLISHER = 3
+MAX_ITEMS = 4           # Bento, 12 Nov 2026: keep the live box to 3-4 headlines
+MAX_PER_PUBLISHER = 1   # so four headlines come from four different publishers
 
 NS = {
     "atom": "http://www.w3.org/2005/Atom",
