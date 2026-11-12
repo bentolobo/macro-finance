@@ -1,22 +1,22 @@
 {
- "retrieved": "2026-11-12T17:10+00:00",
+ "retrieved": "2026-11-12T17:19+00:00",
  "feeds_ok": 11,
  "feeds_total": 11,
  "items": [
   {
-   "title": "Israel Strikes Gaza Hospital, Killing at Least Six",
-   "link": "https://www.wsj.com/world/middle-east/israel-strikes-gaza-hospital-killing-at-least-six-e01ebd5f?mod=rss_worldnews",
-   "date": "2026-11-12T17:05:00+00:00",
-   "summary": "The attack targeted Hamas militants, according to the Israeli military, and comes as progress on Trump’s Gaza Peace Plan is stalled.",
+   "title": "Ukraine Says Its Military Starlink Is Disrupted Again, Hurting Defenses",
+   "link": "https://www.wsj.com/world/ukraine-says-its-military-starlink-is-disrupted-again-hurting-defenses-bfb00a64?mod=rss_worldnews",
+   "date": "2026-11-12T17:14:00+00:00",
+   "summary": "Drones that rely on Starshield, a military version of SpaceX’s Starlink service, are losing connectivity if they fly faster than 100 miles an hour.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
-   "title": "Ukraine Says Its Military Starlink Is Disrupted Again, Hurting Defenses",
-   "link": "https://www.wsj.com/world/ukraine-says-its-military-starlink-is-disrupted-again-hurting-defenses-bfb00a64?mod=rss_worldnews",
-   "date": "2026-11-12T11:40:00+00:00",
-   "summary": "Drones that rely on Starshield, a military version of SpaceX’s Starlink service, are losing connectivity if they fly faster than 100 miles an hour.",
+   "title": "Israel Strikes Gaza Hospital, Killing at Least Six",
+   "link": "https://www.wsj.com/world/middle-east/israel-strikes-gaza-hospital-killing-at-least-six-e01ebd5f?mod=rss_worldnews",
+   "date": "2026-11-12T17:05:00+00:00",
+   "summary": "The attack targeted Hamas militants, according to the Israeli military, and comes as progress on Trump’s Gaza Peace Plan is stalled.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
@@ -949,6 +949,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
+   "title": "Gold Futures Extend Losses as Dollar, Yields Rise",
+   "link": "https://www.wsj.com/finance/commodities-futures/gold-dims-amid-rising-fed-rate-hike-expectations-22fab6f0?mod=rss_markets_main",
+   "date": "2026-11-12T17:10:00+00:00",
+   "summary": "Gold futures retreated further from the $4,000 level as U.S. yields and the dollar rose.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
+  },
+  {
    "title": "Oil Picks Up As Trump Post Dampens Hopes for U.S.-Iran Deal",
    "link": "https://www.wsj.com/finance/commodities-futures/oil-resumes-decline-as-risk-premium-fades-bcdc7fc5?mod=rss_markets_main",
    "date": "2026-11-12T14:36:00+00:00",
@@ -971,15 +980,6 @@
    "link": "https://www.wsj.com/business/endeavour-mining-shares-tumble-as-stoppages-affect-full-year-output-fe0a6cd4?mod=rss_markets_main",
    "date": "2026-11-12T09:09:00+00:00",
    "summary": "Shares opened sharply lower after the company warned it would likely hit only the lower end of its guided range for production this year amid problems at one of its mines.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
-  },
-  {
-   "title": "Gold Dims Amid Rising Fed Rate-Hike Expectations",
-   "link": "https://www.wsj.com/finance/commodities-futures/gold-dims-amid-rising-fed-rate-hike-expectations-22fab6f0?mod=rss_markets_main",
-   "date": "2026-11-12T00:48:00+00:00",
-   "summary": "Gold prices fell as Fed rate-hike bets dimmed the appeal of the non-interest-bearing metal.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
