@@ -1,5 +1,5 @@
 {
- "built": "2026-11-13T18:29+00:00",
+ "built": "2026-11-13T18:33+00:00",
  "groups": [
   {
    "title": "Inflation",
@@ -190,18 +190,6 @@
   }
  ],
  "statements": [
-  {
-   "bank": "BoJ",
-   "title": "Summary of Opinions at the Monetary Policy Meeting on October 29 and 30, 2026",
-   "link": "http://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi261030.pdf",
-   "date": "2026-11-09T23:50:00+00:00"
-  },
-  {
-   "bank": "BoJ",
-   "title": "Minutes of the Monetary Policy Meeting on September 17 and 18, 2026",
-   "link": "http://www.boj.or.jp/en/mopo/mpmsche_minu/minu_2026/g260918.pdf",
-   "date": "2026-11-04T23:50:00+00:00"
-  },
   {
    "bank": "ECB",
    "title": "Monetary policy decisions",
