@@ -1,5 +1,5 @@
 {
- "built": "2026-11-14T00:18+00:00",
+ "built": "2026-11-14T17:07+00:00",
  "groups": [
   {
    "title": "Inflation",
@@ -170,7 +170,7 @@
    "last_move_bp": 25,
    "last_move_date": "2026-09-17",
    "last_move_text": "raised 25 bp on 17 Sep 2026",
-   "as_of": "2026-11-13",
+   "as_of": "2026-11-14",
    "series": "DFEDTARL,DFEDTARU",
    "url": "https://fred.stlouisfed.org/series/DFEDTARU",
    "status": "live"

@@ -1,8 +1,53 @@
 {
- "retrieved": "2026-11-13T18:33+00:00",
+ "retrieved": "2026-11-14T17:07+00:00",
  "feeds_ok": 11,
  "feeds_total": 11,
  "items": [
+  {
+   "title": "The Massive Chinese Spy Operation Targeting Western Tech and AI",
+   "link": "https://www.wsj.com/world/china/the-massive-chinese-spy-operation-targeting-western-tech-and-ai-cd58ff86?mod=rss_worldnews",
+   "date": "2026-11-14T12:06:00+00:00",
+   "summary": "Plus, Democrats ordered Elon Musk to preserve records related to Ukraine’s Starlink access, and our columnist hunts for a crisper apple.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  },
+  {
+   "title": "The Unstoppable Prison Gangs Transforming Ecuador Into a Narco State",
+   "link": "https://www.wsj.com/world/americas/the-unstoppable-prison-gangs-transforming-ecuador-into-a-narco-state-cf3295c9?mod=rss_worldnews",
+   "date": "2026-11-14T03:00:00+00:00",
+   "summary": "From jail cells, drug lords have turned what was once Latin America’s most peaceful country into a critical artery in the global cocaine trade.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  },
+  {
+   "title": "What Greece Learned From Going Broke—and Others In Europe Still Haven’t",
+   "link": "https://www.wsj.com/world/europe/greece-debt-today-aaffcb16?mod=rss_worldnews",
+   "date": "2026-11-14T03:00:00+00:00",
+   "summary": "The most fiscally responsible country in Europe is the one you’d least expect.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  },
+  {
+   "title": "Behind the Nvidia Affair Sits a Vast Chinese Spying Machine",
+   "link": "https://www.wsj.com/world/nvidia-china-espionage-spy-hacking-ai-174c366b?mod=rss_worldnews",
+   "date": "2026-11-14T02:00:00+00:00",
+   "summary": "Beijing is deploying the world’s biggest intelligence-gathering operation to bolster its tech industry. U.S. officials worry Jensen Huang was ensnared.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  },
+  {
+   "title": "Trump to Hold Talks With China’s Xi and Russia’s Putin Next Week",
+   "link": "https://www.wsj.com/world/china/trump-to-hold-talks-with-chinas-xi-and-russias-putin-next-week-29a58e91?mod=rss_worldnews",
+   "date": "2026-11-14T01:34:00+00:00",
+   "summary": "The unprecedented three-way meeting will be held in China’s tech hub of Shenzhen.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  },
   {
    "title": "Iran Escalates Low-Level Conflict With a Shot at Bahrain",
    "link": "https://www.wsj.com/world/middle-east/iran-escalates-low-level-conflict-with-a-shot-at-bahrain-73ff9b51?mod=rss_worldnews",
@@ -13,46 +58,10 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
-   "title": "Kim Jong Un Remakes North Korea’s Flag, Ditching Soviet-Era Version",
-   "link": "https://www.wsj.com/world/asia/kim-jong-un-remakes-north-koreas-flag-ditching-soviet-era-version-c65efcfe?mod=rss_worldnews",
-   "date": "2026-11-13T09:43:00+00:00",
-   "summary": "The revamped  flag marks a new effort by Kim to stamp his own identity on the country’s institutions.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
-   "title": "Degrees Lead Nowhere. Jobs Don’t Exist. Welcome to India’s Youth Revolt.",
-   "link": "https://www.wsj.com/world/india/degrees-lead-nowhere-jobs-dont-exist-welcome-to-indias-youth-revolt-94b61098?mod=rss_worldnews",
-   "date": "2026-11-13T03:00:00+00:00",
-   "summary": "Indian graduates are spending months cramming for long-shot civil-service exams, but their frustration is fueling anger toward Narendra Modi’s ruling party.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
-   "title": "Putin Had Four Plans to Defeat Ukraine. He Only Has Two Left.",
-   "link": "https://www.wsj.com/world/russia/putin-had-four-plans-to-defeat-ukraine-he-only-has-two-left-7875e5a6?mod=rss_worldnews",
-   "date": "2026-11-13T03:00:00+00:00",
-   "summary": "The Kremlin’s hopes for a military victory or a Trump-brokered deal have dimmed. Moscow is now betting on Ukraine’s economic collapse and weakening European support.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
    "title": "Iran’s New Cyber Playbook: Create Real-World Havoc",
    "link": "https://www.wsj.com/world/middle-east/irans-new-cyber-playbook-create-real-world-havoc-8ea2dffc?mod=rss_worldnews",
    "date": "2026-11-13T01:00:00+00:00",
    "summary": "Tehran intensifies its effort to cause pain in the physical world with attacks on lightly protected tankers and refrigerators.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
-   "title": "The U.S. Cut Cuba Off From the World’s Oil. Now It Runs on American Fuel.",
-   "link": "https://www.wsj.com/world/the-u-s-cut-cuba-off-from-the-worlds-oil-now-it-runs-on-american-fuel-d8f26a9a?mod=rss_worldnews",
-   "date": "2026-11-13T00:00:00+00:00",
-   "summary": "Growing American fuel shipments are keeping Cuba afloat after Trump’s oil embargo pushed the island to the brink of a humanitarian crisis.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
@@ -94,10 +103,10 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
-   "title": "Vance Considers Direct Talks With Iran Hard-Liner in Push to End War",
-   "link": "https://www.wsj.com/world/middle-east/vance-considers-direct-talks-with-iran-hardliner-in-push-to-end-war-0c2e3ea4?mod=rss_worldnews",
-   "date": "2026-11-11T19:25:00+00:00",
-   "summary": "Becoming the face of Iran diplomacy could be politically risky for the vice president, some U.S. officials say.",
+   "title": "Kim Jong Un Remakes North Korea’s Flag, Ditching Soviet-Era Version",
+   "link": "https://www.wsj.com/world/asia/kim-jong-un-remakes-north-koreas-flag-ditching-soviet-era-version-c65efcfe?mod=rss_worldnews",
+   "date": "2026-11-13T09:43:00+00:00",
+   "summary": "The revamped  flag marks a new effort by Kim to stamp his own identity on the country’s institutions.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
@@ -139,19 +148,19 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
-   "title": "A Reined In Jensen Huang Is Nvidia’s Best Option",
-   "link": "https://www.wsj.com/business/a-reined-in-jensen-huang-is-nvidias-best-option-e79cb305?mod=rss_worldnews",
-   "date": "2026-11-10T10:30:00+00:00",
-   "summary": "A more restrained chief would suit the chip giant well for the next phase of the AI boom.",
+   "title": "Stellantis Offers to Repay C$24 Million to Canada but Government Says Automaker Breaching Commitments",
+   "link": "https://www.wsj.com/business/autos/stellantis-offers-to-repay-c-24-million-to-canada-but-government-says-automaker-breaching-commitments-15d5e00c?mod=rss_worldnews",
+   "date": "2026-11-13T15:53:00+00:00",
+   "summary": "Stellantis is offering to repay some of the money that Canada’s government wants to see returned for past support, but it won’t say if it’s prepared to defend in court the proposed sale of an Ontario plant.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
-   "title": "Stellantis Offers to Repay C$24 Million to Canada but Government Says Automaker Breaching Commitments",
-   "link": "https://www.wsj.com/business/autos/stellantis-offers-to-repay-c-24-million-to-canada-but-government-says-automaker-breaching-commitments-15d5e00c?mod=rss_worldnews",
-   "date": "2026-11-13T15:53:00+00:00",
-   "summary": "Stellantis is offering to repay some of the money that Canada’s government wants to see returned for past support, but it won’t say if it’s prepared to defend in court the proposed sale of an Ontario plant.",
+   "title": "The U.S. Cut Cuba Off From the World’s Oil. Now It Runs on American Fuel.",
+   "link": "https://www.wsj.com/world/the-u-s-cut-cuba-off-from-the-worlds-oil-now-it-runs-on-american-fuel-d8f26a9a?mod=rss_worldnews",
+   "date": "2026-11-13T00:00:00+00:00",
+   "summary": "Growing American fuel shipments are keeping Cuba afloat after Trump’s oil embargo pushed the island to the brink of a humanitarian crisis.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
@@ -179,15 +188,6 @@
    "link": "https://www.wsj.com/business/autos/canada-pm-carney-calls-stellantis-factory-sale-unacceptable-f18e0afc?mod=rss_worldnews",
    "date": "2026-11-11T00:04:00+00:00",
    "summary": "Canadian Prime Minister Mark Carney said he’s prepared to use whatever legal and policy levers available to protect the roughly 2,000 workers affected.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
-   "title": "Canada Taps Senior Bridgewater Executive to Run Sovereign Wealth Fund",
-   "link": "https://www.wsj.com/world/americas/canada-taps-senior-bridgewater-executive-to-run-sovereign-wealth-fund-d1e3a284?mod=rss_worldnews",
-   "date": "2026-11-09T17:13:00+00:00",
-   "summary": "Karen Karniol-Tambour’s appointment marks the next step in Prime Minister Mark Carney’s effort to jump start the construction of so-called national projects, and help promising domestic startups expand.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
@@ -238,6 +238,42 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
+   "title": "Opinion | Of Course Jensen Huang Had to Go",
+   "link": "https://www.wsj.com/opinion/jensen-huang-nvidia-megaspeed-alice-huang-china-89b2ec4c?mod=rss_worldnews",
+   "date": "2026-11-13T22:53:00+00:00",
+   "summary": "The deep state at issue in the Nvidia scandal is China’s, not America’s.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  },
+  {
+   "title": "Opinion | Jensen Huang and the World’s Information Chaos",
+   "link": "https://www.wsj.com/opinion/jensen-huang-and-the-worlds-information-chaos-f73f5d7e?mod=rss_worldnews",
+   "date": "2026-11-13T20:15:00+00:00",
+   "summary": "Was it a brilliant operation by Chinese intelligence or trivial gamesmanship that spun out of control?",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  },
+  {
+   "title": "Opinion | Is There Any Escape From the Political Blame Game?",
+   "link": "https://www.wsj.com/opinion/is-there-any-escape-from-the-political-blame-game-052538f2?mod=rss_worldnews",
+   "date": "2026-11-13T19:49:00+00:00",
+   "summary": "Republicans have played it for the past two years. The new Democratic majority probably will play it too.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  },
+  {
+   "title": "Opinion | Antisemitism Made a Zionist of Me",
+   "link": "https://www.wsj.com/opinion/antisemitism-made-a-zionist-of-me-8195ded9?mod=rss_worldnews",
+   "date": "2026-11-13T19:12:00+00:00",
+   "summary": "Opponents of Israel have turned into a threat to the American ideal of religious pluralism and tolerance.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  },
+  {
    "title": "Opinion | Is the War Against Iran a Necessary Defense?",
    "link": "https://www.wsj.com/opinion/is-the-war-against-iran-a-necessary-defense-7d451c99?mod=rss_worldnews",
    "date": "2026-11-13T16:07:00+00:00",
@@ -256,37 +292,10 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
-   "title": "Opinion | Ukraine Reports More SpaceX Disruptions",
-   "link": "https://www.wsj.com/opinion/ukraine-starshield-spacex-russia-elon-musk-donald-trump-3902974b?mod=rss_worldnews",
-   "date": "2026-11-12T22:55:00+00:00",
-   "summary": "Restrictions on Starshield harm Ukraine and help the Russians.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
-   "title": "Opinion | Ukraine’s New Defense Against Russian Drones",
-   "link": "https://www.wsj.com/opinion/ukraines-new-defense-against-russian-drones-6e6c2945?mod=rss_worldnews",
-   "date": "2026-11-12T22:42:00+00:00",
-   "summary": "NATO should pay attention to the electronic-warfare ‘dome’ that protects Kyiv.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
-   "title": "Opinion | Voters’ Low Pain Tolerance Helps Adversaries",
-   "link": "https://www.wsj.com/opinion/voters-low-pain-tolerance-helps-adversaries-f9484d3f?mod=rss_worldnews",
-   "date": "2026-11-12T20:44:00+00:00",
-   "summary": "Iran benefits from Americans’ unwillingness to accept higher gasoline prices.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
-   "title": "Opinion | The Vote Against the Wealth Tax Was a Verdict on Inflation",
-   "link": "https://www.wsj.com/opinion/the-vote-against-the-wealth-tax-was-a-verdict-on-inflation-fe173cae?mod=rss_worldnews",
-   "date": "2026-11-12T19:45:00+00:00",
-   "summary": "Politicians who want to address debt by devaluing the currency will find it easier said than done.",
+   "title": "Putin Had Four Plans to Defeat Ukraine. He Only Has Two Left.",
+   "link": "https://www.wsj.com/world/russia/putin-had-four-plans-to-defeat-ukraine-he-only-has-two-left-7875e5a6?mod=rss_worldnews",
+   "date": "2026-11-13T03:00:00+00:00",
+   "summary": "The Kremlin’s hopes for a military victory or a Trump-brokered deal have dimmed. Moscow is now betting on Ukraine’s economic collapse and weakening European support.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
@@ -323,15 +332,6 @@
    "link": "https://www.wsj.com/world/the-spread-of-cheaper-ballistic-missiles-rips-up-decades-of-military-thinking-e6ef7fac?mod=rss_worldnews",
    "date": "2026-11-12T01:00:00+00:00",
    "summary": "As interceptor supplies run down, Iran and the Houthis have shown how American bases are increasingly vulnerable.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
-   "title": "Spain Hit by General Strike as Cost of Living Takes Center Stage Ahead of Elections",
-   "link": "https://www.wsj.com/world/europe/spain-hit-by-general-strike-as-cost-of-living-takes-center-stage-ahead-of-elections-2c86baf7?mod=rss_worldnews",
-   "date": "2026-11-11T17:58:00+00:00",
-   "summary": "Demonstrators took to the streets of cities across Spain to join the country’s first general strike in 14 years, calling for measures to tackle the rising cost of living weeks before voters head to the polls.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
@@ -517,6 +517,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
+   "title": "Degrees Lead Nowhere. Jobs Don’t Exist. Welcome to India’s Youth Revolt.",
+   "link": "https://www.wsj.com/world/india/degrees-lead-nowhere-jobs-dont-exist-welcome-to-indias-youth-revolt-94b61098?mod=rss_worldnews",
+   "date": "2026-11-13T03:00:00+00:00",
+   "summary": "Indian graduates are spending months cramming for long-shot civil-service exams, but their frustration is fueling anger toward Narendra Modi’s ruling party.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  },
+  {
    "title": "Young Protesters Are Putting India’s Modi on the Defensive",
    "link": "https://www.wsj.com/world/india/young-protesters-are-putting-indias-modi-on-the-defensive-56108d4c?mod=rss_worldnews",
    "date": "2026-10-19T18:33:00+00:00",
@@ -553,19 +562,10 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
-   "title": "Shifting U.S. Alliances Push Rivals China and India Together",
-   "link": "https://www.wsj.com/world/asia/shifting-u-s-alliances-push-rivals-china-and-india-together-37c95b68?mod=rss_worldnews",
-   "date": "2026-09-11T16:41:00+00:00",
-   "summary": "As President Trump blows hot and cold, a summit in New Delhi presents an opportunity for two giant neighbors to smooth over their differences.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
-   "title": "The Morning Risk Report: How Hackers Steal Millions in AI Computing Power",
-   "link": "https://www.wsj.com/risk-compliance-journal/the-morning-risk-report-how-hackers-steal-millions-in-ai-computing-power-1359493b?mod=rss_worldnews",
-   "date": "2026-11-11T12:28:00+00:00",
-   "summary": "Plus: Jensen Huang affair revives push for chip restrictions and the U.S. has sued Lyft.",
+   "title": "Iran’s New Cyber Playbook: Create Real-World Havoc",
+   "link": "https://www.wsj.com/world/middle-east/irans-new-cyber-playbook-create-real-world-havoc-8ea2dffc?mod=rss_worldnews",
+   "date": "2026-11-13T01:00:00+00:00",
+   "summary": "Tehran intensifies its effort to cause pain in the physical world with attacks on lightly protected tankers and refrigerators.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
@@ -580,10 +580,10 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
-   "title": "Ten Months of War to Gain 46 Square Miles: How Russia Is Failing on the Battlefield",
-   "link": "https://www.wsj.com/world/russia/ten-months-of-war-to-gain-46-square-miles-how-russia-is-failing-on-the-battlefield-3184ae10?mod=rss_worldnews",
-   "date": "2026-11-07T04:00:00+00:00",
-   "summary": "Ukrainian forces have foiled Moscow’s offensive in the Donetsk region. The Russian army is making one more push.",
+   "title": "Kim Jong Un Remakes North Korea’s Flag, Ditching Soviet-Era Version",
+   "link": "https://www.wsj.com/world/asia/kim-jong-un-remakes-north-koreas-flag-ditching-soviet-era-version-c65efcfe?mod=rss_worldnews",
+   "date": "2026-11-13T09:43:00+00:00",
+   "summary": "The revamped  flag marks a new effort by Kim to stamp his own identity on the country’s institutions.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
@@ -598,19 +598,10 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
-   "title": "Someone Is Causing Chaos Across Europe. The Question Is: Who?",
-   "link": "https://www.wsj.com/world/europe/someone-is-causing-chaos-across-europe-the-question-is-who-ba3749a6?mod=rss_worldnews",
-   "date": "2026-11-07T11:24:00+00:00",
-   "summary": "Authorities are scrambling to figure out the source of a series of bomb threats and hacks that diverted aircraft and led to the evacuation of media outlets.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
-  },
-  {
-   "title": "Vance Considers Direct Talks With Iran Hard-Liner in Push to End War",
-   "link": "https://www.wsj.com/world/middle-east/vance-considers-direct-talks-with-iran-hardliner-in-push-to-end-war-0c2e3ea4?mod=rss_worldnews",
-   "date": "2026-11-11T19:25:00+00:00",
-   "summary": "Becoming the face of Iran diplomacy could be politically risky for the vice president, some U.S. officials say.",
+   "title": "Putin Had Four Plans to Defeat Ukraine. He Only Has Two Left.",
+   "link": "https://www.wsj.com/world/russia/putin-had-four-plans-to-defeat-ukraine-he-only-has-two-left-7875e5a6?mod=rss_worldnews",
+   "date": "2026-11-13T03:00:00+00:00",
+   "summary": "The Kremlin’s hopes for a military victory or a Trump-brokered deal have dimmed. Moscow is now betting on Ukraine’s economic collapse and weakening European support.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
@@ -627,7 +618,7 @@
   {
    "title": "Best High-Yield Savings Accounts of November 2026: Up to 5.00%",
    "link": "https://www.wsj.com/buyside/personal-finance/banking/best-high-yield-savings-account?mod=rss_worldnews",
-   "date": "2026-11-13T14:12:00+00:00",
+   "date": "2026-11-13T20:05:00+00:00",
    "summary": "Beat average interest rates with one of these top high-yield savings accounts.",
    "publisher": "Wall Street Journal",
    "kind": "press",
@@ -643,10 +634,28 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
   },
   {
-   "title": "Stock Market Today: Nvidia Shares Slide Again as Investors Eye Fallout From Huang's Removal",
+   "title": "Stock Market News, Nov. 13, 2026: Nvidia Shares Drop Again as Investors Eye Fallout From Huang's Removal",
    "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-13-2026?mod=rss_markets_main",
    "date": "2026-11-13T09:55:33+00:00",
-   "summary": "Tech stocks slump; AI trade faces two major tests next week with chip giant's earnings and Anthropic's IPO",
+   "summary": "AI trade faces major tests next week with chip giant's earnings and Anthropic's IPO",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
+  },
+  {
+   "title": "Tech Stocks Fall as Next Week Brings Big Tests for the AI Trade",
+   "link": "https://www.wsj.com/finance/stocks/tech-stocks-fall-as-next-week-brings-big-tests-for-the-ai-trade-6a346b49?mod=rss_markets_main",
+   "date": "2026-11-13T21:19:00+00:00",
+   "summary": "Plus, Nvidia closes lower and Anthropic CEO hopes IPO will “overdeliver.”",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
+  },
+  {
+   "title": "Anthropic Chief Tells Jamie Dimon He Hopes IPO Will ‘Underpromise and Overdeliver’",
+   "link": "https://www.wsj.com/finance/anthropic-chief-tells-jamie-dimon-he-hopes-ipo-will-underpromise-and-overdeliver-1ba2dd71?mod=rss_markets_main",
+   "date": "2026-11-13T18:46:00+00:00",
+   "summary": "The artificial-intelligence giant, which is expected to begin trading Thursday, is targeting a valuation of roughly $1.33 trillion or more.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
@@ -683,24 +692,6 @@
    "link": "https://www.wsj.com/health/healthcare/cvs-breakup-wont-satisfy-washington-it-could-still-work-for-wall-street-1b5004e3?mod=rss_markets_main",
    "date": "2026-11-13T10:30:00+00:00",
    "summary": "Spinning off its drugstores won’t quiet CVS’s critics, but it could leave shareholders with a more valuable company.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
-  },
-  {
-   "title": "AI Bots Are Using Credit Cards. Banks Are Racing to Keep Up.",
-   "link": "https://www.wsj.com/finance/ai-bots-are-using-credit-cards-banks-are-racing-to-keep-up-c30dda30?mod=rss_markets_main",
-   "date": "2026-11-13T01:00:00+00:00",
-   "summary": "Stripe is positioning itself as a key cog for agentic commerce, while JPMorgan Chase is a skeptic.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
-  },
-  {
-   "title": "Jensen Huang’s Exit Will Test AI’s Stocks, and Great-Man Theory",
-   "link": "https://www.wsj.com/finance/stocks/jensen-huangs-exit-will-test-ais-stocks-and-great-man-theory-3c4cd404?mod=rss_markets_main",
-   "date": "2026-11-12T21:41:00+00:00",
-   "summary": "Nvidia’s crisis divides the AI trade between companies dependent on Huang’s patronage, and those that didn’t need his chips or financing deals.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
@@ -751,6 +742,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
+   "title": "AI Bots Are Using Credit Cards. Banks Are Racing to Keep Up.",
+   "link": "https://www.wsj.com/finance/ai-bots-are-using-credit-cards-banks-are-racing-to-keep-up-c30dda30?mod=rss_markets_main",
+   "date": "2026-11-13T01:00:00+00:00",
+   "summary": "Stripe is positioning itself as a key cog for agentic commerce, while JPMorgan Chase is a skeptic.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
+  },
+  {
    "title": "Metro Bank Hangs Up ‘For Sale’ Sign",
    "link": "https://www.wsj.com/business/deals/metro-bank-hangs-up-for-sale-sign-6a1e3da4?mod=rss_markets_main",
    "date": "2026-11-12T08:25:00+00:00",
@@ -787,18 +787,9 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
-   "title": "Norway’s Oil Fund Reaches $224.5 Million Settlement With KPMG Over SVB Collapse",
-   "link": "https://www.wsj.com/finance/banking/norway-oil-fund-reaches-224-5-million-settlement-with-kpmg-over-silicon-valley-bank-collapse-e0cc9045?mod=rss_markets_main",
-   "date": "2026-11-06T15:05:00+00:00",
-   "summary": "Norges Bank Investment Management and co-lead plaintiff Sjunde AP-fonden, Sweden’s state pension fund, reached a $224.5 million settlement in principle.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
-  },
-  {
    "title": "Auto & Transport Roundup: Market Talk",
    "link": "https://www.wsj.com/business/auto-transport-roundup-market-talk-82432d04?mod=rss_markets_main",
-   "date": "2026-11-13T17:27:00+00:00",
+   "date": "2026-11-13T21:57:00+00:00",
    "summary": "Find insight on Air France-KLM, HMM and more in the latest Market Talks covering the Auto and Transport sector.",
    "publisher": "Wall Street Journal",
    "kind": "press",
@@ -823,6 +814,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
+   "title": "Nvidia’s Meteoric Rise, in One Chart",
+   "link": "https://www.wsj.com/tech/nvidias-meteoric-rise-in-one-chart-2f47d54e?mod=rss_markets_main",
+   "date": "2026-11-12T20:14:00+00:00",
+   "summary": "A once-modest company soared after ChatGPT unleashed demand for its chips.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
+  },
+  {
    "title": "Brookfield Earnings Buoyed by Fund Raising, Wealth Solutions Growth",
    "link": "https://www.wsj.com/finance/investing/brookfield-earnings-buoyed-by-fund-raising-wealth-solutions-growth-05a27297?mod=rss_markets_main",
    "date": "2026-11-12T12:57:00+00:00",
@@ -832,19 +832,19 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
-   "title": "Praise Was Heaped on Jensen Huang. That Might Be Part of the Problem.",
-   "link": "https://www.wsj.com/articles/praise-was-heaped-on-jensen-huang-that-might-be-part-of-the-problem-4cfa876c?mod=rss_markets_main",
-   "date": "2026-11-12T12:03:00+00:00",
-   "summary": "",
+   "title": "U.S. Stocks Mixed on Nvidia Fallout Fears",
+   "link": "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-on-nvidia-fallout-fears-f9946e8d?mod=rss_markets_main",
+   "date": "2026-11-13T22:14:00+00:00",
+   "summary": "U.S. stocks finished mixed as rate fears resurfaced and tumult at Nvidia spilled into the wider semiconductor sector, dragging down technology indexes.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
-   "title": "U.S. Stocks Fall as Nvidia Shares Slide Again",
+   "title": "U.S. Stocks Decline as Nvidia Shares Slide Again",
    "link": "https://www.wsj.com/finance/stocks/stock-futures-lower-as-investors-look-to-u-s-inflation-data-5b1b5988?mod=rss_markets_main",
-   "date": "2026-11-13T17:31:00+00:00",
-   "summary": "U.S. stocks fell as the tumult surrounding Jensen Huang’s ouster from Nvidia continues to cloud the outlook for the AI trade.",
+   "date": "2026-11-13T20:02:00+00:00",
+   "summary": "U.S. stocks declined as the tumult surrounding Jensen Huang’s ouster from Nvidia continues to cloud the outlook for the AI trade.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
@@ -877,10 +877,10 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
-   "title": "U.S. Stocks Down as Huang Ouster Sends Shockwaves Through Tech",
-   "link": "https://www.wsj.com/finance/stocks/u-s-stocks-fall-as-huang-ouster-sends-shockwaves-through-tech-5b0aa02a?mod=rss_markets_main",
-   "date": "2026-11-12T22:12:00+00:00",
-   "summary": "U.S. stocks slipped after the sudden ouster of one of the key architects of the artificial-intelligence boom sent shockwaves through the technology sector.",
+   "title": "Opinion | Congressional Insider Trading Isn’t as Common as You Think",
+   "link": "https://www.wsj.com/opinion/congressional-insider-trading-isnt-as-common-as-you-think-637d5563?mod=rss_markets_main",
+   "date": "2026-11-13T19:18:00+00:00",
+   "summary": "As with Mr. Pelosi’s Alphabet options, many insider-trading claims fall apart under scrutiny.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
@@ -931,10 +931,19 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
-   "title": "Opinion | Politics Shakes Up the Markets",
-   "link": "https://www.wsj.com/opinion/tech-selloff-economy-politics-2e789982?mod=rss_markets_main",
-   "date": "2026-11-05T22:40:00+00:00",
-   "summary": "A tech correction could force Washington to focus on the economy.",
+   "title": "The Next Wave of Food Inflation Is Coming",
+   "link": "https://www.wsj.com/economy/consumers/the-next-wave-of-food-inflation-is-coming-b06f37db?mod=rss_markets_main",
+   "date": "2026-11-14T01:00:00+00:00",
+   "summary": "Grocery prices could increase again as surging energy costs and supply-chain delays are lifting costs for producers.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
+  },
+  {
+   "title": "Oil Futures End Week Lower",
+   "link": "https://www.wsj.com/finance/commodities-futures/oil-slips-again-as-traders-weigh-diplomacy-hopes-808f1641?mod=rss_markets_main",
+   "date": "2026-11-13T22:20:00+00:00",
+   "summary": "Oil futures settled mixed with Brent practically unchanged and WTI off 0.2%, but both benchmarks saw a second straight weekly decline.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
@@ -942,53 +951,35 @@
   {
    "title": "Basic Materials Roundup: Market Talk",
    "link": "https://www.wsj.com/business/basic-materials-roundup-market-talk-b3b3c77e?mod=rss_markets_main",
-   "date": "2026-11-13T17:26:00+00:00",
+   "date": "2026-11-13T22:01:00+00:00",
    "summary": "Find insight on gold futures, Press Metal Aluminium, Evolution Mining and more in the latest Market Talks covering basic materials.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
-   "title": "U.S. Natural Gas Storage Shows Above-Average Weekly Build",
+   "title": "U.S. Natural Gas Futures Relinquish Some Gains",
    "link": "https://www.wsj.com/finance/commodities-futures/u-s-natural-gas-futures-return-some-gains-1b28586d?mod=rss_markets_main",
-   "date": "2026-11-13T17:03:00+00:00",
-   "summary": "U.S. natural gas futures pulled back after government data showed that inventories rose by more than usual last week.",
+   "date": "2026-11-13T20:38:00+00:00",
+   "summary": "U.S. natural gas futures settled lower, giving back the previous day’s weather-driven gains as a spell of cold weather is set to lift near-term heating demand.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
-   "title": "Gold Little Changed With Focus on Yields, Geopolitical Tension",
+   "title": "Gold, Silver Futures Post Weekly Losses",
    "link": "https://www.wsj.com/finance/commodities-futures/gold-edges-higher-in-technical-rebound-10e4e211?mod=rss_markets_main",
-   "date": "2026-11-13T16:12:00+00:00",
-   "summary": "Gold futures were slightly lower after briefly recovering to the $4,000 level earlier in the session.",
+   "date": "2026-11-13T19:29:00+00:00",
+   "summary": "Gold futures held their ground in choppy trading as a below-estimate U.S. producer price reading and steadying oil prices ease inflation concerns that sank the metals the previous session.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
-   "title": "Oil Futures Extend Gains in Early U.S. Trading",
-   "link": "https://www.wsj.com/finance/commodities-futures/oil-slips-again-as-traders-weigh-diplomacy-hopes-808f1641?mod=rss_markets_main",
-   "date": "2026-11-13T14:56:00+00:00",
-   "summary": "Crude futures rose for a third session, but were on track for weekly losses as increasing supplies offset emerging concerns about the lack of progress toward a settlement in the Middle East.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
-  },
-  {
-   "title": "Oil Futures Rebound as Trump Shrugs Off Need for Iran Deal",
-   "link": "https://www.wsj.com/finance/commodities-futures/oil-resumes-decline-as-risk-premium-fades-bcdc7fc5?mod=rss_markets_main",
-   "date": "2026-11-12T22:02:00+00:00",
-   "summary": "Oil futures rose after President Trump said the U.S. doesn’t need to reach a deal with Iran, adding risk premium back into the market despite the recent increase in supply from the Middle East.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
-  },
-  {
-   "title": "Dollar Supported by Hawkish Fed Expectations",
+   "title": "WSJ Dollar Index Rises 0.84% This Week to 98.34",
    "link": "https://www.wsj.com/finance/currencies/french-political-and-fiscal-uncertainty-could-weigh-on-euro-c7deca5f?mod=rss_markets_main",
-   "date": "2026-11-13T14:22:00+00:00",
-   "summary": "The WSJ Dollar Index rose slightly. Corpay said a hawkish Fed bodes well for the currency, adding it sees the greenback as overbought vs the euro, pound, yen and vulnerable to a reset in expectations.",
+   "date": "2026-11-13T22:33:00+00:00",
+   "summary": "The WSJ Dollar Index rose 0.2%, up for four consecutive trading days.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
@@ -1075,6 +1066,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
+   "title": "Jensen Huang’s Exit Will Test AI’s Stocks, and Great-Man Theory",
+   "link": "https://www.wsj.com/finance/stocks/jensen-huangs-exit-will-test-ais-stocks-and-great-man-theory-3c4cd404?mod=rss_markets_main",
+   "date": "2026-11-12T21:41:00+00:00",
+   "summary": "Nvidia’s crisis divides the AI trade between companies dependent on Huang’s patronage, and those that didn’t need his chips or financing deals.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
+  },
+  {
    "title": "Nvidia Tumbles as its CEO Jensen Huang Departs Amid Multiplying Scandals",
    "link": "https://www.wsj.com/finance/stocks/nvidia-tumbles-as-its-ceo-jensen-huang-departs-amid-multiplying-scandals-d380df1f?mod=rss_markets_main",
    "date": "2026-11-12T21:11:00+00:00",
@@ -1111,15 +1111,6 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
-   "title": "CoreWeave Jumps, Boosting the AI Trade",
-   "link": "https://www.wsj.com/finance/stocks/coreweave-jumps-boosting-the-ai-trade-e5c1569b?mod=rss_markets_main",
-   "date": "2026-11-11T21:17:00+00:00",
-   "summary": "Plus, United Airlines bans AI bots from booking flights.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
-  },
-  {
    "title": "Nvidia’s Disappearing Singapore Sales Deepen Mystery Around Megaspeed",
    "link": "https://www.wsj.com/business/earnings/nvidias-disappearing-singapore-sales-deepen-mystery-around-megaspeed-7d483180?mod=rss_markets_main",
    "date": "2026-11-12T01:00:00+00:00",
@@ -1147,19 +1138,19 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
-   "title": "The 2027 Tax Brackets Are Here. See Where You Land.",
-   "link": "https://www.wsj.com/personal-finance/taxes/the-2027-tax-brackets-are-here-see-where-you-land-c20ada58?mod=rss_markets_main",
-   "date": "2026-11-05T21:04:00+00:00",
-   "summary": "Inflation adjustments to tax brackets, the standard deduction, the child tax credit and more are meant to give taxpayers relief from rising costs of living.",
+   "title": "Don’t Trust the Market’s Knee-Jerk Reaction to the Midterms",
+   "link": "https://www.wsj.com/finance/stocks/dont-trust-the-markets-knee-jerk-reaction-to-the-midterms-8702b17c?mod=rss_markets_main",
+   "date": "2026-11-08T10:30:00+00:00",
+   "summary": "There are usually good reasons for politically driven trades. Yet they often prove catastrophic once the postelection hype settles down.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
-   "title": "Don’t Trust the Market’s Knee-Jerk Reaction to the Midterms",
-   "link": "https://www.wsj.com/finance/stocks/dont-trust-the-markets-knee-jerk-reaction-to-the-midterms-8702b17c?mod=rss_markets_main",
-   "date": "2026-11-08T10:30:00+00:00",
-   "summary": "There are usually good reasons for politically driven trades. Yet they often prove catastrophic once the postelection hype settles down.",
+   "title": "The 2027 Tax Brackets Are Here. See Where You Land.",
+   "link": "https://www.wsj.com/personal-finance/taxes/the-2027-tax-brackets-are-here-see-where-you-land-c20ada58?mod=rss_markets_main",
+   "date": "2026-11-05T21:04:00+00:00",
+   "summary": "Inflation adjustments to tax brackets, the standard deduction, the child tax credit and more are meant to give taxpayers relief from rising costs of living.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
@@ -1192,10 +1183,28 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain"
   },
   {
+   "title": "Shoppers’ complaints about food prices could soon grow louder, as surging energy costs and supply-chain delays are elevating costs for producers: “The worst is yet to come”",
+   "link": "https://www.wsj.com/economy/consumers/the-next-wave-of-food-inflation-is-coming-b06f37db?mod=rss_socialeconomyfeed",
+   "date": "2026-11-14T01:00:00+00:00",
+   "summary": "Grocery prices could increase again as surging energy costs and supply-chain delays are lifting costs for producers.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed"
+  },
+  {
+   "title": "Of all the ways Chairman Kevin Warsh wants to remake the Fed, the least flashy may be the most lasting: He is cutting the number of interest-rate decisions the central bank makes each year",
+   "link": "https://www.wsj.com/economy/central-banking/federal-reserve-calendar-changes-890c4390?mod=rss_socialeconomyfeed",
+   "date": "2026-11-13T21:01:00+00:00",
+   "summary": "The Federal Reserve confirmed that it won’t vote on interest rates at its October meeting next year.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed"
+  },
+  {
    "title": "U.S., Eurozone Bond Yields Rise",
    "link": "https://www.wsj.com/economy/central-banking/upward-pressure-remains-in-treasury-yields-even-as-two-year-yield-stabilizes-0c267082?mod=rss_socialeconomyfeed",
    "date": "2026-11-13T18:00:00+00:00",
-   "summary": "Bond yields rose in Europe and the U.S. on Friday as inflationary pressures kept expectations for further Federal Reserve interest-rate increases strong.",
+   "summary": "Bond yields rose in Europe and the U.S. as inflationary pressures kept expectations for further Federal Reserve interest-rate increases strong.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed"
@@ -1219,28 +1228,10 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed"
   },
   {
-   "title": "Of all the ways Chairman Kevin Warsh wants to remake the Fed, the least flashy may be the most lasting: He is cutting the number of interest-rate decisions the central bank makes each year",
-   "link": "https://www.wsj.com/economy/central-banking/federal-reserve-calendar-changes-890c4390?mod=rss_socialeconomyfeed",
-   "date": "2026-11-13T15:02:00+00:00",
-   "summary": "The Federal Reserve confirmed that it won’t vote on interest rates at its October meeting next year.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed"
-  },
-  {
    "title": "Week Ahead for FX, Bonds: Fed Minutes, U.K. Data in Focus",
    "link": "https://www.wsj.com/economy/week-ahead-for-fx-bonds-fed-minutes-u-k-data-in-focus-679dc61f?mod=rss_socialeconomyfeed",
    "date": "2026-11-13T14:21:00+00:00",
    "summary": "Market expectations for another Fed rate rise in December have increased in the wake of stronger-than-expected jobs data and higher-than-anticipated inflation.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed"
-  },
-  {
-   "title": "Producer-Price Inflation Cooled Last Month, Remains Elevated",
-   "link": "https://www.wsj.com/economy/central-banking/producer-price-inflation-cooled-last-month-remains-elevated-d2d4007f?mod=rss_socialeconomyfeed",
-   "date": "2026-11-13T14:05:00+00:00",
-   "summary": "Prices charged by U.S. producers rose less quickly last month than during their rapid increase in September, but wholesale inflation over the past year remains well above trend.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed"
@@ -1336,6 +1327,15 @@
    "feed": "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed"
   },
   {
+   "title": "Producer-Price Inflation Cooled Last Month, Remains Elevated",
+   "link": "https://www.wsj.com/economy/central-banking/producer-price-inflation-cooled-last-month-remains-elevated-d2d4007f?mod=rss_socialeconomyfeed",
+   "date": "2026-11-13T14:05:00+00:00",
+   "summary": "Prices charged by U.S. producers rose less quickly last month than during their rapid increase in September, but wholesale inflation over the past year remains well above trend.",
+   "publisher": "Wall Street Journal",
+   "kind": "press",
+   "feed": "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed"
+  },
+  {
    "title": "Fed’s Williams Says Still Work to Do to Get Monetary Policy to Right Place",
    "link": "https://www.wsj.com/economy/central-banking/feds-williams-says-still-work-to-do-to-get-monetary-policy-to-right-place-cc3b5992?mod=rss_socialeconomyfeed",
    "date": "2026-11-13T01:26:00+00:00",
@@ -1367,15 +1367,6 @@
    "link": "https://www.wsj.com/economy/central-banking/chinas-central-bank-signals-easing-restraint-as-growth-holds-up-15c19e61?mod=rss_socialeconomyfeed",
    "date": "2026-11-12T04:19:00+00:00",
    "summary": "The People’s Bank of China reiterated its commitment to maintain a pro-growth, accommodative policy stance, while again stating its concern about the risk of too-low rates.",
-   "publisher": "Wall Street Journal",
-   "kind": "press",
-   "feed": "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed"
-  },
-  {
-   "title": "Dovish BOJ Member Urges Caution in Raising Rates Further",
-   "link": "https://www.wsj.com/economy/central-banking/dovish-boj-member-urges-caution-in-raising-rates-further-a40524b3?mod=rss_socialeconomyfeed",
-   "date": "2026-11-12T02:37:00+00:00",
-   "summary": "The Bank of Japan needs to tread carefully when tightening policy, board member Toichiro Asada said, warning about the risk of higher interest rates hurting economic growth.",
    "publisher": "Wall Street Journal",
    "kind": "press",
    "feed": "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed"
@@ -6916,19 +6907,46 @@
    "feed": "https://www.economist.com/international/rss.xml"
   },
   {
-   "title": "Microsoft says services experiencing ‘broad recovery’ after global outage",
-   "link": "https://www.ft.com/content/025b2769-bca8-4a74-b9f5-5d7ad7da32c7?syn-25a6b1a6=1",
-   "date": "2026-11-13T18:25:15+00:00",
-   "summary": "German government says it ‘anticipates a very big impact’ on economy",
+   "title": "Hawkward timing",
+   "link": "https://www.ft.com/content/8c2639dc-e5d5-430d-a641-11776ac26f9c",
+   "date": "2026-11-14T10:05:05+00:00",
+   "summary": "Federal Reserve policymakers have floated the idea of a bigger rate increase in December following strong jobs, growth and inflation data",
    "publisher": "Financial Times",
    "kind": "press",
    "feed": "https://www.ft.com/global-economy?format=rss"
   },
   {
-   "title": "US Treasuries set for worst week since Trump’s ‘liberation day’",
+   "title": "Transcript of an interview with Huw Pill",
+   "link": "https://www.ft.com/content/014fae08-ab39-4fa2-b9d3-f0c961a6710f",
+   "date": "2026-11-14T05:00:46+00:00",
+   "summary": "Bank of England chief economist talks to the FT",
+   "publisher": "Financial Times",
+   "kind": "press",
+   "feed": "https://www.ft.com/global-economy?format=rss"
+  },
+  {
+   "title": "BoE chief economist says further rate rises needed to combat inflation",
+   "link": "https://www.ft.com/content/806b0158-41c5-4db2-ac33-93621f72297b?syn-25a6b1a6=1",
+   "date": "2026-11-14T05:00:46+00:00",
+   "summary": "Huw Pill calls last week’s quarter-point increase to 4% a ‘significant step’ but that there was ‘further to go’ with borrowing costs",
+   "publisher": "Financial Times",
+   "kind": "press",
+   "feed": "https://www.ft.com/global-economy?format=rss"
+  },
+  {
+   "title": "US Treasuries record worst week since Trump’s ‘liberation day’",
    "link": "https://www.ft.com/content/7bebace2-dc87-410a-ae29-ffd9f3176def?syn-25a6b1a6=1",
-   "date": "2026-11-13T17:13:57+00:00",
+   "date": "2026-11-13T22:12:03+00:00",
    "summary": "Higher than expected inflation and hawkish remarks by Fed officials have stung investors who bet a global bond rout was over",
+   "publisher": "Financial Times",
+   "kind": "press",
+   "feed": "https://www.ft.com/global-economy?format=rss"
+  },
+  {
+   "title": "Microsoft says services experiencing ‘broad recovery’ after global outage",
+   "link": "https://www.ft.com/content/025b2769-bca8-4a74-b9f5-5d7ad7da32c7?syn-25a6b1a6=1",
+   "date": "2026-11-13T20:17:46+00:00",
+   "summary": "German government says it ‘anticipates a very big impact’ on economy",
    "publisher": "Financial Times",
    "kind": "press",
    "feed": "https://www.ft.com/global-economy?format=rss"
@@ -7114,46 +7132,109 @@
    "feed": "https://www.ft.com/global-economy?format=rss"
   },
   {
-   "title": "Japanese investment in US to power ahead",
-   "link": "https://www.ft.com/content/ec5adc72-8388-483f-95b2-362d9f0e6d66?syn-25a6b1a6=1",
-   "date": "2026-11-12T01:00:02+00:00",
-   "summary": "Tokyo has been the top investor in the US for seven years in a row — a trend that is unlikely to halt or slow, say bankers",
+   "title": "Trump Media group stares down $1bn debt crunch as bitcoin bet fades",
+   "link": "https://www.ft.com/content/ada459c4-5f43-4a4a-bc6c-90de8897a4f0?syn-25a6b1a6=1",
+   "date": "2026-11-14T13:00:09+00:00",
+   "summary": "Plunge in shares and cryptocurrency prices could force Truth Social owner to sell assets or take on costly new debt",
    "publisher": "Financial Times",
    "kind": "press",
-   "feed": "https://www.ft.com/global-economy?format=rss"
+   "feed": "https://www.ft.com/markets?format=rss"
   },
   {
-   "title": "Trump’s Asia trade deals reap small slice of cash",
-   "link": "https://www.ft.com/content/70b733ec-6cab-41f5-9242-85f7f8916352?syn-25a6b1a6=1",
-   "date": "2026-11-12T01:00:02+00:00",
-   "summary": "Japan, South Korea and Taiwan have made available just 2.7% of financing and FDI under trade and investment pacts to ease tariffs",
+   "title": "Chart of the Week: The great market rotation",
+   "link": "https://www.ft.com/content/936376d1-4a69-4a3c-8975-3c55e9cb9d42?syn-25a6b1a6=1",
+   "date": "2026-11-14T10:30:08+00:00",
+   "summary": "Defensive sectors are the new winners",
    "publisher": "Financial Times",
    "kind": "press",
-   "feed": "https://www.ft.com/global-economy?format=rss"
+   "feed": "https://www.ft.com/markets?format=rss"
   },
   {
-   "title": "FirstFT: Anthropic bankers prepare to increase IPO valuation to $1.5tn",
-   "link": "https://www.ft.com/content/cb451a27-481d-4106-b40f-4a83e3e361fd?syn-25a6b1a6=1",
-   "date": "2026-11-11T11:08:38+00:00",
-   "summary": "Also in today’s newsletter: Hegseth survives impeachment vote and more on Alice Huang’s background",
+   "title": "Hedge fund woes expose the dangers of hot money once again",
+   "link": "https://www.ft.com/content/7c60b026-23ff-4b50-8a2b-7e9614ef7970",
+   "date": "2026-11-14T05:00:38+00:00",
+   "summary": "Recent stumbles have come about as a result of the pursuit of heady growth without the risk management capability and structures to deal with it",
    "publisher": "Financial Times",
    "kind": "press",
-   "feed": "https://www.ft.com/global-economy?format=rss"
+   "feed": "https://www.ft.com/markets?format=rss"
+  },
+  {
+   "title": "Treat prediction markets like futures trading",
+   "link": "https://www.ft.com/content/b5bdf7c5-242b-4078-b3fd-a86b488d5a3a",
+   "date": "2026-11-14T05:00:37+00:00",
+   "summary": "Critics say these sites are just a form of gambling — but they said that about the Chicago Board of Trade too",
+   "publisher": "Financial Times",
+   "kind": "press",
+   "feed": "https://www.ft.com/markets?format=rss"
+  },
+  {
+   "title": "China’s beaten-down tech stocks could offer AI with a little less drama",
+   "link": "https://www.ft.com/content/1505df5d-14e0-4095-8a88-fd23a165a821?syn-25a6b1a6=1",
+   "date": "2026-11-14T05:00:37+00:00",
+   "summary": "Opportunities in China lie as much in the picks and shovels of the AI supply chain",
+   "publisher": "Financial Times",
+   "kind": "press",
+   "feed": "https://www.ft.com/markets?format=rss"
+  },
+  {
+   "title": "How bonds got interesting again",
+   "link": "https://www.ft.com/content/3f89c87c-4bc4-40db-8c15-1957079917f3?syn-25a6b1a6=1",
+   "date": "2026-11-14T05:00:27+00:00",
+   "summary": "Despite the short-term volatility, for those approaching retirement, fixed income products are not the rank outsider they used to be",
+   "publisher": "Financial Times",
+   "kind": "press",
+   "feed": "https://www.ft.com/markets?format=rss"
+  },
+  {
+   "title": "What Europe’s rising public debt means for your portfolio",
+   "link": "https://www.ft.com/content/45684ea3-dba8-476b-8667-2cdbdb5dfd8d",
+   "date": "2026-11-14T05:00:17+00:00",
+   "summary": "How do you invest when hard-up governments are looking for cuts and tax raids?",
+   "publisher": "Financial Times",
+   "kind": "press",
+   "feed": "https://www.ft.com/markets?format=rss"
+  },
+  {
+   "title": "Sam Bankman-Fried would have made nearly $40bn in Anthropic IPO",
+   "link": "https://www.ft.com/content/0ef40ac9-6d01-428f-98c8-a52bf5b9a787?syn-25a6b1a6=1",
+   "date": "2026-11-13T23:39:26+00:00",
+   "summary": "Jailed cryptocurrency mogul loses out on windfall from early investment in the AI lab",
+   "publisher": "Financial Times",
+   "kind": "press",
+   "feed": "https://www.ft.com/markets?format=rss"
+  },
+  {
+   "title": "US Treasuries record worst week since Trump’s ‘liberation day’",
+   "link": "https://www.ft.com/content/7bebace2-dc87-410a-ae29-ffd9f3176def?syn-25a6b1a6=1",
+   "date": "2026-11-13T22:12:03+00:00",
+   "summary": "Higher than expected inflation and hawkish remarks by Fed officials have stung investors who bet a global bond rout was over",
+   "publisher": "Financial Times",
+   "kind": "press",
+   "feed": "https://www.ft.com/markets?format=rss"
+  },
+  {
+   "title": "US securities watchdog plans to loosen rules for executive pay disclosure",
+   "link": "https://www.ft.com/content/de634392-47bd-4a21-938a-77620aeb3d17?syn-25a6b1a6=1",
+   "date": "2026-11-13T20:03:01+00:00",
+   "summary": "Only CEOs and CFOs would be required to disclose pay packages under Securities and Exchange Commission’s proposal",
+   "publisher": "Financial Times",
+   "kind": "press",
+   "feed": "https://www.ft.com/markets?format=rss"
   },
   {
    "title": "Global oil markets swing to surplus as Gulf shipments rebound",
    "link": "https://www.ft.com/content/20b68fe2-9d60-4c0c-b714-1f3e03015823?syn-25a6b1a6=1",
-   "date": "2026-11-13T17:42:34+00:00",
+   "date": "2026-11-13T19:45:14+00:00",
    "summary": "IEA analysts warn it will take months to rebuild stockpiles depleted by US-Iran war",
    "publisher": "Financial Times",
    "kind": "press",
    "feed": "https://www.ft.com/markets?format=rss"
   },
   {
-   "title": "US Treasuries set for worst week since Trump’s ‘liberation day’",
-   "link": "https://www.ft.com/content/7bebace2-dc87-410a-ae29-ffd9f3176def?syn-25a6b1a6=1",
-   "date": "2026-11-13T17:13:57+00:00",
-   "summary": "Higher than expected inflation and hawkish remarks by Fed officials have stung investors who bet a global bond rout was over",
+   "title": "Anthropic’s Amodei ‘not super fussed’ about market turmoil ahead of IPO",
+   "link": "https://www.ft.com/content/4b7b83d7-7fea-4ce2-bfe3-4f2cf75b1d82?syn-25a6b1a6=1",
+   "date": "2026-11-13T19:41:26+00:00",
+   "summary": "AI lab’s chief executive brushes off tech stock turbulence less than a week before  planned $1.5tn listing",
    "publisher": "Financial Times",
    "kind": "press",
    "feed": "https://www.ft.com/markets?format=rss"
@@ -7276,94 +7357,13 @@
    "feed": "https://www.ft.com/markets?format=rss"
   },
   {
-   "title": "Electrification is only part of the climate battle",
-   "link": "https://www.ft.com/content/3202f243-287b-466d-953a-664d0143e91a?syn-25a6b1a6=1",
-   "date": "2026-11-12T18:49:01+00:00",
-   "summary": "A COP31 pledge to expand electric power ought to have a green target attached",
-   "publisher": "Financial Times",
-   "kind": "press",
-   "feed": "https://www.ft.com/markets?format=rss"
-  },
-  {
-   "title": "Nvidia shares slide as Huang resigns",
-   "link": "https://www.ft.com/content/a93307a7-e2cd-4abd-bd89-c38832d8c40e?syn-25a6b1a6=1",
-   "date": "2026-11-12T17:26:15+00:00",
-   "summary": "Stock falls as much as 14% before recovering to trade 5% down on Thursday",
-   "publisher": "Financial Times",
-   "kind": "press",
-   "feed": "https://www.ft.com/markets?format=rss"
-  },
-  {
-   "title": "FirstFT: Nvidia board weighs Jensen Huang’s future as scandal deepens",
-   "link": "https://www.ft.com/content/64198d59-7a03-4f1c-89c6-81ed8bdc5448?syn-25a6b1a6=1",
-   "date": "2026-11-12T11:17:46+00:00",
-   "summary": "Also in today’s newsletter: Jamie Raskin interview and the race for ECB president",
-   "publisher": "Financial Times",
-   "kind": "press",
-   "feed": "https://www.ft.com/markets?format=rss"
-  },
-  {
-   "title": "Wall Street watchdog enforcement against public companies drops to 16-year low",
-   "link": "https://www.ft.com/content/74fa38d2-6925-4204-a61b-192e5277e063?syn-25a6b1a6=1",
-   "date": "2026-11-12T11:00:04+00:00",
-   "summary": "Securities and Exchange Commission brought the fewest actions against corporations since at least 2010, report says",
-   "publisher": "Financial Times",
-   "kind": "press",
-   "feed": "https://www.ft.com/markets?format=rss"
-  },
-  {
-   "title": "How resilient is the US consumer?",
-   "link": "https://www.ft.com/content/c900f840-63c8-4bdd-8f13-a527b89ff9a5?syn-25a6b1a6=1",
-   "date": "2026-11-12T06:30:01+00:00",
-   "summary": "A dialogue with Adam Josephson of Sakonnet Research",
-   "publisher": "Financial Times",
-   "kind": "press",
-   "feed": "https://www.ft.com/markets?format=rss"
-  },
-  {
-   "title": "The bond market is starting to choke on AI debt",
-   "link": "https://www.ft.com/content/2f4d39dd-dee8-4620-996d-3fe978b7522b",
-   "date": "2026-11-12T06:00:02+00:00",
-   "summary": "There aren’t enough baskets to safely cope with this many massive eggs",
-   "publisher": "Financial Times",
-   "kind": "press",
-   "feed": "https://www.ft.com/markets?format=rss"
-  },
-  {
-   "title": "Can anything derail Anthropic’s IPO?",
-   "link": "https://www.ft.com/content/b9ad2b19-4f2a-4f26-89b6-940985a0b9d4?syn-25a6b1a6=1",
-   "date": "2026-11-12T05:00:22+00:00",
-   "summary": "The start-up is forging ahead with its listing in the face of adversity for the broader AI trade",
-   "publisher": "Financial Times",
-   "kind": "press",
-   "feed": "https://www.ft.com/markets?format=rss"
-  },
-  {
-   "title": "Russian diesel exports double after Trump lifts sanctions, but US gets none",
-   "link": "https://www.ft.com/content/525b53ee-4817-4eb6-8292-b6ee0ac45b47?syn-25a6b1a6=1",
-   "date": "2026-11-12T05:00:21+00:00",
-   "summary": "Boost in shipments expected to be shortlived after Ukraine resumes attacks on refineries",
-   "publisher": "Financial Times",
-   "kind": "press",
-   "feed": "https://www.ft.com/markets?format=rss"
-  },
-  {
-   "title": "The blue wave should target red tape",
-   "link": "https://www.ft.com/content/af63512c-56ce-4a8b-9a0a-70a6b9c2424e?syn-25a6b1a6=1",
-   "date": "2026-11-12T05:00:12+00:00",
-   "summary": "You don’t have to be a libertarian nut job to acknowledge the costs imposed by the US administrative state",
-   "publisher": "Financial Times",
-   "kind": "press",
-   "feed": "https://www.ft.com/markets?format=rss"
-  },
-  {
-   "title": "Growth investing or gambling?",
-   "link": "https://www.ft.com/content/92eb0eca-aee8-45af-b336-7a9a20da0a64?syn-25a6b1a6=1",
-   "date": "2026-11-12T05:00:12+00:00",
-   "summary": "The current extreme risk-taking in equity markets might present a once-in-a-career investment opportunity",
-   "publisher": "Financial Times",
-   "kind": "press",
-   "feed": "https://www.ft.com/markets?format=rss"
+   "title": "Agencies extend comment period for proposed third-party risk management guidance",
+   "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm",
+   "date": "2026-11-13T21:15:00+00:00",
+   "summary": "Agencies extend comment period for proposed third-party risk management guidance",
+   "publisher": "Federal Reserve Board",
+   "kind": "official",
+   "feed": "https://www.federalreserve.gov/feeds/press_all.xml"
   },
   {
    "title": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and adjust their check services",
@@ -7537,15 +7537,6 @@
    "feed": "https://www.federalreserve.gov/feeds/press_all.xml"
   },
   {
-   "title": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
-   "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
-   "date": "2026-09-24T18:30:00+00:00",
-   "summary": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
-   "publisher": "Federal Reserve Board",
-   "kind": "official",
-   "feed": "https://www.federalreserve.gov/feeds/press_all.xml"
-  },
-  {
    "title": "Isabel Schnabel: Made in Europe",
    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html",
    "date": "2026-11-13T07:20:00+00:00",
@@ -7690,60 +7681,6 @@
    "feed": "https://www.bis.org/doclist/all_pressrels.rss"
   },
   {
-   "title": "The Czech National Bank’s first DLT bond and the new physics of the digital koruna",
-   "link": "https://www.bis.org/speeches/20261112-czech-national-banks-first-dlt-bond-and-new-physics-digital-koruna",
-   "date": "2026-11-12T00:00:00+00:00",
-   "summary": "Speech by Mr Aleš Michl, Governor of the Czech National Bank, at CzechCrunch Money Maker, Prague, 10 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Opening remarks - Joint Central Bank of Kuwait and Global Finance Magazine Roundtable Discussion with Kuwait Banks",
-   "link": "https://www.bis.org/speeches/20261112-opening-remarks-joint-central-bank-kuwait-and-global-finance-magazine-roundtable-discussion-kuwait-banks",
-   "date": "2026-11-12T00:00:00+00:00",
-   "summary": "Opening remarks by His Excellency Mr Basel A Al-Haroon, Governor of the Central Bank of Kuwait, at the Joint Central Bank of Kuwait and Global Finance Magazine Roundtable Discussion with Kuwait Banks, Kuwait City, 23 September 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Foundations for innovative and resilient capital markets",
-   "link": "https://www.bis.org/speeches/20261112-foundations-innovative-and-resilient-capital-markets",
-   "date": "2026-11-12T00:00:00+00:00",
-   "summary": "Keynote address by Mr Vasileios Madouros, Deputy Governor of the Central Bank of Ireland, at the 2026 ECMI (European Capital Markets Institute) Annual Conference, Brussels, 11 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Central bank independence in today’s world",
-   "link": "https://www.bis.org/speeches/20261112-central-bank-independence-todays-world",
-   "date": "2026-11-12T00:00:00+00:00",
-   "summary": "Speech by Mr Andrew Bailey, Governor of the Bank of England, at the Swiss Institute of International Studies (SIAF) Lecture Series, Zurich University, Zurich, 9 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "The US economy and considerations for monetary policy",
-   "link": "https://www.bis.org/speeches/20261112-us-economy-and-considerations-monetary-policy",
-   "date": "2026-11-12T00:00:00+00:00",
-   "summary": "Speech by Ms Michelle W Bowman, Vice Chair for Supervision of the Board of Governors of the Federal Reserve System, at the C Peter McColough Series on International Economics Council on Foreign Relations, Washington DC, 10 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Japan's current account surplus and corporate adjustment",
-   "link": "https://www.bis.org/speeches/20261112-japans-current-account-surplus-and-corporate-adjustment",
-   "date": "2026-11-12T00:00:00+00:00",
-   "summary": "Speech by Mr Kazuo Ueda, Governor of the Bank of Japan, at the 2026 Michel Camdessus Central Banking Lecture, International Monetary Fund, Washington DC, 6 November 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
    "title": "The science and practice of monetary policy communication - the European Central Bank experience",
    "link": "https://www.bis.org/speeches/20261112-science-and-practice-monetary-policy-communication-european-central-bank-experience",
    "date": "2026-11-12T00:00:00+00:00",
@@ -7798,46 +7735,55 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "What happens to the economy as “intelligence” gets cheaper?",
-   "link": "https://www.bis.org/speeches/20261110-what-happens-economy-as-intelligence-gets-cheaper",
-   "date": "2026-11-10T00:00:00+00:00",
-   "summary": "Speech by Ms Sarah Hunter, Assistant Governor (Economic) of the Reserve Bank of Australia, at the UBS Australasia Conference, Sydney, 9 November 2026.",
+   "title": "The Czech National Bank’s first DLT bond and the new physics of the digital koruna",
+   "link": "https://www.bis.org/speeches/20261112-czech-national-banks-first-dlt-bond-and-new-physics-digital-koruna",
+   "date": "2026-11-12T00:00:00+00:00",
+   "summary": "Speech by Mr Aleš Michl, Governor of the Czech National Bank, at CzechCrunch Money Maker, Prague, 10 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "The Danish pension system in a long-term perspective",
-   "link": "https://www.bis.org/speeches/20261110-danish-pension-system-long-term-perspective",
-   "date": "2026-11-10T00:00:00+00:00",
-   "summary": "Speech by Mr Christian Kettel Thomsen, Governor of Danmarks Nationalbank, at PeRCent’s annual conference 2026, Copenhagen, 4 November 2026.",
+   "title": "Opening remarks - Joint Central Bank of Kuwait and Global Finance Magazine Roundtable Discussion with Kuwait Banks",
+   "link": "https://www.bis.org/speeches/20261112-opening-remarks-joint-central-bank-kuwait-and-global-finance-magazine-roundtable-discussion-kuwait-banks",
+   "date": "2026-11-12T00:00:00+00:00",
+   "summary": "Opening remarks by His Excellency Mr Basel A Al-Haroon, Governor of the Central Bank of Kuwait, at the Joint Central Bank of Kuwait and Global Finance Magazine Roundtable Discussion with Kuwait Banks, Kuwait City, 23 September 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Trust, expectations and monetary policy",
-   "link": "https://www.bis.org/speeches/20261110-trust-expectations-and-monetary-policy",
-   "date": "2026-11-10T00:00:00+00:00",
-   "summary": "Text of the Sir Leslie Melville Lecture by Mr Andrew Hauser, Deputy Governor of the Reserve Bank of Australia, to the Australian National University, Canberra, 5 November 2026.",
+   "title": "Foundations for innovative and resilient capital markets",
+   "link": "https://www.bis.org/speeches/20261112-foundations-innovative-and-resilient-capital-markets",
+   "date": "2026-11-12T00:00:00+00:00",
+   "summary": "Keynote address by Mr Vasileios Madouros, Deputy Governor of the Central Bank of Ireland, at the 2026 ECMI (European Capital Markets Institute) Annual Conference, Brussels, 11 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Navigating stormy waters - reflections on monetary policy",
-   "link": "https://www.bis.org/speeches/20261110-navigating-stormy-waters-reflections-monetary-policy",
-   "date": "2026-11-10T00:00:00+00:00",
-   "summary": "Speech by Ms Isabel Schnabel, Member of the Executive Board of the European Central Bank, at the ECB Conference on Money Markets 2026, Frankfurt am Main, 5 November 2026.",
+   "title": "Central bank independence in today’s world",
+   "link": "https://www.bis.org/speeches/20261112-central-bank-independence-todays-world",
+   "date": "2026-11-12T00:00:00+00:00",
+   "summary": "Speech by Mr Andrew Bailey, Governor of the Bank of England, at the Swiss Institute of International Studies (SIAF) Lecture Series, Zurich University, Zurich, 9 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Message for the European Chamber of Commerce Philippines Luncheon Meeting",
-   "link": "https://www.bis.org/speeches/20261110-message-european-chamber-commerce-philippines-luncheon-meeting",
-   "date": "2026-11-10T00:00:00+00:00",
-   "summary": "Message by Mr Eli M Remolona, Jr, Governor of Bangko Sentral ng Pilipinas (BSP, the central bank of the Philippines), for the European Chamber of Commerce Philippines Luncheon Meeting, Makati City, 3 November 2026.",
+   "title": "The US economy and considerations for monetary policy",
+   "link": "https://www.bis.org/speeches/20261112-us-economy-and-considerations-monetary-policy",
+   "date": "2026-11-12T00:00:00+00:00",
+   "summary": "Speech by Ms Michelle W Bowman, Vice Chair for Supervision of the Board of Governors of the Federal Reserve System, at the C Peter McColough Series on International Economics Council on Foreign Relations, Washington DC, 10 November 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Japan's current account surplus and corporate adjustment",
+   "link": "https://www.bis.org/speeches/20261112-japans-current-account-surplus-and-corporate-adjustment",
+   "date": "2026-11-12T00:00:00+00:00",
+   "summary": "Speech by Mr Kazuo Ueda, Governor of the Bank of Japan, at the 2026 Michel Camdessus Central Banking Lecture, International Monetary Fund, Washington DC, 6 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -7897,28 +7843,46 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Integrated, open and resilient - Europe’s strengths in a fragmenting world",
-   "link": "https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Speech by Mr Boris Vujčić, Vice-President of the European Central Bank, at the 5th Financial System Conference, organised by the Central Bank of Ireland, Dublin, 2 November 2026.",
+   "title": "What happens to the economy as “intelligence” gets cheaper?",
+   "link": "https://www.bis.org/speeches/20261110-what-happens-economy-as-intelligence-gets-cheaper",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Speech by Ms Sarah Hunter, Assistant Governor (Economic) of the Reserve Bank of Australia, at the UBS Australasia Conference, Sydney, 9 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Leading today, building for tomorrow",
-   "link": "https://www.bis.org/speeches/20261109-leading-today-building-tomorrow",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Special address by Mr Swaminathan J, Deputy Governor of the Reserve Bank of India, at the Leadership Conference of Indian Bank, Chennai, 23 October 2026.",
+   "title": "The Danish pension system in a long-term perspective",
+   "link": "https://www.bis.org/speeches/20261110-danish-pension-system-long-term-perspective",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Speech by Mr Christian Kettel Thomsen, Governor of Danmarks Nationalbank, at PeRCent’s annual conference 2026, Copenhagen, 4 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Safeguarding trust and monetary sovereignty in a digital payments era",
-   "link": "https://www.bis.org/speeches/20261109-safeguarding-trust-and-monetary-sovereignty-digital-payments-era",
-   "date": "2026-11-09T00:00:00+00:00",
-   "summary": "Speech by Mr Denis Beau, First Deputy Governor of the Bank of France, at the Hong Kong FinTech Week 2026, Hong Kong, 3 November 2026.",
+   "title": "Trust, expectations and monetary policy",
+   "link": "https://www.bis.org/speeches/20261110-trust-expectations-and-monetary-policy",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Text of the Sir Leslie Melville Lecture by Mr Andrew Hauser, Deputy Governor of the Reserve Bank of Australia, to the Australian National University, Canberra, 5 November 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Navigating stormy waters - reflections on monetary policy",
+   "link": "https://www.bis.org/speeches/20261110-navigating-stormy-waters-reflections-monetary-policy",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Speech by Ms Isabel Schnabel, Member of the Executive Board of the European Central Bank, at the ECB Conference on Money Markets 2026, Frankfurt am Main, 5 November 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Message for the European Chamber of Commerce Philippines Luncheon Meeting",
+   "link": "https://www.bis.org/speeches/20261110-message-european-chamber-commerce-philippines-luncheon-meeting",
+   "date": "2026-11-10T00:00:00+00:00",
+   "summary": "Message by Mr Eli M Remolona, Jr, Governor of Bangko Sentral ng Pilipinas (BSP, the central bank of the Philippines), for the European Chamber of Commerce Philippines Luncheon Meeting, Makati City, 3 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -7951,28 +7915,28 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Marking our tenth anniversary - one conviction, two principles and three challenges",
-   "link": "https://www.bis.org/speeches/20261103-marking-our-tenth-anniversary-one-conviction-two-principles-and-three-challenges",
-   "date": "2026-11-03T00:00:00+00:00",
-   "summary": "Speech by Mr Emmanuel Moulin, Governor of the Bank of France, at the Prudential Supervision and Resolution Authority (ACPR)-Financial Markets Authority(AMF) Fintech Forum, Paris, 2 October 2026.",
+   "title": "Integrated, open and resilient - Europe’s strengths in a fragmenting world",
+   "link": "https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
+   "date": "2026-11-09T00:00:00+00:00",
+   "summary": "Speech by Mr Boris Vujčić, Vice-President of the European Central Bank, at the 5th Financial System Conference, organised by the Central Bank of Ireland, Dublin, 2 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Payments in a fragmenting world - sovereignty, strategy and system design",
-   "link": "https://www.bis.org/speeches/20261103-payments-fragmenting-world-sovereignty-strategy-and-system-design",
-   "date": "2026-11-03T00:00:00+00:00",
-   "summary": "Speech by Mr Denis Beau, First Deputy Governor of the Bank of France, at the South African Reserve Bank Payments Conference 2026, Pretoria, 21 October 2026.",
+   "title": "Leading today, building for tomorrow",
+   "link": "https://www.bis.org/speeches/20261109-leading-today-building-tomorrow",
+   "date": "2026-11-09T00:00:00+00:00",
+   "summary": "Special address by Mr Swaminathan J, Deputy Governor of the Reserve Bank of India, at the Leadership Conference of Indian Bank, Chennai, 23 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Innovation, security and technological sovereignty - reconciling three imperatives",
-   "link": "https://www.bis.org/speeches/20261103-innovation-security-and-technological-sovereignty-reconciling-three-imperatives",
-   "date": "2026-11-03T00:00:00+00:00",
-   "summary": "Speech by Mr Denis Beau, First Deputy Governor of the Bank of France and Delegated Chairman of the Prudential Supervision and Resolution Authority (ACPR), at a seminar organised by the Association Europe-Finances-Régulations, Paris, 15 October 2026.",
+   "title": "Safeguarding trust and monetary sovereignty in a digital payments era",
+   "link": "https://www.bis.org/speeches/20261109-safeguarding-trust-and-monetary-sovereignty-digital-payments-era",
+   "date": "2026-11-09T00:00:00+00:00",
+   "summary": "Speech by Mr Denis Beau, First Deputy Governor of the Bank of France, at the Hong Kong FinTech Week 2026, Hong Kong, 3 November 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -8032,6 +7996,60 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
+   "title": "Marking our tenth anniversary - one conviction, two principles and three challenges",
+   "link": "https://www.bis.org/speeches/20261103-marking-our-tenth-anniversary-one-conviction-two-principles-and-three-challenges",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Speech by Mr Emmanuel Moulin, Governor of the Bank of France, at the Prudential Supervision and Resolution Authority (ACPR)-Financial Markets Authority(AMF) Fintech Forum, Paris, 2 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Payments in a fragmenting world - sovereignty, strategy and system design",
+   "link": "https://www.bis.org/speeches/20261103-payments-fragmenting-world-sovereignty-strategy-and-system-design",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Speech by Mr Denis Beau, First Deputy Governor of the Bank of France, at the South African Reserve Bank Payments Conference 2026, Pretoria, 21 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Innovation, security and technological sovereignty - reconciling three imperatives",
+   "link": "https://www.bis.org/speeches/20261103-innovation-security-and-technological-sovereignty-reconciling-three-imperatives",
+   "date": "2026-11-03T00:00:00+00:00",
+   "summary": "Speech by Mr Denis Beau, First Deputy Governor of the Bank of France and Delegated Chairman of the Prudential Supervision and Resolution Authority (ACPR), at a seminar organised by the Association Europe-Finances-Régulations, Paris, 15 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Statement - base rate of the National Bank of Kazakhstan",
+   "link": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Statement by Mr Timur M Suleimenov, Governor of the National Bank of Kazakhstan, on the base rate of the National Bank of Kazakhstan, Astana, 23 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Liquidity against collateral - the Swiss National Bank’s approach",
+   "link": "https://www.bis.org/speeches/20261102-liquidity-against-collateral-swiss-national-banks-approach",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Speech by Ms Petra Tschudin, Member of the Governing Board of the Swiss National Bank, and Mr Thomas Moser, Alternate Member of the Governing Board of the Swiss National Bank, at the Money Market Event, Geneva, 29 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
+   "title": "Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
+   "link": "https://www.bis.org/speeches/20261102-next-day-securities-settlement-tokenisation-and-transformation-europes-financial-infrastructure",
+   "date": "2026-11-02T00:00:00+00:00",
+   "summary": "Keynote address by Mr Piero Cipollone, Member of the Executive Board of the European Central Bank, at an EU T+1 Industry Committee event on “One year to T+1”, Frankfurt am Main, 29 October 2026.",
+   "publisher": "Bank for International Settlements",
+   "kind": "official",
+   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
+  },
+  {
    "title": "AI adoption in Europe",
    "link": "https://www.bis.org/speeches/20261102-ai-adoption-europe",
    "date": "2026-11-02T00:00:00+00:00",
@@ -8068,28 +8086,28 @@
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Statement - base rate of the National Bank of Kazakhstan",
-   "link": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Statement by Mr Timur M Suleimenov, Governor of the National Bank of Kazakhstan, on the base rate of the National Bank of Kazakhstan, Astana, 23 October 2026.",
+   "title": "Opening Statement to the Senate Economics Legislation Committee (Supplementary Budget Estimates)",
+   "link": "https://www.bis.org/speeches/20261029-opening-statement-senate-economics-legislation-committee-supplementary-budget-estimates",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "Opening statement via videoconference by Ms Michele Bullock, Governor of the Reserve Bank of Australia, to the Senate Economics Legislation Committee (Supplementary Budget Estimates), Sydney, 28 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Liquidity against collateral - the Swiss National Bank’s approach",
-   "link": "https://www.bis.org/speeches/20261102-liquidity-against-collateral-swiss-national-banks-approach",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Speech by Ms Petra Tschudin, Member of the Governing Board of the Swiss National Bank, and Mr Thomas Moser, Alternate Member of the Governing Board of the Swiss National Bank, at the Money Market Event, Geneva, 29 October 2026.",
+   "title": "Chile's September 2026 Monetary Policy Report",
+   "link": "https://www.bis.org/speeches/20261029-chiles-september-2026-monetary-policy-report",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "Presentation by Ms Rosanna Costa, Governor of the Central Bank of Chile, of the Monetary Policy Report before the Honorable Senate of the Republic, Santiago de Chile, 9 September 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
   },
   {
-   "title": "Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
-   "link": "https://www.bis.org/speeches/20261102-next-day-securities-settlement-tokenisation-and-transformation-europes-financial-infrastructure",
-   "date": "2026-11-02T00:00:00+00:00",
-   "summary": "Keynote address by Mr Piero Cipollone, Member of the Executive Board of the European Central Bank, at an EU T+1 Industry Committee event on “One year to T+1”, Frankfurt am Main, 29 October 2026.",
+   "title": "Release of the Monetary Policy Report",
+   "link": "https://www.bis.org/speeches/20261029-release-monetary-policy-report",
+   "date": "2026-10-29T00:00:00+00:00",
+   "summary": "Opening statement by Mr Tiff Macklem, Governor of the Bank of Canada and Ms Carolyn Rogers, Senior Deputy Governor of the Bank of Canada, at the press conference following the monetary policy decision, Ottawa, Ontario, 28 October 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
@@ -8108,33 +8126,6 @@
    "link": "https://www.bis.org/speeches/20261029-connecting-sustainable-finance-climate-resilient-growth",
    "date": "2026-10-29T00:00:00+00:00",
    "summary": "Remarks by Mr Arthur Yuen, Deputy Chief Executive of the Hong Kong Monetary Authority, at One Earth Summit 2026, Hong Kong, 28 October 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "National Bank of Ukraine press briefing - monetary policy decisions",
-   "link": "https://www.bis.org/speeches/20261102-national-bank-ukraine-press-briefing-monetary-policy-decisions",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "Speech by Mr Andriy Pyshnyy, Governor of the National Bank of Ukraine, at a press briefing on monetary policy decisions, Kyiv, 29 October 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Opening Statement to the Senate Economics Legislation Committee (Supplementary Budget Estimates)",
-   "link": "https://www.bis.org/speeches/20261029-opening-statement-senate-economics-legislation-committee-supplementary-budget-estimates",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "Opening statement via videoconference by Ms Michele Bullock, Governor of the Reserve Bank of Australia, to the Senate Economics Legislation Committee (Supplementary Budget Estimates), Sydney, 28 October 2026.",
-   "publisher": "Bank for International Settlements",
-   "kind": "official",
-   "feed": "https://www.bis.org/doclist/cbspeeches.rss"
-  },
-  {
-   "title": "Chile's September 2026 Monetary Policy Report",
-   "link": "https://www.bis.org/speeches/20261029-chiles-september-2026-monetary-policy-report",
-   "date": "2026-10-29T00:00:00+00:00",
-   "summary": "Presentation by Ms Rosanna Costa, Governor of the Central Bank of Chile, of the Monetary Policy Report before the Honorable Senate of the Republic, Santiago de Chile, 9 September 2026.",
    "publisher": "Bank for International Settlements",
    "kind": "official",
    "feed": "https://www.bis.org/doclist/cbspeeches.rss"
